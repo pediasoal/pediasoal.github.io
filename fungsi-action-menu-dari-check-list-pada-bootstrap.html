@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Action Menu Dari Check List Pada Bootstrap - BELAJAR</title>
+    <meta name="description" content="Fungsi Action Menu Dari Check List Pada Bootstrap, , , , , , , 0, , , , , , 0, fungsi-action-menu-dari-check-list-pada-bootstrap, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Action Menu Dari Check List Pada Bootstrap - BELAJAR" />
+    <meta property="og:description" content="Fungsi Action Menu Dari Check List Pada Bootstrap, , , , , , , 0, , , , , , 0, fungsi-action-menu-dari-check-list-pada-bootstrap, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Action Menu Dari Check List Pada Bootstrap - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Action Menu Dari Check List Pada Bootstrap, , , , , , , 0, , , , , , 0, fungsi-action-menu-dari-check-list-pada-bootstrap, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediasoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediasoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediasoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediasoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediasoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediasoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediasoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Action Menu Dari Check List Pada Bootstrap</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">vinagabriella1206</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Action+Menu+Dari+Check+List+Pada+Bootstrap" alt="Fungsi Action Menu Dari Check List Pada Bootstrap">
+                    </div>
+                    <p></p>
+                    <p>apa fungsi menu categories and action?​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-menu-categories-and-action%e2%80%8b">1.
+                                            apa fungsi menu categories and action?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-fungsi-menu-action-di-powerpoint">2.
+                                            Tuliskan fungsi menu action di powerpoint !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-beberapa-fungsi-menu-mailing-list">3.
+                                            jelaskan beberapa fungsi menu mailing list ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-menu-account-list-pada-command-centre-myob">4.
+                                            jelaskan menu account list pada command centre myob</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#our-english-teacher-check-the-atteda-ce-list-everyday">5.
+                                            Our english teacher...check the atteda ce list everyday</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#untuk-menghapus-emailsetelah-kita-memberikan-check-list-di-depan-nama-email-selanjutnya-kita-tekan">6.
+                                            Untuk menghapus email,setelah kita memberikan check list di depan nama email selanjutnya kita tekan?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#untuk-menghapus-email-setelah-kita-berikan-check-list-di-depan-nama-email-selanjutnya-kita-tekan">7.
+                                            untuk menghapus email setelah kita berikan check list di depan nama email selanjutnya kita tekan?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-bootstrap">8.
+                                            Apa yang dimaksud dengan bootstrap</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tentang-prosedur-bootstrap%e2%80%8b">9.
+                                            Jelaskan tentang prosedur bootstrap​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskam-tentang-menu-list-descriptive-text-dan-procedure-text">10.
+                                            Jelaskam tentang menu list, descriptive text, dan procedure text !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#our-math-teacher-check-the-attendance-list-every-day">11.
+                                            Our math teacher...check the attendance list every day</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#golongkanlah-zat-zat-di-bawah-ini-dengan-memberi-tanda-check-list">12.
+                                            Golongkanlah zat zat di bawah ini dengan memberi tanda check list !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-beberapa-fungsi-menu-mailing-list-min-10-menu">13.
+                                            jelaskan beberapa fungsi menu mailing list?  (min 10 menu) </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tanda-panah-yg-berada-disamping-nama-akun-pada-menu-account-list-berfungsi-untuk">14.
+                                            Tanda panah yg berada disamping nama akun pada menu "account list" berfungsi untuk...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berilah-contoh-penerapan-plan-do-check-action-pdca-bidang-lingkungan-di-perusahaan">15.
+                                            Berilah contoh penerapan Plan Do Check Action (PDCA) bidang lingkungan di perusahaan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-arti-dari-our-math-teacher-check-the-attendance-list-every-day">16.
+                                            apa arti dari our math teacher check the attendance list every day</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-yang-dimaksud-check-mark-pada-lompat-jauh-jelaskan-yang-dimaksud-starting-action">17.
+                                            jelaskan yang dimaksud check mark pada lompat jauh &amp; jelaskan yang dimaksud starting action </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#more-a-list-of-action-verbs-found-texts-above">18.
+                                            More a list of action verbs found texts above</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-memunculkan-menu-action-script-dalam-multimedia-flash">19.
+                                            bagaimana cara memunculkan menu action script dalam multimedia flash</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#our-math-teacher-doesnt-check-attendence-list-every-day">20.
+                                            (+) 
+(-) our math teacher doesn't check attendence list every day</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-mana-yang-di-check-list">21.
+                                            tolong mana yang di check list</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-validate-addresses-pada-kotak-dialog-edit-recipient-list-di-menu-mail-merge-adalah%e2%80%8b">22.
+                                            Fungsi dari Validate addresses pada kotak dialog edit recipient list di menu Mail Merge adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-bootstrap-%e2%80%8b">23.
+                                            Apa itu bootstrap ??​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#list-the-action-verbs">24.
+                                            List the action verbs</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-menu-bar-dan-script-list">25.
+                                            jelaskan fungsi dari menu bar dan script list</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-shopping-list-dan-menu-list">26.
+                                            Contoh shopping list dan menu list</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kameraalat-perekam-suaracheck-list-skala-penelitian-yang-merupakan-observasi-adalah">27.
+                                            Kamera,alat perekam suara,check list , skala penelitian  . Yang merupakan observasi adalah ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#our-english-teacher-check-the-attendance-list-everyday">28.
+                                            Our english teacher...Check the attendance list everyday</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#untuk-memberikan-format-list-dengan-angka-merupakan-fungsi-dari-menu-cpt-jawab">29.
+                                            untuk memberikan format list dengan angka merupakan fungsi dari menu...#cpt jawab</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-auto-check-error-pada-menu-mailing-adalah">30.
+                                            fungsi auto check error pada menu mailing adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ikon-action-terdapat-pada-tab-menu">31.
+                                            ikon action terdapat pada tab menu.?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-check-list-in-second-picture">32.
+                                            1. Check list in second picture </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-menu-di-mailing-list-beserta-fungsinya-min-10-menu">33.
+                                            Jelaskan menu di mailing list beserta fungsinya (min 10 menu)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-mengelola-tampilan-slide-show-yang-tidak-berurutan-dengan-tab-menu-action">34.
+                                            Bagaimana mengelola tampilan slide show yang tidak berurutan dengan tab Menu ACTION:</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#our-english-teacher-check-the-attendance-list-every-day">35.
+                                            our english teacher ... check the attendance list every day</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bootstrap-terbaru-sudah-versi">36.
+                                            bootstrap terbaru sudah versi </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ms-mita-check-the-attendance-list-every-day">37.
+                                            Ms. Mita....check the attendance list every day</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#disi-guru-dengan-menulis-check-list-pada-kolom-yang-tersedia-%e2%80%8b">38.
+                                            Disi guru dengan menulis check list pada kolom yang tersedia! ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-menu-yang-digunakan-untuk-membuat-listdaftar-%e2%80%8b">39.
+                                            Apa menu yang digunakan untuk membuat list/daftar? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-aku-ya-hehekerjakan-yg-di-check-list-sama-nomor-23">40.
+                                            tolong aku ya hehekerjakan yg di check list Sama nomor 23</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="apa-fungsi-menu-categories-and-action%e2%80%8b">
+                            1. apa fungsi menu categories and action?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>action :  difungsikan untuk melakukan beberapa aksi tertentu. </p><p><strong>Penjelasan:</strong></p><p>semoga membantuu</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-fungsi-menu-action-di-powerpoint">
+                            2. Tuliskan fungsi menu action di powerpoint !</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Tombol action atau action button pada aplikasi PowerPoint adalah sebuah tombol yang difungsikan untuk melakukan beberapa aksi tertentu. Diantaranya adalah Tautan dan Menjalankan program.</p><p><strong>Penjelasan:</strong></p><p>Dalam sebuh presentasi adakalanya kita membutuhkan sebuah interaksi melalui elemen tertentu yang difungsikan sebagai tombol. Nah, disinilah tombol action akan berfungsi. </p><p>Tombol action ini sendiri bisa diakses melalui menu bar Insert &gt;&gt; Shapes &gt;&gt; Action Button (lihat lampiran gambar). Pada umumnya aksi yang dilakukan tombol action ini adalah aktivitas yang berkaitan dengan presentasi itu sendiri dan hal eksternal.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-beberapa-fungsi-menu-mailing-list">
+                            3. jelaskan beberapa fungsi menu mailing list ?</h2><br />
+                        kalo ngak salah untuk membuat surat di microsoft word<br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-menu-account-list-pada-command-centre-myob">
+                            4. jelaskan menu account list pada command centre myob</h2><br />
+                        Account List : untuk melihat/menambah/mengubah/menghapus daftar akun-akun perusahaan.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="our-english-teacher-check-the-atteda-ce-list-everyday">
+                            5. Our english teacher...check the atteda ce list everyday</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>always</p><p></p><p>tolong jadikan jawaban tercerdas semoga membantu :)</p><p><strong>Jawaban:</strong></p><p>always</p><p><strong>Penjelasan:</strong></p><p>maaf kalau salah</p><p>:v</p><br />
+                                            <h2 class="ez-toc-section" id="untuk-menghapus-emailsetelah-kita-memberikan-check-list-di-depan-nama-email-selanjutnya-kita-tekan">
+                            6. Untuk menghapus email,setelah kita memberikan check list di depan nama email selanjutnya kita tekan?</h2><br />
+                        <p><strong>Jawaban ringkas:</strong></p>Delete<p></p><p><strong>Penjelasan panjang:</strong></p><p>Untuk lebih jelasnya, amatilah lampiran. Misalkan pada email google (gmail), tombol Delete ditunjukkan tanda panah merah.</p><br />
+                                            <h2 class="ez-toc-section" id="untuk-menghapus-email-setelah-kita-berikan-check-list-di-depan-nama-email-selanjutnya-kita-tekan">
+                            7. untuk menghapus email setelah kita berikan check list di depan nama email selanjutnya kita tekan?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Delete</p><p><strong>Penjelasan:</strong></p><p>semoga membantu ^_^</p><p><strong>Jawaban:</strong></p><p>Tekan Delete</p><p><strong>Penjelasan:</strong></p><p>Semoga Bermanfaat</p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-bootstrap">
+                            8. Apa yang dimaksud dengan bootstrap</h2><br />
+                        <strong>Jawaban:</strong>Bootstrap adalah sebuah library framework CSS yang di buat khusus untuk bagian pengembangan front-end website. <p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tentang-prosedur-bootstrap%e2%80%8b">
+                            9. Jelaskan tentang prosedur bootstrap​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Prosedur Bootstrap pada komputer yaitu : </p><p></p><p>Proses hubungan antara beberapa perangkat yang terdapat pada PC (komputer) dan berbagai Aplikasi yang ada pada memori PC kemudian proses me-load sistem operasi tersebut kedalam sebuah memori agar sistem operasi dapat bekerja atau berjalan pada PC atau komputer tersebut.</p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskam-tentang-menu-list-descriptive-text-dan-procedure-text">
+                            10. Jelaskam tentang menu list, descriptive text, dan procedure text !</h2><br />
+                        - Descriptive text is a text that we use and writevto describe something, for example object, parts of body, places, person, plants, animal, etc.<br />- Procedure text is a text that shows how to make something, how to do something or instuctions in a sequences of event and activities. <br />maaf yang menu list aku gak tau..!!<br />
+                                            <h2 class="ez-toc-section" id="our-math-teacher-check-the-attendance-list-every-day">
+                            11. Our math teacher...check the attendance list every day</h2><br />
+                        <p><strong>Our math teacher always check the attendance list every day.</strong></p><br />
+                                            <h2 class="ez-toc-section" id="golongkanlah-zat-zat-di-bawah-ini-dengan-memberi-tanda-check-list">
+                            12. Golongkanlah zat zat di bawah ini dengan memberi tanda check list !</h2><br />
+                        unsur:emas,seng,besi,udara<br />senyawa:air,arang,garam dapur<br />campuran:gula,tinta,asam cuka,sirop,sabun<br />maaf klo salah<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-beberapa-fungsi-menu-mailing-list-min-10-menu">
+                            13. jelaskan beberapa fungsi menu mailing list?  (min 10 menu) </h2><br />
+                         envelopes labels  start mail merge select recipients  greeting Line edit recipient list finish merge auto check for errors address blog <br />
+                                            <h2 class="ez-toc-section" id="tanda-panah-yg-berada-disamping-nama-akun-pada-menu-account-list-berfungsi-untuk">
+                            14. Tanda panah yg berada disamping nama akun pada menu "account list" berfungsi untuk...</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>melanjutkan ke bagian lain</p><br />
+                                            <h2 class="ez-toc-section" id="berilah-contoh-penerapan-plan-do-check-action-pdca-bidang-lingkungan-di-perusahaan">
+                            15. Berilah contoh penerapan Plan Do Check Action (PDCA) bidang lingkungan di perusahaan</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>PDCA, singkatan bahasa Inggris dari "Plan, Do, Check, Act" (Rencanakan, Kerjakan, Cek, Tindak lanjuti), adalah suatu proses pemecahan masalah empat langkah iteratif yang umum digunakan dalam pengendalian kualitas. PDCA dikenal sebagai “siklus Shewhart”, karena pertama kali dikemukakan oleh Walter Shewhart beberapa puluh tahun yang lalu. Namun dalam perkembangannya, metodologi analisis PDCA lebih sering disebut “siklus Deming”. Hal ini karena Deming adalah orang yang mempopulerkan penggunaannya dan memperluas penerapannya. Namun, Deming sendiri selalu merujuk metode ini sebagai siklus Shewhart, dari nama Walter A. Shewhart, yang sering dianggap sebagai bapak pengendalian kualitas statistis. Belakangan, Deming memodifikasi PDCA menjadi PDSA ("Plan, Do, Study, Act") untuk lebih menggambarkan rekomendasinya.Dengan nama apa pun itu disebut, PDCA adalah alat yang bermanfaat untuk melakukan perbaikan secara terus menerus tanpa berhenti.</p><p></p><p></p><p>MAAF KALO SALAH:)</p><br />
+                                            <h2 class="ez-toc-section" id="apa-arti-dari-our-math-teacher-check-the-attendance-list-every-day">
+                            16. apa arti dari our math teacher check the attendance list every day</h2><br />
+                        <p>artinya guru matematika memeriksa daftar kehadiran setiap hari </p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-yang-dimaksud-check-mark-pada-lompat-jauh-jelaskan-yang-dimaksud-starting-action">
+                            17. jelaskan yang dimaksud check mark pada lompat jauh &amp; jelaskan yang dimaksud starting action </h2><br />
+                        Starting action:pada waktu pertama sebelum melakukan lari secepat cepat nya dna melompat setinggi-tinggi<br />
+                                            <h2 class="ez-toc-section" id="more-a-list-of-action-verbs-found-texts-above">
+                            18. More a list of action verbs found texts above</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p></p><p>Sailing, cursed, drove away, denied and went.</p><p></p><p>Penjelasan:</p><p></p><p>Sailing = berlayar</p><p></p><p>Cursed = mengutuk</p><p></p><p>Drove away = mengusir</p><p></p><p>Denied = membantah</p><p></p><p>Went = pergi</p><p></p><p></p><p></p><p></p><p>JADIKAN JAWABAN TERCERDAS</p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-memunculkan-menu-action-script-dalam-multimedia-flash">
+                            19. bagaimana cara memunculkan menu action script dalam multimedia flash</h2><br />
+                        manual dari mouse, klik kanan nanti ada di situ action script, atau pake pintasan di keyboard <br />
+                                            <h2 class="ez-toc-section" id="our-math-teacher-doesnt-check-attendence-list-every-day">
+                            20. (+) 
+(-) our math teacher doesn't check attendence list every day</h2><br />
+                        Jawaban:(+) our math teacher checks attendance list everyday(-) our math teacher doesn't check attendance list everyday(?) Does our math teacher check attendance list everyday?<p></p>PEMBAHASAN Present Tense<p>Digunakan untuk menyatakan Kegiatan yang dilakukan secara berulang, kebiasaan, rutinitas, dan fakta umum. Cirinya:</p>Everyday ✓AlwaysUsuallyOften<p></p>Rumus Present Tense(+) S + Verb-1 (-s/es)(-) S + do/does + not + Verb+1(?) Do/does + S + Verb-1?<p></p>Catatan<p>Subject (our math teacher) pada soal adalah tunggal karena hanya ada satu guru:</p>Maka pada kalimat Positive menggunakan Verb+s (check+s)dan pada kalimat Negative (-) dan Interrogative (?) menggunakan does lalu kembali menggunakan Verb-1 tanpa -s (check)<p></p><p>=== Semoga Membantu ===</p><p></p>Pelajari Lebih Lanjut<p>Present Tense: </p>brainly.co.id/tugas/23915712brainly.co.id/tugas/23541876<p></p>DETAIL JAWABANMapel: Bahasa InggrisMateri: Present TenseLevel: JHSKode Soal: 5Kode Kategorisasi: 7.5<p></p>Kata Kunci:Verb+s, checks Verb-1, does, check<p></p>#SejutaPohon<br />
+                                            <h2 class="ez-toc-section" id="tolong-mana-yang-di-check-list">
+                            21. tolong mana yang di check list</h2><br />
+                        gula: senyawa<br />air: senyawa<br />asam cuka: senyawa<br />besi: unsur<br />arang: unsur<br />sirop: campuran<br />udara: campuran<br />garam dapur: senyawa<br />sabun: senyawa<br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-validate-addresses-pada-kotak-dialog-edit-recipient-list-di-menu-mail-merge-adalah%e2%80%8b">
+                            22. Fungsi dari Validate addresses pada kotak dialog edit recipient list di menu Mail Merge adalah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p> Untuk membuat mail merge Anda dapat melakukannya dengan cara sebagai berikut :</p><p></p><p>2 Pilih menu Tools =&gt; Mail merge wizard untuk menampilkan jendela task pane Mail Merge.</p><p></p><p>3 Saat Anda mulai membuat mail merge, Anda diharuskan memilih tipe dari dokumen yang akan Anda buat yang antara lain meliputi : Letterts : digunakan jika Anda akan membuat surat. Messages : digunakan untuk membuat surat yang secara otomatis terkirim pada alamat atau faxnpada daftar Outlook milik Anda. Envelopes : digunakan untuk membuat amplop sesuai dengan field pada mail merge. Labels : digunakan untuk membuat label surat. Directory : digunakan untuk membuat daftar direktori, seperti daftar tlepon perusahaan. Klik Next untuk menuju langkah selanjutnya. Pilih dasar dari mail merge yang Anda gunakan, apakah pada dokumen yang sudah ada.klik Next.</p><p></p><p>4 Pada langkah ke tiga, pilih sumber data untuk mail merge. Jika Anda ingin menggunakan daftar baru, klik hipelink Create setelah Anda menekan radio button Type a New List. Anda juga dapat memilih database yang sudah ada (pada Access atau Outlook). Klik Next. Langkah ke 4 ini Anda akan diminta untuk membuat surat yang akan Anda gunakan. Jika sebelumnya Anda sudah membuatnya langsung saja klik Next. Pada langkah ke 5 Anda dapat melihat hasil dari surat yang Anda buat tadi. Jika Anda ingin mengedit daftar penerima yang sudah Anda buat tadi, pilih Edit Recipient List. Jika semua benar,lakukan langkah selanjutnya untk menyelesaikan penggabungan dan mencetak dokumen Anda. MEMBUAT DATABASE Saat Anda membuat form surat, biasanya Anda lebi menyukai untuk menggunakan database yang sudah ada ataupun melalui Outlook sebagai sumber datanya. Untuk penggabungan yang lebi cepat, misalnya untuk pembuatan undangan ulang tahun, biasanya akan lebih mudah untuk membuat database baru dalam proses mail merge. Untukmelakukannya, ikutilah petunjuk berikut: Pilih Type a New List pada langkah ketiga pada wizard. Kotak dialog New Address List akan menampilkan:</p><p></p><p>5 Untuk menambahkan record baru, klik tombol New Entry Jika data Anda tidak sesuai dengan daftar field, klik tombol Customize untuk menampilkan kotak dialog Customize Address List. Disini Anda dapat menambahkan field yang Anda butuhkan.</p><p></p><p>6 Hapuslah field yang tidak Anda butuhkan dengan menekan tombol Delet dan tambahkan field yang Anda butuhkan dengan menekan tombol Add, untuk menampilkan kotak dialog Add List. Jika sudah selesai klik OK untuk kembali ke kotak dialog Customsize Address List. Klik OK. Isi record pada field field yang tersedia. Jika sudah selesai, klik OK. Maka Anda akan dihadapkan pada kotak dialog Mail Merge Recipient. Jika sudah benar, klik OK untuk kembali ke jndela task pane MENYERANG DAN MENGURUTAN DATABASE</p><p></p><p>7 Anda dapat mengatur record yang ada dalam data sunber dengan menyaringdatabase yang ada. Untuk melakukannya, Anda dapat mengikuti langkah berikut: Pada kotak dialog Mail Merge Recipient, pilih Edit. Pada kotak dilog Address List, pilih Filter and Sort Pada kotak dialog Filter anad Sortir, pilih kriteria penyaingan dengan memilih field. Klik OK untuk kembali ke daftar. Anda juga dapat mengurutkan database Anda dengan mengikuti Langkah pertama dan kedua yang telah dijelaskan sebelumnya. Klik pada tab Sort Record. Anda dapat memilih metode pengurutan yang sesuai dengan keinginan Anda. MEMBUAT DAN MENGATUR PENGGUNAAN ENVELOPE (AMPLOP) Mail Marge juga sangat bergna untuk membuat envelope (amplop) berdasaran pada sumber data yang ada. Jika Anda ingin mencetak satu atau beberapa lembar ampolp berdasarkan pada informasi yang sama. Untuk membuatnya Anda dapat melakukannya dengan cara sebagai berikut: Pilih menu TOOL =&gt;Letter and Mailings =&gt; Envelope and Labels. Pada tab Envelopes, masukkan alamat penerima dan alamat Anda. Jika Anda ingin menambahkan alamat pos/surat pada amplop,klik check box dibawah alamat penerima. Salah satu manfat dari tool ini adalah Anda dapat membuat dan mencetak amplop pada kotak dialog yang terpisah walaupun dokumen lain terbuka. Anda dapat memilih ukuran amplop pada tombol Options. Anda juga dapat langsung mencetak melalui kotak dialog jika sdah siap.</p><p><strong>Penjelasan:</strong></p><p>SEMOGA MEMBANTU </p><br />
+                                            <h2 class="ez-toc-section" id="apa-itu-bootstrap-%e2%80%8b">
+                            23. Apa itu bootstrap ??​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Bootstrap (Framework)</p><p><strong>Penjelasan:</strong></p><p>Bootstrap adalah salah satu framework dalam membuat sebuah situs atau website. Framework yang digunakan adalah CSS yang dipakai dalam mendesain situs. Bootstrap ini gratis dipakai dan dapat digunakan pada semua jenis device.</p><p><strong>Jawaban:</strong></p><p>Bootstrap adalah kerangka kerja CSS yang sumber terbuka dan bebas untuk merancang situs web dan aplikasi web. Kerangka kerja ini berisi templat desain berbasis HTML dan CSS untuk tipografi, formulir, tombol, navigasi, dan komponen antarmuka lainnya, serta juga ekstensi opsional JavaScript.</p><p></p><p>semoga membantu&gt;_&lt;</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="list-the-action-verbs">
+                            24. List the action verbs</h2><br />
+                        Tuliskan verba tindakan<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-menu-bar-dan-script-list">
+                            25. jelaskan fungsi dari menu bar dan script list</h2><br />
+                        menu bar mempermudah kita untuk mengakses fitur fitur pd mcs word<br />
+                                            <h2 class="ez-toc-section" id="contoh-shopping-list-dan-menu-list">
+                            26. Contoh shopping list dan menu list</h2><br />
+                                                         shoping list<br /><br />-1 ons coffe<br />-1 kg wheat<br />-1 kg egg<br /><br />
+                                            <h2 class="ez-toc-section" id="kameraalat-perekam-suaracheck-list-skala-penelitian-yang-merupakan-observasi-adalah">
+                            27. Kamera,alat perekam suara,check list , skala penelitian  . Yang merupakan observasi adalah ?</h2><br />
+                        <p>kamera, bolpen, kertas, alat perekam juga boleh si</p><br />
+                                            <h2 class="ez-toc-section" id="our-english-teacher-check-the-attendance-list-everyday">
+                            28. Our english teacher...Check the attendance list everyday</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>always</p><p></p><p>maaf kalo salah :)</p><p>arigatou★</p><br />
+                                            <h2 class="ez-toc-section" id="untuk-memberikan-format-list-dengan-angka-merupakan-fungsi-dari-menu-cpt-jawab">
+                            29. untuk memberikan format list dengan angka merupakan fungsi dari menu...#cpt jawab</h2><br />
+                        Fungsi dari menu <strong>Numbering</strong><br />Semoga membantu....<br /><br />
+                                            <h2 class="ez-toc-section" id="fungsi-auto-check-error-pada-menu-mailing-adalah">
+                            30. fungsi auto check error pada menu mailing adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Auto Check for Error, adalah untuk memeriksa kesalahan secara otomatis. Finish&amp;merge, adalah untuk mengetahui bahwa surat yang ada buat sudah lengkap dan bisa langsung dicetak secara otomatis</p><p></p><p><strong>Penjelasan:</strong></p><p>semoga bermanfaat </p><br />
+                                            <h2 class="ez-toc-section" id="ikon-action-terdapat-pada-tab-menu">
+                            31. ikon action terdapat pada tab menu.?</h2><br />
+                        menu ribbon Insert <br /><br /># pada group Links<br />Tab Menu <strong>Insert</strong><br /><br />Semoga Membantu!<br /><br />
+                                            <h2 class="ez-toc-section" id="1-check-list-in-second-picture">
+                            32. 1. Check list in second picture </h2><br />
+                        <p><strong>Jawaban:</strong></p><p>itu jwbnnya tergantung karya tulisan anda sblmnya</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-menu-di-mailing-list-beserta-fungsinya-min-10-menu">
+                            33. Jelaskan menu di mailing list beserta fungsinya (min 10 menu)</h2><br />
+                        Fungsi dari tab Mailings adalah untuk membuat sebuah surat masal dengan format tulisan yang sama, akan tetapi mempunyai data yang berbeda dari setiap surat. Misalnya untuk pembuatan surat undangan dengan jumlah 100 undangan dengan format yang sama, akan tetapi harus memasukan nama dari penerima surat yang berbeda-beda.<br /><br />Didalam tab mailings terdapat berbagi group/icon, diantaranya adalah group create,start mail merge, write&amp;insert fields, preview results, finish. Untuk lebih jelasnya berikut penjelasan dari masing-masing group tersebut :<br /><br />Enfelopes, adalan untuk membuat dan mencetak sampul pada amplop.<br /><br />Labels, adalah untuk menuliskan alamat dan nama.<br /><br />Start Mail Marge, adalah untuk membuat surat.<br /><br />Select Resipiets, adalah untuk memilih penerima surat.<br /><br />Edit Resipiet List, adalah untuk mengatur penerima surat.<br /><br />Hailight Marge Fields aalah untuk menyisipkan sebuah dokument.<br /><br />Address Block, adalah untuk memilih surat.<br /><br />Greeting Line, adalah untuk menambah baris ucapan.<br /><br />Insret Marge Field, adalah untuk menyisipkan dan menggabungkan surat.<br /><br />Rules, adalah untuk memberikan karis bawah pada surat.<br /><br />Match Filds adalah untuk membandingkan surat.<br /><br />Update Labels, adalah untuk memperbarui lebel surat.<br /><br />Preview Resuts, adalah untuk melihat hasil.<br /><br />Find Resifient, adalah untuk mencari penerima.<br /><br />Auto Check for Error, adalah untuk memeriksa kesalahan secara otomatis.<br /><br />Finish&amp;merge, adalah untuk mengetahui bahwa surat yang ada buat sudah lengkap dan bisa langsung dicetak secara otomatis.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-mengelola-tampilan-slide-show-yang-tidak-berurutan-dengan-tab-menu-action">
+                            34. Bagaimana mengelola tampilan slide show yang tidak berurutan dengan tab Menu ACTION:</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>jadikan jawaban terbaik ya</p><p></p><p>Untuk mengelola tampilan slide show yang tidak berurutan dengan tab Menu ACTION, Anda perlu mengikuti langkah-langkah berikut:</p><p></p><p>1. Buka slide show Anda di aplikasi atau program yang Anda gunakan.</p><p>2. Biasanya, untuk mengatur tampilan slide show, Anda akan menemukan opsi seperti "Slide Sorter" atau "Slide Organizer". Pilih opsi ini.</p><p>3. Dalam tampilan Slide Sorter, Anda dapat melihat thumbnail dari setiap slide Anda. Anda bisa mengklik dan menaruh slide dalam urutan yang diinginkan.</p><p>4. Setelah Anda mengatur urutan slide sesuai keinginan, simpan perubahan Anda.</p><p>5. Kembali ke tampilan normal slide show dan periksa apakah slide ditampilkan sesuai urutan yang Anda inginkan.</p><br />
+                                            <h2 class="ez-toc-section" id="our-english-teacher-check-the-attendance-list-every-day">
+                            35. our english teacher ... check the attendance list every day</h2><br />
+                        <p><strong>Kata yang tepat untuk mengisis titik titik pada kalimat rumpang tersebut adalah "does not". </strong>Kalimat terssbut menunjukan bahwa struktur kalimatnya adalah kalaimat negatif. </p><p></p><p><strong>Pembahasan:</strong></p>Keterangan waktu "every day" pada kalimat menunjukan bahwa kalimat  tersebut adalah Simple Present Tense karena every day di sini menunjukan kebiasaan.Struktur kalimatnya menunjukan bahwa kalimat tersebut adalah kalimat negatif, karena Simple Present Tense positif formulanya adalah<strong> subject + main verb + object.</strong>Kalimat di atas memiliki formula: <strong>Subject + do/does + not + Verb1</strong>Sehingga jawabannya antara do atau does, <strong>karena subjeknya adalah "our teacher" </strong>yaitu singular maka menggunakan<strong> does. </strong><p><strong></strong></p><p><strong>Pelajari lebih lanjut</strong></p><p>Pelajari lebih lanjut tentang Bahasa Inggris https://brainly.co.id/tugas/3768072</p><p><strong>#BelajarBersamaBrainly #SPJ4</strong></p><p><strong></strong></p><br />
+                                            <h2 class="ez-toc-section" id="bootstrap-terbaru-sudah-versi">
+                            36. bootstrap terbaru sudah versi </h2><br />
+                        sudah bootstrao Version 4bootstrap terbaru sudah versi 4<br />
+                                            <h2 class="ez-toc-section" id="ms-mita-check-the-attendance-list-every-day">
+                            37. Ms. Mita....check the attendance list every day</h2><br />
+                        maaf itu mau diapakan dan saya gak paham maaf yaaa<br />
+                                            <h2 class="ez-toc-section" id="disi-guru-dengan-menulis-check-list-pada-kolom-yang-tersedia-%e2%80%8b">
+                            38. Disi guru dengan menulis check list pada kolom yang tersedia! ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>disuruh cari hukum bacaan apa gimana de</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-menu-yang-digunakan-untuk-membuat-listdaftar-%e2%80%8b">
+                            39. Apa menu yang digunakan untuk membuat list/daftar? ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>. Ada tiga macam jenis list yang bisa dibuat di : </p><p></p><p>1. Ordered List adalah list yang terurut</p><p></p><p>2. Unordered List adalah list yang tak terurut</p><p></p><p>3. dan Descriptiona List adalah list yang berisi definisi</p><p></p><p></p><p></p><p><strong>Penjelasan:</strong></p><p></p><p>item yg dipakai jika menggunakan buku </p><p>adalah pencil  , spidoll atau pulpen ️</p><p>tergantung anda ingin menggunkan yg mana</p><p>bisa juga menulis list nya di hp atau laptop </p>contoh list belanjaan :<p></p><p>1.  minyak : 15.000</p><p>2. kecap : 7.000</p><p>3. sambel botol 8.000</p><p></p><p>╱╱┏╮╱╱╱╱╱╱╱╱╱╱</p><p>╱╱┃┃╱╱┳╱┓┳╭┛┳┓</p><p>▉━╯┗━╮┃╱┃┣┻╮┣╱</p><p>▉┈┈┈┈┃┻┛┛┻╱┗┗┛</p><p>▉╮┈┈┈┃▔▔▔▔▔▔▔▔</p><p>╱╰━━━╯ </p><br />
+                                            <h2 class="ez-toc-section" id="tolong-aku-ya-hehekerjakan-yg-di-check-list-sama-nomor-23">
+                            40. tolong aku ya hehekerjakan yg di check list Sama nomor 23</h2><br />
+                        no 25, 23<br />maaf saya mau kirim jawaban  yg lain bagaimana yh?<br />soal y kertas buku kecil nih, no wa ad atau sosmed lain biar saya kirim jawaban yg sisa y<br />trims ^_^56 = 2 . ((3x + 5) + (2x - 2)<br />28 = 5x + 3<br />x = (28 - 3)/5<br />x = 25/5<br />x = 5 cm<br /><br />p = 3(5) + 5<br />p = 20<br /><br />l = 2(5) - 2<br />l = 8<br /><br />L = 20 . 8<br />L = B. 160 cm²<br /><br />Opsi B<br /><br />#RA-Help <br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/rEwsKL4Elng?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-verify-data-on-disc-after-burning-nero.html">Fungsi Dari Verify Data On Disc After Burning Nero</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-device-controller.html">Fungsi Dari Device Controller</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/definisi-dan-fungsi-dari-parameter-dan-statistik.html">Definisi Dan Fungsi Dari Parameter Dan Statistik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-uts-sbk-kelas-7-semester-2.html">Contoh Soal Uts Sbk Kelas 7 Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-un-logaritma-smk.html">Contoh Soal Un Logaritma Smk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/arti-dari-masyarakat-memiliki-fungsi.html">Arti Dari Masyarakat Memiliki Fungsi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-type-password.html">Apa Fungsi Dari Type Password</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-permintaan.html">Apa Fungsi Dari Permintaan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-akuntansi-perusahaan-jasa-travel.html">Contoh Soal Akuntansi Perusahaan Jasa Travel</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/berikut-yang-termasuk-fungsi-dari-dccu-adalah.html">Berikut Yang Termasuk Fungsi Dari Dccu Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/tab-berfungsi-untuk.html">Tab Berfungsi Untuk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-web-proxy-ipcop.html">Fungsi Dari Web Proxy Ipcop</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-google-analytics-di-firebase-android-studio.html">Fungsi Dari Google Analytics Di Firebase Android Studio</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-textbox-label-dan-button.html">Apa Fungsi Dari Textbox Label Dan Button</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-matematika-persamaan-dan-pertidaksamaan-nilai-mutlak.html">Contoh Soal Matematika Persamaan Dan Pertidaksamaan Nilai Mutlak</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/jelaskan-fungsi-dari-timing-light.html">Jelaskan Fungsi Dari Timing Light</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-try-out-sd-bahasa-indonesia-2019.html">Contoh Soal Try Out Sd Bahasa Indonesia 2019</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-purt-com.html">Fungsi Dari Purt Com</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-pemilik.html">Fungsi Dari Pemilik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/prestise-sinonim.html">Prestise Sinonim</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediasoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediasoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

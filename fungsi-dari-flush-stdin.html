@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Flush Stdin - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Flush Stdin, , , , , , , 0, , , , , , 0, fungsi-dari-flush-stdin, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Flush Stdin - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Flush Stdin, , , , , , , 0, , , , , , 0, fungsi-dari-flush-stdin, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Flush Stdin - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Flush Stdin, , , , , , , 0, , , , , , 0, fungsi-dari-flush-stdin, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediasoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediasoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediasoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediasoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediasoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediasoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediasoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Flush Stdin</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">erikacristiana</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Flush+Stdin" alt="Fungsi Dari Flush Stdin">
+                    </div>
+                    <p></p>
+                    <p>Fungsi yang berguna untuk menghapus buffer didalam I/O adalah …
+a. flush(stdin);
+b. fflush(sdin);
+c. fflus(stdin);
+d. fflush(stdin);ini jawabannya
+e. ffush(stdin);</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-yang-berguna-untuk-menghapus-buffer-didalam-io-adalah-%e2%80%a6a-flushstdinb-fflushsdinc-fflusstdind-fflushstdinini-jawabannyae-ffushstdin">1.
+                                            Fungsi yang berguna untuk menghapus buffer didalam I/O adalah …
+a. flush(stdin);
+b. fflush(sdin);
+c. fflus(stdin);
+d. fflush(stdin);ini jawabannya
+e. ffush(stdin);</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-perintah-flush-privileges">2.
+                                            Jelaskan fungsi dari perintah Flush Privileges?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-bentuk-dari-straight-flush">3.
+                                            bagaimana bentuk dari straight flush ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#keep-clean-remember-to-flush-the-toilet-after-you-use-it-silence-exam-in-progresswhat-is-the-purpose-of-the-noticewhat-does-the-notice-mean">4.
+                                            -keep clean. remember to flush the toilet after you use it.
+-silence.exam in progress
+what is the purpose of the notice?
+what does the notice mean?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-beberapa-model-pintu-rumah-kecuali-pintu-%e2%80%a6%c2%a0a-panelb-plenkc-flushd-lipat-butuh-banget-jawaban-kk%e2%80%8b">5.
+                                            Berikut ini beberapa model pintu rumah, kecuali pintu … *a. Panelb. Plenkc. Flushd. Lipat butuh banget jawaban kk​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-beberapa-model-pintu-rumah-kecuali-a-pintu-panelb-pintu-louvrec-pintu-flushd-pintu-kaca">6.
+                                            berikut ini beberapa model pintu rumah. kecuali a.pintu panelb.pintu Louvrec.pintu flushd.pintu kaca</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#7-which-statement-is-correct-based-on-thenoticenoticeflush-toiletafter-usinga-we-are-prohibited-to-flush-the-toilet-b-it-warns-the-users-to-avoid-the-toilet-c-the-notice-can-be-found-in-the-rest">7.
+                                            7. Which statement is correct based on thenotice?NOTICEFLUSH TOILETAFTER USINGa. We are prohibited to flush the toilet.b. It warns the users to avoid the toilet.c. The notice can be found in the rest-room.d. You should clean the toilet before usingit.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#keep-clean-remember-to-flush-the-toilet-after-you-use-it-silence-exam-in-progresswhat-is-the-purpose-of-the-noticewhat-does-the-notice-mean">8.
+                                            -keep clean. remember to flush the toilet after you use it.
+-silence.exam in progress
+what is the purpose of the notice?
+what does the notice mean?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-pengertian-dari-flush-toilet-after-using">9.
+                                            Apa pengertian Dari Flush  Toilet After Using </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#arrage-the-words-into-the-right-notice1-after-toilet-flush-using2-school-drug-zone-free3-or-drink-this-no-in-food-class4-on-pets-grounds-no-schooltolong-di-bantu-ya">10.
+                                            Arrage the words into the right notice1. after - toilet - flush - using2. school - drug - zone - free3. or - drink - this - no - in - food - class4. on - pets - grounds - no - schoolTolong di bantu ya kak ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-playground-and-school-grounds-closed-at-10-p-m-2-school-bus-parking-only-3-flush-toilet-after-using-pertanyaan-1-where-can-you-find-the-notice-2-what-does-the-notice-mean">11.
+                                            1. Playground and school grounds closed at 10 P.M. 2. School bus parking only. 3. Flush toilet after using. Pertanyaan : 1. Where can you find the notice ? 2. What does the notice mean ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#x-7-if-x-9-printok-file-stdin-line-2-printok-indentationerror-expected-an-indented-blocksaya-coba-di-soft">12.
+                                            &gt;&gt;&gt; x = 7&gt;&gt;&gt; if x &lt; 9:. . . print("ok")    File "&lt;stdin&gt;", line 2        print("ok")               ^IndentationError: expected an indented block&gt;&gt;&gt;saya coba di software python, hasilnya begitu. apa yang salah dan harus bagaimana agar programnya bisa berjalan?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#translate-jenis-kapal-yang-mengangkut-minyak-mentah-bahan-kimia-dan-produk-minyak-bumi-kapal-tanker-kelihatannya-hampir-seperti-kapal-curah-bulk-carrier-tapi-di-atas-dek-nya-ada-flush-dan-dilind">13.
+                                            Translate: Jenis kapal yang mengangkut minyak mentah, bahan kimia dan produk minyak bumi. Kapal Tanker kelihatannya hampir seperti Kapal Curah (Bulk Carrier), tapi di atas dek nya ada flush dan dilindungi oleh jaringan pipa-pipa minyak dan ventilasi.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#use-dictionary-to-find-the-following-difficult-wordsuse-dictionary-to-find-the-following-difficult-words-1-lather-vigorously2-pump3-thoroughly4-redness5-flush6-swallowed7-rinse8-avoid-9-irrit">14.
+                                            Use dictionary to find the following difficult wordsUse dictionary to find the following difficult words.1. lather vigorously2. pump3. thoroughly4. redness5. flush6. swallowed7. rinse8. avoid 9. irritation10.recommended11.repeat use12.expiration​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#water-helps-keep-our-skin-healthy-and-glowing-it-helps-in-the-reduction-of-wrinkling-and-aids-in-our-ability-to-flush-fat-toxins-and-any-other-unwanted-or-foreign-substance-from-our-bodies-flushi">15.
+                                            Water helps keep our skin healthy and glowing. It helps in the reduction of wrinkling, and aids in our ability to flush fat, toxins, and any other unwanted or foreign substance from our bodies. Flushing our intestines with plenty of water allows us to maintain stable and safe quantities of yeast and bacteria. Plenty of water keeps our thought processes and brain function at optimal levels, and prevents headaches that are caused from not enough hydration.what is the paragraph about?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-ones-is-the-appropriate-statement-noticeflush-toiletafter-usinga-we-must-not-flush-the-toilet-after-using-b-we-have-to-keep-the-toilet-clean-c-we-are-banned-to-use-the-toilet-d-we-can-leav">16.
+                                            Which ones is the appropriate statement? *NOTICEFLUSH TOILETAFTER USINGa. We must not flush the toilet after using.b. We have to keep the toilet clean.c. we are banned to use the toilet.d. we can leave the toilet dirty.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-arti-dari-notice-dan-sign-misalnya-keep-clean-we-must-keep-clean-this-area1-flush-the-toilet-after-using2-jangan-membawa-makanan-dan-minuman-dari-luar3-do-not-enter4-do-not-thro">17.
+                                            jelaskan arti dari notice dan sign 
+misalnya ("keep clean" : we must keep clean this area)
+1. flush the toilet after using
+2. jangan membawa makanan dan minuman dari luar
+3.do not enter
+4. do not throw trash in toilet
+5. no smoking in this area
+6.high voltage
+7.keep away
+8. caution automatic door
+9. caution wet floor
+seceptanya.. terimakasih</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#write-short-messages-based-on-the-following-notices-2-be-carefull-park-is-not-rsponsible-for-injury-theft-or-accident">18.
+                                            Write short messages based on the following notices.                                                          2. BE CAREFULL! PARK IS NOT RSPONSIBLE FOR INJURY , THEFT OR ACCIDENT.                                                         3. WASH HANDS BEFORE AND AFTER CONTACT TO PREVENT THE SPREAD OF INFECTION.                                                         4. KEEP CLEAN. REMEMBER TO FLUSH THE TOILET AFTER YOU USE IT.                                                         5. CONSERVATION AREA. NEVER COLLECT ANY REPTILES NOR PLANTS. </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#noticeflush-toiletafter-usingwhere-do-you-probably-find-the-noticea-in-the-classroomb-in-the-parkc-in-the-rest-roomd-in-the-office-roomplis-lahh%e2%80%8b">19.
+                                            NOTICEFLUSH TOILETAFTER USINGWhere do you probably find the notice?a.in the classroomb.in the parkc.in the rest roomd.in the office roomPLIS LAHH​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#noticeflush-toiletafter-usingwhat-should-we-do-after-reading-the-notice-%e2%80%8b">20.
+                                            NOTICEFLUSH TOILETAFTER USINGWhat should we do after reading the notice ?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#noticeplease-do-not-flush-rubbish-downthe-toilet1-what-will-people-do-if-they-read-the-noticea-they-do-not-flush-the-toilet-b-they-will-not-flush-the-toilet-c-they-will-flush-rubbish-down-the-toi">21.
+                                            NOTICEPLEASE DO NOT FLUSH RUBBISH DOWNTHE TOILET1. What will people do if they read the notice?A. They do not flush the toilet.B. They will not flush the toilet.C. They will flush rubbish down the toilet.D. They will not flush rubbish down the toilet.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#noticeflush-toiletafter-using15-what-should-we-do-after-reading-the-notice-a-keep-the-toilet-cleanb-the-toilet-is-being-repairedc-use-another-toiletd-dont-use-the-toilettolong-jawab-dengan-bena">22.
+                                            NOTICEFLUSH TOILETAFTER USING15. What should we do after reading the notice ?A. Keep the toilet cleanB. The toilet is being repairedC. Use another toiletD. Don't use the toilettolong jawab dengan benar ingat ada allah yg boong kapir​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#noticeflush-toilet-after-using1-have-you-seen-such-kind-of-noticewherewhen2-what-does-the-notice-tell-you3-what-do-you-have-to-di-with-it">23.
+                                            NOTICE
+Flush toilet after using
+1.have you seen such kind of notice?where?when?
+2.what does the notice tell you?
+3.what do you have to di with it?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-model-pintu-yang-tidak-memiliki-patokanbaku-adalah-model-pintu-a-plankb-flushc-art-craftd-louver%e2%80%8b">24.
+                                            5. Model pintu yang tidak memiliki patokanbaku adalah model pintu ....a. plankb. flushc. art &amp; craftd. louver​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#22-where-do-you-usually-find-this-notice-even-if-youare-in-a-rushpleaserememberto-flusha-at-a-gas-stationb-at-a-schoolc-at-a-toiletd-at-a-park%e2%80%8b">25.
+                                            22. Where do you usually find this notice ?EVEN IF YOUARE IN A RUSHPLEASEREMEMBERTO FLUSHa. At a gas stationb. At a schoolc. At a toiletd. At a park​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#flush-please-using-the-toilet-it-afterdi-susun-ya-makasih-dah-mau-bantuin">26.
+                                            Flush - please - using - the toilet - it - after
+Di susun ya makasih dah mau bantuin</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#attach-move-coloring-outline-try-flush-dan-deliver-diubah-k-verb-2-dan-verb-3">27.
+                                            Attach, move, coloring, outline, try, flush dan deliver diubah k verb 2 dan verb 3</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#answers-the-quention-correctly-a-where-can-you-find-the-notice-flush-after-use-what-does-it-meanb-where-do-you-put-the-noticepush-and-pull-bantu-jawab%e2%80%8b">28.
+                                            answers the quention correctly! a). where can you find the notice "flush after use"? what does it mean?b). where do you put the notice"push" and "pull" ?bantu jawab​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#thereno-reports-of-casualitiesin-the-flush-flood-be">29.
+                                            there/no reports of casualities/in the flush flood (be)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#where-do-you-usually-find-the-2-pointsnotice-beloweven-if-youare-in-a-rushpleaserememberto-flushat-a-parkat-a-gas-stationat-a-toilet%d0%be%d0%beat-a-school">30.
+                                            Where do you usually find the 2 points
+notice below?
+EVEN IF YOU
+ARE IN A RUSH
+PLEASE
+REMEMBER
+TO FLUSH
+At a park
+At a gas station
+At a toilet
+ОО
+At a school</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#text-for-no-1-2cnoticeflush-toiletafter-using1-what-should-we-do-after-reading-thenoticea-keep-the-toilet-clean-b-the-toilet-is-being-repaired-c-use-another-toilet-d-dont-use-the-toilet">31.
+                                            Text for no 1-2,C,NOTICEFLUSH TOILETAFTER USING1. What should we do after reading thenotice?a. Keep the toilet clean.b. The toilet is being repaired.C. Use another toilet. .d. Don't use the toilet.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-operator-merupakan-simbol-yang-biasa-dilibatkan-dalam-program-untuk-melakukan-suatu-operasi-atau-manipulasi-berikut-yang-bukan-merupakan-pengguna-operator-adalaha-menjumlahkan-dua-nilai-b-mem">32.
+                                            1. operator merupakan simbol yang biasa dilibatkan dalam program untuk melakukan suatu operasi atau manipulasi, berikut yang bukan merupakan pengguna operator adalah?
+a. menjumlahkan dua nilai 
+b. memberikan nilai kedua variable 
+c. mebandingkan kesamaan dua nilai
+d. menginput suatu nilai
+e.  semua jawaban benar
+2. yang bukan termasuk jenis operator yaitu
+a. penugasan 
+b. aritmatika 
+c. hubungan 
+d. logika
+e. penambahan 
+3. operator logika yang menyatakan "atau" dalam lambang berikut ini adalah
+a. &amp;&amp;
+b. II
+c. !
+d. &lt;&gt;
+e. =
+4. hal hal yang harus diperhatikan dalam pemakaian fungsi scanf() 
+a. memakai penentu format
+b. memberi pergantian baris secara otomatis 
+c. tidak memerlukan penentu lebar field
+d. tidak boleh menggunakan spasi 
+e. variablenya harus menggunakan operator alamat &amp;
+5. yang termasuk tipe data untuk bilangan bulat adalah 
+a. float 
+b. void
+c. long 
+d. double
+e. int
+6. fungsi yang berguna untuk menghapus buffer didalam I/O adalah 
+a. flush(stdin);
+b. fflush(sdin);
+c. fflus(stdin);
+d. fflush(stdin);
+e. ffush(stdin);
+7. penggunaan aritmatika yang benar yaitu
+a. t=t+angka;
+b. foat r,I,x,t=0;
+c. while(i&lt;=3);
+d. for(x=1,x&lt;=10,X++);
+e. i++;
+8. fungsi yang bukan berguna untuk menampilkan data ke layar monitor
+a. printf()
+b. puts()
+c. putchar()
+d. scanf()
+e. bukan salah satu di atas
+9. urutan langkah langkah logis untuk menyelesaikan masalah yang disusun secara sistematis disebut 
+a. algoritma 
+b. flowchart
+c.  variable
+d. tipe data
+e. konstanta 
+10.pemberian nama variable yang benar adalah 
+a. %nilai
+b. nilai_mahasiswa
+c. nama mahasiswa
+d. &amp;panjang
+e. alamat!
+11. dalam pemberian nama variable karakter maksimal yang bisa digunakan sebanyak 
+a. 8
+b. 16
+c. 32
+d. 64
+e. 128
+12. yang bukantermasuk dalam deklarasi pada turbo c adalah
+a. fungsi
+b. variable 
+c. konstanta
+d. kepala program
+e. variable
+13. contoh bentuk deklarasi variable bertipe char adalah
+a. int  x;
+b. #define nilai 50;
+c. konstanta 
+d. kepala program
+e. variabel
+14. berikut ini yang termasuk operator aritmatika yaitu
+a. *
+b. /
+c. %
+d.+
+e. semua benar
+15. yang bukan ketentuan dalam penggunaan perintah gets() yaitu
+a. untuk data karakter
+b. diakhiri dengan penekanan tombol enter 
+c. cursor akan pindah baris
+d. tidak memerlukan penentu format
+e. harus diawali dengan perintah scanf();
+16. jenis operator yang disediakan oleh turbo c adalah 
+a. aritmatika 
+b. perbandingan 
+c. konstanta 
+d. tetap
+e. variabel
+17. yang termasuk tipe data perbandingan adalah 
+a. penjumlahan 
+b. pengurangan 
+c. perkalian 
+d. pembagian
+e. kurang dari 
+18. operator untuk peningkatan nilai bertambah 1 termasuk dalam operator 
+a. unary
+b. aritmatika 
+c. bitwise
+d. perbandingan 
+e. hubungan 
+19. yang termasuk contoh operator penugasan adalah 
+a. A=A*y;
+b. 9 % 2 = 1;
+c. Bil &lt;= 100;
+d. Bill1 ! 10;
+e. 5 &amp; 5;
+20. array terdiri dari berbagai tipe kecuali
+a. array multi-dimensi 
+b. array dimensi satu
+c. array dimensi tiga
+ d. array dimensi dua</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-arti-dari-notice-flush-toilet-after-using">33.
+                                            apakah arti dari notice flush toilet after using</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pay-attention-to-the-notice-below-and-find-out-there-meanings-%e2%80%a2-keep-door-closed-at-all-times-%e2%80%a2-no-entry-without-permission%e2%80%a2-do-not-throw-trash-in-toilet%e2%80%a2-celluler-pho">34.
+                                            Pay attention to the notice below and find out there meanings • KEEP DOOR, CLOSED AT ALL TIMES • NO ENTRY WITHOUT PERMISSION• DO NOT THROW TRASH IN TOILET• CELLULER PHONES PROHIBITATED• FLUSH TOILET AFTER USING• PLAY GROUNG AND SCHOOL GROUND CLOSED AT 10.00 PM• NO FOOD OR DRINK IN THIS AREA • DON'T FORGET TO CLOSE THE WINDOWS BEFORE YOU LEAVE THE HOUSE • WASH THE DISHES STRAIGHT AWAY AFTER YOU FINISH EATING• PLEASE DO NOT FEED THE ANIMALArtikan notice tersebut dan dimana biasanya notice tersebut dapat ditemukan ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pendalaman-materi-sukses-ujian-bahasa-inggriswarning-can-cause-severe-eye-injuryif-eye-contact-occurs-flush-your-eye-with-water-the-notice-means-that-a-we-should-use-it-on-our-eyesb-i">35.
+                                            PENDALAMAN MATERI SUKSES UJIAN - BAHASA INGGRIS
+WARNING : CAN CAUSE SEVERE EYE INJURY!
+If eye contact occurs. Flush your eye with water.
+The notice means that ....
+a. We should use it on our eyes
+b. It is dangerous if we use it on our eyes
+c. We must see using it
+d. You don't have to do anything it there is an eye
+*dbas*</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#akupun-berdiri-bangkit-mengambil-tissue-di-pojok-toilet-srrrr-bunyi-flush-toilet-terdengar-oh-my-god-ternyata-seluruh-toilet-di-bandara-ini-memiliki-flush-otomatis-baiklah-saatnya-aku-menertawa">36.
+                                            Akupun berdiri, bangkit mengambil tissue di pojok toilet. "Srrrr" bunyi flush toilet terdengar. Oh my god, ternyata seluruh toilet di bandara ini memiliki flush otomatis.Baiklah, saatnya aku menertawakan diri sendiri. Bagian teks cerpen di atas adalah… *</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#notice_____flush-toiletafter-usingwhere-do-you-probably-find-the-notice-a-in-the-classroomb-in-the-toilet-cleanc-in-the-rest-roomd-in-the-park">37.
+                                            Notice
+_____
+Flush toilet
+After using
+Where do you probably find the notice? 
+A. In the classroom
+B. In the toilet clean
+C.in the rest room
+D. In the park</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#notice-flush-toilet-after-using-31-what-should-we-do-after-reading-the-notice-32-where-do-you-probably-find-the-notice%e2%80%8b">38.
+                                            NOTICE FLUSH TOILET AFTER USING 31. What should we do after reading the notice ? 32. Where do you probably find the notice?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5alnoticeflush-toiletafter-usingc-we21-where-do-you-find-the-notice-a-class-roomc-toiletb-cafetariad-laboratory22-i-have-three-cute-cats-like-to-play-in-my-garden-a-1b-youd-they23-i-ca">39.
+                                            5alNOTICEFLUSH TOILETAFTER USINGc. We21. Where do you find the notice ?a. Class roomc. Toiletb. Cafetariad. Laboratory22. I have three cute cats.... Like to play in my garden.a. 1b. Youd. They23. I can do it .... Than you.c. Fastestb. Fasterd. Slower24. Tom and I ..... in a Cinema last night.a. Amb. Ared. Do25. My mother .... A chocolate cake.a, Cookc. Cookingb. Cooksd. Cookeda. Fastc. Is​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-berberapa-model-pintu-rumah-kecuali-a-pintu-panel-b-pintu-plank-c-pintu-flush-d-pintu-lipat%e2%80%8b">40.
+                                            berikut ini berberapa model pintu rumah kecuali a.pintu panel b.pintu plank c.pintu flush d.pintu lipat​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="fungsi-yang-berguna-untuk-menghapus-buffer-didalam-io-adalah-%e2%80%a6a-flushstdinb-fflushsdinc-fflusstdind-fflushstdinini-jawabannyae-ffushstdin">
+                            1. Fungsi yang berguna untuk menghapus buffer didalam I/O adalah …
+a. flush(stdin);
+b. fflush(sdin);
+c. fflus(stdin);
+d. fflush(stdin);ini jawabannya
+e. ffush(stdin);</h2><br />
+                        Fungsi fflush(stdin) berfungsi menghapus buffer di dalam alat I/O<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-perintah-flush-privileges">
+                            2. Jelaskan fungsi dari perintah Flush Privileges?</h2><br />
+                        Flush Privileges adalah sinonim untuk reload. Perintah reload menyuruh server untuk membaca ulang tabel hak akses. <br />
+                                            <h2 class="ez-toc-section" id="bagaimana-bentuk-dari-straight-flush">
+                            3. bagaimana bentuk dari straight flush ?</h2><br />
+                        As wajik , king wajik , queen wajik , jack wajik , 10 wajik<br />
+                                            <h2 class="ez-toc-section" id="keep-clean-remember-to-flush-the-toilet-after-you-use-it-silence-exam-in-progresswhat-is-the-purpose-of-the-noticewhat-does-the-notice-mean">
+                            4. -keep clean. remember to flush the toilet after you use it.
+-silence.exam in progress
+what is the purpose of the notice?
+what does the notice mean?</h2><br />
+                        you must clean the toilet after you use it<br />1. The purpose of the notice is to remind the readers to flush the toilet after using it. It means that the toilet has to always be kept clean.<br /><br />2. The purpose is to remind the readers of the exam in progress. It means that we musn't make a noise during the exam.<br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-beberapa-model-pintu-rumah-kecuali-pintu-%e2%80%a6%c2%a0a-panelb-plenkc-flushd-lipat-butuh-banget-jawaban-kk%e2%80%8b">
+                            5. Berikut ini beberapa model pintu rumah, kecuali pintu … *a. Panelb. Plenkc. Flushd. Lipat butuh banget jawaban kk​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>panel</p><p>#semoga membantu</p><p>#karna panel itu bukan masuk disebuah pintu.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-beberapa-model-pintu-rumah-kecuali-a-pintu-panelb-pintu-louvrec-pintu-flushd-pintu-kaca">
+                            6. berikut ini beberapa model pintu rumah. kecuali a.pintu panelb.pintu Louvrec.pintu flushd.pintu kaca</h2><br />
+                        berikut ini beberapa model pintu rumah kecuali... <br />d.) pintu kacamodel pintu rumah kecuali D.pintu kaca<br />maaf kl slh<br />
+                                            <h2 class="ez-toc-section" id="7-which-statement-is-correct-based-on-thenoticenoticeflush-toiletafter-usinga-we-are-prohibited-to-flush-the-toilet-b-it-warns-the-users-to-avoid-the-toilet-c-the-notice-can-be-found-in-the-rest">
+                            7. 7. Which statement is correct based on thenotice?NOTICEFLUSH TOILETAFTER USINGa. We are prohibited to flush the toilet.b. It warns the users to avoid the toilet.c. The notice can be found in the rest-room.d. You should clean the toilet before usingit.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. </p><p><strong>Penjelasan:</strong></p><p>karna pernyataan berisi larangan, maka pilih jawaban juga yang sesuai pernyataan</p>‘Notice flush toilet after using’<br />Siram setelah pakai<br /><br />a. Dilarang menyiram toilet <br />b. Menyarankan pengguna untuk menghindari toilet <br />c. Notice tersebut bisa di temukan di toilet <br />d. Kamu harus membersihkan toilet sebelum memakai nya <br /><br />Jawaban: C<br />
+                                            <h2 class="ez-toc-section" id="keep-clean-remember-to-flush-the-toilet-after-you-use-it-silence-exam-in-progresswhat-is-the-purpose-of-the-noticewhat-does-the-notice-mean">
+                            8. -keep clean. remember to flush the toilet after you use it.
+-silence.exam in progress
+what is the purpose of the notice?
+what does the notice mean?</h2><br />
+                        the purpose keep clean . remember to flush the toilet after you use is you are obliged flush the toilet after you use . mean : jaga kebersihan . menyiram toilet setelah di guna kan <br />-silence . exam in progress : you must <br /><br />
+                                            <h2 class="ez-toc-section" id="apa-pengertian-dari-flush-toilet-after-using">
+                            9. Apa pengertian Dari Flush  Toilet After Using </h2><br />
+                        <p>Flush Toilet After Using</p><p>=Siram Toilet Setelah Digunakan</p><p></p><p></p><p>*Tambahkan kata 'Please' dlm bhs English atau 'Mohon' dlm bhs Indonesia, agar lebih sopan.</p><p></p><p></p><p>Terimakasih, semoga membantu:)</p><br />
+                                            <h2 class="ez-toc-section" id="arrage-the-words-into-the-right-notice1-after-toilet-flush-using2-school-drug-zone-free3-or-drink-this-no-in-food-class4-on-pets-grounds-no-schooltolong-di-bantu-ya">
+                            10. Arrage the words into the right notice1. after - toilet - flush - using2. school - drug - zone - free3. or - drink - this - no - in - food - class4. on - pets - grounds - no - schoolTolong di bantu ya kak ​</h2><br />
+                        <p>1. flush after using toilet</p><p>2. school zone free drug</p><p>3. no drink or food in this class</p><br />
+                                            <h2 class="ez-toc-section" id="1-playground-and-school-grounds-closed-at-10-p-m-2-school-bus-parking-only-3-flush-toilet-after-using-pertanyaan-1-where-can-you-find-the-notice-2-what-does-the-notice-mean">
+                            11. 1. Playground and school grounds closed at 10 P.M. 2. School bus parking only. 3. Flush toilet after using. Pertanyaan : 1. Where can you find the notice ? 2. What does the notice mean ?</h2><br />
+                        1. School<br />2. Parking lot<br />3. Toilet<br /><br />meaning<br />1. You have to go from the playground or school ground before 2 p.m<br />2. It's prohibited to park there for another vehicle except School Bus<br />3. You have to flush the toilet in order to keep it clean<br />
+                                            <h2 class="ez-toc-section" id="x-7-if-x-9-printok-file-stdin-line-2-printok-indentationerror-expected-an-indented-blocksaya-coba-di-soft">
+                            12. &gt;&gt;&gt; x = 7&gt;&gt;&gt; if x &lt; 9:. . . print("ok")    File "&lt;stdin&gt;", line 2        print("ok")               ^IndentationError: expected an indented block&gt;&gt;&gt;saya coba di software python, hasilnya begitu. apa yang salah dan harus bagaimana agar programnya bisa berjalan?​</h2><br />
+                        Di baris ketiga yang ada tulisan print("ok") kasih spasi di awal baris.<br /><br />Seperti ini :<br /><br />x = 7<br />if x &lt; 9:<br /> print("ok")<br /><br />Semoga membantu :)<br />
+                                            <h2 class="ez-toc-section" id="translate-jenis-kapal-yang-mengangkut-minyak-mentah-bahan-kimia-dan-produk-minyak-bumi-kapal-tanker-kelihatannya-hampir-seperti-kapal-curah-bulk-carrier-tapi-di-atas-dek-nya-ada-flush-dan-dilind">
+                            13. Translate: Jenis kapal yang mengangkut minyak mentah, bahan kimia dan produk minyak bumi. Kapal Tanker kelihatannya hampir seperti Kapal Curah (Bulk Carrier), tapi di atas dek nya ada flush dan dilindungi oleh jaringan pipa-pipa minyak dan ventilasi.</h2><br />
+                        dari google Types of ships carrying crude oil, chemicals and petroleum products. Tankers looks almost like Bulk Ship (BulkCarrier), but at the top of his deck there is a flush and is protected by a network of oil pipelines and ventilation.<br />
+                                            <h2 class="ez-toc-section" id="use-dictionary-to-find-the-following-difficult-wordsuse-dictionary-to-find-the-following-difficult-words-1-lather-vigorously2-pump3-thoroughly4-redness5-flush6-swallowed7-rinse8-avoid-9-irrit">
+                            14. Use dictionary to find the following difficult wordsUse dictionary to find the following difficult words.1. lather vigorously2. pump3. thoroughly4. redness5. flush6. swallowed7. rinse8. avoid 9. irritation10.recommended11.repeat use12.expiration​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. lather vigorously = berbusa dengan keras</p><p>2. pump = pompa</p><p>3. thoroughly = dengan seksama, dengan teliti</p><p>4. redness = kemerahan</p><p>5. flush = memerah</p><p>6. swallowed = ditelan</p><p>7. rinse = berkumur, membilas</p><p>8. avoid = hindari</p><p>9. irritation = iritasi</p><p>10. recommended = disarankan</p><p>11. repeat use = penggunaan ulang</p><p>12. expiration = kadaluarsa</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="water-helps-keep-our-skin-healthy-and-glowing-it-helps-in-the-reduction-of-wrinkling-and-aids-in-our-ability-to-flush-fat-toxins-and-any-other-unwanted-or-foreign-substance-from-our-bodies-flushi">
+                            15. Water helps keep our skin healthy and glowing. It helps in the reduction of wrinkling, and aids in our ability to flush fat, toxins, and any other unwanted or foreign substance from our bodies. Flushing our intestines with plenty of water allows us to maintain stable and safe quantities of yeast and bacteria. Plenty of water keeps our thought processes and brain function at optimal levels, and prevents headaches that are caused from not enough hydration.what is the paragraph about?</h2><br />
+                        water for health benefits<br /><br />
+                                            <h2 class="ez-toc-section" id="which-ones-is-the-appropriate-statement-noticeflush-toiletafter-usinga-we-must-not-flush-the-toilet-after-using-b-we-have-to-keep-the-toilet-clean-c-we-are-banned-to-use-the-toilet-d-we-can-leav">
+                            16. Which ones is the appropriate statement? *NOTICEFLUSH TOILETAFTER USINGa. We must not flush the toilet after using.b. We have to keep the toilet clean.c. we are banned to use the toilet.d. we can leave the toilet dirty.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>B. ''We have to keep the toilet clean''</strong></p><p></p><p>Which ones is the appropriate statement? *</p><p>NOTICE</p><p>FLUSH TOILET</p><p>AFTER USING</p><p>jawaban:</p><p>b. We have to keep the toilet clean.</p><p></p><p>b. Kami harus menjaga kebersihan toilet.</p><p></p><p>clean=bersih </p><p></p><p>maaf kalo salah semoga bermanfaat :)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-arti-dari-notice-dan-sign-misalnya-keep-clean-we-must-keep-clean-this-area1-flush-the-toilet-after-using2-jangan-membawa-makanan-dan-minuman-dari-luar3-do-not-enter4-do-not-thro">
+                            17. jelaskan arti dari notice dan sign 
+misalnya ("keep clean" : we must keep clean this area)
+1. flush the toilet after using
+2. jangan membawa makanan dan minuman dari luar
+3.do not enter
+4. do not throw trash in toilet
+5. no smoking in this area
+6.high voltage
+7.keep away
+8. caution automatic door
+9. caution wet floor
+seceptanya.. terimakasih</h2><br />
+                        1.siram toilet setelah dipakai<br />3.Dilarang masuk<br />4.Dilarang buang sampah ditoilet<br />5.Jangan merokok di area ini<br />6. tegangan tinggi<br />7.Menjauhlah<br />8.perhatian pintu otomatis<br />9.perhatian : lantai basah1. we must flush the toilet after using.<br />2. we mustn't bring food and drink from outside<br />3. we mustn't enter<br />4. we mustn't thorw trash in toilet<br />5. we mustn't smoking in this area<br />6. we must be careful because there is a high voltage<br />7. we must keep away<br />8. we must be careful these automatic door<br />9. we must be careful because the floor is wet<br /><br />maaf klo ada yang salah<br /><br />
+                                            <h2 class="ez-toc-section" id="write-short-messages-based-on-the-following-notices-2-be-carefull-park-is-not-rsponsible-for-injury-theft-or-accident">
+                            18. Write short messages based on the following notices.                                                          2. BE CAREFULL! PARK IS NOT RSPONSIBLE FOR INJURY , THEFT OR ACCIDENT.                                                         3. WASH HANDS BEFORE AND AFTER CONTACT TO PREVENT THE SPREAD OF INFECTION.                                                         4. KEEP CLEAN. REMEMBER TO FLUSH THE TOILET AFTER YOU USE IT.                                                         5. CONSERVATION AREA. NEVER COLLECT ANY REPTILES NOR PLANTS. </h2><br />
+                        tuliskan pesan singkat berdasarkan petunjuk berikut.<br />2.Berhati-hati!Parkir tidak mempertanggungjawabkan untuk kerusakan,pencurian,kecelakaan3.Bersihkan tanganmu sebelum dan sesudah kontak untuk menghindari infeksi.4.tetap bersih.ingat untuk menyiram toilet sesudah kau memakainya.5.area konservasi.jangan pernah mengambil reptil ataupun tanaman<br />
+                                            <h2 class="ez-toc-section" id="noticeflush-toiletafter-usingwhere-do-you-probably-find-the-noticea-in-the-classroomb-in-the-parkc-in-the-rest-roomd-in-the-office-roomplis-lahh%e2%80%8b">
+                            19. NOTICEFLUSH TOILETAFTER USINGWhere do you probably find the notice?a.in the classroomb.in the parkc.in the rest roomd.in the office roomPLIS LAHH​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>c. in the restroom</p><p>kuyy mulai membaca untuk menambah wawasan dan kosakata</p><br />
+                                            <h2 class="ez-toc-section" id="noticeflush-toiletafter-usingwhat-should-we-do-after-reading-the-notice-%e2%80%8b">
+                            20. NOTICEFLUSH TOILETAFTER USINGWhat should we do after reading the notice ?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Flush the toilet after using it</p><p><strong>Penjelasan:</strong></p><p>maaf kalau salah :}</p><br />
+                                            <h2 class="ez-toc-section" id="noticeplease-do-not-flush-rubbish-downthe-toilet1-what-will-people-do-if-they-read-the-noticea-they-do-not-flush-the-toilet-b-they-will-not-flush-the-toilet-c-they-will-flush-rubbish-down-the-toi">
+                            21. NOTICEPLEASE DO NOT FLUSH RUBBISH DOWNTHE TOILET1. What will people do if they read the notice?A. They do not flush the toilet.B. They will not flush the toilet.C. They will flush rubbish down the toilet.D. They will not flush rubbish down the toilet.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A.They do not flush the toilet</p><p><strong>Jawaban:</strong></p><p>D. They will not flush rubbish down the toilet,</p><p></p><p>Maaf kalau salah.</p><br />
+                                            <h2 class="ez-toc-section" id="noticeflush-toiletafter-using15-what-should-we-do-after-reading-the-notice-a-keep-the-toilet-cleanb-the-toilet-is-being-repairedc-use-another-toiletd-dont-use-the-toilettolong-jawab-dengan-bena">
+                            22. NOTICEFLUSH TOILETAFTER USING15. What should we do after reading the notice ?A. Keep the toilet cleanB. The toilet is being repairedC. Use another toiletD. Don't use the toilettolong jawab dengan benar ingat ada allah yg boong kapir​</h2><br />
+                        <p></p><p><strong>J</strong><strong>a</strong><strong>w</strong><strong>a</strong><strong>b</strong><strong>a</strong><strong>n</strong><strong>:</strong><strong> </strong></p><p>A. Keep the toilet clean</p><p></p><p>Semoga membantu ^^</p><p>Jawaban:</p><p>*A. Keep the toilet clean*</p><br />
+                                            <h2 class="ez-toc-section" id="noticeflush-toilet-after-using1-have-you-seen-such-kind-of-noticewherewhen2-what-does-the-notice-tell-you3-what-do-you-have-to-di-with-it">
+                            23. NOTICE
+Flush toilet after using
+1.have you seen such kind of notice?where?when?
+2.what does the notice tell you?
+3.what do you have to di with it?</h2><br />
+                        1.in the toilet.. Bathroom<br />2.Told us that we should flush after using the bathroom. <br />3.Flush after using. 1.have you seen such kind of notice?where?when?<br />=Yes, i see it in a toilet door, when i want to pee and piss<br />2.what does the notice tell you?<br />=The notice tell me to flush the toilet after pee or piss<br />3.what do you have to do with it?<br />=Just obey the notice with flush the toilet that make people more comfortable to use it<br />
+                                            <h2 class="ez-toc-section" id="5-model-pintu-yang-tidak-memiliki-patokanbaku-adalah-model-pintu-a-plankb-flushc-art-craftd-louver%e2%80%8b">
+                            24. 5. Model pintu yang tidak memiliki patokanbaku adalah model pintu ....a. plankb. flushc. art &amp; craftd. louver​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C .MODEL PINTU ART &amp; CRAFT</p><p> Tidak ada patokan baku mengenai model pintu jenis ini karena pada dasarnya model pintu art &amp; craft merupakan model pintu yang penuh dengan nilai seni. Seorang pembuat pintu bisa dengan bebas menuangkan rasa seninya pada model pintu ini.</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="22-where-do-you-usually-find-this-notice-even-if-youare-in-a-rushpleaserememberto-flusha-at-a-gas-stationb-at-a-schoolc-at-a-toiletd-at-a-park%e2%80%8b">
+                            25. 22. Where do you usually find this notice ?EVEN IF YOUARE IN A RUSHPLEASEREMEMBERTO FLUSHa. At a gas stationb. At a schoolc. At a toiletd. At a park​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C. At a toilet.</p><p></p><p><strong>Penjelasan:</strong></p><p>karena di situ terdapat tulisan "EVEN IF YOU ARE IN A RUSH <strong>PLEASE</strong><strong> </strong>REMEMBER TO FLUSH" yang artinya "BAHKAN JIKA ANDA TERBURU-BURU <strong>HARAP INGAT</strong> UNTUK FLUSH", "flush" di sini berarti menyiram WC, tulisan seperti itu tentunya terdapat di toilet.</p><br />
+                                            <h2 class="ez-toc-section" id="flush-please-using-the-toilet-it-afterdi-susun-ya-makasih-dah-mau-bantuin">
+                            26. Flush - please - using - the toilet - it - after
+Di susun ya makasih dah mau bantuin</h2><br />
+                        <p>Jawaban:</p><p></p><p>Penjelasan:</p><p>﻿please, flush, the toilet ,after ,it, using</p><p><strong>jawaban: Flush it  after using the toilet please</strong></p><p><strong>Penjelasan:</strong></p><p>sebagai jawaban terbaik </p><br />
+                                            <h2 class="ez-toc-section" id="attach-move-coloring-outline-try-flush-dan-deliver-diubah-k-verb-2-dan-verb-3">
+                            27. Attach, move, coloring, outline, try, flush dan deliver diubah k verb 2 dan verb 3</h2><br />
+                        <p>Attach = attached = attached</p><p>Move = moved = moved</p><p>Colouring = coloured = coloured</p><p>Outline = outlined = outlined</p><p>Try = tried = tried</p><p>Flush = flushed = flushed</p><p>Deliver = delivered = delivered</p><p>Verb1 -&gt; Verb2 -&gt; Verb3 | Verb-Ing</p><p>Attach 》 Attached 》 Attached | Attaching</p><p>Move 》 Moved 》 Moved | Moving</p><p>Colour 》 Coloured 》 Coloured | Coloring</p><p>Outline 》 Outlined 》 Outlined | Outlining</p><p>Try 》 Tried 》 Tried | Trying</p><p>Flush 》 Flushed 》 Flushed | Flushing</p><p>Deliver 》 Delivered 》 Delivered | Delivering</p><p></p><p>Semoga bermanfaat</p><br />
+                                            <h2 class="ez-toc-section" id="answers-the-quention-correctly-a-where-can-you-find-the-notice-flush-after-use-what-does-it-meanb-where-do-you-put-the-noticepush-and-pull-bantu-jawab%e2%80%8b">
+                            28. answers the quention correctly! a). where can you find the notice "flush after use"? what does it mean?b). where do you put the notice"push" and "pull" ?bantu jawab​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. In the toilet. It means that we must flush after using it</p><p>B. On the door/entrance</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="thereno-reports-of-casualitiesin-the-flush-flood-be">
+                            29. there/no reports of casualities/in the flush flood (be)</h2><br />
+                        there are no reports of casualities on flush flood<br /><br />
+                                            <h2 class="ez-toc-section" id="where-do-you-usually-find-the-2-pointsnotice-beloweven-if-youare-in-a-rushpleaserememberto-flushat-a-parkat-a-gas-stationat-a-toilet%d0%be%d0%beat-a-school">
+                            30. Where do you usually find the 2 points
+notice below?
+EVEN IF YOU
+ARE IN A RUSH
+PLEASE
+REMEMBER
+TO FLUSH
+At a park
+At a gas station
+At a toilet
+ОО
+At a school</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>at a toilet </p><p></p><p>karena flush itu bahasa indonesianya membilas </p><br />
+                                            <h2 class="ez-toc-section" id="text-for-no-1-2cnoticeflush-toiletafter-using1-what-should-we-do-after-reading-thenoticea-keep-the-toilet-clean-b-the-toilet-is-being-repaired-c-use-another-toilet-d-dont-use-the-toilet">
+                            31. Text for no 1-2,C,NOTICEFLUSH TOILETAFTER USING1. What should we do after reading thenotice?a. Keep the toilet clean.b. The toilet is being repaired.C. Use another toilet. .d. Don't use the toilet.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a.Keep the Toilet Clean</p><p><strong>Penjelasan:</strong></p><p>jadiin jawaban tercerdas ya </p><br />
+                                            <h2 class="ez-toc-section" id="1-operator-merupakan-simbol-yang-biasa-dilibatkan-dalam-program-untuk-melakukan-suatu-operasi-atau-manipulasi-berikut-yang-bukan-merupakan-pengguna-operator-adalaha-menjumlahkan-dua-nilai-b-mem">
+                            32. 1. operator merupakan simbol yang biasa dilibatkan dalam program untuk melakukan suatu operasi atau manipulasi, berikut yang bukan merupakan pengguna operator adalah?
+a. menjumlahkan dua nilai 
+b. memberikan nilai kedua variable 
+c. mebandingkan kesamaan dua nilai
+d. menginput suatu nilai
+e.  semua jawaban benar
+2. yang bukan termasuk jenis operator yaitu
+a. penugasan 
+b. aritmatika 
+c. hubungan 
+d. logika
+e. penambahan 
+3. operator logika yang menyatakan "atau" dalam lambang berikut ini adalah
+a. &amp;&amp;
+b. II
+c. !
+d. &lt;&gt;
+e. =
+4. hal hal yang harus diperhatikan dalam pemakaian fungsi scanf() 
+a. memakai penentu format
+b. memberi pergantian baris secara otomatis 
+c. tidak memerlukan penentu lebar field
+d. tidak boleh menggunakan spasi 
+e. variablenya harus menggunakan operator alamat &amp;
+5. yang termasuk tipe data untuk bilangan bulat adalah 
+a. float 
+b. void
+c. long 
+d. double
+e. int
+6. fungsi yang berguna untuk menghapus buffer didalam I/O adalah 
+a. flush(stdin);
+b. fflush(sdin);
+c. fflus(stdin);
+d. fflush(stdin);
+e. ffush(stdin);
+7. penggunaan aritmatika yang benar yaitu
+a. t=t+angka;
+b. foat r,I,x,t=0;
+c. while(i&lt;=3);
+d. for(x=1,x&lt;=10,X++);
+e. i++;
+8. fungsi yang bukan berguna untuk menampilkan data ke layar monitor
+a. printf()
+b. puts()
+c. putchar()
+d. scanf()
+e. bukan salah satu di atas
+9. urutan langkah langkah logis untuk menyelesaikan masalah yang disusun secara sistematis disebut 
+a. algoritma 
+b. flowchart
+c.  variable
+d. tipe data
+e. konstanta 
+10.pemberian nama variable yang benar adalah 
+a. %nilai
+b. nilai_mahasiswa
+c. nama mahasiswa
+d. &amp;panjang
+e. alamat!
+11. dalam pemberian nama variable karakter maksimal yang bisa digunakan sebanyak 
+a. 8
+b. 16
+c. 32
+d. 64
+e. 128
+12. yang bukantermasuk dalam deklarasi pada turbo c adalah
+a. fungsi
+b. variable 
+c. konstanta
+d. kepala program
+e. variable
+13. contoh bentuk deklarasi variable bertipe char adalah
+a. int  x;
+b. #define nilai 50;
+c. konstanta 
+d. kepala program
+e. variabel
+14. berikut ini yang termasuk operator aritmatika yaitu
+a. *
+b. /
+c. %
+d.+
+e. semua benar
+15. yang bukan ketentuan dalam penggunaan perintah gets() yaitu
+a. untuk data karakter
+b. diakhiri dengan penekanan tombol enter 
+c. cursor akan pindah baris
+d. tidak memerlukan penentu format
+e. harus diawali dengan perintah scanf();
+16. jenis operator yang disediakan oleh turbo c adalah 
+a. aritmatika 
+b. perbandingan 
+c. konstanta 
+d. tetap
+e. variabel
+17. yang termasuk tipe data perbandingan adalah 
+a. penjumlahan 
+b. pengurangan 
+c. perkalian 
+d. pembagian
+e. kurang dari 
+18. operator untuk peningkatan nilai bertambah 1 termasuk dalam operator 
+a. unary
+b. aritmatika 
+c. bitwise
+d. perbandingan 
+e. hubungan 
+19. yang termasuk contoh operator penugasan adalah 
+a. A=A*y;
+b. 9 % 2 = 1;
+c. Bil &lt;= 100;
+d. Bill1 ! 10;
+e. 5 &amp; 5;
+20. array terdiri dari berbagai tipe kecuali
+a. array multi-dimensi 
+b. array dimensi satu
+c. array dimensi tiga
+ d. array dimensi dua</h2><br />
+                        1. E 2.C 3.<strong>B 4. E 5, E 6. D 7. A 8. D 9. A 10. B</strong><br /><br />
+                                            <h2 class="ez-toc-section" id="apakah-arti-dari-notice-flush-toilet-after-using">
+                            33. apakah arti dari notice flush toilet after using</h2><br />
+                        Siram toilet setelah digunakan.<br />siram setelah menggunakan toilet<br />
+                                            <h2 class="ez-toc-section" id="pay-attention-to-the-notice-below-and-find-out-there-meanings-%e2%80%a2-keep-door-closed-at-all-times-%e2%80%a2-no-entry-without-permission%e2%80%a2-do-not-throw-trash-in-toilet%e2%80%a2-celluler-pho">
+                            34. Pay attention to the notice below and find out there meanings • KEEP DOOR, CLOSED AT ALL TIMES • NO ENTRY WITHOUT PERMISSION• DO NOT THROW TRASH IN TOILET• CELLULER PHONES PROHIBITATED• FLUSH TOILET AFTER USING• PLAY GROUNG AND SCHOOL GROUND CLOSED AT 10.00 PM• NO FOOD OR DRINK IN THIS AREA • DON'T FORGET TO CLOSE THE WINDOWS BEFORE YOU LEAVE THE HOUSE • WASH THE DISHES STRAIGHT AWAY AFTER YOU FINISH EATING• PLEASE DO NOT FEED THE ANIMALArtikan notice tersebut dan dimana biasanya notice tersebut dapat ditemukan ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>intiny itu maaf kalo salahhh</p><p><strong>Jawaban:</strong></p><p>sorry ya cuma bisa nge translate :D</p><p></p>tutuplah pintu setiap saatjangan masuk tanpa permisijangan buang sampah di dalam kamar mandi/ wcdilarang menggunakan telpon selulersiram wc setelah digunakantaman bermain dan area sekolah tutup pada pukul 10 malamdilarang ada makanan dan minuman di area inijangan lupa tutup jendela sebelum kamu meninggalkan rumahcuci lah piring setelah kamu gunakan/setelah kamu makantolong, jangan beri makan hewan/dilarang memberi makan hewan<p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="pendalaman-materi-sukses-ujian-bahasa-inggriswarning-can-cause-severe-eye-injuryif-eye-contact-occurs-flush-your-eye-with-water-the-notice-means-that-a-we-should-use-it-on-our-eyesb-i">
+                            35. PENDALAMAN MATERI SUKSES UJIAN - BAHASA INGGRIS
+WARNING : CAN CAUSE SEVERE EYE INJURY!
+If eye contact occurs. Flush your eye with water.
+The notice means that ....
+a. We should use it on our eyes
+b. It is dangerous if we use it on our eyes
+c. We must see using it
+d. You don't have to do anything it there is an eye
+*dbas*</h2><br />
+                        jawabnya b .<br />smg benerrrbismillah<br />Kata Saya yg B(:<br /><br />
+                                            <h2 class="ez-toc-section" id="akupun-berdiri-bangkit-mengambil-tissue-di-pojok-toilet-srrrr-bunyi-flush-toilet-terdengar-oh-my-god-ternyata-seluruh-toilet-di-bandara-ini-memiliki-flush-otomatis-baiklah-saatnya-aku-menertawa">
+                            36. Akupun berdiri, bangkit mengambil tissue di pojok toilet. "Srrrr" bunyi flush toilet terdengar. Oh my god, ternyata seluruh toilet di bandara ini memiliki flush otomatis.Baiklah, saatnya aku menertawakan diri sendiri. Bagian teks cerpen di atas adalah… *</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>"srrr" bunyi flush toilet terdengar. Oh my god, ternyata seluruh toilet di bandara iji memiliki flush otomatis. </p><p><strong>Penjelasan:</strong></p><p>#maafklsalah#</p><br />
+                                            <h2 class="ez-toc-section" id="notice_____flush-toiletafter-usingwhere-do-you-probably-find-the-notice-a-in-the-classroomb-in-the-toilet-cleanc-in-the-rest-roomd-in-the-park">
+                            37. Notice
+_____
+Flush toilet
+After using
+Where do you probably find the notice? 
+A. In the classroom
+B. In the toilet clean
+C.in the rest room
+D. In the park</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Notice
+</p><p>_____
+</p><p>Flush toilet
+</p><p>After using
+</p><p>
+</p><p>Where do you probably find the notice?
+</p><p>A. In the classroom
+</p><p>B. In the toilet clean
+</p><p><strong>C.in the rest room
+</strong></p><p>D. In the park</p><p><strong>Penjelasan:</strong></p><p><strong>C.in the rest room  ; KAMAR MANDI</strong></p><p><strong></strong></p><p><strong>semoga membantu :))</strong></p><p><strong>JADIKAN JAWABAN TERBAIK!!</strong></p><br />
+                                            <h2 class="ez-toc-section" id="notice-flush-toilet-after-using-31-what-should-we-do-after-reading-the-notice-32-where-do-you-probably-find-the-notice%e2%80%8b">
+                            38. NOTICE FLUSH TOILET AFTER USING 31. What should we do after reading the notice ? 32. Where do you probably find the notice?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>31. We should flush the toilet after using it</p><p>32.In the bathroom/restroom</p><br />
+                                            <h2 class="ez-toc-section" id="5alnoticeflush-toiletafter-usingc-we21-where-do-you-find-the-notice-a-class-roomc-toiletb-cafetariad-laboratory22-i-have-three-cute-cats-like-to-play-in-my-garden-a-1b-youd-they23-i-ca">
+                            39. 5alNOTICEFLUSH TOILETAFTER USINGc. We21. Where do you find the notice ?a. Class roomc. Toiletb. Cafetariad. Laboratory22. I have three cute cats.... Like to play in my garden.a. 1b. Youd. They23. I can do it .... Than you.c. Fastestb. Fasterd. Slower24. Tom and I ..... in a Cinema last night.a. Amb. Ared. Do25. My mother .... A chocolate cake.a, Cookc. Cookingb. Cooksd. Cookeda. Fastc. Is​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>21. C. Toilet.</p><p>22. D. They.</p><p>23. B. Faster.</p><p>24. B Are.</p><p>25. C. Cooking.</p><p></p><p></p><p>Maap kalo ada yang salah:))</p><p></p><p><strong>Jawaban:</strong></p><p>21. c. toilet </p><p>22. d. they </p><p>23. b. faster </p><p>24. b. are </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-berberapa-model-pintu-rumah-kecuali-a-pintu-panel-b-pintu-plank-c-pintu-flush-d-pintu-lipat%e2%80%8b">
+                            40. berikut ini berberapa model pintu rumah kecuali a.pintu panel b.pintu plank c.pintu flush d.pintu lipat​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>d. pintu lipat</p><p>maaf klo slh;)</p><p><strong></strong></p><p></p><p>jawaba nya adalah b.pintu plank</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/vB5yTaBS9ZM?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-perkalian-bentuk-akar.html">Contoh Soal Perkalian Bentuk Akar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-pencak-silat.html">Contoh Soal Pencak Silat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-kanvas-width-hight-resolution.html">Fungsi Dari Kanvas Width Hight Resolution</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/bagian-penyusun-dan-fungsi-dari-vacum-cleanner.html">Bagian Penyusun Dan Fungsi Dari Vacum Cleanner</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-antonim-dalam-bahasa-inggris.html">Contoh Soal Antonim Dalam Bahasa Inggris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-bagian-dari-daun.html">Fungsi Bagian Dari Daun</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-saja-fungsi-dari-jam-tangan-samsung-s3-frontier.html">Apa Saja Fungsi Dari Jam Tangan Samsung S3 Frontier</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-ribbon-tab-animations.html">Apa Fungsi Dari Ribbon Tab Animations</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/cara-mengatasi-masalah-alih-fungsi-lahan-dari-segi-penataan-ruang.html">Cara Mengatasi Masalah Alih Fungsi Lahan Dari Segi Penataan Ruang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-daily-activity-dan-jawabannya.html">Contoh Soal Daily Activity Dan Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/back-up-bank-apabila-supply-generator-terputus-adalah-fungsi-dari.html">Back Up Bank Apabila Supply Generator Terputus Adalah Fungsi Dari</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-kloroplasma.html">Apa Fungsi Dari Kloroplasma</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-tes-masuk-madrasah-aliyah-negeri.html">Contoh Soal Tes Masuk Madrasah Aliyah Negeri</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/jabatan-dalam-organisasi-yang-menangani-masalah-dana-atau-keuangan-adalah.html">Jabatan Dalam Organisasi Yang Menangani Masalah Dana Atau Keuangan Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-kubus-dan-balok.html">Contoh Soal Kubus Dan Balok</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-menaksir-tinggi-pohon-dan-jawabannya.html">Contoh Soal Menaksir Tinggi Pohon Dan Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-latihan-membaca-untuk-anak-tk.html">Contoh Soal Latihan Membaca Untuk Anak Tk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apakah-fungsi-dari-header-file-pada-program-c.html">Apakah Fungsi Dari Header File Pada Program C+</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/keyboard-a.html">Keyboard A</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-tugas-akhir-smkn-3-buduran.html">Contoh Tugas Akhir Smkn 3 Buduran</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediasoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediasoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

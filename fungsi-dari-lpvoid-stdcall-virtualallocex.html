@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Lpvoid stdcall Virtualallocex - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Lpvoid stdcall Virtualallocex, , , , , , , 0, , , , , , 0, fungsi-dari-lpvoid-stdcall-virtualallocex, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Lpvoid stdcall Virtualallocex - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Lpvoid stdcall Virtualallocex, , , , , , , 0, , , , , , 0, fungsi-dari-lpvoid-stdcall-virtualallocex, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Lpvoid stdcall Virtualallocex - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Lpvoid stdcall Virtualallocex, , , , , , , 0, , , , , , 0, fungsi-dari-lpvoid-stdcall-virtualallocex, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediasoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediasoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediasoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediasoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediasoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediasoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediasoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Lpvoid stdcall Virtualallocex</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">tazkianavisatazkia</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Lpvoid+stdcall+Virtualallocex" alt="Fungsi Dari Lpvoid stdcall Virtualallocex">
+                    </div>
+                    <p></p>
+                    <p>Jika kromosom diploid suatu organisme 50 buah maka berapakah kromosom aploidnya?</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jika-kromosom-diploid-suatu-organisme-50-buah-maka-berapakah-kromosom-aploidnya">1.
+                                            Jika kromosom diploid suatu organisme 50 buah maka berapakah kromosom aploidnya?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-leptoid-dan-hidroid">2.
+                                            fungsi leptoid dan hidroid</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-sel-diploid">3.
+                                            Apa fungsi dari sel diploid</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#arduino-adalah-pemrograman%c2%a0procesing%c2%a0yang-memiliki-fungsi%c2%a0void-setup%c2%a0void-setup%c2%a0memiliki-makna%e2%80%a6-abeberapa-kode-di%c2%a0void-setup%c2%a0akan-dibaca-sekali-oleh-ard">4.
+                                            Arduino adalah pemrograman procesing yang memiliki fungsi void setup(), void setup() memiliki makna….Abeberapa kode di void setup akan dibaca sekali oleh arduinoBbeberapa kode di void setup akan dibaca sekali oleh arduinoCsemua kode di void setup akan dibaca sekali oleh arduinoDsemua kode di void setup akan dibaca berulang kali oleh arduino​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4fungsi-bagian-ginjal-beserta-fungsinya">5.
+                                            4fungsi bagian ginjal beserta fungsinya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ciri-ciri-dari-jenis-fungsi-non-void-adalah-sebagai-berikut-kecuali">6.
+                                            Ciri-ciri dari jenis fungsi non Void adalah sebagai berikut, kecuali...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-contoh-dan-fungsi1fungsi-magis2-fungsi-simbolis3-fungsi-kontruksi4fungsi-ekonomis-dan-contohnya">7.
+                                            berikan contoh dan fungsi:
+1fungsi magis
+2 fungsi simbolis
+3 fungsi kontruksi
+4fungsi ekonomis 
+DAN CONTOHNYA</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-void-dalam-bahasa-computer-c">8.
+                                            apa fungsi void dalam bahasa computer C#</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-sel-diploid-adalah%e2%80%8b">9.
+                                            fungsi sel diploid adalah?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-mid-pada-fumgsi-teks">10.
+                                            apa fungsi dari MID pada fumgsi teks??</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-di-maksud-dengan-wing-stall">11.
+                                            Apa yang di maksud dengan wing stall</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-fungsi-aorta-2-fungsi-darah-kotor-menuju-paru-paru3-fungsi-darah-dari-paru-paru4-fungsi-serambi-kiri5-fungsi-katup6-fungsi-bilik-kiri-7-fungsi-sekat-jantung8fungsi-bilik-kanan9fungsi-katup">12.
+                                            1.fungsi aorta 
+2.fungsi darah kotor menuju paru-paru
+3.fungsi darah dari paru paru
+4 fungsi serambi kiri
+5.fungsi katup
+6. fungsi bilik kiri 
+7.fungsi sekat jantung
+8fungsi bilik kanan
+9fungsi katup
+10fungsi serambi kanan
+11fungsi darah kotor dari seluruh tubuh
+12fungsi darah bersih menuju seluruh tubuh</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-fumgsi-fungsi-kerajinan-tekstil%e2%80%8b">13.
+                                            sebutkan fumgsi fungsi kerajinan tekstil​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-semut-apa-dan-dfungsi-kupu-kupu">14.
+                                            fungsi semut apa dan dfungsi kupu kupu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungdi-fungsi-peraturan">15.
+                                            Fungdi-Fungsi peraturan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-arti-dari-fruit-stall">16.
+                                            apa arti dari fruit stall?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jaringan-kambium-berfumngsi-kroloflas-berfungsi">17.
+                                            - jaringan kambium berfumngsi
+- kroloflas berfungsi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-using-namespace-std-fungsi-menu-void-1-2-fungsi-jumlah-pesanan-void-3-4-5-fungsi-pilihan-menu-void-pilihan6-7">18.
+                                            #include using namespace std; //Fungsi Menu void 1 ........() { 2 . . . . } //Fungsi Jumlah Pesanan void 3 . . . . (4....... ) { 5 . . . . } //Fungsi Pilihan Menu void pilihan(6....... ) { 7 . . . . } //Fungsi cetak void 8 ........(int i, int jml, int pil[], int item[]) { } main() { } 9 . . . . //Variabel yang digunakan int i, jml, pil[100], item[100]; //Pemanggilan fungsi menu menu(); //Pemanggilan fungsi jumlah jumlah(jml); system("cls"); menu(); //Pemanggilan fungsi pilihan menu pilihan(i, jml, pil, item); system("cls"); menu(); //Pemanggilan fungsi cetak hasil 10 . . . .</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kata-kunci-yang-digunakan-untuk-menyatakan-nilai-balik-di-dalam-fungsi-a-voidb-returnc-getd-break%e2%80%8b">19.
+                                            Kata kunci yang digunakan untuk menyatakan nilai balik di dalam fungsi? *a.voidb.returnc.getd.break​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#selain-sebagai-media-komunikasi-surat-memiliki-fungsi-fungsi-yang-lain-jelaskan-fumgsi-fungsi-tersebut-%e2%80%8b">20.
+                                            Selain sebagai media komunikasi, surat memiliki fungsi-fungsi yang lain. Jelaskan fumgsi-fungsi tersebut.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-perintah-dibawah-ini-public-void-runnew-frmsupplier-setvisibletrue%e2%80%8b">21.
+                                            Jelaskan Fungsi dari Perintah dibawah ini :Public void run(){New FrmSupplier().setVisible(true);}​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-2-fungsi-sumsum-tulang-belakangsebutkan-2fungsi-sumsum-lanjutansebutkan-3fungsi-saraf-simpatiksebutkan-3-fungsi-saraf-parasimpatik">22.
+                                            sebutkan 2 fungsi sumsum tulang belakang!
+sebutkan 2fungsi sumsum lanjutan!
+sebutkan 3fungsi saraf simpatik!
+sebutkan 3 fungsi saraf parasimpatik!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#musik-bagi-bangsa-yunani-berfungsi-sebagai-3fungsi">23.
+                                            musik bagi bangsa yunani berfungsI sebagai 3fungsi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-windshearapa-itu-stallcara-kerja-tcastraffic-colussion-avoidance-systemapa-fungsi-flaps-and-slapsapa-sebutan-untuk-sayap-kecil-melengkung-di-ujung-sayap-pesawat%e2%80%8b">24.
+                                            apa itu windshear?apa itu stall?cara kerja tcas(traffic colussion avoidance system)?apa fungsi flaps and slaps?apa sebutan untuk sayap kecil melengkung di ujung sayap pesawat?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#alat-musik-meloid-berfungsi-sebagai%e2%80%8b">25.
+                                            alat musik meloid berfungsi sebagai​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-pengertian-fungsi-dan-trik-penggunaan-keyword-void-di-javascript">26.
+                                            Apa pengertian, fungsi, dan trik penggunaan keyword void di Javascript? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-main-pada-public-static-void-mainstring-args">27.
+                                            Apa fungsi main() pada public static void main(String[] args) ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-fungsi-void-main-dengan-class-dalam-java">28.
+                                            jelaskan perbedaan fungsi void main dengan class dalam java</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#terangkan-yang-kalian-ketahui-tentang-fungsi-void-loop-%e2%80%8b">29.
+                                            Terangkan yang kalian ketahui tentang fungsi void loop( ) { }!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-kromosom-diploid-dan-haploid">30.
+                                            Fungsi kromosom diploid dan haploid</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#level-html-dasar-apa-sajakah-fungsi-dari-include-void-main-clrscr-cout-dan-getchinclude-void-mainclrscrcout-%e2%80%9dmugi-rachmat%e2%80%9dgetch">31.
+                                            Level : HTML Dasar
+ Apa sajakah Fungsi dari Include, Void Main, Clrscr, Cout dan Getch
+#include 
+void main()
+{
+clrscr()
+cout &lt;&lt;”Mugi Rachmat”;
+getch();
+}</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-bagian-testis-yang-berperan-dalam-produksi-sperma-dan-hormon-testosteron-disebut-a-epididimisb-vas-deferensc-vesikula-seminalisd-tubulus-seminiferus2-pasangan-antara-bagian-alat-reproduksi-l">32.
+                                            1. Bagian testis yang berperan dalam produksi sperma dan hormon testosteron disebut...A. epididimisB. vas deferensC. vesikula seminalisD. tubulus seminiferus2. Pasangan antara bagian alat reproduksi laki-laki dan fungsinya berikut ini yangbenaradalah...A. skrotum berfungsi sebagai pembungkus testisB. tubulus seminiferus berfungsi sebagai saluran tempat keluarnya spermaC. uretra berfungsi sebagai tempat pematangan spermaD. vas deferens berfungsi sebagai tempat produksi spermaPernyataan yang benar terkait dengan jumlah kromosom spermatogonium danspermatozoa adalah...A. spermatogonium bersifat diploid, spermatozoa bersifat haploidB. spermatogonium bersifat haploid, spermatozoa bersifat diploidC. spermatogonium bersifat diploid, spermatozoa bersifat diploidjawab dong kak​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungdi-karya-seni-rupa-dibagi-menjadi-dua-yaitu-fungsi-individual-dan-fungsi-%e2%80%8b">33.
+                                            fungdi karya seni rupa dibagi menjadi dua yaitu fungsi individual dan fungsi.....​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-sebuah-fungsi-yang-didefinisikan-sendiri-penggunaan-sintaks-void-digunakan-untuk-apa%e2%80%8b">34.
+                                            Dalam sebuah fungsi yang didefinisikan sendiri, penggunaan sintaks void digunakan untuk apa?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#alat-musik-meloid-berfungsi-untuk%e2%80%8b">35.
+                                            alat musik meloid berfungsi untuk​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#generasi-pada-lumut-ada-yang-bersifat-haploid-dan-diploid-generasi-apa-yang-bersifat-haploid-dan-generasi-apa-yang-bersifat-dipoid-dan-apa-perbedaan-haploid-dan-diploid">36.
+                                            generasi pada lumut ada yang bersifat haploid dan diploid. generasi apa yang bersifat haploid dan generasi apa yang bersifat dipoid. dan apa perbedaan haploid dan diploid?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-sel-diploid">37.
+                                            Fungsi dari sel diploid</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#terangkan-tentang-fungsi-void-loop-%e2%80%8b">38.
+                                            terangkan tentang fungsi void loop( ) { }!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-fungsi1fungsi-hias">39.
+                                            contoh fungsi:1fungsi hias </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-sel-diploid-dan-fungsinya">40.
+                                            apa itu sel diploid dan fungsinya</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="jika-kromosom-diploid-suatu-organisme-50-buah-maka-berapakah-kromosom-aploidnya">
+                            1. Jika kromosom diploid suatu organisme 50 buah maka berapakah kromosom aploidnya?</h2><br />
+                        25 karena jika haploid kan berarti satu bukan dua. jadi diploidnya di bagi dua sehingga hasilnya 25.<br />maaf kalau saya salah<br />
+                                            <h2 class="ez-toc-section" id="fungsi-leptoid-dan-hidroid">
+                            2. fungsi leptoid dan hidroid</h2><br />
+                        Hidroid adalah tahap hidup bagi sebagian besar hewan dari kelas Hydrozoa, predator kecil yang berhubungan dengan ubur-ubur.<br />Leptoid adalah salah satu sel korteks berdinding tipis yang membentuk kumpulan benang menonjol ke dalam tabung bagian tengah rimbang pada bangsa lumut<br /><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-sel-diploid">
+                            3. Apa fungsi dari sel diploid</h2><br />
+                        Yaitu sel yang memiliki kromosom dalam keadaan<br /><br />berpasangan atau sel yang memiliki dua set atau<br /><br />dua perangkat kromosom. Misalnya sel tubuh<br /><br />manusia memiliki 46 buah kromosom yang selalu<br /><br />dalam keadaan berpasangan sehingga disebut<br /><br />diploid (2n) (di berarti dua, ploid berarti set/<br /><br />perangkat). Sedangkan sel kelamin manusia memiliki<br /><br />kromosom tidak berpasangan . Hal ini terjadi karena<br /><br />pada saat pembentukan sel kelamin, sel induk yang<br /><br />bersifat diploid membelah secara meiosis, sehingga<br /><br />sel kelamin anaknya hanya mewarisi setengah dari<br /><br />kromosom induknya. Maka dalam sel kelamin<br /><br />(gamet) manusia terdapat 23 kromosom yang tidak<br /><br />berpasangan atau hanya memiliki seperangkat atau<br /><br /><br />satu set kromosom saja, disebut haploid (n). <br /><br /><br />
+                                            <h2 class="ez-toc-section" id="arduino-adalah-pemrograman%c2%a0procesing%c2%a0yang-memiliki-fungsi%c2%a0void-setup%c2%a0void-setup%c2%a0memiliki-makna%e2%80%a6-abeberapa-kode-di%c2%a0void-setup%c2%a0akan-dibaca-sekali-oleh-ard">
+                            4. Arduino adalah pemrograman procesing yang memiliki fungsi void setup(), void setup() memiliki makna….Abeberapa kode di void setup akan dibaca sekali oleh arduinoBbeberapa kode di void setup akan dibaca sekali oleh arduinoCsemua kode di void setup akan dibaca sekali oleh arduinoDsemua kode di void setup akan dibaca berulang kali oleh arduino​</h2><br />
+                        <p></p><p>c</p><p><strong>Penjelasan:</strong></p> fungsi <strong>void set up</strong>() dijalankan pada saat sketch atau program Arduino mulai. Jadi, semua program di <strong>void</strong> <strong>setup()</strong><strong> </strong>hanya akan dijalankan sekali atau saat di restart.<p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="4fungsi-bagian-ginjal-beserta-fungsinya">
+                            5. 4fungsi bagian ginjal beserta fungsinya</h2><br />
+                        Hai Ika, kakak coba bantu jawab ya.<br /><br />bagian-bagian ginjal adalah sebagai berikut:<br />1. Korteks<br />Bagian bagian ginjal manusia yang paling utama adalah korteks. Tempat inilah yang menjadi muara asalnya urin berasal. Di dalam korteks terdapat jutaan nefron nefron yang di dalamnya terletak badan Malpighi. Setiap badan Malpighi tersusun atas glomerulus, kapsula bowman, serta beberapa tubulus tubulus pendukung untuk proses pemfilteran. Darah manusia akan mulai di filter pada bagian ini.<br /><br />Nefron yang terletak di dalam nefron tersebut memiliki struktur dan kegunaan sendiri. bagian inilah yang menjadi unit terkecil ginjal, di mana memiliki fungsional sendiri. berikut adalah bagian bagian di dalam nefron :<br /><br />2. Nefron<br />Inilah tempat darah yang ada di dalam tubuh di saring. Di dalam setiap nefron terdapat bagian bagian penting seperti glomerulus, kapsula bowman, tubulus kontortus proximal, tubulus kontortus distal, tubulus kolektivus serta lengkung henle.<br /><br />3. Glomerulus<br />Pada bagian glomerulus ini darah yang masuk akan di saring zat zat yang masih berguna. Seperti air, garam, asam amino, glukosa (zat gula), serta urea. Hasil penyaringan dari bagian ini adalah urin primer.<br /><br />4. Kapsul bowman<br />Dinamakan sebagai kapsul bowman karena bentuk organ ini mirip seperti kapsul atau kantung yang mana di temukan oleh peneliti Sir William Bowman. Kapsul bowman ini membungkus glomerulus.<br /><br />5. Tubulus kontortus proximal<br />Di tempat inilah yang menghasilkan urin sekunder. Di dalam tubulus kontortus proximal, darah yang berasal dari glomerulus melakukan penyerapan kembali. Sebab darah yang sudah menjadi urin primer ini masih mengandung zat zat yang berguna. Pada proses ini di kenal dengan nama reabsorpsi atau penyerapan kembali. Tubulus kontortus proximal masih menerima glukosa, asam amino, air serta garam yang penting untuk tubuh.<br /><br />6. Lengkung henle<br />Di namakan dengan lengkung henle karena anatomi organ ini memang melengkung. Struktur seperti ini memang di perlukan dalam menyaring dan sebagai penghubung antara tubulus kontortus proximal dengan tubulus kontortus distal.<br /><br />7. Tubulus kontortus distal<br />Pada bagian ini, urin yang masih dalam tahap urin sekunder melepas zat zat yang masih berguna. Lalu mendapat tambahan zat zat sisa atau pembuangan yang tidak berguna. Di sinilah terbentuknya urin yang sesungguhnya, dimana nantinya di keluarkan ke luar tubuh manusia.<br /><br />8. Tubulus kolektivus<br />Bagian ini menjadi bagian terakhir di bagian nefron. Bentuknya yang mirip selang menjadi saluran terakhir dan terpanjang dalam ginjal. Fungsinya untuk menampung urin sesungguhnya hasil pengolahan dan penyerapan di dalam nefron. Kemudian setelah dari sini, urin urin tersebut di lanjutkan ke pelvis. Lalu akan di tamping sebelum benar benar di keluarkan di kandung kemih.<br /><br />9. Medulla<br />Medulla ini merupakan jaringan yang berbentuk seperti piramida piramida dimana terletak lengkung henle. Medulla adalah tempat berkumpulnya pembuluh darah kapiler dan juga kapsul bowman. Di tempat ini urin primer akan mengalami proses panjang sebelum menjadi urin sekunder.<br /><br />Kemudian setelah melalui proses penyerapan yang panjang, urin tadi akan di olah menjadi urin yang sesungguhnya. Kemudian di keluarkan sebagai air kencing. Medulla ini menjadi tempat yang menhubungkan antara tubulus kontortus proximal dengan tubulus kontortus distal.<br /><br />10. Arteri ginjal<br />Merupakan pembuluh nadi yang berguna untuk membawa darah ke dalam ginjal. Setelah sampai di dalam ginjal, maka darah tersebut masuk ke dalam glomerulus untuk di filter atau saring. Darah yang masih terdapat zat zat berguna seperti protein dan asam amino akan kembali di serap dan di gunakan tubuh. Jika darah tersebut hanya mengandung urea dan zat tidak berguna lainnya, akan berlanjut sampai kandung kemih.<br /><br />11. Vena ginjal<br />Vena ginjal merupakan bagian utama dari ginjal. Vena ginjal adalah pembuluh balik yang berguna untuk membawa darah keluar dari dalam ginjal menuju vena cava inferior. Urutan pemprosesan vena ginjal adalah setelah melewati Darah tersebut kemudian akan di alirkan kembali ke dalam jantung untuk di olah menjadi darah bersih atau yang mengandung oksigen.<br /><br />12. Ureter<br />Ureter merupakan erupakan yang sangat berguna untuk mengalirkan urin yang sesungguhnya dari ginjal ke kandung kemih.  Ureter berbentuk seperti saluran maskuler yang silinder di dalam tubuh. Panjang ureter adalah sekitar 20-30 dengan diameter maksimum sekitar 1,7 cm di dekat kandung kemih dan yang berjalan dari hilus ginjal yang menuju kandung kemih.<br /><br />13. Pelvis<br />Pelvis ini berguna sebagai sebagai tempat penampungan sementara urin yang sudah di filter atau di saring di dalam ginjal. Nantinya jika tempat penampungan ini penuh, urin akan turun melalui ureter menuju kandung kemih. Jika kandung kemihnya penuh, maka syaraf dan otot akan berkontraksi untuk mengirimkan sinyal sinyal kuat ke bagian bagian otak manusia bahwa diri ingin segera ‘pipis’.<br /><br />Demikian, semoga dapat membantu :)1. Kapsul Ginjal<br /><br />Kapsul ginjal (kapsula renal) adalah bagian paling luar ginjal yang berfungsi untuk membungkus dan melindungi ginjal. Kapsul ginjal terdiri dari membran fibrosa (jaringan ikat). Strukturnya halus, tipis, dan transparan.<br /><br />2. Korteks<br /><br />Korteks adalah lapisan sekunder ginjal. Pada korteks terdapat sebagian bagian nefron yaitu glomerulus, tubulus kontortus proksimal, dan tubulus kontortus distal.<br /><br />3. Medula<br /><br />Medula adalah lapisan dalam ginjal yang berbentuk seperti piramida (kerucut) terbalik. Pada medula terdapat sebagian bagian nefron yaitu lengkung henle (baik itu naik maupun turun) dan tubulus kolektivus.<br /><br />4. Pelvis<br /><br />Pelvis adalah bagian paling tengah dari ginjal. Fungsi pelvis adalah sebagai tempat penampungan sementara urine dan sebagai tempat bermuaranya tubulus kolektivus. Setelah ditampung, urine akan dibawa ke kandung kemih melalui ureter.<br /><br />Semoga bisa membantu, maaf juga kalau slh<br />
+                                            <h2 class="ez-toc-section" id="ciri-ciri-dari-jenis-fungsi-non-void-adalah-sebagai-berikut-kecuali">
+                            6. Ciri-ciri dari jenis fungsi non Void adalah sebagai berikut, kecuali...</h2><br />
+                        Aku tau ciri ciri fungsi non void.  siapa tau bisa bantu. <br /><br />ciri ciri fungsi non void = <br /><br />1. ada keyword return<br />2. ada tipe data yang mengawali fungsi<br />3. tidak ada keyword void<br />4. Memiliki nilai kembalian <br />
+                                            <h2 class="ez-toc-section" id="berikan-contoh-dan-fungsi1fungsi-magis2-fungsi-simbolis3-fungsi-kontruksi4fungsi-ekonomis-dan-contohnya">
+                            7. berikan contoh dan fungsi:
+1fungsi magis
+2 fungsi simbolis
+3 fungsi kontruksi
+4fungsi ekonomis 
+DAN CONTOHNYA</h2><br />
+                        1  Fungsi simbolis, yaitu sebagai hiasan yang mengandung simbol-simbol tertentu yang berhubungan dengan spiritual. Oleh karena memiliki nilai dan makna tertentu, maka penempatan dan pemasangan karya ukir tidak bisa disembarang tempat.<br /><br /> 2 Fungsi konstruksi yaitu ukiran yang selain dipakai sebagai hiasan, juga digunakan sebagai pendukung sebuah bangunan. Misalnya ukiran pada tiang rumah, ukiran pada pintu gapura, dll.<br /><br />3 Fungsi ekonomis, yaitu fungsi yang menambah nilai jual. Misalnya ukiran pada kaki kursi, meja, lemari, tutup lampu, dipan, dll<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-void-dalam-bahasa-computer-c">
+                            8. apa fungsi void dalam bahasa computer C#</h2><br />
+                        <p><strong>Teknologi Informatika (TI) </strong>merupakan suatu istilah umum dalam teknologi apa saja yang dapat membantu manusia dalam membuat, mengubah, menyimpan, mengomunikasikan, dan menyebarkan informasi. Berdasarkan soal, dapat disimpulkan bahwa <strong>fungsi void dalam bahasa computer C# </strong>adalah dapat menentukan bahwa suatu metode tidak mengembalikan nilai dan bisa mendeklarasikan suatu penunjuk ke jenis yang tidak diketahui.</p><p></p><p><strong>Pembahasan:</strong></p><p>Seiring dengan perkembangan zaman, maka kemjuan ilmu pengetahuan dan teknologi juga semakin berkembang. Misalnya pada zaman dahulu, kita mengetik menggunakan mesin ketik, sedangkan sekarang kita dapat mengetik suatu teks maupun naskah menggunakan microsoft word yang ada di dalam komputer. TI (Teknologi Informatika) sangat berperan bagi kehidupan manusia. <strong>Teknologi Informatika (TI) </strong>merupakan suatu istilah umum dalam teknologi apa saja yang dapat membantu manusia dalam membuat, mengubah, menyimpan, mengomunikasikan, dan menyebarkan informasi. Berdasarkan soal, dapat disimpulkan bahwa <strong>fungsi void dalam bahasa computer C# </strong>adalah dapat menentukan bahwa suatu metode tidak mengembalikan nilai dan bisa mendeklarasikan suatu penunjuk ke jenis yang tidak diketahui.</p><p><strong>Pelajari lebih lanjut</strong></p>Materi tentang pengertian void set up dan loop https://brainly.co.id/tugas/29321927Materi tentang fungsi microsoft word brainly.co.id/tugas/5075012Materi tentang pengertian microsoft word brainly.co.id/tugas/832101<p><strong>Detail jawaban</strong></p><p><strong>Kelas : 7</strong></p><p><strong>Mapel : TIK</strong></p><p><strong>Bab : Perkembangan Tekonologi Informasi dan Komunikasi</strong></p><p><strong>Kode : 7.11.2</strong></p><p></p><p><strong>#TingkatkanPrestasimu</strong></p><p><strong>#SPJ3</strong></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-sel-diploid-adalah%e2%80%8b">
+                            9. fungsi sel diploid adalah?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sel diploid dapat menghasilkan sel yang haploid dengan proses meiosis untuk membentuk sel gamet.</p><p></p><p><strong>S</strong><strong>u</strong><strong>m</strong><strong>b</strong><strong>e</strong><strong>r</strong><strong> </strong><strong>:</strong><strong> </strong><strong>P</strong><strong>e</strong><strong>n</strong><strong>j</strong><strong>e</strong><strong>l</strong><strong>a</strong><strong>s</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>G</strong><strong>u</strong><strong>r</strong><strong>u</strong><strong> </strong><strong>I</strong><strong>P</strong><strong>A</strong><strong>k</strong><strong>u</strong></p><p></p><p><strong>•</strong><strong> </strong>Semoga Membantu<strong> </strong><strong>•</strong></p><p><strong>&lt;</strong><strong> </strong>Maaf Kalau Salah<strong> </strong><strong>&gt;</strong></p><p><strong>°</strong><strong> </strong>Jadikan Jawaban Tercerdas<strong> </strong><strong>°</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-mid-pada-fumgsi-teks">
+                            10. apa fungsi dari MID pada fumgsi teks??</h2><br />
+                        untuk menentukan nilai/ huruf tengah.<br />
+                                            <h2 class="ez-toc-section" id="apa-yang-di-maksud-dengan-wing-stall">
+                            11. Apa yang di maksud dengan wing stall</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Stall dalam penerbangan sayap tetap sering dialami sebagai pengurangan tiba-tiba di lift sebagai pilot meningkatkan sudut sayap serangan dan melebihi sudut kritis serangan (yang mungkin karena memperlambat kecepatan stall bawah di tingkat penerbangan).</p><p></p><p><strong>Penjelasan:</strong></p><p>Maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="1-fungsi-aorta-2-fungsi-darah-kotor-menuju-paru-paru3-fungsi-darah-dari-paru-paru4-fungsi-serambi-kiri5-fungsi-katup6-fungsi-bilik-kiri-7-fungsi-sekat-jantung8fungsi-bilik-kanan9fungsi-katup">
+                            12. 1.fungsi aorta 
+2.fungsi darah kotor menuju paru-paru
+3.fungsi darah dari paru paru
+4 fungsi serambi kiri
+5.fungsi katup
+6. fungsi bilik kiri 
+7.fungsi sekat jantung
+8fungsi bilik kanan
+9fungsi katup
+10fungsi serambi kanan
+11fungsi darah kotor dari seluruh tubuh
+12fungsi darah bersih menuju seluruh tubuh</h2><br />
+                        Jawaban nomor 1 membawa Co2<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-fumgsi-fungsi-kerajinan-tekstil%e2%80%8b">
+                            13. sebutkan fumgsi fungsi kerajinan tekstil​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi kerajinan tekstil, antara lain:</p><p>•Untuk memenuhi kebutuhan sandang.</p><p>•Sebagai alat bantu atau alat yang digunakan dalam keperluan rumah tangga.</p><p>•Sebagai alat yang digunakan dalam upacara atau ritual tradisi tertentu.</p><p>•Sebagai alat untuk memenuhi kebutuhan fashion (mempercantik penampilan).</p><p><strong>Penjelasan:</strong></p><p><strong>s</strong><strong>e</strong><strong>m</strong><strong>o</strong><strong>g</strong><strong>a</strong><strong> </strong><strong>m</strong><strong>e</strong><strong>m</strong><strong>b</strong><strong>a</strong><strong>n</strong><strong>t</strong><strong>u</strong></p><p><strong>Penjelasan:</strong></p><p>Untuk memenuhi kebutuhan sandang. Sebagai alat bantu atau alat yang digunakan dalam keperluan rumah tangga. dan sebagainya ~jadikan jawaban yg terbaik~</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-semut-apa-dan-dfungsi-kupu-kupu">
+                            14. fungsi semut apa dan dfungsi kupu kupu</h2><br />
+                        fungsi kedua binatang itu membantu penyerbukan<br />
+                                            <h2 class="ez-toc-section" id="fungdi-fungsi-peraturan">
+                            15. Fungdi-Fungsi peraturan</h2><br />
+                        Fungsi peraturan adalah menjadikan orang atau rakyat menjadi orang yang patuh terhadap norma dan tidak melanggar peraturan. Dan agar manusia hidupnya baik dan tenteram.Fungsi peraturan adalah menjadikan orang atau rakyat menjadi orang yang patuh terhadap norma dan tidak melanggar peraturan. Dan agar manusia hidupnya baik dan tenteram.<br />
+                                            <h2 class="ez-toc-section" id="apa-arti-dari-fruit-stall">
+                            16. apa arti dari fruit stall?</h2><br />
+                        warung buah klo gak salah setau saya itutempat penjualan buah<br /><br />moga membantu ya :)<br />
+                                            <h2 class="ez-toc-section" id="jaringan-kambium-berfumngsi-kroloflas-berfungsi">
+                            17. - jaringan kambium berfumngsi
+- kroloflas berfungsi</h2><br />
+                        fungsi jaringan kambium : mempertebal batang (agar tumbuh besar)<br />maksudnya kloroplas mungkin<br />fungsinya: sebagai organ tempat terjadinya proses dan reaksi kimia pada proses fotosintesis...1. Jaringan kambium berfungsi sebagai pembatas antara jaringan Floem dan xylem.<br />2. Kloroflas berfungsi sebagai tempat klorofil berada.<br />semoga membantu...<br /><br />
+                                            <h2 class="ez-toc-section" id="include-using-namespace-std-fungsi-menu-void-1-2-fungsi-jumlah-pesanan-void-3-4-5-fungsi-pilihan-menu-void-pilihan6-7">
+                            18. #include using namespace std; //Fungsi Menu void 1 ........() { 2 . . . . } //Fungsi Jumlah Pesanan void 3 . . . . (4....... ) { 5 . . . . } //Fungsi Pilihan Menu void pilihan(6....... ) { 7 . . . . } //Fungsi cetak void 8 ........(int i, int jml, int pil[], int item[]) { } main() { } 9 . . . . //Variabel yang digunakan int i, jml, pil[100], item[100]; //Pemanggilan fungsi menu menu(); //Pemanggilan fungsi jumlah jumlah(jml); system("cls"); menu(); //Pemanggilan fungsi pilihan menu pilihan(i, jml, pil, item); system("cls"); menu(); //Pemanggilan fungsi cetak hasil 10 . . . .</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ini yang di tanyakan apa?</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="kata-kunci-yang-digunakan-untuk-menyatakan-nilai-balik-di-dalam-fungsi-a-voidb-returnc-getd-break%e2%80%8b">
+                            19. Kata kunci yang digunakan untuk menyatakan nilai balik di dalam fungsi? *a.voidb.returnc.getd.break​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>b.</strong><strong>r</strong><strong>e</strong><strong>t</strong><strong>r</strong><strong>u</strong><strong>n</strong></p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="selain-sebagai-media-komunikasi-surat-memiliki-fungsi-fungsi-yang-lain-jelaskan-fumgsi-fungsi-tersebut-%e2%80%8b">
+                            20. Selain sebagai media komunikasi, surat memiliki fungsi-fungsi yang lain. Jelaskan fumgsi-fungsi tersebut.​</h2><br />
+                        <p>Sebagai sarana komunikasi untuk menyampaikan pemberitahuan, permohonan/ permintaan, perintah, pernyataan, laporan, dan lain-lain.</p><p></p><p>Sebagai alat bukti tertulis yang memiliki kekuatan hukum</p><p></p><p>Sebagai alat untuk membantu mengingat suatu kegiatan</p><p></p><p>Sebagai catatan atau dokumentasi historis untuk keperluan kegiatan lain</p><p></p><p>Sebagai alat untuk mewakili pribadi atau lembaga pembuat surat yang menyampaikan pesan, informasi, atau misi, yang ingin disampaikan pada penerima</p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-perintah-dibawah-ini-public-void-runnew-frmsupplier-setvisibletrue%e2%80%8b">
+                            21. Jelaskan Fungsi dari Perintah dibawah ini :Public void run(){New FrmSupplier().setVisible(true);}​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>fungsinya akan membuat object baru dari class FormSupplier. setelah jadi objek tersebut diset kenampakannya dengan memanggil fungsi dalam objek setVisible sehingga formnya akan keluhatan oleh user</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-2-fungsi-sumsum-tulang-belakangsebutkan-2fungsi-sumsum-lanjutansebutkan-3fungsi-saraf-simpatiksebutkan-3-fungsi-saraf-parasimpatik">
+                            22. sebutkan 2 fungsi sumsum tulang belakang!
+sebutkan 2fungsi sumsum lanjutan!
+sebutkan 3fungsi saraf simpatik!
+sebutkan 3 fungsi saraf parasimpatik!</h2><br />
+                        Dua fungsi sumsum tulang belakang:<br />1. Sebagai transmisi masuknya rangsangan antara periferi dan otak.<br />2. Sebagai pengontrol gerak refleks.<br /><br />Dua fungsi sumsum lanjutan:<br />1. Sebagai penghubung otak dengan saraf tulang belakang.<br />2. Menyempitkan atau melebarkan pembuluh darah.<br /><br />Tiga fungsi saraf simpatik:<br />1. Mempercepat detak jantung.<br />2. Meningkatkan sekresi adrenalin.<br />3. Mempersempit diameter pembuluh darah.<br /><br />Tiga fungsi saraf parasimpatik:<br />1. Menghambat percepatan detak jantung.<br />2. Menurunkan sekresi adrenalin.<br />3. Mmemperlebar diameter pembuluh darah.<br />
+                                            <h2 class="ez-toc-section" id="musik-bagi-bangsa-yunani-berfungsi-sebagai-3fungsi">
+                            23. musik bagi bangsa yunani berfungsI sebagai 3fungsi</h2><br />
+                        a. Iringan upacara religius, penyembahan pada dewa dewa atau setengah dewa.<br />b. Iringan upacara kerajaan<br />c. Iringan drama tari, sastra, atlentik, gladiator dan hiburan sosial<br />1. iringan upacara religius , penyembahan dewa - dewa atau setengah dewa<br />2. iringan upacara kerajaan<br />3. iringan drama tari<br />4. iringan berperang<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="apa-itu-windshearapa-itu-stallcara-kerja-tcastraffic-colussion-avoidance-systemapa-fungsi-flaps-and-slapsapa-sebutan-untuk-sayap-kecil-melengkung-di-ujung-sayap-pesawat%e2%80%8b">
+                            24. apa itu windshear?apa itu stall?cara kerja tcas(traffic colussion avoidance system)?apa fungsi flaps and slaps?apa sebutan untuk sayap kecil melengkung di ujung sayap pesawat?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Wind Shear adalah <strong>angin yang berubah secara tiba-tiba. </strong>Paling berbahaya jika terjadi perubahan 180 derajat. Angin dari arah depan mendadak berubah arah menjadi dari arah belakang mengakibatkan pesawat kehilangan gaya angkat secara tiba-tiba</p><p></p><p>2. Secara istilah stall diartikan sebagai <strong>kehilangan kekuatan untuk mengangkat.</strong> Stall terjadi karena bertambahnya hambatan udara pada bagian sayap pesawat terbang sehingga pesawat kehilangan kemampuan untuk terangkat di udara.</p><p></p><p>3. Cara Kerja TCAS</p><p>TCAS <strong>melakukan komunikasi dengan mengirimkan data dari transponder menggunakan frekuensi yang sama 1030/1090 MHz </strong>sehingga apabila terjadi konflik, pesawat saling memberikan informasi mengenai altitude dan jarak kepada pesawat lain (intruder) yang mendekat.</p><p></p><p>4. Flap berfungi <strong>mengendalikan laju udara yang mengalir melalui sayap pesawat.</strong> Flap dapat membantu pesawat tipe fix wing lepas landas maupun melakukan pengereman saat mendarat, Kegunaan flap, fungsi flap ini untuk menambah daya angkat (lift), tapi disisi lain juga untuk menambah drag.</p><p></p><p>5. Ujung sayap pesawat atau dalam dunia penerbangan disebut dengan istilah <strong>wingtip</strong> ini dibuat melengkung dikarenakan oleh beragam alasan.</p><br />
+                                            <h2 class="ez-toc-section" id="alat-musik-meloid-berfungsi-sebagai%e2%80%8b">
+                            25. alat musik meloid berfungsi sebagai​</h2><br />
+                        <p>Alat Musik Melodis</p><p>Alat musik melodis yaitu alat musik yang berfungsi untuk memainkan rangkaian susunan nada – nada merupakan melodi lagu. </p><p>Semoga membantu :)</p>Jawaban:<p>Alat musik melodis adalah alat musik yang melodi/ nada</p><p></p><p>Contoh:</p>PianoGitarHarmonikaPianikaBiolaAngklung<p></p><p>Fungsi:</p><p>Untuk melengkapi Bunyi-bunyian yang dihasilkan dari masing-masing alat musik ritmis dan harmonis</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-pengertian-fungsi-dan-trik-penggunaan-keyword-void-di-javascript">
+                            26. Apa pengertian, fungsi, dan trik penggunaan keyword void di Javascript? </h2><br />
+                        <p><strong>Jawaban:</strong></p><p>void adalah operator yang digunakan untuk mengembalikan nilai undefined sehingga browser tidak akan dapat memuat halaman baru.</p><p></p><p>pembuat web memanggil javascript tersebut untuk membuat fungsi tambahan pada sebuah link. pada dasarnya ketika anda mengklik sebuah link browser anda akan menuju ketempat link itu berada dengan refresh page halaman / loading halaman.</p><p></p><p>ada suatu kondisi dimana anda ingin merubah suatu aksi tapi tidak sesuai dengan sifat aslinya dan tidak menampilkan perubahan apapun pada url pada browser untuk keperluan proses selanjutnya.</p><p></p><p>semoga bermanfaat yaa ☺☺☺</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-main-pada-public-static-void-mainstring-args">
+                            27. Apa fungsi main() pada public static void main(String[] args) ?</h2><br />
+                        Fungsi main() pada public static void main(String[] args) adalah, agar compiler tahu, fungsi apa yang dilakukan terlebih dahulu ketika berhasil di compile. Dan sebenarnya main() itu bukan fungsi, melainkan prosedur, dalam C# :) Semoga membantu<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-fungsi-void-main-dengan-class-dalam-java">
+                            28. jelaskan perbedaan fungsi void main dengan class dalam java</h2><br />
+                        <p>Perbedaan fungsi void main dengan class dalam java adalah, void main adalah main function atau fungsi main, di mana program pertama kali dieksekusi. Sedangkan class adalah kerangka  dari setiap object individual yang akan dibuat. Program dalam class hanya akan dieksekusi ketika objek dari class itu diakses melalui program dalam main function.</p>Pembahasan<p>Fungsi void main adalah sebuah fungsi utama dalam program java yang akan dijalankan oleh program ketika dieksekusi. Fungsi main ini berisi alur program yang dibuat, yang isinya akan memanggil fungsi fungsi lainnya.</p><p>class adalah kerangka  dari setiap object individual yang akan dibuat. Berikut adalah contoh  implementasi class dalam pemrograman Java:
+</p><p>class Bicycle
+</p><p>{
+</p><p>int cadence = 0;
+</p><p>int speed = 0;
+</p><p>int gear = 1;
+</p><p>}
+</p><p>Pada contoh di atas variabel cadence, speed, gear merupakan state atau
+</p><p>keadaan dari object yang akan dibuat. Class juga memiliki method yang
+</p><p>berfungsi sebagai alat interaksi class dengan dunia di luar class.</p><p><strong>Contoh membuat objek dari class dalam fungsi main</strong></p><p>public static void main(String[] args)
+</p><p>{
+</p><p>     // Membuat dua object sepeda yang berbeda
+</p><p>     Bicycle bike1 = new Bicycle();
+</p><p>     Bicycle bike2 = new Bicycle();
+</p><p>}</p><p>Class bisa memiliki fungsi yang disebut method.Method merupakan suatu operasi berupa fungsi-fungsi yang dapat dikerjakan oleh suatu object. Method yang didefinisikan pada class bisa dipanggil melalui object.</p><p>Method memiliki 4 (empat) bagian dasar :
+</p>
+Nama metode
+Kembalian yang dikembalikan setelah memanggil method.
+Input parameter.
+Badan atau isi method, berupa instruksi untuk melakukan sesuatu hal.<br />Pelajari lebih lanjut
+<p>class handphone dan objek objeknya https://brainly.co.id/tugas/18517447</p><p>
+</p>Detil Jawaban
+<p><strong>Kelas </strong>: 10  
+</p><p>
+<strong>Bab </strong>: Mengenal Pemrograman Komputer  
+</p><p><strong>
+Kata Kunci </strong>: pemrograman berbasis objek</p><br />
+                                            <h2 class="ez-toc-section" id="terangkan-yang-kalian-ketahui-tentang-fungsi-void-loop-%e2%80%8b">
+                            29. Terangkan yang kalian ketahui tentang fungsi void loop( ) { }!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>fungsi void loop</p><p>dijalankan setelah fungsi setup.</p><p></p><p>bertujuan untuk mengeksekusi dan menjalankan program yang sudah dibuat.</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-kromosom-diploid-dan-haploid">
+                            30. Fungsi kromosom diploid dan haploid</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Diploid	Haploid</p><p>Tentang	Sel Diploid mengandung dua set lengkap (2n) dari kromosom.	Sel haploid memiliki setengah jumlah kromosom (n) sebagai diploid - yaitu sel haploid hanya berisi satu set lengkap dari kromosom.</p><p>Pembelahan dan Perkembangan Sel	Sel Diploid bereproduksi dengan cara mitosis membuat sel-sel yang merupakan tiruan yang sama persis.	Sel haploid adalah hasil dari proses meiosis, suatu tipe pembelahan sel dimana sel diploid membelah untuk menghasilkan sel bibit haploid. Sel haploid akan bergabung dengan sel haploid lainnya saat pembuahan.</p><p>Contoh	Kulit, darah, sel otot (juga dikenal sebagai sel somatik)	Sel yang digunakan dalam reproduksi seksual, sperma dan ovum (juga dikenal sebagai gamet).</p><br />
+                                            <h2 class="ez-toc-section" id="level-html-dasar-apa-sajakah-fungsi-dari-include-void-main-clrscr-cout-dan-getchinclude-void-mainclrscrcout-%e2%80%9dmugi-rachmat%e2%80%9dgetch">
+                            31. Level : HTML Dasar
+ Apa sajakah Fungsi dari Include, Void Main, Clrscr, Cout dan Getch
+#include 
+void main()
+{
+clrscr()
+cout &lt;&lt;”Mugi Rachmat”;
+getch();
+}</h2><br />
+                        include itu seperti prosesor pengarah an header<br />main adalah nama judul fungsi<br />clrscr berfungsi membersihkan layar<br />cout berfungsi mengeluarkan/menampilkan text<br />getch berfungsi menginputkan/menampilkan enter/baris selanjutnya<br /><br />#best answer yaaaa<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="1-bagian-testis-yang-berperan-dalam-produksi-sperma-dan-hormon-testosteron-disebut-a-epididimisb-vas-deferensc-vesikula-seminalisd-tubulus-seminiferus2-pasangan-antara-bagian-alat-reproduksi-l">
+                            32. 1. Bagian testis yang berperan dalam produksi sperma dan hormon testosteron disebut...A. epididimisB. vas deferensC. vesikula seminalisD. tubulus seminiferus2. Pasangan antara bagian alat reproduksi laki-laki dan fungsinya berikut ini yangbenaradalah...A. skrotum berfungsi sebagai pembungkus testisB. tubulus seminiferus berfungsi sebagai saluran tempat keluarnya spermaC. uretra berfungsi sebagai tempat pematangan spermaD. vas deferens berfungsi sebagai tempat produksi spermaPernyataan yang benar terkait dengan jumlah kromosom spermatogonium danspermatozoa adalah...A. spermatogonium bersifat diploid, spermatozoa bersifat haploidB. spermatogonium bersifat haploid, spermatozoa bersifat diploidC. spermatogonium bersifat diploid, spermatozoa bersifat diploidjawab dong kak​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.a</p><p>2.a</p><p>3.a </p><p><strong>Penjelasan:</strong></p><p>maaf kalok salah awowkaowm</p><br />
+                                            <h2 class="ez-toc-section" id="fungdi-karya-seni-rupa-dibagi-menjadi-dua-yaitu-fungsi-individual-dan-fungsi-%e2%80%8b">
+                            33. fungdi karya seni rupa dibagi menjadi dua yaitu fungsi individual dan fungsi.....​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>fungsi sosial</p><p><strong>Penjelasan:</strong></p><p>#jadikanjawabanterbaik</p><p>#semogabermanfaat : )</p><br />
+                                            <h2 class="ez-toc-section" id="dalam-sebuah-fungsi-yang-didefinisikan-sendiri-penggunaan-sintaks-void-digunakan-untuk-apa%e2%80%8b">
+                            34. Dalam sebuah fungsi yang didefinisikan sendiri, penggunaan sintaks void digunakan untuk apa?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Dalam sebuah fungsi yang didefinisikan sendiri, penggunaan sintaks `void` digunakan untuk menandakan bahwa fungsi tersebut tidak mengembalikan nilai apa pun. Artinya, ketika sebuah fungsi dinyatakan sebagai `void`, itu berarti fungsi tersebut dijalankan untuk melakukan tugas tertentu tanpa menghasilkan nilai balik yang dapat digunakan dalam perhitungan atau eksekusi lanjutan. Fungsi-fungsi ini sering digunakan untuk melakukan operasi atau tindakan tertentu tanpa perlu mengembalikan hasil atau nilai khusus.</p><br />
+                                            <h2 class="ez-toc-section" id="alat-musik-meloid-berfungsi-untuk%e2%80%8b">
+                            35. alat musik meloid berfungsi untuk​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Berfungsi membawakan rangkaian melodi lagu atau alunan melodi sesuai notasinya</p><br />
+                                            <h2 class="ez-toc-section" id="generasi-pada-lumut-ada-yang-bersifat-haploid-dan-diploid-generasi-apa-yang-bersifat-haploid-dan-generasi-apa-yang-bersifat-dipoid-dan-apa-perbedaan-haploid-dan-diploid">
+                            36. generasi pada lumut ada yang bersifat haploid dan diploid. generasi apa yang bersifat haploid dan generasi apa yang bersifat dipoid. dan apa perbedaan haploid dan diploid?</h2><br />
+                          haploid = protonema<br />diploid=zygot ke bawah<br />haploid=satu kromosom. diploid=dua kromosom. <br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-sel-diploid">
+                            37. Fungsi dari sel diploid</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>fungsinya adalah membantu suatu proses pembelahan pada suatu sel agar dapat berjalan lancar. Contohnya pembelahan pada proses pembelahan mitosis.</p><br />
+                                            <h2 class="ez-toc-section" id="terangkan-tentang-fungsi-void-loop-%e2%80%8b">
+                            38. terangkan tentang fungsi void loop( ) { }!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi void loop dijalankan setelah fungsi setup sudah selesai dijalankan, void loop bertujuan untuk mengeksekusi dan menjalankan program yang sudah dibuat.</p><br />
+                                            <h2 class="ez-toc-section" id="contoh-fungsi1fungsi-hias">
+                            39. contoh fungsi:1fungsi hias </h2><br />
+                        Fungsi penghias : Kerajinan yang di buat semata mata hanya sebagai hiasan<br />Contah:<br /> - kayu ukiran<br /> - lukisan ,dsb<br />
+                                            <h2 class="ez-toc-section" id="apa-itu-sel-diploid-dan-fungsinya">
+                            40. apa itu sel diploid dan fungsinya</h2><br />
+                        Sel diploid adalah sel-sel yang mengandung satu set lengkap (atau 2n) kromosom.<br /><br />Bagian-bagian Sel dan Pertumbuhan: Sel haploid dari ibu dan ayah dan selama proses reproduksi pupuk untuk membentuk zigot diploid. Zigot ini mengalami mitosis untuk menghasilkan sel-sel diploid lebih.<br /><br />Contoh Organisme: Manusia dan hampir semua mamalia adalah organisme diploid.<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/B9RT5sVunmk?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>biologi</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-instal-han-di-ps3.html">Fungsi Dari Instal Han Di Ps3</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-tretinoin.html">Apa Fungsi Dari Tretinoin</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-perkalian-bentuk-akar.html">Contoh Soal Perkalian Bentuk Akar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/bagian-dan-fungsi-dari-inkubator.html">Bagian Dan Fungsi Dari Inkubator</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-tombol-keyboard-pada-komputer.html">Fungsi Tombol Keyboard Pada Komputer</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dan-tujuan-dari-safety-talk.html">Fungsi Dan Tujuan Dari Safety Talk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-pembuluh-xilem.html">Apa Fungsi Dari Pembuluh Xilem</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-kelas-2-sd-matematika.html">Contoh Soal Kelas 2 Sd Matematika</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/trik-menjawab-psikotes.html">Trik Menjawab Psikotes</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-cream-erha-21-ag2.html">Fungsi Dari Cream Erha 21 Ag2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-agama-kelas-10-semester-2.html">Contoh Soal Agama Kelas 10 Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-pengenceran-larutan.html">Contoh Soal Pengenceran Larutan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-power-point.html">Contoh Soal Power Point</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-tugas-akhir-m1.html">Contoh Tugas Akhir M1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-dan-jawaban-manajemen-keuangan-semester-6.html">Contoh Soal Dan Jawaban Manajemen Keuangan Semester 6</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-organ-ginjal.html">Fungsi Dari Organ Ginjal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-zoom-control.html">Apa Fungsi Dari Zoom Control</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/konfigurasi-dns.html">Konfigurasi Dns</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-tentang-usaha.html">Contoh Soal Tentang Usaha</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-cerdas-cermat-pai-tingkat-sd.html">Contoh Soal Cerdas Cermat Pai Tingkat Sd</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediasoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediasoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

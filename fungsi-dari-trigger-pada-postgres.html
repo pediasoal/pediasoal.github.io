@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Trigger Pada Postgres - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Trigger Pada Postgres, , , , , , , 0, , , , , , 0, fungsi-dari-trigger-pada-postgres, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Trigger Pada Postgres - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Trigger Pada Postgres, , , , , , , 0, , , , , , 0, fungsi-dari-trigger-pada-postgres, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Trigger Pada Postgres - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Trigger Pada Postgres, , , , , , , 0, , , , , , 0, fungsi-dari-trigger-pada-postgres, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediasoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediasoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediasoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediasoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediasoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediasoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediasoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Trigger Pada Postgres</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">djarko86</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Trigger+Pada+Postgres" alt="Fungsi Dari Trigger Pada Postgres">
+                    </div>
+                    <p></p>
+                    <p>fungsi trigger slope pada osiloskop​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-trigger-slope-pada-osiloskop%e2%80%8b">1.
+                                            fungsi trigger slope pada osiloskop​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-trigger-level-pada-osiloskop%e2%80%8b">2.
+                                            fungsi trigger level pada osiloskop​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-artinya-to-trigger">3.
+                                             apa artinya to trigger</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-powerpoint-ada-animasi-yang-berfungsi-sebagai-pemicu-untuk-menjalankan-animasi-lain-bagian-dari-animasi-dalam-powerpoint-ysng-berfungsi-sebagai-pemicu-untuk-menjalankan-animasi-lain-adalah">4.
+                                            Dalam PowerPoint ada animasi yang berfungsi sebagai pemicu untuk menjalankan animasi lain, Bagian dari animasi dalam PowerPoint ysng berfungsi sebagai pemicu untuk menjalankan animasi lain adalah ... a. triggerb. slide c. custon showd. sortere. pane​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-was-the-trigger-for-having-interest-in-japan">5.
+                                            what was the trigger for having interest in japan?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#squeeze-the-trigger-gently-to-the-closest-meaning-of-the-underlined-word-is-a-releaseb-turn-onc-appeard-press%e2%80%8b">6.
+                                            Squeeze the trigger gently to ...The closest meaning of the underlined word is ...A releaseB. turn onC. appearD. press​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#suatu-cara-untuk-menghubungkan-suatu-bagian-tertentu-di-dalam-slide-file-dokumen-program-atau-halaman-web-dengan-bagian-yang-lainnya-pada-bidang-tersebut-adalah-a-animationsb-hyperlinkc-trigg">7.
+                                            Suatu cara untuk menghubungkan suatu bagian tertentu di dalam slide, file dokumen, program, atau halaman web dengan bagian yang lainnya pada bidang tersebut adalah ...a. Animationsb. Hyperlinkc. Triggerd. Audio​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-what-is-the-meaning-of-strike-occur-trigger-release-create-causes-10-15%e2%80%8b">8.
+                                            8. What is the meaning of: strike = Occur = Trigger= Release = Create = Causes = 10.15​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-bagaimana-implementasi-trigger-event-pada-postgresql-2-batasan-apa-yang-harus-diperhatikan-jika-akan-dibuat-triggert-event-pada-sebuah-table%e2%80%8b">9.
+                                            1. Bagaimana implementasi TRIGGER EVENT pada Postgresql 2. Batasan apa yang harus diperhatikan jika akan dibuat TRIGGERT EVENT pada sebuah table​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#who-was-the-trigger-for-the-second-world-war%e2%80%8b">10.
+                                            Who was the trigger for the second world war?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tentukan-frekwensi-dari-ossilator-schmitt-trigger-yang-memakai-ic74hc14-jika-r-10-kohm-dan-c-0005uf">11.
+                                            Tentukan frekwensi dari ossilator schmitt trigger yang memakai IC
+74HC14, jika R = 10 Kohm, dan C = 0,005uF</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kalimat-trigger-verbs-infinitive1-want2-need3-would-like4-would-love5-plan-dll">12.
+                                            contoh kalimat trigger verbs infinitive1.want2.need3.would like4.would love5.plan dll.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#andi-ingin-membuat-call-to-action-menggunakan-reciprocity-sebagai-psychological-trigger-untuk-mengurangi-risiko-penolakan-makacall-to-action-yang-andi-buat-adalah">13.
+                                            Andi ingin membuat call to action menggunakan reciprocity sebagai psychological trigger untuk mengurangi risiko penolakan.Maka,call to action yang Andi buat adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#saya-lagi-membuat-website-tentang-pembookingan-lapangan-futsal-memakai-codeigniter-pertanyaan-saya-bagaiman-supaya-pas-pembookingan-tidak-ada-pembookingan-double-di-tanggal-dan-jam-yang-sama-apa">14.
+                                            Saya lagi membuat website tentang pembookingan lapangan futsal memakai codeigniter .
+Pertanyaan saya .
+Bagaiman supaya pas pembookingan tidak ada pembookingan double di tanggal dan jam yang sama ?
+Apakah harus memakai trigger di database atau gimna ?
+Mohon solusinya .</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#15-salah-satu-aplikasi-proxy-server-di-sistem-operasilinux-adalah-a-postgresb-squirrelc-squidd-apachefungsi-utama-proxy-server-yang-tidak-benaradalah-a-fungsi-connection-sharingb-fungsi-filt">15.
+                                            15. Salah satu aplikasi proxy server di sistem operasiLinux adalah..a. Postgresb. Squirrelc. Squidd. ApacheFungsi utama Proxy Server yang tidak benaradalah...a. Fungsi Connection Sharingb. Fungsi Filteringc. Fungsi Cachingd. Fungsi Routing​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#read-the-text-earthquake-then-answer-the-questions-8-what-is-the-meaning-of-strike-occur-trigger-release-create-causes-%e2%80%8b">16.
+                                            Read the text.Earthquake then answer the questions 8. What is the meaning of: strike = Occur = Trigger = Release = Create = Causes ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#langkah-langkah-membuat-trigger">17.
+                                            Langkah-langkah membuat Trigger</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#arti-dari-cyclone-joker-heat-metal-luna-trigger-accel-trial-nt-kr-double">18.
+                                            Arti dari "Cyclone, Joker, Heat, Metal, Luna, Trigger, Accel, Trial" ?
+Nt : Kr Double</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#29-fitur-berikut-ada-di-microsoft-powerpointkecuali-a-hyperlinkb-triggerc-effect-timingd-sum%e2%80%8b">19.
+                                            29. Fitur berikut ada di Microsoft PowerPoint,kecuali ....a. Hyperlinkb. TriggerC. Effect Timingd. Sum​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-menjadi-triggerpenyebab-tokoh-membuka-usaha-jasa-transportasi-dan-logistik">20.
+                                            Apa yang menjadi trigger/penyebab tokoh membuka usaha jasa transportasi dan logistik?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#squeeze-the-trigger-gently-the-italic-word-has-similar-meaning-with-a-harshly-b-softly-c-regularly-d-rarely%e2%80%8b">21.
+                                            Squeeze the trigger gently..... The italic word has similar meaning with a. harshly b. softly c. regularly d. rarely​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-kegunaan-trigger-dalam-database">22.
+                                            Apa kegunaan trigger dalam database ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-jawab-dari-catastrophicdeadlydamagetriggerhazardrapidincurredcasualtiesdestructivepredict">23.
+                                            apa jawab dari 
+catastrophic,deadly,damage,trigger,hazard,rapid,incurred,casualties,destructive,predict</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-membuat-trigger-pada-powerpoint">24.
+                                            bagaimana cara membuat trigger pada powerpoint ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-membuat-trigger-oracle-mengurangi-stok">25.
+                                            Bagaimana cara membuat trigger oracle mengurangi stok?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-trigger-jelaskan-dan-berikan-contohnya">26.
+                                            apa itu trigger? jelaskan dan berikan contohnya </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#27-mistakes-in-the-sitting-position-when-muslims-perform-tasyahud-can-trigger-joint-disorders-the-most-likely-things-to-happen-are">27.
+                                            27. Mistakes in the sitting position when Muslims perform tasyahud can trigger joint disorders. The most likely things to happen are ....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#protagonis-di-game-danganronpa-trigger-happy-havoc-adalah-a-makoto-naegib-byakuya-togamic-hajime-hinata%e2%80%8b">28.
+                                            protagonis di game danganronpa: trigger happy havoc adalah...A. Makoto naegiB. Byakuya togamiC  Hajime hinata​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-hyperlink-dan-trigger-di-power-point-%e2%80%8b">29.
+                                            perbedaan hyperlink dan trigger di power point ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sound-pada-animasi-ditambahkan-dengan-mengeklik-ikon-a-animation-pane-b-add-animation-c-trigger-d-animations-painter">30.
+                                            Sound pada animasi ditambahkan dengan mengeklik ikon ...
+A. Animation Pane.
+B. Add Animation.
+C. Trigger.
+D. Animations Painter.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#istilah-yang-biasa-digunakan-oleh-programmer-untuk-suatu-proses-yang-akan-berjalan-jika-syarat-dari-pemicu-terpenuhi-5-poin-a-events-b-kontrol-c-trigger-d-looks%e2%80%8b">31.
+                                            Istilah yang biasa digunakan oleh programmer untuk suatu proses yang akan berjalan jika syarat dari pemicu terpenuhi... * 5 poin A. Events B. kontrol C. Trigger D. Looks​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#if-he-be-quicker-to-pull-the-trigger-the-snake-bite-not-him-on-the-ankle">32.
+                                            if he (be)  quicker to pull the trigger, the snake (bite. not) him on the ankle</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pemrograman-visual-dilakukan-dengan-cara-a-drag-and-dropb-men-triggerc-men-dragd-copypastemohon-bantuannya-%e2%80%8b">33.
+                                            Pemrograman Visual dilakukan dengan cara.....A. Drag and DropB. Men - TriggerC. Men - DragD. CopyPasteMohon Bantuannya ....​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#event-blocks-berfungsi-untuk-men-trigger-script-agar-a-berhenti-b-berjalanc-terhapusd-tersimpan-tolong-bantuin-ya-pliss-nanti-aku-aku-ikuti-soalnya-aku-butuh-hari-ini-juga-%e2%80%8b">34.
+                                            Event blocks berfungsi untuk men trigger script agar .....a. berhenti b. berjalanc. terhapusd. tersimpan tolong bantuin ya pliss nanti aku aku ikuti , soalnya aku butuh hari ini juga ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kuisberapa-susunan-dari-kata-trigger%e2%80%8b">35.
+                                            kuis!!Berapa susunan dari kata "trigger"?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#if-we-eat-so-much-food-contains-fat-we-can-trigger-a-atack%e2%80%8b">36.
+                                            if we eat so much food contains fat we can trigger a .... atack​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#arti-to-trigger-to-drifttoccrash-uponto-supply">37.
+                                            arti to trigger , to drift,toccrash upon,to supply</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatkan-kalimat-trigger-volunteer-predict-accompany-relax-approve-bantuinn-plissss">38.
+                                            Buatkan kalimat trigger, volunteer, predict, accompany, relax, approve...
+Bantuinn plissss</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ad-yg-taumama-just-killer-a-man-put-a-gun-againts-his-head-pulled-my-trigger-now-hes-dead%e2%80%8b">39.
+                                            ad yg taumama just killer a man put a gun againts His head pulled my trigger now he's dead​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#for-the-h5n1-avian-influenza-virus-to-trigger-a-human-pandemic-%e2%80%9d-the-word-trigger-is-closest-in-meaning-to">40.
+                                             for the H5N1 Avian influenza virus to trigger a human pandemic.” The word ' trigger' is closest in meaning to</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="fungsi-trigger-slope-pada-osiloskop%e2%80%8b">
+                            1. fungsi trigger slope pada osiloskop​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>untuk mengatur agar frekuensi tetap </p><p>penjelasan</p><p>jadikan jawaban terbaik dan flow ya</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-trigger-level-pada-osiloskop%e2%80%8b">
+                            2. fungsi trigger level pada osiloskop​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi Trigger level:Untuk mengatur agar frekuensi tetap terbaca</p><p></p><p></p><p><strong>Jawaban:</strong></p><p>untuk mengatur agar frekuansi tetap terbaca</p><p><strong>Penjelasan:</strong></p><p>jadikan jawaban terbaik dan flow ya</p><br />
+                                            <h2 class="ez-toc-section" id="apa-artinya-to-trigger">
+                            3.  apa artinya to trigger</h2><br />
+                        arti dari kata to trigger adalah "untuk memicu"<br /><br />semoga bermanfaat<br />untuk memicu semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="dalam-powerpoint-ada-animasi-yang-berfungsi-sebagai-pemicu-untuk-menjalankan-animasi-lain-bagian-dari-animasi-dalam-powerpoint-ysng-berfungsi-sebagai-pemicu-untuk-menjalankan-animasi-lain-adalah">
+                            4. Dalam PowerPoint ada animasi yang berfungsi sebagai pemicu untuk menjalankan animasi lain, Bagian dari animasi dalam PowerPoint ysng berfungsi sebagai pemicu untuk menjalankan animasi lain adalah ... a. triggerb. slide c. custon showd. sortere. pane​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. trigger</p><p><strong>Penjelasan:</strong></p><p>Trigger pada power point apabila trigger diaktifkan maka akan memicu objek lain untuk melakukan animasi</p><br />
+                                            <h2 class="ez-toc-section" id="what-was-the-trigger-for-having-interest-in-japan">
+                            5. what was the trigger for having interest in japan?</h2><br />
+                        <p>The trigger may be universally same, the very own Japanese legacy of cartoons and animes.</p><p></p><p>I remember, as a 7 year old kid, I got access to cable television, and the evergreen Japanese cartoons Doraemon, Shinchan, Ninja Hattori, Kiteretsu aired on TV. They provided source of entertainment for kids.</p><br />
+                                            <h2 class="ez-toc-section" id="squeeze-the-trigger-gently-to-the-closest-meaning-of-the-underlined-word-is-a-releaseb-turn-onc-appeard-press%e2%80%8b">
+                            6. Squeeze the trigger gently to ...The closest meaning of the underlined word is ...A releaseB. turn onC. appearD. press​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D. press​</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="suatu-cara-untuk-menghubungkan-suatu-bagian-tertentu-di-dalam-slide-file-dokumen-program-atau-halaman-web-dengan-bagian-yang-lainnya-pada-bidang-tersebut-adalah-a-animationsb-hyperlinkc-trigg">
+                            7. Suatu cara untuk menghubungkan suatu bagian tertentu di dalam slide, file dokumen, program, atau halaman web dengan bagian yang lainnya pada bidang tersebut adalah ...a. Animationsb. Hyperlinkc. Triggerd. Audio​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B. Hyperlink</p><p><strong>Penjelasan:</strong></p><p>gugel aja</p><br />
+                                            <h2 class="ez-toc-section" id="8-what-is-the-meaning-of-strike-occur-trigger-release-create-causes-10-15%e2%80%8b">
+                            8. 8. What is the meaning of: strike = Occur = Trigger= Release = Create = Causes = 10.15​</h2><br />
+                        <p>Without more context or information, it is impossible to determine the meaning of this statement. "Strike" "Occur" "Trigger" "Release" "Create" "Causes" and "10.15" are all individual words or numbers that do not form a coherent sentence or phrase.</p><br />
+                                            <h2 class="ez-toc-section" id="1-bagaimana-implementasi-trigger-event-pada-postgresql-2-batasan-apa-yang-harus-diperhatikan-jika-akan-dibuat-triggert-event-pada-sebuah-table%e2%80%8b">
+                            9. 1. Bagaimana implementasi TRIGGER EVENT pada Postgresql 2. Batasan apa yang harus diperhatikan jika akan dibuat TRIGGERT EVENT pada sebuah table​</h2><br />
+                        <p>1. Untuk mengimplementasikan trigger event pada PostgreSQL, pertama-tama Anda perlu membuat trigger function yang akan dipanggil oleh trigger. Kemudian Anda dapat membuat trigger dengan menggunakan perintah <strong>CREATE TRIGGER</strong> dan menentukan event yang akan memicu trigger tersebut, serta tabel yang akan dipantau oleh trigger tersebut.</p><p>Contoh:</p><p>CREATE OR REPLACE FUNCTION update_timestamp()</p><p>RETURNS TRIGGER AS $$</p><p>BEGIN</p><p>   NEW.updated_at = now();</p><p>   RETURN NEW;</p><p>END;</p><p>$$ language 'plpgsql';</p><p></p><p>CREATE TRIGGER update_timestamp_trigger</p><p>BEFORE UPDATE ON users</p><p>FOR EACH ROW</p><p>EXECUTE PROCEDURE update_timestamp();</p><p>2. Di sini, trigger function <strong>update_timestamp()</strong> akan dipanggil oleh trigger <strong>update_timestamp_trigger</strong> setiap kali terjadi event <strong>UPDATE </strong>pada tabel <strong>users</strong>.</p>Ada beberapa batasan yang perlu diperhatikan saat membuat trigger event pada PostgreSQL:Trigger hanya dapat dipicu oleh event <strong>INSERT</strong>, <strong>UPDATE</strong>, atau <strong>DELETE</strong>.Trigger hanya dapat dibuat pada tabel yang ada, tidak bisa dibuat pada vista (view).Trigger hanya dapat mengakses data yang sesuai dengan event yang memicu trigger tersebut. Misalnya, trigger yang dipicu oleh event <strong>INSERT </strong>hanya dapat mengakses data baru yang sedang di-insert, tidak bisa mengakses data yang sudah ada sebelumnya.Trigger hanya dapat dipicu oleh perintah <strong>SELECT </strong>jika perintah tersebut menggunakan <strong>FOR EACH ROW</strong>.Trigger hanya dapat mengakses data yang terdapat dalam satu transaksi. Jadi, trigger tidak akan dipicu jika data yang dimodifikasi sudah dicommit atau rollback.Trigger tidak bisa memanggil fungsi yang menggunakan perintah <strong>VOLATILE</strong>, <strong>STABLE</strong>, atau <strong>IMMUTABLE </strong>jika perintah tersebut bergantung pada data yang sedang diubah oleh trigger.Trigger tidak bisa memodifikasi data yang sedang diubah oleh trigger. Misalnya, jika trigger dipicu oleh event <strong>INSERT</strong>, maka trigger tidak bisa mengubah data yang baru saja di-insert.<br />
+                                            <h2 class="ez-toc-section" id="who-was-the-trigger-for-the-second-world-war%e2%80%8b">
+                            10. Who was the trigger for the second world war?​</h2><br />
+                        <p>Jawaban:</p><p>The cause of world war 2 in general is the last, namely because of the emergence of 2 world alliances, namely the fascist block and the allied block. The fascist bloc consisted of Germany, Italy, and Japan (also allied with Romania, Hungary, Bulgaria, Slovakia and Croatia). While the allied bloc consists of the democratic and communist blocs.</p><p></p><p>artinya.</p><p></p><p>Penyebab perang dunia 2 secara umum yang terakhir, yaitu karena munculnya 2 aliansi dunia yaitu blok fasis dan blok sekutu. Blok fasis terdiri dari Jerman, Italia, dan Jepang (juga bersekutu dengan Rumania, Hongaria, Bulgaria, Slowakia, dan Kroasia). Sedangkan blok sekutu terdiri dari blok demokrasi dan komunis.</p><p>Penjelasan:</p><p>Hope it helps, don't forget to follow and make it the brainliest answer</p><p></p><p>artinya.</p><p>Semoga membantu jangan lupa di follow dan jadikan jawaban tercerdas ya.</p><br />
+                                            <h2 class="ez-toc-section" id="tentukan-frekwensi-dari-ossilator-schmitt-trigger-yang-memakai-ic74hc14-jika-r-10-kohm-dan-c-0005uf">
+                            11. Tentukan frekwensi dari ossilator schmitt trigger yang memakai IC
+74HC14, jika R = 10 Kohm, dan C = 0,005uF</h2><br />
+                        <p><strong>Frekuensi osilator Schmitt Trigger dengan IC 74HC14, R = 10 kiloohm, dan C = 0.005 mikrofarad adalah sekitar 3183.09 Hz. </strong>Untuk menentukan frekuensi osilator Schmitt Trigger yang menggunakan IC 74HC14, kita perlu menggunakan rumus dasar yang melibatkan resistansi (R) dan kapasitansi (C) pada rangkaian RC.</p><p><strong>Rumus dasar untuk frekuensi osilator RC adalah:</strong></p><p>f = 1 / (2 * pi * R * C)</p><p>Di mana:</p><p>f adalah frekuensi (dalam satuan Hertz)</p><p>pi adalah konstanta Pi (3.14159...)</p><p>R adalah resistansi (dalam satuan Ohm)</p><p>C adalah kapasitansi (dalam satuan Farad)</p><p></p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p><strong>Diketahui:</strong></p><p>R = 10 Kohm, dan C = 0,005uF</p><p><strong>Ditanya:</strong></p><p>Tentukan frekwensi dari ossilator schmitt trigger yang memakai IC</p><p>74HC14</p><p><strong>Jawab:</strong></p><p>f = 1 / (2 * 3.14159 * 10,000 * 0.005 * 10^(-6))</p><p>= 1 / (2 * 3.14159 * 10 * 0.005 * 10^(-6))</p><p>= 1 / (3.14159 * 0.0001)</p><p>= 1 / 0.000314159</p><p>= 3183.09 Hz</p><p></p><p><strong>Jadi, frekuensi osilator Schmitt Trigger dengan IC 74HC14, R = 10 kiloohm, dan C = 0.005 mikrofarad adalah sekitar 3183.09 Hz.</strong></p><p><strong></strong></p>Pelajari lebih lanjutMateri tentang dalam penelitian kedalaman laut, frekuensi osilator diterima hidrofon setelah selang waktu 0,4 sekon. jika laju rambat bunyi di air adalah 1.400 m/s, berapakah kedalaman laut? https://brainly.co.id/tugas/5950245<p></p><p><strong>#BelajarBersamBrainly</strong></p><p><strong>#SPJ1</strong></p><p></p><p></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="contoh-kalimat-trigger-verbs-infinitive1-want2-need3-would-like4-would-love5-plan-dll">
+                            12. contoh kalimat trigger verbs infinitive1.want2.need3.would like4.would love5.plan dll.</h2><br />
+                        1.wanted<br />2.needed<br />5.planned<br />
+                                            <h2 class="ez-toc-section" id="andi-ingin-membuat-call-to-action-menggunakan-reciprocity-sebagai-psychological-trigger-untuk-mengurangi-risiko-penolakan-makacall-to-action-yang-andi-buat-adalah">
+                            13. Andi ingin membuat call to action menggunakan reciprocity sebagai psychological trigger untuk mengurangi risiko penolakan.Maka,call to action yang Andi buat adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Subcribe sekarang dan dapatkan streaming 2 bulan.</p><p></p><p>SEMOGA MEMBANTU </p><p>jadikan jawaban terbaik :)</p><p>Jawaban:</p><p>Blablablablablablablabalbakabakabakan</p><br />
+                                            <h2 class="ez-toc-section" id="saya-lagi-membuat-website-tentang-pembookingan-lapangan-futsal-memakai-codeigniter-pertanyaan-saya-bagaiman-supaya-pas-pembookingan-tidak-ada-pembookingan-double-di-tanggal-dan-jam-yang-sama-apa">
+                            14. Saya lagi membuat website tentang pembookingan lapangan futsal memakai codeigniter .
+Pertanyaan saya .
+Bagaiman supaya pas pembookingan tidak ada pembookingan double di tanggal dan jam yang sama ?
+Apakah harus memakai trigger di database atau gimna ?
+Mohon solusinya .</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>sebelum data ditambahkan ke database, buat dulu kaya validasi yg isinya query buat mencocokkan apakah di hari dan jam tersebut ada pesanan. hal ini berarti harus ada data jam dan tanggal di database. kalau aku yg ilmu cetek dan gatau yg lebih simpel, biasanya aku bikin query count, kalau hasilnya &lt;0, data baru  dapat ditambahkan ke database. tapi kalau hasilnya &gt;0, berarti sudah ada data pemesan yg memesan pada tgl dan jam tersebut, baru nanti didirect ke halaman lain yg menyatakan kalau pada jam dan tgl itu sudah ada yg membooking. atau kalau mau, bisa juga ditampilkan data jam dan tgl yg sudah dibooking, sehingga orang yg mau booking bisa lamgsung lihat dan beralih ke jam lain</p><br />
+                                            <h2 class="ez-toc-section" id="15-salah-satu-aplikasi-proxy-server-di-sistem-operasilinux-adalah-a-postgresb-squirrelc-squidd-apachefungsi-utama-proxy-server-yang-tidak-benaradalah-a-fungsi-connection-sharingb-fungsi-filt">
+                            15. 15. Salah satu aplikasi proxy server di sistem operasiLinux adalah..a. Postgresb. Squirrelc. Squidd. ApacheFungsi utama Proxy Server yang tidak benaradalah...a. Fungsi Connection Sharingb. Fungsi Filteringc. Fungsi Cachingd. Fungsi Routing​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. C. Squid</p><p>2. D. Fungsi Routing</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="read-the-text-earthquake-then-answer-the-questions-8-what-is-the-meaning-of-strike-occur-trigger-release-create-causes-%e2%80%8b">
+                            16. Read the text.Earthquake then answer the questions 8. What is the meaning of: strike = Occur = Trigger = Release = Create = Causes ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>strike</strong><strong> </strong><strong>=</strong><strong> </strong><strong>memukul</strong></p><p><strong>occur</strong><strong> </strong><strong>=</strong><strong> </strong><strong>terjadi</strong></p><p><strong>trigger</strong><strong> </strong><strong>=</strong><strong> </strong><strong>pemicu</strong></p><p><strong>release</strong><strong> </strong><strong>=</strong><strong> </strong><strong>melepaskan</strong></p><p><strong>create</strong><strong> </strong><strong>=</strong><strong> </strong><strong>membuat</strong></p><p><strong>causes</strong><strong> </strong><strong>=</strong><strong> </strong><strong>penyebab</strong></p><br />
+                                            <h2 class="ez-toc-section" id="langkah-langkah-membuat-trigger">
+                            17. Langkah-langkah membuat Trigger</h2><br />
+                        CREATE    [DEFINER = { USER | CURRENT_USER }]    TRIGGER trigger_name    trigger_time trigger_event    ON tbl_name FOR EACH ROW    trigger_bodyInsert, yaitu trigger akan diaktifkan ketika terjadi penambahan data pada sebuah table.Update, yaitu trigger akan diaktifkan ketika terjadi pengubahan data, yang mana data tersebut sudah ada sebelumnya pada sebuah table.Delete, yaitu trigger akan diaktifkan ketika terjadi penghapusan data pada sebuah table.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="arti-dari-cyclone-joker-heat-metal-luna-trigger-accel-trial-nt-kr-double">
+                            18. Arti dari "Cyclone, Joker, Heat, Metal, Luna, Trigger, Accel, Trial" ?
+Nt : Kr Double</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Topan, Joker, Panas, Logam, Luna, Pemicu, Accel, Percobaan</p><p><strong>Penjelasan:</strong></p><p>Maaf kalau misalnya salah</p><br />
+                                            <h2 class="ez-toc-section" id="29-fitur-berikut-ada-di-microsoft-powerpointkecuali-a-hyperlinkb-triggerc-effect-timingd-sum%e2%80%8b">
+                            19. 29. Fitur berikut ada di Microsoft PowerPoint,kecuali ....a. Hyperlinkb. TriggerC. Effect Timingd. Sum​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sum</p><p><strong>Penjelasan:</strong></p><p><strong>Sum adalah fitur dari Microsoft Excel yang berfungsi menjumlahkan data pada tabel</strong></p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-menjadi-triggerpenyebab-tokoh-membuka-usaha-jasa-transportasi-dan-logistik">
+                            20. Apa yang menjadi trigger/penyebab tokoh membuka usaha jasa transportasi dan logistik?</h2><br />
+                        <p>Jawaban: kekurangan pencaharian</p><p></p><p>Penjelasan:maaf kalo salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="squeeze-the-trigger-gently-the-italic-word-has-similar-meaning-with-a-harshly-b-softly-c-regularly-d-rarely%e2%80%8b">
+                            21. Squeeze the trigger gently..... The italic word has similar meaning with a. harshly b. softly c. regularly d. rarely​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>Squeeze the trigger gently..... </p><p>a. harshly </p><p><strong>b. softly </strong></p><p>c. regularly </p><p>d. rarely​</p><p><strong>The Answer:</strong></p><p>Dengan menganggap bahwa kata yang dimiringkan (the italic word) adalah gently, maka jawabannya adalah <strong>Softly</strong>. (pilihan jawaban <strong>b</strong>)</p><p></p>Explanation<p>Perintah soal adalah untuk menentukan sinonim dari kata yang dimiringkan. Kata yang dimiringkan dalam kalimat di soal tersebut mungkin adalah 'gently'.</p><p></p><p><strong>Gently</strong> berarti dengan lemah lembut; dengan hati-hati.</p><p></p><p>Arti kata pada pilihan jawaban di soal adalah sebagai berikut.</p><strong>Harshly </strong>: dengan kasar.<strong>Softly </strong>: dengan lembut.<strong>Regularly </strong>: secara teratur.<strong>Rarely </strong>: jarang.<p></p><p>Karena gently berarti dengan lemah lembut, maka sinonim kata tersebut adalah softly. Kedua kata tersebut memiliki makna yang serupa.</p><p>—</p>Solution Details<p>[tex]\bold {Subject\::}[/tex] English</p><p>[tex]\bold {Level\::}[/tex] Intermediate</p><p>[tex]\bold {Chapters\::}[/tex] Synonyms; Adverbs</p><p>[tex]\bold {Code\::}[/tex] 5</p><p>—</p>KeywordsSynonymsAdverbsGentlySoftly<br />
+                                            <h2 class="ez-toc-section" id="apa-kegunaan-trigger-dalam-database">
+                            22. Apa kegunaan trigger dalam database ?</h2><br />
+                        Trigger dapat melakukan perubahan cascade melalui melalui relasi tabel pada database<br /><br />
+                                            <h2 class="ez-toc-section" id="apa-jawab-dari-catastrophicdeadlydamagetriggerhazardrapidincurredcasualtiesdestructivepredict">
+                            23. apa jawab dari 
+catastrophic,deadly,damage,trigger,hazard,rapid,incurred,casualties,destructive,predict</h2><br />
+                        Arti kata.<br /><br />Catastrophic = bencana<br />Deadly = mematikan<br />Damage = kerusakan<br />Trigger = pelatuk<br />Hazard = bahaya<br />Rapid = cepat<br />Incurred = terjadi<br />Casualties = korban<br />Destructive = destruktif<br />Predict =  meramalkan<br /><br />semoga membantu : )<br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-membuat-trigger-pada-powerpoint">
+                            24. bagaimana cara membuat trigger pada powerpoint ?</h2><br />
+                        1. Pilih layout dari sebuah slide pada powerpoint yang akan di beri 
+trigger dan buatlah shape (tombol navigasi) sebanyak yang dibutuhkan 
+sesuai dengan keinginan kita.<br />2. Masukkan sebuah gambar atau animasi maupun video yang akan digunakan 
+sebagai trigger dari sebuah folder yang sudah ditentukan.<br />3. Buatlah animasi sebagai trigger dengan cara mengklik gambar tersebut,
+ kemudian tekan menu animation dan pilih tombol custom animation.<br />4. Pastikan gambar yang dipilih sudah benar, kemudian tekan tombol add effect -&gt; entrance -&gt;pilih effect yang diinginkan.<br />5. Untuk pengaturan trigger klik tombol custom animation -&gt; tekan 
+tombol trigger -&gt; pilih start effect on click of -&gt; pilih kotak 
+pertama (animasi 1 ) -&gt; ok.<br />5. Untuk pengaturan trigger klik tombol custom animation -&gt; tekan 
+tombol trigger -&gt; pilih start effect on click of -&gt; pilih kotak 
+pertama (animasi 1 ) -&gt; ok.<br />7. Ulangi pembuatan trigger berikutnya dengan langkah-langkah seperti 
+diatas. Tujuannya adalah pada saat animasi ke-2 muncul maka animasi ke-1
+ hilang. Begitu sebaliknya. Caranya berikan animasi exit dalam trigger 
+animasi ke-2 pada saat animasi ke-1 muncul, sebaliknya masukkan animasi 
+exit pada animasi ke-1 dalam trigger animasi ke-2. Ubah animasi exit 
+dari keduanya mulai strat menjadi with previous.<br />Demikian sedikit tutorial mengenai bagaimana cara penggunaan trigger 
+dalam presentasi menggunakan powerpoint. Semoga bermanfaat….<br /><br /><br /><br /><br /><br /><br /><br />1. Pilih layout dari sebuah slide pada powerpoint yang akan di beri trigger dan buatlah shape (tombol navigasi) sebanyak yang dibutuhkan sesuai dengan keinginan kita.<br />2. Masukkan sebuah gambar atau animasi maupun video yang akan digunakan sebagai trigger dari sebuah folder yang sudah ditentukan.<br />3. Buatlah animasi sebagai trigger dengan cara mengklik gambar tersebut, kemudian tekan menu animation dan pilih tombol custom animation.<br />4. Pastikan gambar yang dipilih sudah benar, kemudian tekan tombol add effect -&gt; entrance -&gt;pilih effect yang diinginkan.<br />5. Untuk pengaturan trigger klik tombol custom animation -&gt; tekan tombol trigger -&gt; pilih start effect on click of -&gt; pilih kotak pertama (animasi 1 ) -&gt; ok.<br />6. Jika trigger sudah berhasil dibuat, maka akan terlihat icon tangan dan pada jendela animasi terdapat tulisan trigger<br />7. Ulangi pembuatan trigger berikutnya dengan langkah-langkah seperti diatas<br /><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-membuat-trigger-oracle-mengurangi-stok">
+                            25. Bagaimana cara membuat trigger oracle mengurangi stok?</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>permisi suhu, saya punya table barang dan tabel detil penjualan barang, ketika saya insert ke tabel detil, stok di table barang sudah berhasil berkurang,</p><p></p><p>Permasalahnnya! ketika saya insert baru ke tabel detil penjualan barang dengan kode barang yg sama maka kondisinya akan menjadi update. dan hanya stok saja yg terupdate.</p><p></p><p>tetapi stok di table barang tidak berkurang, saya pengennya ketik diinput kembali dengan kode barang yg sama, maka stok di table barang akan berkurang kembali.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-itu-trigger-jelaskan-dan-berikan-contohnya">
+                            26. apa itu trigger? jelaskan dan berikan contohnya </h2><br />
+                        <br />Trigger adalah blok PL/SQL atau prosedur yang berhubungan dengan table, view, skema atau database yang dijalankan secara implicit pada saat terjadi sebuah event. Trigger merupakan store procedure yang dijalankan secara automatis saat user melakukan modifikasi data pada tabel. Modifikasi data yang dilakukan pada tabel yaitu berupa perintah INSERT, UPDATE, dan DELETE. INSERT , UPDATE dan DELETE bisa digabung jadi satu trigger yang dinamakan Multiple Trigger.<br />Trigger event ada 3 kemungkinan : INSERT, UPDATE atau DELETE.<br />Pada saat trigger event UPDATE, kita dapat memasukkan daftar kolom untuk mengidentifikasi kolom mana yang berubah untuk mengaktifkan sebuah trigger (contoh : UPDATE OF salary ... ). Jika tidak ditentukan, maka perubahannya akan berlaku untuk semua kolom pada semua baris.<br /><br />Tipe trigger ada 2 macam, yaitu :<br /><br />· Statement : trigger dijalankan sekali saja pada saat terjadi sebuah event. Statement trigger juga dijalankan sekali, meskipun tidak ada satupun baris yang dipengaruhi oleh event yang terjadi.<br /><br />· Row : trigger dijalankan pada setiap baris yang dipengaruhi oleh terjadinya sebuah event. Row trigger tidak dijalankan jika event dari trigger tidak berpengaruh pada satu baris pun.<br /><br />Trigger body mendefinisikan tindakan yang perlu dikerjakan pada saat terjadinya event yang mengakibatkan sebuah trigger menjadi aktif.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="27-mistakes-in-the-sitting-position-when-muslims-perform-tasyahud-can-trigger-joint-disorders-the-most-likely-things-to-happen-are">
+                            27. 27. Mistakes in the sitting position when Muslims perform tasyahud can trigger joint disorders. The most likely things to happen are ....</h2><br />
+                        <p>When Muslims perform the tasyahud (sitting position) during prayer, mistakes in their posture can potentially lead to joint disorders. The most likely issues that may arise include:</p><p></p><p>1. Strain on the knees: Incorrect positioning or excessive pressure on the knees during tasyahud can strain the knee joints, leading to discomfort, pain, or even knee-related injuries.</p><p></p><p>2. Hip misalignment: Poor posture during tasyahud, such as sitting with uneven weight distribution or a tilted pelvis, can result in hip misalignment. This misalignment may cause hip joint problems or contribute to issues like hip pain or hip joint impingement.</p><p></p><p>3. Spinal strain: Incorrect alignment of the spine while sitting in tasyahud can put strain on the vertebrae and spinal discs. Over time, this can lead to spinal problems, including spinal misalignment, back pain, or spinal disc issues.</p><p></p><p>4. Ankle and foot issues: Inadequate support or improper positioning of the ankles and feet during tasyahud can increase the risk of ankle sprains, strains, or foot-related discomfort. It is important to maintain proper foot and ankle alignment to prevent such issues.</p><p></p><p>To avoid these potential joint disorders, Muslims should ensure correct posture during tasyahud by sitting with proper alignment, distributing weight evenly, and taking care not to put excessive strain on any particular joint. Additionally, incorporating regular stretching exercises and maintaining overall joint flexibility can also help prevent such problems.</p><br />
+                                            <h2 class="ez-toc-section" id="protagonis-di-game-danganronpa-trigger-happy-havoc-adalah-a-makoto-naegib-byakuya-togamic-hajime-hinata%e2%80%8b">
+                            28. protagonis di game danganronpa: trigger happy havoc adalah...A. Makoto naegiB. Byakuya togamiC  Hajime hinata​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. Makoto naegi</p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><p>aku punya gamenya awokawokawok</p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-hyperlink-dan-trigger-di-power-point-%e2%80%8b">
+                            29. perbedaan hyperlink dan trigger di power point ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>hyperlink digunakan untuk memasukan link dari internal ataupun eksternal sedangkan trigger digunakan untuk mentrigger suatu tombol atau apapun untuk melakukan suatu hal</p><br />
+                                            <h2 class="ez-toc-section" id="sound-pada-animasi-ditambahkan-dengan-mengeklik-ikon-a-animation-pane-b-add-animation-c-trigger-d-animations-painter">
+                            30. Sound pada animasi ditambahkan dengan mengeklik ikon ...
+A. Animation Pane.
+B. Add Animation.
+C. Trigger.
+D. Animations Painter.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. ANIMATION LANE</p><p><strong>Penjelasan:</strong></p><p>SOUND PADA  ANIMATION PANE</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="istilah-yang-biasa-digunakan-oleh-programmer-untuk-suatu-proses-yang-akan-berjalan-jika-syarat-dari-pemicu-terpenuhi-5-poin-a-events-b-kontrol-c-trigger-d-looks%e2%80%8b">
+                            31. Istilah yang biasa digunakan oleh programmer untuk suatu proses yang akan berjalan jika syarat dari pemicu terpenuhi... * 5 poin A. Events B. kontrol C. Trigger D. Looks​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C. Trigger</p><p></p><p>maaf kalau salah</p><br />
+                                            <h2 class="ez-toc-section" id="if-he-be-quicker-to-pull-the-trigger-the-snake-bite-not-him-on-the-ankle">
+                            32. if he (be)  quicker to pull the trigger, the snake (bite. not) him on the ankle</h2><br />
+                        if he is quicker to pull the trigger, the snake doesn't bite him on the ankle<br /><br />
+                                            <h2 class="ez-toc-section" id="pemrograman-visual-dilakukan-dengan-cara-a-drag-and-dropb-men-triggerc-men-dragd-copypastemohon-bantuannya-%e2%80%8b">
+                            33. Pemrograman Visual dilakukan dengan cara.....A. Drag and DropB. Men - TriggerC. Men - DragD. CopyPasteMohon Bantuannya ....​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>A. drag and drop</strong></p><p><strong>Penjelasan:</strong></p><p>semoga membantu dan maaf jika jawaban saya salah</p><br />
+                                            <h2 class="ez-toc-section" id="event-blocks-berfungsi-untuk-men-trigger-script-agar-a-berhenti-b-berjalanc-terhapusd-tersimpan-tolong-bantuin-ya-pliss-nanti-aku-aku-ikuti-soalnya-aku-butuh-hari-ini-juga-%e2%80%8b">
+                            34. Event blocks berfungsi untuk men trigger script agar .....a. berhenti b. berjalanc. terhapusd. tersimpan tolong bantuin ya pliss nanti aku aku ikuti , soalnya aku butuh hari ini juga ​</h2><br />
+                        <p><strong>Jawaban:</strong></p>b. berjalan.<p><strong>Penjelasan:</strong></p><p>semoga membantu ya dan jangan lupa follow y nanti aku follow back.</p><br />
+                                            <h2 class="ez-toc-section" id="kuisberapa-susunan-dari-kata-trigger%e2%80%8b">
+                            35. kuis!!Berapa susunan dari kata "trigger"?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p> = ? </p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p></p><p>Jawab = susunan kata dari "trigger" =</p><p></p><p>            = t</p><p>            = r</p><p>            = i</p><p>            = g</p><p>            = g</p><p>            = e</p><p>            = r</p><p></p><p>Banyak kata : 7</p><p>Unsur ganda : (r = 2) dan (g = 2) =</p><p></p><p>Jawab = 7 × 6 × 5 × 4 × 3 × 2 × 1 × (2) × (2) =</p><p></p><p>            = 5.040 × 2 × 2 =</p><p></p><p>            = 10.080 × 2 =</p><p></p><p>            = 20.160.</p><p></p><p>Semoga Membantu ^^</p><p></p><p>dan maaf kalo salah ^_^</p>trigger<p>unsur ganda: 2,2</p><p>total 7 huruf</p><p></p><p>7!/2!×2!</p><p>= 5.040/4</p><p>= 1.260 susunan</p><br />
+                                            <h2 class="ez-toc-section" id="if-we-eat-so-much-food-contains-fat-we-can-trigger-a-atack%e2%80%8b">
+                            36. if we eat so much food contains fat we can trigger a .... atack​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>heart attack kayaknya. semoga membantu </p><p></p><p><strong>Jawaban:</strong></p><p>Obesity</p><p><strong>Penjelasan:</strong></p><p>if we eat so much food contains fat we can trigger a .... atack​  to indonesian</p><p> jika kita makan begitu banyak makanan mengandung lemak kita dapat memicu .... atack (di dekat Atack)</p><p>makanan berlamak dapat menyebabkan penumpukan lemak sehingga dabat menyebabkan obesitas</p><br />
+                                            <h2 class="ez-toc-section" id="arti-to-trigger-to-drifttoccrash-uponto-supply">
+                            37. arti to trigger , to drift,toccrash upon,to supply</h2><br />
+                        untuk memicu, melayang, toccrash atas, untuk memasokJawaban :<br />--Meanings--<br />To trigger : memicu<br />To drift : melayang, meniup<br />To crash upon : menabrak<br />To supply : memasok<br /><br />Semoga membantu^^<br />
+                                            <h2 class="ez-toc-section" id="buatkan-kalimat-trigger-volunteer-predict-accompany-relax-approve-bantuinn-plissss">
+                            38. Buatkan kalimat trigger, volunteer, predict, accompany, relax, approve...
+Bantuinn plissss</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>he pulled the <strong>trigger </strong>of the shotgun, </p><p>he <strong>volunteered </strong>for the job, </p><p>it is too early to <strong>predict </strong>the result, </p><p>the two sisters were to <strong>accompany </strong>us to New York, </p><p>they persuaded the local authorities concerned to <strong>relax</strong> their restrictions,</p><p>the budget was <strong>approved </strong>by Congress</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="ad-yg-taumama-just-killer-a-man-put-a-gun-againts-his-head-pulled-my-trigger-now-hes-dead%e2%80%8b">
+                            39. ad yg taumama just killer a man put a gun againts His head pulled my trigger now he's dead​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>mama hanya membunuh seorang pria menodongkan pistol ke kepalanya. Kepalanya menarik pelatukku sekarang dia sudah mati</p><p><strong>Penjelasan:</strong></p><p>itu artinya ya:)</p><p>semoga membantu</p><p>dan maaf kalau salah ya:`)</p><p><strong>Jawaban:</strong></p><p>mama seorang pembunuh yg adil.Seorang pria menodongkan pistol ke kepalanya menarik pelatukku sekarang dia sudah mati</p><p><strong>Penjelasan:</strong></p><p>Maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="for-the-h5n1-avian-influenza-virus-to-trigger-a-human-pandemic-%e2%80%9d-the-word-trigger-is-closest-in-meaning-to">
+                            40.  for the H5N1 Avian influenza virus to trigger a human pandemic.” The word ' trigger' is closest in meaning to</h2><br />
+                        <p>precipitate, prompt, or trigger off</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/hTRr-tVVfZ4?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>fisika</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-fungsi-dari-lembar-kerja-adobe-dreamweaver-cs3.html">Fungsi Fungsi Dari Lembar Kerja Adobe Dreamweaver Cs3</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-perintah-cls-pada-microsoft-visual-basic-2010.html">Fungsi Dari Perintah Cls Pada Microsoft Visual Basic 2010</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-gerak-parabola-dan-penyelesaiannya.html">Contoh Soal Gerak Parabola Dan Penyelesaiannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-neutrofil-pada-sel-darah-putih.html">Fungsi Dari Neutrofil Pada Sel Darah Putih</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-function-listbox3-callback-hobject-eventdata-handles.html">Fungsi Dari Function Listbox3 callback Hobject Eventdata Handles</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-akuntansi-jasa-dan-jawabannya.html">Contoh Soal Akuntansi Jasa Dan Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-standard-button-mozilla-firefox.html">Fungsi Dari Standard Button Mozilla Firefox</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-bagian-bagian-kunci-shock.html">Fungsi Dari Bagian Bagian Kunci Shock</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-menambah-nama-pabrik-atau-produsen-dalam-opencart.html">Fungsi Dari Menambah Nama Pabrik Atau Produsen Dalam Opencart</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-artikel-tugas-akhir-tourism.html">Contoh Artikel Tugas Akhir Tourism</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/tab-berfungsi-untuk.html">Tab Berfungsi Untuk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/sendi-pada-tulang-tengkorak.html">Sendi Pada Tulang Tengkorak</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-torsi.html">Contoh Soal Torsi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-alokasi-bop-metode-bertahap.html">Contoh Soal Alokasi Bop Metode Bertahap</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-struktur-cilliata.html">Fungsi Dari Struktur Cilliata</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-pilihan-ganda-statistika-kelas-12.html">Contoh Soal Pilihan Ganda Statistika Kelas 12</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/dokumen-icon.html">Dokumen Icon</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-luas-kerucut.html">Contoh Soal Luas Kerucut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-usb-sound-card.html">Fungsi Dari Usb Sound Card</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-dan-jawaban-manajemen-proyek.html">Contoh Soal Dan Jawaban Manajemen Proyek</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediasoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediasoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

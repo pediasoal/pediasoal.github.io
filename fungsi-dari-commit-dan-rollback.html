@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Commit Dan Rollback - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Commit Dan Rollback, , , , , , , 0, , , , , , 0, fungsi-dari-commit-dan-rollback, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Commit Dan Rollback - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Commit Dan Rollback, , , , , , , 0, , , , , , 0, fungsi-dari-commit-dan-rollback, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Commit Dan Rollback - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Commit Dan Rollback, , , , , , , 0, , , , , , 0, fungsi-dari-commit-dan-rollback, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediasoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediasoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediasoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediasoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediasoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediasoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediasoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Commit Dan Rollback</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">Rianrhim</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Commit+Dan+Rollback" alt="Fungsi Dari Commit Dan Rollback">
+                    </div>
+                    <p></p>
+                    <p>cara atasi aplikasi rollback rx minta aktivasi??</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-atasi-aplikasi-rollback-rx-minta-aktivasi">1.
+                                            cara atasi aplikasi rollback rx minta aktivasi??</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-beri-tahu-saya-kode-aktivasi-aplikasi-rollback-rx">2.
+                                            tolong beri tahu saya kode aktivasi aplikasi rollback rx?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#commit-of-good-for-indonesia-terdiri-dari-negara">3.
+                                            Commit of good for Indonesia terdiri dari negara</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-much-of-the-carnage-of-elephants-giraffes-and-big-cats-__________-uncaring-hunters-a-must-commit-byb-must-be-committedc-must-have-committedd-must-have-been-commited-by">4.
+                                            2.Much of the carnage of elephants, giraffes, and big cats __________ uncaring hunters.A. Must commit byB. Must be committedC. Must have committedD. Must have been commited by</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#some-people-are-prison-for-crimes-that-they-didnt-commita-onb-atc-in%e2%80%8b">5.
+                                            some people are....prison for crimes that they didn't commita. onb. atc. in​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#one-day-there-were-a-husband-and-wife-they-have-agreed-that-tomorrow-is-the-day-that-they-will-commit-suicide-they-also-have-agreed-that-they-will-bring-the-things-which-they-love-most-on-a-bag-fin">6.
+                                            One day there were a husband and wife. They have agreed that tomorrow is the day that they will commit suicide. they also have agreed that they will bring the things which they love most on a bag. Finally both of them looked for a very high building and they also have agreed to fall together. Eventually her husband jumps up but his wife does not, because his wife was afraid. His wife only saw her husband fall from the building. But her husband pulled out a parachute inside her bag. The question is who cheated whom?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#would-you-commit-a-sincrime-for-example-kill-for-the-sake-of-your-beliefs-or-religion-side-note-i-dont-discriminate-people-for-having-different-beliefs-and-backgrounds-but-you-have-to-admit">7.
+                                            Would you commit a sin/crime, (For example: kill) for the sake of your beliefs or religion? Side note: I don't discriminate people for having different beliefs and backgrounds, but you have to admit, some are pretty extreme.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#suffix-word-noun-definition-contoh-ion-digest-digestion-the-process-of-digesting-food1-ance-endure-______">8.
+                                            Suffix           Word             Noun                   Definition Contoh:       -ion         digest             digestion               the process of digesting food1.-ance   endure           ____________     _____________________2.-ence   competent     ____________      _____________________3.-er       organize        ____________      _____________________4.-or       conquer        ____________      _____________________5.-ion      discuss         ____________      _____________________6.-tion     delete           ____________      _____________________7.-ism     mystic           ____________      _____________________8.-ment   commit         ____________      _____________________9.-ness    effective       ____________      _____________________10.-ion      restrict         ____________      _____________________</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#struktur-organisasi-asean-terdiri-dari-beberapa-bagian-kekuasaan-tertinggi-dalam-organisasi-asean-ialah-a-annual-meetingb-summit-meetingc-annual-ministerial-meetingd-standing-commit">9.
+                                            Struktur organisasi ASEAN terdiri dari beberapa bagian. Kekuasaan tertinggi dalam organisasi ASEAN ialah .... 
+a. Annual Meeting
+b. Summit Meeting
+c. Annual Ministerial Meeting
+d. Standing Commit</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ini-gimana-ya-1-form-derivatives-with-the-following-words-from-the-text-abovemodel-crime-criminal-%e2%80%93-criminalityregulatesocialcommitassaultprotectimprisonsuperviserequirepunishp">10.
+                                            Ini Gimana ya..
+1.Form derivatives with the following words from the text above
+Model: crime - criminal – criminality
+regulate
+Social
+Commit
+Assault
+protect
+imprison
+Supervise
+Require
+Punish
+Public
+law
+charge
+accident
+offend
+negligence</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#struktur-organisasi-asean-terdiri-dari-beberapa-bagian-kekuasaan-tertinggi-dalam-organisasi-asean-adalah-a-annual-meetingb-summit-meetingc-annual-ministerial-meetingd-standing-commit">11.
+                                            Struktur organisasi ASEAN terdiri dari beberapa bagian. Kekuasaan tertinggi dalam organisasi ASEAN adalah ....
+a. Annual Meeting
+b. Summit Meeting
+c. Annual Ministerial Meeting
+d. Standing Commit</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#you-dont-need-to-be-pure-to-be-friends-with-me-you-will-make-me-my-friend-as-long-as-you-dont-commit-treason-arti-nya-apa%e2%80%8b">12.
+                                            You don't need to be pure to be friends with me. You will make me my friend as long as you don't commit treason arti nya apa​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-kata-sifat-kata-bendadan-kata-kerja-dari-drugs-make-us-commit-crimes-lets-save-the-younger-generation-from-drugs-for-the-future-and-nation-and-state%e2%80%8b">13.
+                                            apa kata sifat ,kata benda,dan kata kerja dari Drugs make US commit crimes let's save the younger generation from drugs for the future and nation and state​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-vicky-would-rather-he-didnt-commit-the-same-mistake-the-sentence-above-means-a-vicky-commits-the-same-mistakeb-vicky-had-committed-the-same-mistakec-vicky-doesnt-commit-the-sameistake">14.
+                                            1. Vicky would rather he didn't commit the same mistake. 
+The sentence above means... 
+a. Vicky commits the same mistake
+b. Vicky had committed the same mistake
+c. Vicky doesn't commit the sameistake
+d. Vicky committed the same mistake
+2. If Dika... today, Mr. Andi... him a birthday party. 
+a. will come, will give
+b. comes, will give
+c. will come, gives
+d. comes, give
+3. BambangPamungkas... his second goal if he jumped higher. 
+a. will score
+b. would score
+c. scored
+d. scores
+4. Which one of the following sentences is correct? 
+a. Zidane will buy that car if he had enough money
+b. Royhana would stopped playing Dream League Soccer if he is tired
+c. I will helyou don't mind
+d. It will be corret if you will not choose it. 
+Tolong dibantu ya soalnya mau di kumpul </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-way-should-i-choose-to-commit-suicide-rope-chan-or-cutter-kun">15.
+                                            What way should I choose to commit suicide? Rope-chan or Cutter-kun?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tombol-yang-dipilih-untuk-mengambil-data-yang-akan-ditransaksikan-yaitu-%e2%80%a6a-id-transaksib-validasi-etransc-commitd-lov-f2e-layanan-transaksi">16.
+                                            Tombol yang dipilih untuk mengambil data yang akan ditransaksikan yaitu …
+A. ID transaksi
+B. Validasi etrans
+C. Commit
+D. LOV (F2)
+E. Layanan transaksi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#45-what-will-the-school-do-to-eliminate-students-who-commit-cheatinga-create-a-good-visionb-select-honest-studentsc-make-harsh-punishmentd-make-students-confidente-administer-the-school-a">17.
+                                            
+45. What will the school do to eliminate students who commit cheating?
+A. Create a good vision
+B. Select honest students
+C. Make harsh punishment
+D. Make students confident
+E. Administer the school affair
+46. "Students who always cheat deteriorate their mental capacity." (Paragraph 3) The word "deteriorate"
+means...
+A. support
+B. worsen
+C. cause
+D. create
+E. Find
+47. "They weaken their self confidence." (Paragraph 3) What does the word "They" refer to?
+A. tests
+B. papers
+C. results
+D. students
+E. Cheatings</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-should-i-do-so-i-cant-waste-my-entire-short-existencesa-should-i-do-nothing-useful-till-i-dieb-should-i-hold-all-of-my-pain-till-i-diec-should-i-think-about-how-cruel-the-world">18.
+                                            What should I do so I can't waste my entire short existences?A. Should I do nothing useful     till I die?B. Should I hold all of my pain     till I die?C. Should I think about how     cruel the world is and     always cry to sleep because     of it?D. Should I commit suicide so I     can't suffer anymore in this     cruel existence?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#20-what-do-they-have-to-do-after-signing-up-on-signup-com-they-a-have-to-come-to-all-of-the-eventsb-must-visit-their-friends-staff-and-teachersc-must-commit-to-the-pph-hours-for-the-yeard">19.
+                                            20. What do they have to do after signing up on SignUp.com? They ....A. have to come to all of the eventsB. must visit their friends, staff, and teachersC. must commit to the PPH hours for the yearD. have to attend every meeting in the Town Hall​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4-paris-is-place-for-thosewho-believe-absurdities-canmake-you-commit-atrocities-a-theb-ac-onlyd-just%e2%80%8b">20.
+                                            4. Paris is...... place for thosewho believe absurdities canmake you commit atrocities.A. theB. aC. onlyD. just​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tantanganchallenge100-pointtema-sejarah-dalam-bahasa-inggris-1939-1945-ww2question1-what-is-axis-power2-which-countries-became-germanys-allies-during-world-war-23-why-did-germany-lose-at-operati">21.
+                                            Tantangan/Challenge100 PointTema: Sejarah Dalam Bahasa Inggris 1939-1945 WW2Question:1.What is Axis Power?2.which countries became Germany's allies during World War 2?3.Why Did Germany Lose At Operation Barbarrosa?4.Who Is United States Of America's Allies During World War 2?5.Why Japan attack USA?6.How Is British and France Force Get Trapped in Dunkirk Harbour During World War 2?7.Why Prime Minister Arthur Neville Chamberlain Resign?8.Who Is The Next British Prime Minister?9.Where IJN Yamato,KMS Bismarck,USS Arizona Sunk?10.why did Hitler commit suicide?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bantu-plis-dah-2-hari-kek-gini-pas-bluescreen-ada-tulisan-atikmpag-sys-video_tdr_failureudah-di-coba-update-driver-rollback-driver-ganti-file-atikmpag-sys-nya-tetep-masih-gini-juga-cuma-bisa-masu">22.
+                                            Bantu plis, dah 2 hari kek gini.Pas bluescreen ada tulisan "atikmpag.sys VIDEO_TDR_FAILURE"udah di coba update driver, rollback driver, ganti file atikmpag.sys nya tetep masih gini.Juga cuma bisa masuk pake save mode, kalau ga pake save mode jadi bluescreenCoba instal ulang driver nya gabisa​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#transaction-management-buatlah-solusi-untuk-menangani-dua-transaksi-dimana-awal-saldox-sebesar-1-000-000-jika-a-transaksi-ta-membaca-saldox-pada-saat-t1-mengurangi-saldox-sebesar-100-000-pada-sa">23.
+                                            (Transaction Management) Buatlah solusi untuk menangani dua transaksi dimana awal SaldoX sebesar 1.000.000, jika: a. Transaksi Ta membaca saldoX pada saat t1, mengurangi saldoX sebesar 100.000 pada saat t2, menulis saldoX pada saat t3, dan melakukan rollback pada saat t5 b. Transaksi Tb membaca saldoX pada saat t4, mengurangi saldoX sebesar 50.000 pada saat t5, menulis saldoX pada saat t6, dan melakukan commit pada saat t7</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#aku-ngepush-repository-github-semua-udah-aku-add-udah-aku-commit-pas-ngepush-ga-ada-error-tapi-direponya-gak-ada-perubahan-sama-sekali-tolong-bantuannya">24.
+                                            Aku ngepush repository (github), semua udah aku add udah aku commit. Pas ngepush, ga ada error. Tapi direponya gak ada perubahan sama sekali. Tolong bantuannya :))))</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-jawab-ya-kawan-1-asean-dibentuk-berdasarkan-naskaha-piagam-jakartab-deklarasi-bangkokc-deklarasi-perdamaiand-deklarasi-asia-pasific2-yg-termasuk-deklarasi-bangkok-adalaha-meningkatkan-p">25.
+                                            tolong jawab ya kawan...    1.asean dibentuk berdasarkan naskah?a.piagam jakartab.deklarasi bangkokc.deklarasi perdamaiand.deklarasi asia pasific2.yg termasuk deklarasi bangkok adalah?a.meningkatkan perdamaian dan stabilitas ragionalb.membantu menyelesaikan konflik yg terjadi di asia tenggarac.meningkatkan kerjasama di bidang pendidikand.mempercepat kemajuan ekonomu di kawasan asia tenggara3.kekuasaan tertinggi dlm organisasi asean adalah?a.annual meetingb.sumit meetingc.annual mesterial meetingd.standing commit4.letak geografis singapura sangat strategis karena dilalui jalur lalu lintas internasional.kondisi tersebut menguntungkan terutama dibidang?a.industrib.pertanianc.perdagangand. kelautan5.indonesia menjadi penengah persengketaan di filipina antara?a.kelompok muslim dan separalisb.pemerintah dan kelompok muslim marococ.pemerintah dan kelompok separalisd.pemerintah dg militer asing</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-she-denied-________commit-the-crime-a-to-be-committingb-committingc-commitd-to-commite-commited2-i-cant-afford-you-_______-buy-a-new-car-a-are-buyingb-were-buyingc-to-buyd-buye-buying3">26.
+                                            1. She denied ________(commit) the crime.
+A.to be committingB.committingC.commitD.to commitE.commited
+2. 
+I can't afford you _______ (buy) a new car.
+A.are buyingB.were buyingC.to buyD.buyE.buying
+3. They agree ________(help) us
+A.helpingB.is helpingC.had helpedD.helpedE.to help
+4 We need Chris_________(help) us figure out the solution
+A.helpedB.to helpC.helpingD.is helpingE.to be helped</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#diubah-menjadi-past-form-of-the-regular-verbsa-bakeb-tiptoec-enjoyd-passe-tryf-cryg-commith-plani-stayj-travel-tolong-y-kak">27.
+                                            diubah menjadi  past form of the regular verbs
+a.bake
+b.tiptoe
+c.enjoy
+d. pass
+e. try
+f. cry
+g. commit
+h.plan
+i.stay
+j.travel
+ Tolong y kak
+: )</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#change-to-the-verb-to-the-passive-voice-andrewrite-the-sentence-be-sure-to-neep-the-sametense1-his-boss-has-transfered-him-to-another-department2-the-army-will-complate-that-project-next-year3-the">28.
+                                            # Change to the verb to the passive voice andrewrite the sentence be sure to neep the sametense1.His boss has transfered him to another department2. the army will complate that project next year3. the commit 15 Consindering that proposal right now4 the Secretary opens the mail every morning5. He signed letter​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#text-for-number-5-7-attentionour-school-will-commit-the-annual-youth-conference-that-will-be-held-in-paraqia-mountain-on-march-21st-from-morning-until-evening-please-mark-your-calendar-and-registe">29.
+                                            Text for number 5-7 Attention!Our school will commit the annual youth conference that will be held in Paraqia Mountain, on March 21st from morning until evening. Please, mark your calendar and register yourself by March 10th.Information about school programs, teaching procedures, and others will be discussed. For enrolment and further info, please visit our website: www.paraqiacolloquy.com/enroll/101html.Be sure you have completed your registration. 5. What event will be held by the school?a. School extracurricularb. Learning procedurec. Conference of the annual youthd. Register of the meeting​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-proses-validasi-e-trans-setelah-membuka-aplikasi-tas-dan-login-kemudian-pilih-validasi-e-trans-maka-tahapan-selanjutnya-adalah-%e2%80%a6a-ambil-produk-yang-akan-ditransaksikanb-klik-menu-l">30.
+                                            Pada proses validasi e-trans, setelah membuka aplikasi TAS dan login, kemudian pilih validasi e-trans, maka tahapan selanjutnya adalah …
+A. Ambil produk yang akan ditransaksikan
+B. Klik menu LOV (F2)
+C. Tempelkan jari pada finger scanner
+D. Klik commit
+E. Klik inquiry</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#selesaikan-masalah-dibawah-ini-dengan-metode-locking-pada-concurrency-control-untuk-permasalahan-inconsistent-analysis-analisa-yang-tidak-konsisten-diketahui-t1-t2-transaksi-1-transaksi-2-t-a-b">31.
+                                            Selesaikan masalah dibawah ini dengan metode Locking pada concurrency control untuk permasalahan Inconsistent Analysis (Analisa yang tidak konsisten) Diketahui T1, T2: Transaksi 1, Transaksi 2 t a b с : waktu : 250 (nilai awal a) : 100 (nilai awal b) :50 (nilai awal c) sum : sum awal = 0 Transaksi yang terjadi: [Bobot: 25] tl 12 Tl begin transaction T1 sum 0 13T1 write lock(a) 14T1 read(a) t5 → T2 Begin transaction, Tl a=a+15 t6T2 read lock(a), T1 write(a) 17T1 write lock(b) t8T1 read(b) 19TI b-b+10 110 T1 write(b) t11 T1 sum-sum + b t12 TI unlock(a,b) t13 →T2 read(a), t14 →T2 a=a+15 t15 T2 write(a) t16T2 sum-sum+a t17T2 Write_lock(c) t18 T2 read (c) t19 →T2 c-c+50 t20 ➜T2 write(c) 121 122 t23 T1 write lock (c) ,T2 sum-sum+c T2 unlok(a.c) T1 read (c), T2 commit 124T1 c = c +100 125T1write (c) T26T1 unlock (c) t27T1 commit​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#struktur-organisasi-asean-terdiri-dari-beberapa-bagian-kekuasaan-tertinggi-dalam-organisasi-asean-ialah-a-annual-meeting-b-summit-meeting-c-annual-ministeral-meeting-d-standing-commit">32.
+                                            Struktur organisasi asean terdiri dari beberapa bagian .kekuasaan tertinggi dalam organisasi asean ialah 
+A annual meeting 
+B summit meeting 
+C annual ministeral meeting 
+D standing commit</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#because-of-experiencing-bereavement-some-people-consider-suicide-to-let-go-of-their-sorrow-a-commit-b-to-commit-c-committing-d-committed">33.
+                                            Because  of   experiencing  bereavement.  some people  consider  ...  suicide  to  let  go  of   their sorrow.
+(A) commit 
+(B) to commit 
+(C) committing 
+(D) committed </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kalimat-rumpang-91-a-attempt-b-attempts-c-attempted-d-attempting-e-attemption92-a-critic-b-critical-c-critism-d-cricitizing-e-critics93-a-when-b-while-c-as-long-as-d-during-e-since94">34.
+                                            kalimat rumpang 91. a. attempt b. attempts c. attempted d. attempting e. attemption92. a. critic b. critical c. critism d. cricitizing e. critics93. a. when b. while c. as long as d. during e. since94. a. made b. making c. having made d. makes e. has made95. a. should commit b. committed c. should be committed d. was committed e. be committed</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#should-i-a-kill-myselfb-commit-a-suicidec-waste-my-lifed-do-nothing-useful%e2%80%8b">35.
+                                            Should I ...A. Kill myself?B. Commit a suicide?C. Waste my life?D. Do nothing useful?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fill-the-blanks-with-shall-or-should-1-i-go-home-2-you-pay-for-this-3-thet-get-the-reward-4-you-finish-your-assignment-after-class-5-you-study-english-every-day-6-i-clos">36.
+                                            fill the blanks with shall or should
+ 1. I....go home.
+ 2 You....pay for this
+ 3  Thet ...get the reward 
+ 4 You....finish your assignment after class
+ 5 You....study english every day
+ 6. .....I close the door?
+ 7. What.....I do?
+ 8. ......I do that?
+ 9. I think we.....trust our people more
+10. They....succeed
+ 11. One baked potato.....be enough for each person
+12. No one.....commit crime
+13. Lets begin,....we?
+14 .....I state first?
+15 The bus.....arrive in a few minutes</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-kata-lain-dalam-bahasa-inggris-masing-masing-2-katacommitcompilecomposecompriseconcealconcedeconceiveconcernconductconfessdoubtdragdraindumpease">37.
+                                            Tuliskan kata lain dalam bahasa inggris masing masing 2 kata
+Commit
+Compile
+Compose
+comprise
+Conceal
+Concede
+Conceive
+Concern
+Conduct
+Confess
+Doubt
+Drag
+Drain
+Dump
+Ease</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-to-depict2-smooth3-congestion4-to-cope5-tough6-skilled7-to-fire8-to-employ9-ornament10-welfare11-excellence12-to-acquire13-friction14-proficiency15-diverse16-conversely17-to-gain18">38.
+                                            1. to depict2. smooth3. congestion4. to cope5. tough6. skilled7. to fire8. to employ9. ornament10. welfare11. excellence12. to acquire13. friction14. proficiency15. diverse16. conversely17. to gain18. enormous19. crucially20. to reap21. transnational22. entity23. limitlessly24. twisted25. to commit​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#when-we-commit-to-students%e2%80%99-wellbeing-and-learning-through-the-practice-of-positive-influence-professional-judgment-and-empathy-in-practice-we-are-fostering-the-value-of">39.
+                                            When we commit to students’ wellbeing and learning through the practice of positive influence, professional judgment and empathy in practice, we are fostering the value of:</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#personel-toko-dapat-menempelkan-jari-di-finger-scanner-setelah-proses-%e2%80%a6a-input-member-alfamartb-input-nik-kasir-dan-approval-kemudian-pilih-commitc-input-nik-dan-pin-kasird-input-jenis">40.
+                                            Personel toko dapat menempelkan jari di finger scanner setelah proses …
+A. Input member Alfamart
+B. Input NIK kasir dan approval kemudian pilih commit
+C. Input NIK dan pin kasir
+D. Input jenis pembayaran
+E. Input token dan nominal yang akan ditransaksikan</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="cara-atasi-aplikasi-rollback-rx-minta-aktivasi">
+                            1. cara atasi aplikasi rollback rx minta aktivasi??</h2><br />
+                        maksudnya follbck ya?<br /><br />rollback semacam deep freeze cari yang sudah di c*ack mungkin bisa membantu<br /><br />
+                                            <h2 class="ez-toc-section" id="tolong-beri-tahu-saya-kode-aktivasi-aplikasi-rollback-rx">
+                            2. tolong beri tahu saya kode aktivasi aplikasi rollback rx?</h2><br />
+                        kode aktifasiya bukan angka/huruf tapi exe<br /><br />
+                                            <h2 class="ez-toc-section" id="commit-of-good-for-indonesia-terdiri-dari-negara">
+                            3. Commit of good for Indonesia terdiri dari negara</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Amerika Serikat, Australia, dan Belgia</p><p></p><p></p><p>Maaf kalau salah #JQS</p><br />
+                                            <h2 class="ez-toc-section" id="2-much-of-the-carnage-of-elephants-giraffes-and-big-cats-__________-uncaring-hunters-a-must-commit-byb-must-be-committedc-must-have-committedd-must-have-been-commited-by">
+                            4. 2.Much of the carnage of elephants, giraffes, and big cats __________ uncaring hunters.A. Must commit byB. Must be committedC. Must have committedD. Must have been commited by</h2><br />
+                        <p>A. Must commit by</p><p>Maaf klo salah</p><p>Much of the carnage of elephants, giraffes, and big cats ___ uncaring hunters.
+</p><p>Kalimat di atas adalah contoh dari kalimat passive voice atau kalimat pasif. Apa itu arti dari passive voice?  Passive voice is a sentence used when the speaker is more interested in the receiver of the action than the doer.
+</p><p>Kalimat soal adalah contoh passive voice, ditandai oleh "much of the carnage of elephants, girrafes, and big cats" yaitu "banyaknya pembunuhan gajah, jerapah, dan kucing besar" yang lebih cocok menjadi <strong>receiver</strong> (penerima atau objek) dan makna "uncaring hunters" yaitu "pemburu yang tidak peduli", yang lebih cocok menjadi <strong>doer </strong>(pelaku atau subyek).
+</p><p>Bagaimana menyusun kalimat passive voice? Pola grammar dari passive voice adalah:
+</p><p><strong>Object + auxiliary verb (to be) + past participle (V3) + (by + Subject) (+ additional information)
+</strong></p><p>maka pilihan yang benar adalah
+</p><p>must have been + commited + by (<strong>D</strong>)</p><p>       to be                     V3          by</p><p>Jadi, untuk menjawab pertanyaan semacam soal tadi, kamu bisa melihat pola grammar passive voice yaitu auxiliary verb + past participle + by.</p><p>Kalau kamu mau latihan lagi, kamu bisa melihat contoh passive voice di link ini ya:</p><p>- Exercise: change into passive voice, di https://brainly.co.id/tugas/14255824</p><br /><p>Selamat belajar!</p><p>________</p><p>Detil tambahan:</p><p>Kelas: 11 SMA</p><p>Mapel: B. Inggris</p><p>Kategori: Grammar</p><p>Kata kunci: grammar, passive voice</p><br />
+                                            <h2 class="ez-toc-section" id="some-people-are-prison-for-crimes-that-they-didnt-commita-onb-atc-in%e2%80%8b">
+                            5. some people are....prison for crimes that they didn't commita. onb. atc. in​</h2><br />
+                        <p><strong>Jawaban:</strong></p>c. some people are in prison dor crimes that they didnt commit<p></p><br />
+                                            <h2 class="ez-toc-section" id="one-day-there-were-a-husband-and-wife-they-have-agreed-that-tomorrow-is-the-day-that-they-will-commit-suicide-they-also-have-agreed-that-they-will-bring-the-things-which-they-love-most-on-a-bag-fin">
+                            6. One day there were a husband and wife. They have agreed that tomorrow is the day that they will commit suicide. they also have agreed that they will bring the things which they love most on a bag. Finally both of them looked for a very high building and they also have agreed to fall together. Eventually her husband jumps up but his wife does not, because his wife was afraid. His wife only saw her husband fall from the building. But her husband pulled out a parachute inside her bag. The question is who cheated whom?</h2><br />
+                        Her husband is the one who cheated, cause his wife is afraid.Answer:<br />In essence, they both cheat. The reason, Both have agreed suicide but when her husband had jumped from the top of the building, his wife did not jump for fear. And logically it must be only her husband who died and his wife lives. But on the contrary, if his wife jumps off the top of the building with her husband, the one who will die is his wife, because her husband has prepared a parachute to anticipate that he does not fall to the bottom of the building.<br />In conclusion,  both  of them are cheat.<br /><br />Intinya, mereka sama-sama curang. Alasannya, Keduanya telah menyepakati bunuh diri namun saat suaminya meloncat dari atas gedung, istrinya tidak loncat karena takut. Dan secara logika pastilah hanya suaminya yang meninggal dan istrinya tetap hidup. Tapi sebaliknya, jika istrinya melompat dari atas gedung dengan suaminya, orang yang akan mati adalah istrinya, karena suaminya telah menyiapkan parasut untuk mengantisipasi bahwa ia tidak jatuh ke dasar bangunan.<br />Kesimpulannya, keduanya curang.<br /><br />*Thanks*<br />
+                                            <h2 class="ez-toc-section" id="would-you-commit-a-sincrime-for-example-kill-for-the-sake-of-your-beliefs-or-religion-side-note-i-dont-discriminate-people-for-having-different-beliefs-and-backgrounds-but-you-have-to-admit">
+                            7. Would you commit a sin/crime, (For example: kill) for the sake of your beliefs or religion? Side note: I don't discriminate people for having different beliefs and backgrounds, but you have to admit, some are pretty extreme.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>mohon maaf gak tau jawabannya jadi gak bisa jawab</p><br />
+                                            <h2 class="ez-toc-section" id="suffix-word-noun-definition-contoh-ion-digest-digestion-the-process-of-digesting-food1-ance-endure-______">
+                            8. Suffix           Word             Noun                   Definition Contoh:       -ion         digest             digestion               the process of digesting food1.-ance   endure           ____________     _____________________2.-ence   competent     ____________      _____________________3.-er       organize        ____________      _____________________4.-or       conquer        ____________      _____________________5.-ion      discuss         ____________      _____________________6.-tion     delete           ____________      _____________________7.-ism     mystic           ____________      _____________________8.-ment   commit         ____________      _____________________9.-ness    effective       ____________      _____________________10.-ion      restrict         ____________      _____________________</h2><br />
+                        1. Endurance <br />2. Competence <br />3. Organizer <br />4. Conqueror <br />5. Discussion <br />6. Deletion <br />7. Mysticism <br />8. Commitment<br />9. Effectiveness <br />10. Restriction <br />
+                                            <h2 class="ez-toc-section" id="struktur-organisasi-asean-terdiri-dari-beberapa-bagian-kekuasaan-tertinggi-dalam-organisasi-asean-ialah-a-annual-meetingb-summit-meetingc-annual-ministerial-meetingd-standing-commit">
+                            9. Struktur organisasi ASEAN terdiri dari beberapa bagian. Kekuasaan tertinggi dalam organisasi ASEAN ialah .... 
+a. Annual Meeting
+b. Summit Meeting
+c. Annual Ministerial Meeting
+d. Standing Commit</h2><br />
+                        <p>b. Summit Meeting</p><p><strong>Penjelasan:</strong></p><p>Summit Meeting merupakan Struktur organisasi ASEAN terdiri dari beberapa bagian. Kekuasaan tertinggi dalam organisasi ASEAN.</p><p>ASEAN Adalah Organisasi Kerja Sama Yang Berada Di Asia Tenggara. Tujuan adanya Asean yaitu untuk meningkatkan stabilitas dikawasan asean. organisasi ini dibentuk di kota bangkok , thailand.</p><p></p><p></p><p><strong>S</strong><strong>e</strong><strong>m</strong><strong>o</strong><strong>g</strong><strong>a</strong><strong> </strong><strong>B</strong><strong>e</strong><strong>r</strong><strong>m</strong><strong>a</strong><strong>n</strong><strong>f</strong><strong>a</strong><strong>a</strong><strong>t</strong></p><p><strong>#</strong><strong>B</strong><strong>e</strong><strong>l</strong><strong>a</strong><strong>j</strong><strong>a</strong><strong>r</strong><strong>I</strong><strong>P</strong><strong>S</strong><strong>B</strong><strong>e</strong><strong>r</strong><strong>s</strong><strong>a</strong><strong>m</strong><strong>a</strong><strong>B</strong><strong>r</strong><strong>a</strong><strong>i</strong><strong>n</strong><strong>l</strong><strong>y</strong></p><br />
+                                            <h2 class="ez-toc-section" id="ini-gimana-ya-1-form-derivatives-with-the-following-words-from-the-text-abovemodel-crime-criminal-%e2%80%93-criminalityregulatesocialcommitassaultprotectimprisonsuperviserequirepunishp">
+                            10. Ini Gimana ya..
+1.Form derivatives with the following words from the text above
+Model: crime - criminal – criminality
+regulate
+Social
+Commit
+Assault
+protect
+imprison
+Supervise
+Require
+Punish
+Public
+law
+charge
+accident
+offend
+negligence</h2><br />
+                        <p>di ubah dek dari v1 ke v2 dan v3</p><p><strong>Penjelasan:</strong></p><p>maaf kalau salah</p><br />
+                                            <h2 class="ez-toc-section" id="struktur-organisasi-asean-terdiri-dari-beberapa-bagian-kekuasaan-tertinggi-dalam-organisasi-asean-adalah-a-annual-meetingb-summit-meetingc-annual-ministerial-meetingd-standing-commit">
+                            11. Struktur organisasi ASEAN terdiri dari beberapa bagian. Kekuasaan tertinggi dalam organisasi ASEAN adalah ....
+a. Annual Meeting
+b. Summit Meeting
+c. Annual Ministerial Meeting
+d. Standing Commit</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Struktur organisasi ASEAN terdiri dari beberapa bagian. Kekuasaan tertinggi dalam organisasi ASEAN adalah ....</p><p><strong>b</strong><strong>.</strong><strong> </strong><strong>summit </strong><strong>meet</strong><strong>ing</strong></p><p></p><p><strong>Jawaban:</strong></p><p>b. Summit Meeting</p><p><strong>Penjelasan:</strong></p><p>Summit Meeting adalah pertemuan kepala negara, pertemuan ini adalah kekuasaan tertinggi dari organisasi ASEAN</p><br />
+                                            <h2 class="ez-toc-section" id="you-dont-need-to-be-pure-to-be-friends-with-me-you-will-make-me-my-friend-as-long-as-you-dont-commit-treason-arti-nya-apa%e2%80%8b">
+                            12. You don't need to be pure to be friends with me. You will make me my friend as long as you don't commit treason arti nya apa​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Bahasa Indonesia :</p><p>anda tidak perlu murni untuk menjadi teman Selama anda tidak melakukan penghianatan </p><p></p><p>Bahasa mandarin :zhiyao nin bufan panguo zhiyao, nin jiu Bubi chengwei </p><p>pengyu </p><p></p><p>semoga membantu </p><br />
+                                            <h2 class="ez-toc-section" id="apa-kata-sifat-kata-bendadan-kata-kerja-dari-drugs-make-us-commit-crimes-lets-save-the-younger-generation-from-drugs-for-the-future-and-nation-and-state%e2%80%8b">
+                            13. apa kata sifat ,kata benda,dan kata kerja dari Drugs make US commit crimes let's save the younger generation from drugs for the future and nation and state​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Narkoba membuat mu melakukan kejahatan mari selamatkan generasi muda dari narkoba demi masa depan dan bangsa dan negara</p><p>drugs make US commit  ( kata benda) </p><p>crimes ( kata sifat )</p><p>(kata kerja) let's save the younger generation</p><br />
+                                            <h2 class="ez-toc-section" id="1-vicky-would-rather-he-didnt-commit-the-same-mistake-the-sentence-above-means-a-vicky-commits-the-same-mistakeb-vicky-had-committed-the-same-mistakec-vicky-doesnt-commit-the-sameistake">
+                            14. 1. Vicky would rather he didn't commit the same mistake. 
+The sentence above means... 
+a. Vicky commits the same mistake
+b. Vicky had committed the same mistake
+c. Vicky doesn't commit the sameistake
+d. Vicky committed the same mistake
+2. If Dika... today, Mr. Andi... him a birthday party. 
+a. will come, will give
+b. comes, will give
+c. will come, gives
+d. comes, give
+3. BambangPamungkas... his second goal if he jumped higher. 
+a. will score
+b. would score
+c. scored
+d. scores
+4. Which one of the following sentences is correct? 
+a. Zidane will buy that car if he had enough money
+b. Royhana would stopped playing Dream League Soccer if he is tired
+c. I will helyou don't mind
+d. It will be corret if you will not choose it. 
+Tolong dibantu ya soalnya mau di kumpul </h2><br />
+                        Jawaban :<br />1) D. Vicky commited the same mistake<br />2) B. Comes, will give<br />3) B. Would score<br />4) B. Royhana would stopped playing Dream League Soccer if he is tired<br /><br />Semoga membantu^^<br />
+                                            <h2 class="ez-toc-section" id="what-way-should-i-choose-to-commit-suicide-rope-chan-or-cutter-kun">
+                            15. What way should I choose to commit suicide? Rope-chan or Cutter-kun?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>cara apa yang harus saya pilih untuk bunuh diri? tali chan atau pemotong kun? </p><p><strong>Penjelasan:</strong></p><p>#semangatbelajar</p><br />
+                                            <h2 class="ez-toc-section" id="tombol-yang-dipilih-untuk-mengambil-data-yang-akan-ditransaksikan-yaitu-%e2%80%a6a-id-transaksib-validasi-etransc-commitd-lov-f2e-layanan-transaksi">
+                            16. Tombol yang dipilih untuk mengambil data yang akan ditransaksikan yaitu …
+A. ID transaksi
+B. Validasi etrans
+C. Commit
+D. LOV (F2)
+E. Layanan transaksi</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>jawabannya a. ID transaksi</p><p><strong>Penjelasan:</strong></p><p>maaf klo slh</p><br />
+                                            <h2 class="ez-toc-section" id="45-what-will-the-school-do-to-eliminate-students-who-commit-cheatinga-create-a-good-visionb-select-honest-studentsc-make-harsh-punishmentd-make-students-confidente-administer-the-school-a">
+                            17. 
+45. What will the school do to eliminate students who commit cheating?
+A. Create a good vision
+B. Select honest students
+C. Make harsh punishment
+D. Make students confident
+E. Administer the school affair
+46. "Students who always cheat deteriorate their mental capacity." (Paragraph 3) The word "deteriorate"
+means...
+A. support
+B. worsen
+C. cause
+D. create
+E. Find
+47. "They weaken their self confidence." (Paragraph 3) What does the word "They" refer to?
+A. tests
+B. papers
+C. results
+D. students
+E. Cheatings</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>45. c</p><p>46. b</p><p>47. e</p><p>walau pun Saya tidak baca wacananya, jawaban nya tergambar jelas.</p><p><strong>Jawaban:</strong></p><p>number</p><p>45. c</p><p>46.b</p><p>47. e</p><p><strong>Penjelasan:</strong></p><p><strong>S</strong><strong>O</strong><strong>R</strong><strong>R</strong><strong>Y</strong><strong> </strong><strong>I</strong><strong>F</strong><strong> </strong><strong>T</strong><strong>H</strong><strong>E</strong><strong>R</strong><strong>E</strong><strong> </strong><strong>I</strong><strong>S</strong><strong> </strong><strong>A</strong><strong>N</strong><strong> </strong><strong>E</strong><strong>R</strong><strong>R</strong><strong>O</strong><strong>R</strong></p><br />
+                                            <h2 class="ez-toc-section" id="what-should-i-do-so-i-cant-waste-my-entire-short-existencesa-should-i-do-nothing-useful-till-i-dieb-should-i-hold-all-of-my-pain-till-i-diec-should-i-think-about-how-cruel-the-world">
+                            18. What should I do so I can't waste my entire short existences?A. Should I do nothing useful     till I die?B. Should I hold all of my pain     till I die?C. Should I think about how     cruel the world is and     always cry to sleep because     of it?D. Should I commit suicide so I     can't suffer anymore in this     cruel existence?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B. You should hold all of your pain till you die</p><p>Sebelumnya mohon maaf, ini emang tugas ato kamunya yang bermasalah?</p><br />
+                                            <h2 class="ez-toc-section" id="20-what-do-they-have-to-do-after-signing-up-on-signup-com-they-a-have-to-come-to-all-of-the-eventsb-must-visit-their-friends-staff-and-teachersc-must-commit-to-the-pph-hours-for-the-yeard">
+                            19. 20. What do they have to do after signing up on SignUp.com? They ....A. have to come to all of the eventsB. must visit their friends, staff, and teachersC. must commit to the PPH hours for the yearD. have to attend every meeting in the Town Hall​</h2><br />
+                        Jawabannya A<br /><br /><br />Maap ya min kalo mimin salah<br /><br />
+                                            <h2 class="ez-toc-section" id="4-paris-is-place-for-thosewho-believe-absurdities-canmake-you-commit-atrocities-a-theb-ac-onlyd-just%e2%80%8b">
+                            20. 4. Paris is...... place for thosewho believe absurdities canmake you commit atrocities.A. theB. aC. onlyD. just​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>jawabanya <strong>A</strong><strong>.</strong><strong> </strong><strong>the</strong></p><p></p><p><strong>semoga</strong><strong> </strong><strong>membantu</strong><strong>:</strong><strong>)</strong><strong> </strong></p><p><strong>tnx!</strong></p><p>Paris is the place for those who believe absrudities atrocities</p><br />
+                                            <h2 class="ez-toc-section" id="tantanganchallenge100-pointtema-sejarah-dalam-bahasa-inggris-1939-1945-ww2question1-what-is-axis-power2-which-countries-became-germanys-allies-during-world-war-23-why-did-germany-lose-at-operati">
+                            21. Tantangan/Challenge100 PointTema: Sejarah Dalam Bahasa Inggris 1939-1945 WW2Question:1.What is Axis Power?2.which countries became Germany's allies during World War 2?3.Why Did Germany Lose At Operation Barbarrosa?4.Who Is United States Of America's Allies During World War 2?5.Why Japan attack USA?6.How Is British and France Force Get Trapped in Dunkirk Harbour During World War 2?7.Why Prime Minister Arthur Neville Chamberlain Resign?8.Who Is The Next British Prime Minister?9.Where IJN Yamato,KMS Bismarck,USS Arizona Sunk?10.why did Hitler commit suicide?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.   The Axis powers (German: Achsenmächte; Italian: Potenze dell'Asse; Japanese: 枢軸国 Sūjikukoku), also known as the "Rome–Berlin–Tokyo Axis" (also acronymized as "Roberto"), were the nations that fought in World War II against the Allies. The Axis powers agreed on their opposition to the Allies, but did not completely coordinate their activity.</p><p>2.  Germany</p><p> Italy</p><p> Japan</p><p>States that adhered to the Tripartite Pact:</p><p> Hungary</p><p> Romania</p><p> Slovakia</p><p> Bulgaria</p><p> Croatia</p><p>Co-belligerent states:</p><p> Finland </p><p> Iraq </p><p> Thailand</p><p> Soviet Union </p><p>3. Failure of blitzkrieg, giving the Soviets valuable time to relocate factories and build more and more T-34 tanks, defensive lines, train more troops, and refine their attacks and strategies. Even though this took years, the Nazis' fate was essentially decided by the winter of 1941</p><p></p><p>Unpreparedness - The army was given something like 6-8 weeks to take Moscow. They started invading in June, and while they came close to seizing the capital, they ultimately failed. Their overconfidence and short timetable meant they didn't bring any winter gear.</p><p></p><p>Materials - Overextended supply lines.</p><p></p><p>Allies - The axis allies consistently failed in their tasks, for example defending German flanks during Stalingrad</p><p></p><p>Stalingrad - the Germans effort to take Stalingrad was ancillary to the drive to the Caucuses but consumed enormous resources and ultimately lost an entire Army group. It wasn't strategically important and a complete waste.</p><p></p><p>Hubris - Hitler would not accept differing viewpoints and had a false sense that his plans were infallible due to his early successes. He would typically ignore his general's advice. For example, he would never let his forces withdraw, and if you were promoted to Field Marshall, well that was a death sentence, as someone of that rank was never taken alive and expected to fight until the death. (General Paulus was the first of this rank to surrender at Stalingrad.)</p><br />
+                                            <h2 class="ez-toc-section" id="bantu-plis-dah-2-hari-kek-gini-pas-bluescreen-ada-tulisan-atikmpag-sys-video_tdr_failureudah-di-coba-update-driver-rollback-driver-ganti-file-atikmpag-sys-nya-tetep-masih-gini-juga-cuma-bisa-masu">
+                            22. Bantu plis, dah 2 hari kek gini.Pas bluescreen ada tulisan "atikmpag.sys VIDEO_TDR_FAILURE"udah di coba update driver, rollback driver, ganti file atikmpag.sys nya tetep masih gini.Juga cuma bisa masuk pake save mode, kalau ga pake save mode jadi bluescreenCoba instal ulang driver nya gabisa​</h2><br />
+                        <p>Coba gan bawa ke servis buat di reset ama di instal ulang windowsnya</p><br />
+                                            <h2 class="ez-toc-section" id="transaction-management-buatlah-solusi-untuk-menangani-dua-transaksi-dimana-awal-saldox-sebesar-1-000-000-jika-a-transaksi-ta-membaca-saldox-pada-saat-t1-mengurangi-saldox-sebesar-100-000-pada-sa">
+                            23. (Transaction Management) Buatlah solusi untuk menangani dua transaksi dimana awal SaldoX sebesar 1.000.000, jika: a. Transaksi Ta membaca saldoX pada saat t1, mengurangi saldoX sebesar 100.000 pada saat t2, menulis saldoX pada saat t3, dan melakukan rollback pada saat t5 b. Transaksi Tb membaca saldoX pada saat t4, mengurangi saldoX sebesar 50.000 pada saat t5, menulis saldoX pada saat t6, dan melakukan commit pada saat t7</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>137964389272437292680758+7908699=999999999999999999</p><br />
+                                            <h2 class="ez-toc-section" id="aku-ngepush-repository-github-semua-udah-aku-add-udah-aku-commit-pas-ngepush-ga-ada-error-tapi-direponya-gak-ada-perubahan-sama-sekali-tolong-bantuannya">
+                            24. Aku ngepush repository (github), semua udah aku add udah aku commit. Pas ngepush, ga ada error. Tapi direponya gak ada perubahan sama sekali. Tolong bantuannya :))))</h2><br />
+                        <p>coba pake --force</p><p>$ ~ git push origin master --force</p><br />
+                                            <h2 class="ez-toc-section" id="tolong-jawab-ya-kawan-1-asean-dibentuk-berdasarkan-naskaha-piagam-jakartab-deklarasi-bangkokc-deklarasi-perdamaiand-deklarasi-asia-pasific2-yg-termasuk-deklarasi-bangkok-adalaha-meningkatkan-p">
+                            25. tolong jawab ya kawan...    1.asean dibentuk berdasarkan naskah?a.piagam jakartab.deklarasi bangkokc.deklarasi perdamaiand.deklarasi asia pasific2.yg termasuk deklarasi bangkok adalah?a.meningkatkan perdamaian dan stabilitas ragionalb.membantu menyelesaikan konflik yg terjadi di asia tenggarac.meningkatkan kerjasama di bidang pendidikand.mempercepat kemajuan ekonomu di kawasan asia tenggara3.kekuasaan tertinggi dlm organisasi asean adalah?a.annual meetingb.sumit meetingc.annual mesterial meetingd.standing commit4.letak geografis singapura sangat strategis karena dilalui jalur lalu lintas internasional.kondisi tersebut menguntungkan terutama dibidang?a.industrib.pertanianc.perdagangand. kelautan5.indonesia menjadi penengah persengketaan di filipina antara?a.kelompok muslim dan separalisb.pemerintah dan kelompok muslim marococ.pemerintah dan kelompok separalisd.pemerintah dg militer asing</h2><br />
+                        1. b. deklarasi bangkok<br />2. a.meningkatkan perdamaian dan stabilitas ragional<br />3. d standing commit<br />4. c perdagangan<br />5 a kelompok muslim dan separalis1.b.Deklarasi Bangkok.<br />2.a.meningkatkan perdamaian dan stabilitas regional.<br />3.c.annual masterial meeting.<br />4.a.industri.<br />5.c.pemerintah dengan kelompok sparalis.<br /><br />
+                                            <h2 class="ez-toc-section" id="1-she-denied-________commit-the-crime-a-to-be-committingb-committingc-commitd-to-commite-commited2-i-cant-afford-you-_______-buy-a-new-car-a-are-buyingb-were-buyingc-to-buyd-buye-buying3">
+                            26. 1. She denied ________(commit) the crime.
+A.to be committingB.committingC.commitD.to commitE.commited
+2. 
+I can't afford you _______ (buy) a new car.
+A.are buyingB.were buyingC.to buyD.buyE.buying
+3. They agree ________(help) us
+A.helpingB.is helpingC.had helpedD.helpedE.to help
+4 We need Chris_________(help) us figure out the solution
+A.helpedB.to helpC.helpingD.is helpingE.to be helped</h2><br />
+                        1. She denied <strong>commiting </strong>the crime.<br />2. I can't afford you <strong>to buy</strong> a new car.<br />3. They agree <strong>to help</strong> us.<br />4. We need Chris <strong>to help</strong> us figure out the solution<br />1.  She denied <strong>commiting </strong>the crime.<br />2. I can't afford you <strong>to buy</strong> a new car.<br />3. They agree <strong>to help</strong> us.<br />4. We need Chris <strong>to help</strong> us figure out the solution<br /><br />
+                                            <h2 class="ez-toc-section" id="diubah-menjadi-past-form-of-the-regular-verbsa-bakeb-tiptoec-enjoyd-passe-tryf-cryg-commith-plani-stayj-travel-tolong-y-kak">
+                            27. diubah menjadi  past form of the regular verbs
+a.bake
+b.tiptoe
+c.enjoy
+d. pass
+e. try
+f. cry
+g. commit
+h.plan
+i.stay
+j.travel
+ Tolong y kak
+: )</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. baked</p><p>b. tiptoed</p><p>c. enjoyed</p><p>d. passed</p><p>e. tried</p><p>f. cried</p><p>g. committed</p><p>h. planned</p><p>i. stayed</p><p>j. traveled (AE) / travelled (BE)</p><p><strong>Penjelasan:</strong></p><p>kalau ada kata yg mau diubah jadi past form of regular verbs, tinggal kasih "-ed" atau "-d" di bagian akhir ajaa</p><p>kecuali yg ada -y dibelakang, baru kasih -ied</p><p>kalau commit dan travel itu emg beda sendiri diaa</p><p></p><p>semoga bermanfaat, maaf kalau ada salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="change-to-the-verb-to-the-passive-voice-andrewrite-the-sentence-be-sure-to-neep-the-sametense1-his-boss-has-transfered-him-to-another-department2-the-army-will-complate-that-project-next-year3-the">
+                            28. # Change to the verb to the passive voice andrewrite the sentence be sure to neep the sametense1.His boss has transfered him to another department2. the army will complate that project next year3. the commit 15 Consindering that proposal right now4 the Secretary opens the mail every morning5. He signed letter​</h2><br />
+                        Jawaban:He has been transferred by his boss to another department That project will be completed by The army next year That proposal is being considered by the committee The mail is opened by the secretary every morning Letter was signed by him<p></p>PEMBAHASAN Present Perfect Active Voice: S + has/have + V3 + OPassive Voice: O + has/have + been + V3 + By S<p>1. His boss has transfered him to another department</p><p>=&gt; He has been transferred by his boss to another department </p><p> </p>Future Tense Active Voice: S + will + V1 + OPassive Voice: O + will + Be + V3 + By S<p>2. the army will complete that project next year</p><p>=&gt; That project will be completed by The army next year </p><p></p>Present Continuous Active Voice: S + is/am/are + V-ing + OPassive Voice: O + is/am/are + being + V3 + By S<p>3. the committee is Considering that proposal right now</p><p>=&gt; That proposal is being considered by the committee </p><p></p>Present Tense Active Voice: S + V1 (-s/es) + OPassive Voice: O + Be (is/am/are) + V3 + By S<p>4. the Secretary opens the mail every morning</p><p>=&gt; The mail is opened by the secretary every morning </p><p></p>Past Tense Active Voice: S + V2 + OPassive Voice: O + Be (was/were) + V3 + By S<p>5. He signed letter</p><p>=&gt; Letter was signed by him</p><p></p><p>=== Semoga Membantu ===</p><p></p>Link Terkait<p>Passive Voice:</p>brainly.co.id/tugas/25878448brainly.co.id/tugas/25878293<p></p>DETAIL JAWABAN Mapel: Bahasa Inggris Materi: Passive Voice Level: SHS Kode Soal: 5Kode Kategorisasi: 11.5<p></p><p><strong>Kata Kunci</strong>: Active Voice, Passive Voice, Present Perfect, Future Tense, Present Continuous, Present Tense, Past Tense </p><p></p><p><strong>#SejutaPohon</strong></p><br />
+                                            <h2 class="ez-toc-section" id="text-for-number-5-7-attentionour-school-will-commit-the-annual-youth-conference-that-will-be-held-in-paraqia-mountain-on-march-21st-from-morning-until-evening-please-mark-your-calendar-and-registe">
+                            29. Text for number 5-7 Attention!Our school will commit the annual youth conference that will be held in Paraqia Mountain, on March 21st from morning until evening. Please, mark your calendar and register yourself by March 10th.Information about school programs, teaching procedures, and others will be discussed. For enrolment and further info, please visit our website: www.paraqiacolloquy.com/enroll/101html.Be sure you have completed your registration. 5. What event will be held by the school?a. School extracurricularb. Learning procedurec. Conference of the annual youthd. Register of the meeting​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>c jawabannya</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="pada-proses-validasi-e-trans-setelah-membuka-aplikasi-tas-dan-login-kemudian-pilih-validasi-e-trans-maka-tahapan-selanjutnya-adalah-%e2%80%a6a-ambil-produk-yang-akan-ditransaksikanb-klik-menu-l">
+                            30. Pada proses validasi e-trans, setelah membuka aplikasi TAS dan login, kemudian pilih validasi e-trans, maka tahapan selanjutnya adalah …
+A. Ambil produk yang akan ditransaksikan
+B. Klik menu LOV (F2)
+C. Tempelkan jari pada finger scanner
+D. Klik commit
+E. Klik inquiry</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>d. klik commit </p><p></p><p><strong>Penjelasan:</strong></p><p>maaf klo slh</p><br />
+                                            <h2 class="ez-toc-section" id="selesaikan-masalah-dibawah-ini-dengan-metode-locking-pada-concurrency-control-untuk-permasalahan-inconsistent-analysis-analisa-yang-tidak-konsisten-diketahui-t1-t2-transaksi-1-transaksi-2-t-a-b">
+                            31. Selesaikan masalah dibawah ini dengan metode Locking pada concurrency control untuk permasalahan Inconsistent Analysis (Analisa yang tidak konsisten) Diketahui T1, T2: Transaksi 1, Transaksi 2 t a b с : waktu : 250 (nilai awal a) : 100 (nilai awal b) :50 (nilai awal c) sum : sum awal = 0 Transaksi yang terjadi: [Bobot: 25] tl 12 Tl begin transaction T1 sum 0 13T1 write lock(a) 14T1 read(a) t5 → T2 Begin transaction, Tl a=a+15 t6T2 read lock(a), T1 write(a) 17T1 write lock(b) t8T1 read(b) 19TI b-b+10 110 T1 write(b) t11 T1 sum-sum + b t12 TI unlock(a,b) t13 →T2 read(a), t14 →T2 a=a+15 t15 T2 write(a) t16T2 sum-sum+a t17T2 Write_lock(c) t18 T2 read (c) t19 →T2 c-c+50 t20 ➜T2 write(c) 121 122 t23 T1 write lock (c) ,T2 sum-sum+c T2 unlok(a.c) T1 read (c), T2 commit 124T1 c = c +100 125T1write (c) T26T1 unlock (c) t27T1 commit​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Berikut adalah solusi masalah menggunakan metode Locking pada concurrency control dengan memperhatikan permasalahan Inconsistent Analysis:</p><p></p><p>1. T1 memulai transaksi:</p><p>   - T1 melakukan write lock pada variabel a.</p><p>   - T1 membaca nilai variabel a.</p><p></p><p>2. T2 memulai transaksi:</p><p>   - T2 melakukan write lock pada variabel a.</p><p>   - T1 melakukan write pada variabel a.</p><p></p><p>3. T1 melanjutkan transaksi:</p><p>   - T1 melakukan write lock pada variabel b.</p><p>   - T1 membaca nilai variabel b.</p><p>   - T1 mengubah nilai variabel b.</p><p>   - T1 menulis nilai variabel b.</p><p>   - T1 mengubah nilai sum dengan menambahkan nilai variabel b.</p><p>   - T1 melakukan unlock pada variabel a dan b.</p><p>   - T2 membaca nilai variabel a.</p><p></p><p>4. T2 melanjutkan transaksi:</p><p>   - T2 melakukan write pada variabel a.</p><p>   - T2 mengubah nilai sum dengan menambahkan nilai variabel a.</p><p>   - T2 melakukan write lock pada variabel c.</p><p>   - T2 membaca nilai variabel c.</p><p>   - T2 mengubah nilai variabel c.</p><p>   - T2 melakukan write pada variabel c.</p><p>   - T2 mengubah nilai sum dengan menambahkan nilai variabel c.</p><p>   - T2 melakukan unlock pada variabel a dan c.</p><p></p><p>5. T1 melanjutkan transaksi:</p><p>   - T1 melakukan write lock pada variabel c.</p><p>   - T2 membaca nilai variabel c.</p><p>   - T1 melakukan read pada variabel c.</p><p>   - T1 melakukan commit pada transaksi.</p><p></p><p>Catatan: Perhatikan bahwa pada langkah 5 terjadi conflict antara T1 dan T2 pada variabel c. Oleh karena itu, pemrosesan harus dilakukan dengan memperhatikan urutan akses pada variabel tersebut untuk menghindari inconsistent analysis.</p><br />
+                                            <h2 class="ez-toc-section" id="struktur-organisasi-asean-terdiri-dari-beberapa-bagian-kekuasaan-tertinggi-dalam-organisasi-asean-ialah-a-annual-meeting-b-summit-meeting-c-annual-ministeral-meeting-d-standing-commit">
+                            32. Struktur organisasi asean terdiri dari beberapa bagian .kekuasaan tertinggi dalam organisasi asean ialah 
+A annual meeting 
+B summit meeting 
+C annual ministeral meeting 
+D standing commit</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C.annual ministeral meeting</p><p><strong>Penjelasan:</strong></p><p>jadikan jawaban tercerdas ya </p><p><strong>Jawaban:</strong></p><p>B summit meeting </p><p><strong>Penjelasan:</strong></p><p>Pertemuan para kepala pemerintahan (Summit Meeting). Pertemuan ini merupakan kekuasaan tertinggi dalam ASEAN.</p><p></p><p>jadiin jawaban terbaik ya Terima kasih</p><br />
+                                            <h2 class="ez-toc-section" id="because-of-experiencing-bereavement-some-people-consider-suicide-to-let-go-of-their-sorrow-a-commit-b-to-commit-c-committing-d-committed">
+                            33. Because  of   experiencing  bereavement.  some people  consider  ...  suicide  to  let  go  of   their sorrow.
+(A) commit 
+(B) to commit 
+(C) committing 
+(D) committed </h2><br />
+                        B. To commit<br />semoga membantu yaB.to commit<br />maaf ya klo salah<br />#SM<br />
+                                            <h2 class="ez-toc-section" id="kalimat-rumpang-91-a-attempt-b-attempts-c-attempted-d-attempting-e-attemption92-a-critic-b-critical-c-critism-d-cricitizing-e-critics93-a-when-b-while-c-as-long-as-d-during-e-since94">
+                            34. kalimat rumpang 91. a. attempt b. attempts c. attempted d. attempting e. attemption92. a. critic b. critical c. critism d. cricitizing e. critics93. a. when b. while c. as long as d. during e. since94. a. made b. making c. having made d. makes e. has made95. a. should commit b. committed c. should be committed d. was committed e. be committed</h2><br />
+                        <p>Answer: </p><br /><p>In answering the gap fill exercise, you need to find out the missing part of speech and decide it based on the available option. </p><p>91. a. attempt (noun) as it's about something. </p><p>92. e. critics (noun) as it's about someone/ doer. </p><p>93. d. during (adverb of time)</p><p>94. b. making (pronoun - which makes) </p><p>95. a. should commit (as it tells about suggestion)</p><br /><p>Kelas: SMA</p><p>Mapel: English</p><p>Kategori: vocabulary  </p><p>Subject : English</p><p>Category : Cloze Text</p><p>Level : SHS</p><br /><p>Some tips and tricks for completing a cloze :</p><p>1. read the passage thoroughly</p><p>2. look what comes before and after the sentences with the blank. The sentences should link together.</p><p>3. know the type of word to fill in. Is it a noun, an adjective?</p><p>4. eliminate with care</p><p>5. read a lot to build up your language skill and vocabulary.</p><p>6. Practice, coz practice makes perfect. ^^</p><br /><br /><p>Answers :</p><p>91. <strong>a. attempt</strong></p><p>ada article an berarti harus diikuti kata benda.</p><p>attempt = usaha (n)</p><p>attempts = berusaha (v-s)</p><p>attempted (v₂)</p><p>attempting (present participle)</p><p>attemption =&gt; tidak ada</p><br /><p>92. c. criticism</p><p>nonviolent (tidak menggunakan kekerasan) adalah kata sifat. Kata sifat menerangkan kata benda.</p><p>critic = pengkritik</p><p>critical = kritis</p><p>criticism = kritikan</p><p>criticizing = mengkritik (present participle)</p><p>critics (pl noun)</p><p>Yang paling tepat adalah <strong>nonviolent criticism</strong> (kritikan yang tidak menggunakan kekerasan)</p><br /><p>93. <strong>d. during</strong></p><p>during the 1790's = selama tahun 1790an</p><p>when = ketika</p><p>while = ketika</p><p>as long as = sama panjang</p><p>since = sejak</p><br /><p>94. <strong>b. making</strong></p><br /><p>95. <strong>c. should be committed</strong></p><p>John Adams should be committed to a madhouse (John Adams harus dimasukkan ke RSJ) <strong>kalimat pasif</strong>.</p><br />
+                                            <h2 class="ez-toc-section" id="should-i-a-kill-myselfb-commit-a-suicidec-waste-my-lifed-do-nothing-useful%e2%80%8b">
+                            35. Should I ...A. Kill myself?B. Commit a suicide?C. Waste my life?D. Do nothing useful?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D do nothing useful</p><p><strong>Penjelasan:</strong></p><p>aku mau saya jalan </p><p><strong>Jawaban:</strong></p><p>D</p><p><strong>Penjelasan:</strong></p><p>gk semua masalah harus diselesaikan dengan bunuh diri</p><p></p><p>itu sia sia</p><p></p><p>percuma</p><p></p><p>^-^</p><br />
+                                            <h2 class="ez-toc-section" id="fill-the-blanks-with-shall-or-should-1-i-go-home-2-you-pay-for-this-3-thet-get-the-reward-4-you-finish-your-assignment-after-class-5-you-study-english-every-day-6-i-clos">
+                            36. fill the blanks with shall or should
+ 1. I....go home.
+ 2 You....pay for this
+ 3  Thet ...get the reward 
+ 4 You....finish your assignment after class
+ 5 You....study english every day
+ 6. .....I close the door?
+ 7. What.....I do?
+ 8. ......I do that?
+ 9. I think we.....trust our people more
+10. They....succeed
+ 11. One baked potato.....be enough for each person
+12. No one.....commit crime
+13. Lets begin,....we?
+14 .....I state first?
+15 The bus.....arrive in a few minutes</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>happy</p><p><strong>Penjelasan:</strong></p><p>Kathy and she was like a week ago she was like oh like to get a refund of the a week and then I have to get</p><p><strong>Jawaban:</strong></p><p>1. should</p><p>2.should</p><p>3. should</p><p>4. should</p><p>5. should</p><p>6. should</p><p>7. should</p><p>8. should</p><p>9. shall</p><p>10. should</p><p>12. should</p><p>13. shall</p><p>14. should</p><p>15. should</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-kata-lain-dalam-bahasa-inggris-masing-masing-2-katacommitcompilecomposecompriseconcealconcedeconceiveconcernconductconfessdoubtdragdraindumpease">
+                            37. Tuliskan kata lain dalam bahasa inggris masing masing 2 kata
+Commit
+Compile
+Compose
+comprise
+Conceal
+Concede
+Conceive
+Concern
+Conduct
+Confess
+Doubt
+Drag
+Drain
+Dump
+Ease</h2><br />
+                        Commit = enact; apply<br />Compile = collect; assemble<br />Compose = make; construct<br />comprise = include; incorporate<br />Conceal = hide; disguise<br />Concede = give in; admit<br />Conceive = undrestand; comprehend<br />Concern = burden; interest<br />Conduct = treatment; charge<br />Confess = admit; reveal<br />Doubt = uncertainty; hesitancy<br />Drag = lug; tow<br />Drain = bleed; siphon<br />Dump = discard; throw away<br />Ease = peace; quiet<br /><br />
+                                            <h2 class="ez-toc-section" id="1-to-depict2-smooth3-congestion4-to-cope5-tough6-skilled7-to-fire8-to-employ9-ornament10-welfare11-excellence12-to-acquire13-friction14-proficiency15-diverse16-conversely17-to-gain18">
+                            38. 1. to depict2. smooth3. congestion4. to cope5. tough6. skilled7. to fire8. to employ9. ornament10. welfare11. excellence12. to acquire13. friction14. proficiency15. diverse16. conversely17. to gain18. enormous19. crucially20. to reap21. transnational22. entity23. limitlessly24. twisted25. to commit​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. menggambarkan</p><p>2. halus</p><p>3. kemacetan</p><p>4. mengatasi</p><p>5. tangguh</p><p>6. terampil</p><p>7. menembak</p><p>8. mempekerjakan</p><p>9. ornamen</p><p>10. kesejahteraan</p><p>11. keunggulan</p><p>12. memperoleh</p><p>13. gesekan</p><p>14. kecakapan</p><p>15. beragam</p><p>16. sebaliknya</p><p>17. memperoleh</p><p>18. besar sekali</p><p>19. yang terpenting</p><p>20. menuai</p><p>21. transnasional</p><p>22. entitas</p><p>23. tanpa batas</p><p>24. bengkok</p><p>25. berkomitmen</p><br />
+                                            <h2 class="ez-toc-section" id="when-we-commit-to-students%e2%80%99-wellbeing-and-learning-through-the-practice-of-positive-influence-professional-judgment-and-empathy-in-practice-we-are-fostering-the-value-of">
+                            39. When we commit to students’ wellbeing and learning through the practice of positive influence, professional judgment and empathy in practice, we are fostering the value of:</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>empathy and motivation</p><p><strong>Penjelasan:</strong></p><p>When we commit to students’ wellbeing and learning through the practice of positive influence, professional judgment and empathy in practice, we are fostering the value of: empathy and motivation</p><br />
+                                            <h2 class="ez-toc-section" id="personel-toko-dapat-menempelkan-jari-di-finger-scanner-setelah-proses-%e2%80%a6a-input-member-alfamartb-input-nik-kasir-dan-approval-kemudian-pilih-commitc-input-nik-dan-pin-kasird-input-jenis">
+                            40. Personel toko dapat menempelkan jari di finger scanner setelah proses …
+A. Input member Alfamart
+B. Input NIK kasir dan approval kemudian pilih commit
+C. Input NIK dan pin kasir
+D. Input jenis pembayaran
+E. Input token dan nominal yang akan ditransaksikan</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. Input member alfamart</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/pw8GKP3ItoQ?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-mencari-luas-permukaan-balok.html">Contoh Soal Mencari Luas Permukaan Balok</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apakah-fungsi-dari-disk-defragmenter.html">Apakah Fungsi Dari Disk Defragmenter</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-limit-tak-hingga-bentuk-akar.html">Contoh Soal Limit Tak Hingga Bentuk Akar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-akuntansi-perusahaan-dagang-ayat-jurnal-penyesuaian.html">Contoh Soal Akuntansi Perusahaan Dagang Ayat Jurnal Penyesuaian</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-psll-pshh-psll.html">Fungsi Dari Psll Pshh Psll</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-cerita-kurs-beli-dan-kurs-jual.html">Contoh Soal Cerita Kurs Beli Dan Kurs Jual</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-aplikasi-persamaan-trigonometri.html">Contoh Soal Aplikasi Persamaan Trigonometri</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-analisis-soal-bahasa-inggris.html">Contoh Analisis Soal Bahasa Inggris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-kurva-pasar-persaingan-sempurna.html">Contoh Soal Kurva Pasar Persaingan Sempurna</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-bahasa.html">Contoh Soal Bahasa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-tentang-sistem-koordinasi.html">Contoh Soal Tentang Sistem Koordinasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-permintaan.html">Apa Fungsi Dari Permintaan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-5w-1h-bahasa-indonesia.html">Contoh Soal 5w 1h Bahasa Indonesia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/10-contoh-antonim.html">10 Contoh Antonim</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-deret-geometri-tak-hingga-brainly.html">Contoh Soal Deret Geometri Tak Hingga Brainly</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-torsi.html">Contoh Soal Torsi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-google-analytics-di-firebase-android-studio.html">Fungsi Dari Google Analytics Di Firebase Android Studio</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-try-out-sd-bahasa-indonesia-2019.html">Contoh Soal Try Out Sd Bahasa Indonesia 2019</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-jurnal-umum-buku-besar-neraca-saldo-perusahaan-dagang.html">Contoh Soal Jurnal Umum Buku Besar Neraca Saldo Perusahaan Dagang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-psikotes-daya-ingat.html">Contoh Soal Psikotes Daya Ingat</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediasoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediasoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

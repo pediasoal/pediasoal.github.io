@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoh Perintah Dalam Sistem Dos Dari External Command Dan Fungsinya - BELAJAR</title>
+    <meta name="description" content="Contoh Perintah Dalam Sistem Dos Dari External Command Dan Fungsinya, , , , , , , 0, , , , , , 0, contoh-perintah-dalam-sistem-dos-dari-external-command-dan-fungsinya, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contoh Perintah Dalam Sistem Dos Dari External Command Dan Fungsinya - BELAJAR" />
+    <meta property="og:description" content="Contoh Perintah Dalam Sistem Dos Dari External Command Dan Fungsinya, , , , , , , 0, , , , , , 0, contoh-perintah-dalam-sistem-dos-dari-external-command-dan-fungsinya, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contoh Perintah Dalam Sistem Dos Dari External Command Dan Fungsinya - BELAJAR" />
+    <meta name="twitter:description" content="Contoh Perintah Dalam Sistem Dos Dari External Command Dan Fungsinya, , , , , , , 0, , , , , , 0, contoh-perintah-dalam-sistem-dos-dari-external-command-dan-fungsinya, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediasoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediasoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediasoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediasoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediasoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediasoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediasoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Contoh Perintah Dalam Sistem Dos Dari External Command Dan Fungsinya</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">intansahfah</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Contoh+Perintah+Dalam+Sistem+Dos+Dari+External+Command+Dan+Fungsinya" alt="Contoh Perintah Dalam Sistem Dos Dari External Command Dan Fungsinya">
+                    </div>
+                    <p></p>
+                    <p>berikan contoh perintah dalam sistem DOS Eksternal command ! ​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-contoh-perintah-dalam-sistem-dos-eksternal-command-%e2%80%8b">1.
+                                            berikan contoh perintah dalam sistem DOS Eksternal command ! ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-apa-yang-anda-ketahui-tentang-internal-command-dan-external-command-dalam-dos-berikan-contohnya%e2%80%8b">2.
+                                            Jelaskan apa yang anda ketahui tentang internal command dan external command dalam dos berikan contohnya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-external-dalam-dos-yang-berfungsi-untuk-mengganti-file">3.
+                                            perintah external dalam dos yang berfungsi untuk mengganti file</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-beberapa-contoh-perintah-internal-pada-dos">4.
+                                            sebutkan beberapa contoh perintah internal pada DOS </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#del-adlh-perintah-pd-dos-promptcommand-dos-untuk">5.
+                                            del *.* adlh perintah pd DOS prompt(command DOS) untuk....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-nya-scandisk-di-perintah-eksternal-dos-buat-apa">6.
+                                            Fungsi nya scandisk di perintah eksternal dos buat apa ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-apakah-yang-menyebabkan-terjadinya-ip-address-conflict-2-jelaskan-cara-pengujian-sebuah-kabel-jaringan-3-apakah-perbedaan-nic-internal-dan-external-4-apa-fungsi-perintah-ping-dalam-comm">7.
+                                            1.  Apakah yang menyebabkan terjadinya IP Address Conflict? 
+2.  Jelaskan cara pengujian sebuah kabel jaringan 
+3.  Apakah perbedaan NIC internal dan external? 
+4.  Apa fungsi perintah ping dalam command prompt 
+5.  Sebutkan contoh software untuk scanning sebuah jaringan. </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-contoh-5-perintah-dasar-dari-sistem-operasi-doscli">8.
+                                            berikan contoh 5 perintah dasar dari sistem operasi DOS/CLI</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-perintah-dalam-dos-yng-termasuk-internal-command">9.
+                                            perintah perintah dalam DOS yng termasuk internal command??</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-atau-kegunaan-dari-masing2-perintah-dasar-ms-dos%e2%80%8b">10.
+                                            fungsi atau kegunaan dari masing2 perintah Dasar MS-DOS?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-fungsi-perintah-command%e2%80%8b">11.
+                                            tuliskan fungsi perintah command​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-yang-dimaksud-dengan-external-command">12.
+                                            apakah yang dimaksud dengan external command</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-yang-telah-tersimpan-dalam-memori-yang-telah-dipindahkan-dari-sistem-operasi-ke-bios-adalah-a-international-commandb-power-commandc-commandd-internal-command%e2%80%8b">13.
+                                            Perintah yang telah tersimpan dalam memori yang telah dipindahkan dari sistem operasi ke BIOS adalah... .A. International commandB. Power commandC.  commandD. Internal command​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-definisi-dari-internal-command-dan-external-command">14.
+                                            tuliskan definisi dari internal command dan external command</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#31-tuliskan-perntah-command-promp-yang-digunakan-untuk-menampilkan-versi-pada-sistem-dos-yang-sedang-digunakan%e2%80%8b">15.
+                                            31. Tuliskan perntah Command promp yang digunakan untuk menampilkan versi pada sistem DOS yang sedang digunakan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sistem-operasi-yang-menggunakancommand-line-interface-adalah-a-dosc-unixb-mac-osd-linux%e2%80%8b">16.
+                                            Sistem operasi yang menggunakancommand-line interface adalah ....a. DOSC. UNIXb. Mac OSd. Linux​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-internal-command-dan-external-command-sebutkan-contoh-masing-masing-5-%e2%80%8b">17.
+                                            Apa perbedaan Internal Command dan External Command? Sebutkan contoh masing-masing 5 ! ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-dos-berbasis-text-pada-sistem-oprasi-windows-adalah%e2%80%8b">18.
+                                            perintah dos berbasis text pada sistem oprasi windows adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-contoh-dan-cara-menjalankan-perintah-append-dalam-command-prompt">19.
+                                            bagaimana contoh dan cara menjalankan perintah append dalam command prompt</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-perintah-dasar-internal-dan-external-command-ditolonh-yah-teman-teman-%e2%80%8b">20.
+                                            perintah perintah dasar internal dan external command..ditolonh yah teman teman :(​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dasar-dari-perintah-verify-pada-command-prompt-adl">21.
+                                            Fungsi dasar dari perintah verify pada command prompt adl</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-yang-digunakan-untuk-mengubah-sistem-waktu-pada-dos-adalah">22.
+                                            perintah yang digunakan untuk mengubah sistem waktu pada Dos  adalah </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-dasar-command-promt-beserta-fungsinya">23.
+                                            perintah dasar command promt beserta fungsinya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-perintah-pin-yang-digunakan-di-command-prompt-adalah%e2%80%8b">24.
+                                            fungsi perintah pin yang digunakan di command prompt adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-perintah-dasar-dos-internal-eksternal-command">25.
+                                            Contoh perintah dasar DOS internal &amp; eksternal command ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-perintah-dos-beserta-fungsinya">26.
+                                            Sebutkan perintah DOS beserta fungsinya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#aplikasi-yang-berfungsi-menjalankan-perintah-command-line-disebut">27.
+                                            Aplikasi yang berfungsi menjalankan perintah command line disebut . . . .</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sistem-operasi-komputer-khususnya-dos-memiliki-dua-macam-perintah-yaitu-internal-command-dan-eksternal-command-cara-kerja-dari-internal-command-adalah-%e2%80%a6%c2%a0%e2%80%8b">28.
+                                            Sistem operasi komputer khususnya DOS, memiliki dua macam perintah yaitu internal command dan eksternal command, cara kerja dari internal command adalah … *​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-tiga-contoh-perintah-internet-dalam-dos">29.
+                                            Sebutkan tiga contoh perintah internet dalam DOS?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-yang-dimaksud-dos-external">30.
+                                            apakah yang dimaksud DOS external</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-external-command-dalam-dos-sebutkan-macam-macamnya-serta-jelaskan-kegunaanya">31.
+                                            apa yang dimaksud dengan external command dalam DOS? sebutkan macam macamnya serta jelaskan kegunaanya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-yang-telah-tersimpan-dalam-memori-yang-telah-dipindahkan-dari-sistem-operasi-ke-bios-adalah-a-international-commandb-power-commandc-commandd-internal-commandmohon-bantuan-nya">32.
+                                            Perintah yang telah tersimpan dalam memori yang telah dipindahkan dari sistem operasi ke BIOS adalah... .A. International commandB. Power commandC.  commandD. Internal commandMohon bantuan nya ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-beberapa-perintah-external-command-berikuta-attridb-diskcopyc-formatjawab%e2%80%8b">33.
+                                            Jelaskan fungsi dari beberapa perintah external command berikut!!A. AttridB. DiskcopyC. Formatjawab??​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-5-fungsi-external-command%e2%80%8b">34.
+                                            tuliskan 5 fungsi external command​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-yang-di-maksud-dengan-software-command-prompt-atau-dos-prompt">35.
+                                            apakah yang di maksud dengan software command prompt atau DOS Prompt?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-apa-perbedaan-sistem-operasi-windows-dengan-linux2-jelaskan-pengertian-tentang-booting3-sebutkan-empat-file-sistem-yang-terdapat-dalam-sistem-operasi-dos4-sebutkan-macam-macam-program-aplik">36.
+                                            1. Apa perbedaan sistem operasi windows dengan linux?
+2. Jelaskan pengertian tentang booting?
+3. Sebutkan empat file sistem yang terdapat dalam sistem operasi DOS
+4. sebutkan macam-macam program aplikasi yang dapat di pasang pada sistem operasi DOS.
+5. Apa yang dimaksud dengan internal command dan external command dalam sistem operasi?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-external-dalam-dos-yang-berdingsi-untuk-mengganti-file">37.
+                                            perintah external dalam dos yang berdingsi untuk mengganti file</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kalimat-command-yang-mengandung-5-perintah%e2%80%8b">38.
+                                            contoh kalimat command yang mengandung 5 perintah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#beda-internal-command-dan-external-command">39.
+                                            beda internal command dan external command</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#aplikasi-yang-berfungsi-menjalankan-perintah-command-line-disebut">40.
+                                            aplikasi yang berfungsi menjalankan perintah command Line disebut</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="berikan-contoh-perintah-dalam-sistem-dos-eksternal-command-%e2%80%8b">
+                            1. berikan contoh perintah dalam sistem DOS Eksternal command ! ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ATTRIB</p><p>CHKDSK</p><p>DELTREE</p><p>FORMAT</p><p>DISKCOPY</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-apa-yang-anda-ketahui-tentang-internal-command-dan-external-command-dalam-dos-berikan-contohnya%e2%80%8b">
+                            2. Jelaskan apa yang anda ketahui tentang internal command dan external command dalam dos berikan contohnya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Internal command merupakan instruksi yang sejak awal ditempatkan dalam perangkat memori. Contoh: Copy, Color, Cis dan lain sebagainya. External command merupakan instruksi yang pengeksekusiannya membutuhkan aplikasi eksternal di luar perangkat memori, seperti .exe.</p><p><strong>Penjelasan:</strong></p><p>tlng donkk ksih jwbn yg tercerdass</p><p></p><p>bntu sampai rank pakar pliss!</p><p><strong>Jawaban:</strong></p><p>Perintah internal (internal command), yakni perintah-perintah yang telah dimasukkan ke dalam COMMAND.COM (interpreter perintah DOS), sehingga dapat langsung dieksekusi oleh kernel DOS</p><p></p><p><strong>Contoh:</strong></p><p>1. Assoc</p><p>2. Atmadm.</p><p>3. Break.</p><p>4. Call.</p><p>5. Chdir.</p><p>6. Cls.</p><p>7. Color.</p><p>8. Copy.</p><p></p><p><strong>Penjelasan:</strong></p><p>Semoga membantu ya </p><p>•‿•</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="perintah-external-dalam-dos-yang-berfungsi-untuk-mengganti-file">
+                            3. perintah external dalam dos yang berfungsi untuk mengganti file</h2><br />
+                        replace<br /><br /># semoga membantu<br /><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-beberapa-contoh-perintah-internal-pada-dos">
+                            4. sebutkan beberapa contoh perintah internal pada DOS </h2><br />
+                        BREAK<br />CALL<br />CHCP
+<br />CHDIR(CD)
+<br />CLS
+<br />   COPY
+<br />   CTTY
+<br />   DATE
+<br />   DEL(ERASE)
+<br />   DIR
+<br />   ECHO
+<br />   EXIT
+<br />   FOR
+<br />   GOTO
+<br />   IF
+<br />   MKDIR(MD)
+<br />   PATH
+<br />   PAUSE
+<br />   PROMPT
+<br />   REM
+<br />   RENAME(REN)
+<br />   RMDIR(RD)
+<br />   SET
+<br />   SHIFT
+<br />   TIME
+<br />   TYPE
+<br />   VER
+<br />   VERIFY
+<br />   VOL<br /><br />maaf cuma segitu yang saya tahu :D<br /><br />Semoga membantu dan jadikan jawaban terbaik...<br />
+                                            <h2 class="ez-toc-section" id="del-adlh-perintah-pd-dos-promptcommand-dos-untuk">
+                            5. del *.* adlh perintah pd DOS prompt(command DOS) untuk....</h2><br />
+                        Untuk membuang file  dengan nama dan format apapun Membuang file<br /><br /><br />Maaf kalo salah<br />
+                                            <h2 class="ez-toc-section" id="fungsi-nya-scandisk-di-perintah-eksternal-dos-buat-apa">
+                            6. Fungsi nya scandisk di perintah eksternal dos buat apa ?</h2><br />
+                        untuk memeriksa file sistem dari kemungkina error dan bad cluster serta memperbaikinyascandisk juga tool yang digunakan untuk memeriksa struktur file sistem,tabel lokasi file(file Allocation)dan dapat untuk mengetahui ada tidaknya bad sektor.<br /><br />
+                                            <h2 class="ez-toc-section" id="1-apakah-yang-menyebabkan-terjadinya-ip-address-conflict-2-jelaskan-cara-pengujian-sebuah-kabel-jaringan-3-apakah-perbedaan-nic-internal-dan-external-4-apa-fungsi-perintah-ping-dalam-comm">
+                            7. 1.  Apakah yang menyebabkan terjadinya IP Address Conflict? 
+2.  Jelaskan cara pengujian sebuah kabel jaringan 
+3.  Apakah perbedaan NIC internal dan external? 
+4.  Apa fungsi perintah ping dalam command prompt 
+5.  Sebutkan contoh software untuk scanning sebuah jaringan. </h2><br />
+                        1. Dalam 1 jaringan komputer ada 2 komputer atau lebih yang memiliki alamat IP Address yang sama<br />2. Kabel jaringan (model UTP dengan 8 warna kabel yang berbeda-beda) bisa diuji dengan menggunakan alat Network Cable tester. <br />masing masing ujung kabel dihubungkan dengan alat itu, lalu alat itu dinyalakan untuk mengetahui kabel warna apa yang tidak tersambung.<br />3. NIC internal adalah NIC yang sudah terintegrasi dengan motherboard CPU (sudah menjadi 1), sedangkan NIC external adalah NIC yang bisa dibongkar pasang di CPU.<br />4. Ping adalah perintah yang berfungsi untuk menguji konektifitas komputer dalam suatu jaringan.<br />5. Salah 1 contoh software untuk scanning jaringan bernama Angry IP Scanner<br /><br />
+                                            <h2 class="ez-toc-section" id="berikan-contoh-5-perintah-dasar-dari-sistem-operasi-doscli">
+                            8. berikan contoh 5 perintah dasar dari sistem operasi DOS/CLI</h2><br />
+                        1. dir<br />2. date<br />3. time<br />4. copy<br />5. ver<br /><br /># semoga membantu <br />- cd<br />- dir<br />- mkdir<br />- cls<br />- copy<br /><br />___________<br />#Semoga bermanfaat ^_^<br />
+                                            <h2 class="ez-toc-section" id="perintah-perintah-dalam-dos-yng-termasuk-internal-command">
+                            9. perintah perintah dalam DOS yng termasuk internal command??</h2><br />
+                        Dir/A : menampilkan semua file yang ada dalam drive A<br />Dir/P : menampilkan file per halaman layar monitor<br />CD : mengubah direktori<br />RD : menghapus direktori<br />DATE : menampilkan dan membuat tanggal<br />TIME : menampilkan dan membuat waktu/jam<br />REN : mengubah nama file<br />DEL : menghapus file<br />COPY : meng-copy file<br />CLS : membersihkan layar monitor<br />
+                                            <h2 class="ez-toc-section" id="fungsi-atau-kegunaan-dari-masing2-perintah-dasar-ms-dos%e2%80%8b">
+                            10. fungsi atau kegunaan dari masing2 perintah Dasar MS-DOS?​</h2><br />
+                        <p>Break</p><p>Fungsi: untuk menyiapkan pemeriksaan penekanan tombol Control-C(diaktifkan atau tidak diaktifkan)</p><p></p><p>Chdir / CD</p><p>Fungsi: untuk mengubah direktori ke dalam path yang lain</p><p></p><p>CLS</p><p>Fungsi: berguna untuk menghapus/ mengosongkan isi layar</p><p></p><p>Copy</p><p>Fungsi: fasilitas untuk menggandakan suatu file atau lebih ke dalam drive/ lokasi lain</p><p></p><p>Date</p><p>Fungsi: memunculkan / menetapkan tanggal pada jam internal komputer</p><p></p><p>Del</p><p>Fungsi: untuk menghapus file atau beberapa file yang dinyatakan</p><p></p><p>Dir</p><p>Fungsi: Untuk menyalin suatu file atau lebih ke lokasi lain</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-fungsi-perintah-command%e2%80%8b">
+                            11. tuliskan fungsi perintah command​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>jika maksudnya adalah Command Prompt atau disingkat dengan CMD maka:</p><p>merupakan suatu perintah dos yang ada pada sistem operasi Windows. Penggunaannya ditujukan agar user lebih mudah dalam mengeksplorasi windows secara online ataupun offline. Di sisi lain, aplikasi ini dapat juga disalahgunakan, misalnya seorang cracker yang ingin menjalankan misi-misinya dengan berbekal command prompt. Oleh karena itu, sebagai bentuk antisipasi anda sebagai pengguna perangkat computer, penting untuk mempelajari seluk-beluk command prompt supaya anda dapat memahami manfaat dan cara kerjanya.</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apakah-yang-dimaksud-dengan-external-command">
+                            12. apakah yang dimaksud dengan external command</h2><br />
+                        External Command adalah perintah yang memerlukan suatu untuk memproses perintah tersebut.adalah perintah untuk melakukan sesuatu dalam suatu kursor<br /><br />selesai<br />
+                                            <h2 class="ez-toc-section" id="perintah-yang-telah-tersimpan-dalam-memori-yang-telah-dipindahkan-dari-sistem-operasi-ke-bios-adalah-a-international-commandb-power-commandc-commandd-internal-command%e2%80%8b">
+                            13. Perintah yang telah tersimpan dalam memori yang telah dipindahkan dari sistem operasi ke BIOS adalah... .A. International commandB. Power commandC.  commandD. Internal command​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>jawabannya : A. internasional command</p><p></p><p>*Semoga bermanfaat* </p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-definisi-dari-internal-command-dan-external-command">
+                            14. tuliskan definisi dari internal command dan external command</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Internal Command adalah perintah yang tidak lagi membutuhkan file khusus, karena semua intruksi internal sudah ditampung dalam file command.com</p><p>External Command adalah perintah yang hanya dapat dijalankan(berfungsi) apabila file external ada pada direktori dimana perintah dijalankan atau telah dilakukan patch kedirektori dimana file external tersebut berada. </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="31-tuliskan-perntah-command-promp-yang-digunakan-untuk-menampilkan-versi-pada-sistem-dos-yang-sedang-digunakan%e2%80%8b">
+                            15. 31. Tuliskan perntah Command promp yang digunakan untuk menampilkan versi pada sistem DOS yang sedang digunakan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ver</p><p>command /k ver</p><br />
+                                            <h2 class="ez-toc-section" id="sistem-operasi-yang-menggunakancommand-line-interface-adalah-a-dosc-unixb-mac-osd-linux%e2%80%8b">
+                            16. Sistem operasi yang menggunakancommand-line interface adalah ....a. DOSC. UNIXb. Mac OSd. Linux​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>b. Mac OS</p><p><strong>Penjelasan:</strong></p><p>Antarmuka baris perintah (bahasa Inggris: command-line interface, CLI) adalah mekanisme interaksi dengan sistem operasi atau perangkat lunak komputer dengan mengetikkan perintah untuk menjalankan tugas tertentu.</p><p></p><p>Konsep CLI dimulai sewaktu teletypewriter machine (TTY) dihubungkan ke komputer pada dasawarsa 1950-an dan terus berkembang bersama dengan sistem GUI seperti Microsoft Windows, Mac OS, dan X Window System.</p><p></p><p>#semogamembantu</p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-internal-command-dan-external-command-sebutkan-contoh-masing-masing-5-%e2%80%8b">
+                            17. Apa perbedaan Internal Command dan External Command? Sebutkan contoh masing-masing 5 ! ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>semua perintah dari internal command dapat langsung dijalankan dari prompt, tanpa harus masuk ke direktori. </p><p>sedangkan eksternal command semua perintah nya tidak dapat langsung dijalankan melalui prompt.</p><p><strong>Penjelasan:</strong></p><p>maaf contoh nya lupa</p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="perintah-dos-berbasis-text-pada-sistem-oprasi-windows-adalah%e2%80%8b">
+                            18. perintah dos berbasis text pada sistem oprasi windows adalah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Perintah DOS merupakan sebuah perintah yang dimana akan dapat digunakan didalam sebuah sistem operasi DOS. </p><p><strong>Penjelasan:</strong></p><p>semoga membantu:)</p><p>Maaf kalo salah:)</p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-contoh-dan-cara-menjalankan-perintah-append-dalam-command-prompt">
+                            19. bagaimana contoh dan cara menjalankan perintah append dalam command prompt</h2><br />
+                        perintah append dalam command prompt dapat digunakan oleh program untuk membuka file dalam direktori lain seolah-olah file tersebut berada pada satu direktori<br /> APPEND digunakan untuk memberitahukan pada sistem operasi atau mengenai jejak pencarian file data (file yang mempunyai perluasan selain .EXE, .COM, atau .BAT).jika instruksi PATH digunakan untuk memberi jejak file yang dapat dieksekusi, maka fungsi instruksi APPEND akan memberikan jejak dari file yang tidak dapat dieksekusi seperti jejak lokasi data ataupun teks.<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="perintah-perintah-dasar-internal-dan-external-command-ditolonh-yah-teman-teman-%e2%80%8b">
+                            20. perintah perintah dasar internal dan external command..ditolonh yah teman teman :(​</h2><br />
+                        <p> </p><p>MS-DOS</p><p> </p><p>MS-DOS adalah singkatan dari Microsoft Disk Operating System, yaitu Sistem Operasi berbasis baris-perintah (command-line) yang digunakan pada PC. Seperti sistem operasi lain contohnya OS/2, ia menterjemahkan input dari keyboard menjadi pekerjaan yang dapat dilakukan oleh komputer, ia juga dapat menangani pekerjaan seperti input dan output pada disket atau harddisk, dukungan video, kontrol keyboard , dan banyak lagi fungsi-fungsi internal lainnya yang berkaitan dengan eksekusi sebuah program dan pemeliharaan file.</p><p>Perintah MS-DOS diketikkan dalam sebuah jendela yang disebut Command Prompt Window. Untuk keluar dari MS-DOS, ketik exit dalam jendela tersebut yaitu pada kursor yang berkedip-kedip.</p><p>MS-DOS Mode adalah sebuah shell dimana lingkungan MS-DOS di-emulasikan dalam Sistem Operasi 32-bit, seperti Windows. Program berbasis MS-DOS dapat berjalan di Windows dan biasanya ia membuat sebuah file yang disebut Program Information File (PIF) yang muncul sebagai shortcut di desktop anda.</p><p>Untuk membuka jendela Command Prompt, klik Start, pilih All Programs, pilih Accessories, dan kemudian klik Command Prompt.</p><p>Perintah DOS adalah perintah-perintah yang dapat dijalankan di dalam sistem operasi DOS. Dalam sistem operasi DOS, terdapat dua jenis perintah, yakni:</p><p>a.      Perintah internal (internal command), yakni perintah-perintah yang telah dimasukkan ke dalam COMMAND.COM (interpreter perintah DOS), sehingga dapat langsung dieksekusi oleh kernel DOS, di mana saja.</p><p>b.      Perintah eksternal (external command), yakni perintah-perintah yang tidak dimasukkan ke dalam COMMAND.COM, dan membutuhkan sebuah berkas yang dapat dieksekusi (berupa program DOS) yang harus terdapat dalam direktori aktif.</p><p></p><p>A.     PERINTAH-PERINTAH INTERNAL :</p><p></p><p>BREAK</p><p>Mengeset pengecekan penekanan tombol Ctrl+C atau menggagalkannya.</p><p>CD atau CHDIR</p><p>Mengganti direktori aktif ke direktori lainnya yang ditentukan dalam parameter. Jika dijalankan tanpa parameter, maka perintah ini akan menampilkan lokasi di mana direktori aktif berada.</p><p>CHCP</p><p>Jika dijalankan tanpa parameter, perintah ini akan menampilkan code page (kumpulan karakter) dalam bentuk angka yang sedang digunakan. Perintah ini juga dapat digunakan untuk mengganti code page untuk semua perangkat yang mendukung pergantian kumpulan karakter.</p><p>CLS</p><p>Membersihkan layar dan menempatkan kursor pada pojok kiri layar. Perintah ini tidak memiliki parameter.</p><p>COPY</p><p>Menyalin satu atau beberapa berkas dari satu lokasi ke lokasi lainnya yang ditentukan. Perintah ini memiliki dua parameter, yakni parameter sumber berkas dan tujuan ke mana berkas akan disalin.</p><p>CTTY</p><p>Perintah ini akan mengganti perangkat terminal (terminal device/tty) yang digunakan untuk mengontrol komputer.</p><p>DATE</p><p>Perintah ini akan menampilkan tanggal saat ini. Perintah ini juga dapat mengeset tanggal komputer.</p><p>DEL atau ERASE</p><p>Menghapus berkas yang ditentukan dalam parameter. Parameter dapat berupa nama berkas atau beberapa nama berkas yang disusun menggunakan karakter wildcard.</p><p>DIR</p><p>Jika digunakan tanpa parameter, perintah ini dapat menampilkan daftar berkas-berkas dan subdirektori yang terdapat di dalam direktori aktif. Berkas ini memiliki satu parameter, yakni lokasi direktori di mana hendak menampilkan daftar isi direktori.</p><p>EXIT</p><p>Keluar dari shell COMMAND.COM sekunder dan kembali lagi kepada COMMAND.COM primer.</p><p>LH atau LOADHIGH</p><p>Memuat sebuah program ke upper memory block.</p><p>LOCK</p><p>Perintah ini mengizinkan akses langsung terhadap hard disk. Perintah ini hanya dimiliki oleh MS-DOS dalam Windows 95/98.</p><p>MKDIR atau MD</p><p>Membuat sebuah direktori dalam direktori aktif.</p><p>PATH</p><p>Menentukan di mana MS-DOS harus mencari berkas-berkas yang dapat dieksekusi sebagai program.</p><p>PROMPT</p><p>Mengubah tampilan command prompt MS-DOS.</p><p>RMDIR atau RD</p><p>Menghapus sebuah direktori kosong. Akan gagal bila direktori tersebut mengandung berkas atau subdirektori lainnya. Gunakan perintah eksternal DELTREE untuk menghapus total sebuah tree direktori.</p><p>REN atau RENAME</p><p>Mengubah nama sebuah atau beberapa berkas (dengan menggunakan karakter wildcard).</p><p>SET</p><p>Menampilkan, menghapus atau mengeset variabel-variabel lingkungan. Umumnya, perintah ini dimasukkan ke dalam berkas AUTOEXEC.BAT.</p><p>TIME</p><p>Menampilkan atau mengeset waktu saat ini.</p><p>TYPE</p><p>Menampilkan isi dari sebuah berkas (dalam bentuk teks) ke dalam standard output.</p><p>UNLOCK</p><p>Menonaktifkan akses hard disk secara langsung. Perintah ini hanya dimiliki oleh MS-DOS dalam Windows 95/98.</p><p>VER</p><p>Menampilkan versi sistem operasi yang digunakan.</p><p>VERIFY</p><p>Menyuruh sistem operasi agar melakukan verifikasi bahwa berkas-berkas yang ditulis ke dalam media penyimpanan telah sempurna ditulis, dan menampilkan status verifikasi. Perintah ini secara default dinyalakan oleh MS-DOS.</p><p>VOL</p><p>Menampilkan nama label dari sebuah volume atau partisi.</p><p></p><p></p><p></p><p></p><p><strong>#</strong><strong>S</strong><strong>E</strong><strong>M</strong><strong>O</strong><strong>G</strong><strong>A</strong><strong> </strong><strong>MEMBANTU</strong><strong> </strong><strong>YAH◉‿◉</strong></p><p></p><p><strong>Jawaban:</strong></p><p>ms-dos</p><p><strong>Penjelasan:</strong></p><p>kasih jawaban terbaik</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-dasar-dari-perintah-verify-pada-command-prompt-adl">
+                            21. Fungsi dasar dari perintah verify pada command prompt adl</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Memberitahu Windows apakah akan memverifikasi file yang Anda ditulis dengan benar atau tidak ke disk.</p><p><strong>Penjelasan:</strong></p><p>Fungsi perintah ini dapat dibaca dengan mengetikkan perintah Help pada command prompt.</p><p>Perintah Help akan menampilkan informasi berbagai perintah dasar di command prompt (termasuk perintah verify). Perhatikan gambar berikut ini (pada tanda panah merah).</p><br />
+                                            <h2 class="ez-toc-section" id="perintah-yang-digunakan-untuk-mengubah-sistem-waktu-pada-dos-adalah">
+                            22. perintah yang digunakan untuk mengubah sistem waktu pada Dos  adalah </h2><br />
+                        <p><strong>Jawaban:</strong></p><p>yang digunakan untuk mengubah sistem waktu pada Dos ialah <strong>TIME</strong></p><p><strong>Penjelasan:</strong></p><p>Semoga barokah</p><br />
+                                            <h2 class="ez-toc-section" id="perintah-dasar-command-promt-beserta-fungsinya">
+                            23. perintah dasar command promt beserta fungsinya</h2><br />
+                        Pengertian Command Prompt<br /><br />Command Prompt atau DOS prompt adalah sebuah command line (baris perintah) pada sebuah OS (Operating System) berbasis GUI untuk mengesekusi file dengan cara menuliskan perintahnya pada jendela cmd. Atau singkatnya Command Prompt ini adalah sistem operasi berbasis baris perintah karena sebenarnya Command Prompt atau DOS prompt ini pada awalnya digunakan sebagai sistem operasi akan tetapi setelah dos mulai banyak di tinggalkan maka sekarang dos tetap di integrasikan oleh microsoft pada Windows yang lebih kita kenal dengan nama MS-DOS atau Command Prompt.<br /><br />Dxdiag = untuk melihat diagnosis direct X sebuah komputer <br />
+                                            <h2 class="ez-toc-section" id="fungsi-perintah-pin-yang-digunakan-di-command-prompt-adalah%e2%80%8b">
+                            24. fungsi perintah pin yang digunakan di command prompt adalah​</h2><br />
+                        <p>Jawaban:</p><p>Ping atau Packet Internet Gropher merupakan program yang dijalankan melalui CMD (Command Prompt) pada Windows. Fungsi perintah ping di CMD salah satunya untuk melakukan cek koneksi pada suatu host. </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="contoh-perintah-dasar-dos-internal-eksternal-command">
+                            25. Contoh perintah dasar DOS internal &amp; eksternal command ?</h2><br />
+                        Internal : DIR, COPY, DELETE, COPY, RENAME, TIME, DATE, VOL, VER, CLS, dan Prompt.<br /><br />Eksternal : ATTRIB,CHKDSK, DELTREE, FORMAT, FDISK, DISKCOPY, EDIT, LABEL, MEM, MODE, MOVE, SYSTEM, XCOPY, dan SCANDISK<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-perintah-dos-beserta-fungsinya">
+                            26. Sebutkan perintah DOS beserta fungsinya</h2><br />
+                        CD : Celana Dalam :'v kwkwkw Change direktori pindah tempat<br />ls : List liat isi semua file<br />mkdir : buat file baru <br />Assoc : modifikasi extensi<br />Del : apus berkas<br />Dir : pindah tempat / direktori<br />exit : keluar<br />Rmdir : apus file<br />Rename : ubah nama<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="aplikasi-yang-berfungsi-menjalankan-perintah-command-line-disebut">
+                            27. Aplikasi yang berfungsi menjalankan perintah command line disebut . . . .</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Aplikasi yang berfungsi menjalankan perintah command line di sebut <strong>open </strong><strong>office </strong></p><br />
+                                            <h2 class="ez-toc-section" id="sistem-operasi-komputer-khususnya-dos-memiliki-dua-macam-perintah-yaitu-internal-command-dan-eksternal-command-cara-kerja-dari-internal-command-adalah-%e2%80%a6%c2%a0%e2%80%8b">
+                            28. Sistem operasi komputer khususnya DOS, memiliki dua macam perintah yaitu internal command dan eksternal command, cara kerja dari internal command adalah … *​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>MS DOS mengambil perintah dari memory, perintah di memory ini di load dari command.com yang berisi perintah internal seperti: date, time, cd, dll</p><p></p><p><strong>Penjelasan:</strong></p><p>DOS punya file penting: msdos.sys, io.sys dan command.com</p><p>sistem operasi DOS ini sebenarnya sama pentingnya spt console-nya linux, tapi banyak yang lupa'in</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-tiga-contoh-perintah-internet-dalam-dos">
+                            29. Sebutkan tiga contoh perintah internet dalam DOS?</h2><br />
+                        Perintah DOS terbagi atas dua kelompok, yaitu:<br />– perintah internal, dan<br />– perintah eksternal<br /><br />A. Perintah Internal<br />Perintah internal merupakan perintah yang otomatis tersedia setelah sistem DOS aktif.<br />Contoh-contoh perintah internal:<br />– CLS<br />– DIR<br />– COPY<br />– DEL<br />– REN<br />– EDIT<br />– TYPE<br />– PROMPT<br />– LABEL<br />– VOL<br />– dsb<br /><br />B. Perintah Eksternal<br />Perintah eksternal merupakan perintah yang belum tentu ada walaupun sitem DOS sudah diaktifkan. Karena perintah-perintah eksternal umumnya membutuhkan ruang memory yang besar sehingga perintah tersebut tidak diletakkan ke memory begitu DOS diaktifkan.<br />Perintah-perintah eksternal antara lain adalah:<br />– DISKCOPY<br />– DEBUG<br />– FORMAT<br />– DEFRAGMENT<br />– dsb<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="apakah-yang-dimaksud-dos-external">
+                            30. apakah yang dimaksud DOS external</h2><br />
+                        perintah DOS yang biasa dikerjakan setelah komputer di booting, yang memerlukan disket DOS itu sendiri.
+
+maaf kalau salah<br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-external-command-dalam-dos-sebutkan-macam-macamnya-serta-jelaskan-kegunaanya">
+                            31. apa yang dimaksud dengan external command dalam DOS? sebutkan macam macamnya serta jelaskan kegunaanya</h2><br />
+                        External command ialah perintah yang tidak dimasukkan ke dalam COMMAND.COM dan membutuhkan file yang dapat dieksekusi (berupa program Dos) serta harus terdapat dalam directory aktif. Macamnya:<br />XCOPY: berguna untuk menyalin file atau directory.<br />TITLE: berguna untuk mengubah judul jendela command prompt yang aktif<br />TREE: berguna menampilkan secara grafis struktur directory<br /><br /># semoga membantu<br /><br />
+                                            <h2 class="ez-toc-section" id="perintah-yang-telah-tersimpan-dalam-memori-yang-telah-dipindahkan-dari-sistem-operasi-ke-bios-adalah-a-international-commandb-power-commandc-commandd-internal-commandmohon-bantuan-nya">
+                            32. Perintah yang telah tersimpan dalam memori yang telah dipindahkan dari sistem operasi ke BIOS adalah... .A. International commandB. Power commandC.  commandD. Internal commandMohon bantuan nya ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Internal command adalah peritah yang telah tersimpan dalam memori yang dipindahkan dari sistem operasi ke BIOS. Eternal command adalah perintah yang berada di luar memori.</p><p><strong>Penjelasan:</strong></p><p>jawabannya A</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-beberapa-perintah-external-command-berikuta-attridb-diskcopyc-formatjawab%e2%80%8b">
+                            33. Jelaskan fungsi dari beberapa perintah external command berikut!!A. AttridB. DiskcopyC. Formatjawab??​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A. Attrib berfungsi sebagai perintah untuk menampilkan atribut file.</p><p>B. Diskcopy berfungsi sebagai perintah untuk manyalin semua data dalam disket ke disket lain.</p><p>C. Format berfungsi sebagai perintah untuk memformat disket maupun hardisk yg sudah dipartisi.</p><p><strong>Penjelasan:</strong></p><p>A. Contoh atribut yg umumnya terdapat pada file antara lain: Hidden dan Read Only.</p><p></p><p>B. Cara kerja perintah diskcopy yaitu: masukkan disket ke dalam FDD, selanjutnya ketikkan perintah ini dan biarkan proses penyalinan (copy) data berjalan. Saat proses berakhir, keluarkan disket dan masukkan disket yg masih kosong ke dalam FDD (nantinya akan tampil proses masuknya data yg disalin tadi ke dalam disket yg masih kosong)</p><p></p><p>C. Perintah format sering dipakai untuk mengosongkan isi disket, harddisk dan dapat pula dilakukan pada flashdisk.</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-5-fungsi-external-command%e2%80%8b">
+                            34. tuliskan 5 fungsi external command​</h2><br />
+                        <p>a.attrib berfungsi sebagai perintah untuk menampilkan atribut file </p><p>b.discopy berfungsi sebagai perintah untuk menyalin semua data dalam disket ke disket lain</p><p>c.format berfungsi sebagai perintah untuk memformat disket maupun hardisk yg sudah dapartisi</p><p></p><p><strong>Penjelasan:</strong></p><p>A.contoh atribut yg umumnya terdapat pada file antara lain:hadden dan read only </p><p>B.cara kerja perintah diskcopy yaitu:masukkan disket kedalam fdd selanjutnya ketikkan perintah ini dan biarkan proses penyalinan (copy) data berjalan</p><p>C.perintah format sering di pakai untuk mengosokan isi disket harddisk dan dapat pula dilakukan flashdisk</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apakah-yang-di-maksud-dengan-software-command-prompt-atau-dos-prompt">
+                            35. apakah yang di maksud dengan software command prompt atau DOS Prompt?</h2><br />
+                        <p>ommand Prompt (cmd.exe) adalah baris perintah penerjemah (baris perintah yang dieksekusi ke sistem operasi yang disediakan oleh Microsoft pada :
+</p><p>1.OS/2
+</p><p>2. Windows CE, dan
+</p><p>keluarga sistem operasi Windows NT (termasuk Windows 2000, Windows XP, Windows Vista, Windows Server 2003 dan Windows Server 2008).</p><br />
+                                            <h2 class="ez-toc-section" id="1-apa-perbedaan-sistem-operasi-windows-dengan-linux2-jelaskan-pengertian-tentang-booting3-sebutkan-empat-file-sistem-yang-terdapat-dalam-sistem-operasi-dos4-sebutkan-macam-macam-program-aplik">
+                            36. 1. Apa perbedaan sistem operasi windows dengan linux?
+2. Jelaskan pengertian tentang booting?
+3. Sebutkan empat file sistem yang terdapat dalam sistem operasi DOS
+4. sebutkan macam-macam program aplikasi yang dapat di pasang pada sistem operasi DOS.
+5. Apa yang dimaksud dengan internal command dan external command dalam sistem operasi?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.) Bedanya Windows merupakan sistem operasi tertutup atau komersial. Pengguna harus membeli lisensi kepada perusahaan yang mengembangkanya yakni Microsoft. Sementara Linux merupakan sistem operasi open source atau gratis yang bisa dikembangkan oleh siapa pun.</p><p>2.) booting adalah istilah yang dipakai untuk menyebutkan proses loading awal saat kita menghidupkan komputer.</p><p>3.) -EDIT.COM </p><p>     -QBASIC.EXE</p><p>     -MIRROR.COM</p><p>     - UNDELETE.EXE</p><p>4.) -Wordstar</p><p>     -Lotus</p><p>     -Word Perfect</p><p>5.) Internal command merupakan instruksi yang sejak awal ditempatkan dalam perangkat memori. Contoh: Copy, Color, Cis dan lain sebagainya. External command merupakan instruksi yang pengeksekusiannya membutuhkan aplikasi eksternal di luar perangkat memori, seperti .exe.</p><br />
+                                            <h2 class="ez-toc-section" id="perintah-external-dalam-dos-yang-berdingsi-untuk-mengganti-file">
+                            37. perintah external dalam dos yang berdingsi untuk mengganti file</h2><br />
+                        replace<br /><br /># semoga membantu<br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-kalimat-command-yang-mengandung-5-perintah%e2%80%8b">
+                            38. contoh kalimat command yang mengandung 5 perintah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.) Don't waste food! (Jangan membuang makan!)</p><p></p><p>2.) Clean your room, please! (Tolong, bersihkanlah ruangan kamu!)</p><p></p><p>3.) Mom, tomorrow please wake me up at five in the morning okay. (Ibu, besok tolong bangunkan saya pukul lima pagi ya)</p><p></p><p>4.) Please close the door. (Tolong tutup lah pintu nya)</p><p></p><p>5.) Please dry the laundry now! (Tolong jemurkan cucian baju sekarang!)</p><br />
+                                            <h2 class="ez-toc-section" id="beda-internal-command-dan-external-command">
+                            39. beda internal command dan external command</h2><br />
+                        semua perintah dari internal command dapat langsung dijalankan dari prompt, tanpa harus masuk ke direktori. sedangkan eksternal command semua perintah nya tidak dapat langsung dijalankan melalui prompt.<br /><br />smga mmbntu :)<br /><br />
+                                            <h2 class="ez-toc-section" id="aplikasi-yang-berfungsi-menjalankan-perintah-command-line-disebut">
+                            40. aplikasi yang berfungsi menjalankan perintah command Line disebut</h2><br />
+                        namanya command prompt<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/BaNhYBO4isY?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>bahasa_lain</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-dan-jawaban-jurnal-penyesuaian-perusahaan-jasa.html">Contoh Soal Dan Jawaban Jurnal Penyesuaian Perusahaan Jasa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-gson.html">Fungsi Dari Gson</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-syntax-set-flashdata-pada-codeigniter.html">Fungsi Dari Syntax Set flashdata Pada Codeigniter</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-gerak-parabola-dan-penyelesaiannya.html">Contoh Soal Gerak Parabola Dan Penyelesaiannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-perpindahan-kalor-smp-kelas-7.html">Contoh Soal Perpindahan Kalor Smp Kelas 7</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-barisan-dan-deret-geometri-kelas-8.html">Contoh Soal Barisan Dan Deret Geometri Kelas 8</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-metodologi-penelitian-dalam-tugas-akhir-teknik-geologi.html">Contoh Metodologi Penelitian Dalam Tugas Akhir Teknik Geologi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/di-bawah-ini-merupakan-fungsi-dari-sebuah-pernikahan-kecuali.html">Di Bawah Ini Merupakan Fungsi Dari Sebuah Pernikahan Kecuali</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/sinonim-mandiri.html">Sinonim Mandiri</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-type-password.html">Apa Fungsi Dari Type Password</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-affected-rows-pada-php.html">Fungsi Dari Affected rows Pada Php</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-abstrak-tugas-akhir-teknik-informatika.html">Contoh Abstrak Tugas Akhir Teknik Informatika</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-analisis-soal-bahasa-inggris.html">Contoh Analisis Soal Bahasa Inggris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/trik-lulus-toefl.html">Trik Lulus Toefl</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-sel-schwann.html">Fungsi Dari Sel Schwann</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-data-margin-30.html">Fungsi Dari Data margin 30</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-teknologi.html">Fungsi Teknologi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-bahasa-indonesia-kelas-2-tema-7.html">Contoh Soal Bahasa Indonesia Kelas 2 Tema 7</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-make-up-dan-haste.html">Fungsi Dari Make Up Dan Haste</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-garnier-light-complete-super-essence.html">Fungsi Dari Garnier Light Complete Super Essence</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediasoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediasoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

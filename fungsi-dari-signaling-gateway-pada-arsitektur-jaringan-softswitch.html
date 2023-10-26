@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Signaling Gateway Pada Arsitektur Jaringan Softswitch - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Signaling Gateway Pada Arsitektur Jaringan Softswitch, , , , , , , 0, , , , , , 0, fungsi-dari-signaling-gateway-pada-arsitektur-jaringan-softswitch, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Signaling Gateway Pada Arsitektur Jaringan Softswitch - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Signaling Gateway Pada Arsitektur Jaringan Softswitch, , , , , , , 0, , , , , , 0, fungsi-dari-signaling-gateway-pada-arsitektur-jaringan-softswitch, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Signaling Gateway Pada Arsitektur Jaringan Softswitch - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Signaling Gateway Pada Arsitektur Jaringan Softswitch, , , , , , , 0, , , , , , 0, fungsi-dari-signaling-gateway-pada-arsitektur-jaringan-softswitch, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediasoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediasoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediasoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediasoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediasoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediasoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediasoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Signaling Gateway Pada Arsitektur Jaringan Softswitch</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">HaikalLNandito7553</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Signaling+Gateway+Pada+Arsitektur+Jaringan+Softswitch" alt="Fungsi Dari Signaling Gateway Pada Arsitektur Jaringan Softswitch">
+                    </div>
+                    <p></p>
+                    <p>Arsitektur jaringan yang berfungsi sebagai gerbang antara jaringan signal ss7 dengan node-node lain pada jaringan ip yang dikontrol oleh softswitch disebut</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#arsitektur-jaringan-yang-berfungsi-sebagai-gerbang-antara-jaringan-signal-ss7-dengan-node-node-lain-pada-jaringan-ip-yang-dikontrol-oleh-softswitch-disebut">1.
+                                            Arsitektur jaringan yang berfungsi sebagai gerbang antara jaringan signal ss7 dengan node-node lain pada jaringan ip yang dikontrol oleh softswitch disebut</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-komponen-soft-switch-yang-berfungsi-untu-mengontrol-semua-sesi-layanan-dan-komunikasi-mengatur-interaksi-elemen-elemen-jaringan-yang-lain-adalah-%e2%80%a6-a-signaling-gateway-b-gateway-contro">2.
+                                            Dalam komponen soft switch yang berfungsi untu mengontrol semua sesi layanan dan komunikasi, mengatur interaksi elemen-elemen jaringan yang lain adalah … a. Signaling Gateway b. Gateway Controller c. Media Gateway d. Feature Server e. Media Server​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-saja-fungsi-gateway-dalam-jaringan-%e2%80%8b">3.
+                                            apa saja fungsi gateway dalam jaringan ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-jelaskan-arsitektur-utama-dari-server-softswitch%e2%80%8b">4.
+                                            5. Jelaskan arsitektur utama dari server softswitch!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-arsitektur-osi-pada-jaringan-komputer">5.
+                                            jelaskan fungsi dari arsitektur osi pada jaringan komputer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#server-proxy-yang-berfungsi-secara-teknis-untuk-menjadi-sebuah-gateway-berperan-untuk-membatasi-penggunaan-jaringan-local-dan-jaringan-local-adalah-a-fungsi-connection-sharing-b-fungsi-filtering-c">6.
+                                            Server proxy yang berfungsi secara teknis untuk menjadi sebuah gateway berperan untuk membatasi penggunaan jaringan local dan jaringan local adalah...A. Fungsi connection sharing B. Fungsi filtering C. Fungsi caching D. Fungsi anonymous E. Fungsi transparent​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-proxy-server-dan-internet-gateway-di-suatu-jaringan-dan-apa-manfaatnya">7.
+                                            apa fungsi proxy server dan internet gateway di suatu jaringan dan apa manfaatnya ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-arsitektur-osi-pada-jaringan-komputer">8.
+                                            Jelaskan fungsi dari Arsitektur OSI pada jaringan Komputer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-perangkat-jaringan-berikut-server-switch-router-dan-gateway%e2%80%8b">9.
+                                            Jelaskan fungsi dari perangkat jaringan berikut: Server, Switch, Router dan Gateway​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-pengertian-arsitektur-jaringan">10.
+                                            jelaskan pengertian arsitektur jaringan !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-arsitektur-tcpip-pada-jaringan-komputer">11.
+                                            Jelaskan fungsi dari Arsitektur TCP/IP pada jaringan Komputer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-terjadi-jika-dua-jaringan-berbeda-protocol-tanpa-gateway-%e2%80%8b">12.
+                                            Apa yang terjadi jika dua jaringan berbeda protocol tanpa gateway ?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-penggunaannya-softswitch-mampu-menyelesaikan-permasalaan-sehinga-dapat-menjadi-jawaban-bagi-strategi-evolusi-pstn-konvensonal-menuju-ke-jaringan-masa-depan-yang-berbasis-paket-hal-ini-disebabk">13.
+                                            Dalam penggunaannya, softswitch mampu menyelesaikan permasalaan sehinga dapat menjadi jawaban bagi strategi evolusi PSTN konvensonal menuju ke jaringan masa depan yang berbasis paket. Hal ini disebabkan oleh..... a. Softswitch menggunakan teknologi yang canggih sehingga mampu mengatasi semua kekurangan dari PSTNb. Softswitch memiliki lebih banyak kelebihan jika dibandingkan dengan jaringan PSTNc. Softswitch menggunakan jaringan IP sehinga dapat beroperasi secara penuh bersama PSTN sampai eksistensi PSTN habisd. Softswitch menggunakan jaringan IP yang menyebabkan biaya komunikasi murah sehingga softswitch digunakan oleh lebih banyak penggunae. Softswitch menjadi next generation network​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-software-yang-dapat-digunakan-untuk-membuat-jaringan-softswitch">14.
+                                            Apa software yang dapat digunakan untuk membuat jaringan Softswitch?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#macam-macam-jaringan-berdasarkan-struktur-arsitekturnya">15.
+                                            macam-macam jaringan berdasarkan struktur arsitekturnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-internet-gateway%e2%80%8b">16.
+                                            fungsi internet gateway​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-arsitektur-osi-pada-jaringan-komputer">17.
+                                            Jelaskan fungsi dari Arsitektur OSI pada jaringan Komputer </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1jelaskan-cara-kerja-komponen-context-pada-dial-attendant-jawab-2-bagaimanakah-fungsionalitas-layanan-yang-disediakan-oleh-softswitch-jawab-3-sebutkan-arsitektur-utama-dari-server-softswitch-awab">18.
+                                            1Jelaskan cara kerja komponen context pada dial-attendant! Jawab: 2.Bagaimanakah fungsionalitas layanan yang disediakan oleh softswitch? Jawab: 3.Sebutkan arsitektur utama dari server softswitch! awab:​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#default-gateway-pada-jaringan-adalah">19.
+                                            Default gateway pada jaringan adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menjelaskan-arsitektur-jaringan">20.
+                                            menjelaskan arsitektur jaringan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-application-layer-gateway">21.
+                                            fungsi application layer gateway?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengertian-arsitektur-jaringan-pengertian-topologi-jaringan-macam-macam-topologi-jaringan">22.
+                                            pengertian arsitektur jaringan.?
+pengertian topologi jaringan..?
+macam-macam topologi jaringan..!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-softswitch-sebenarnya">23.
+                                            apakah fungsi softswitch sebenarnya?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-fungsi-gateway-dalam-suatu-jaringan-komputer%e2%80%8b">24.
+                                            sebutkan fungsi gateway dalam suatu jaringan komputer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-dalam-sebuah-jaringan-komputer-bila-terhubung-dengan-internet-yang-berfungsi-sebagai-gateway-adalah-%e2%80%a6">25.
+                                            8.	Dalam sebuah jaringan komputer bila terhubung dengan internet yang berfungsi sebagai gateway adalah …..</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-default-gateway%e2%80%8b">26.
+                                            apa fungsi dari Default gateway​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#interkoneksi-jaringan-dengan-masing-masing-jaringan-memiliki-arsitektur-yang-sangat-berbeda-dijembatani-menggunakan-perangkat-a-router-b-hubc-kabeld-gateway%e2%80%8b">27.
+                                            Interkoneksi jaringan dengan masing- masing jaringan memiliki arsitektur yang sangat berbeda dijembatani menggunakan perangkat .... a. router b. hubc. kabeld. gateway​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-arsitektur-jaringan%e2%80%8b">28.
+                                            sebutkan arsitektur jaringan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-utama-media-gateway">29.
+                                            apa fungsi utama media gateway?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-arsitektur-osi-pada-jaringan-komputer">30.
+                                            Jelaskan fungsi dari Arsitektur OSI pada jaringan Komputer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#untuk-mengatur-koneksi-dari-media-stream-merupakan-fungsi-dari%e2%80%a6-a-sg-signalling-gateway-signaling-gateway-b-megacoc-mg-media-gateway-media-gatewayd-application-server-application-servere">31.
+                                            Untuk mengatur koneksi dari media stream merupakan fungsi dari…..a.SG (Signalling Gateway) Signaling gateway b.MEGACOc.MG (Media Gateway) Media gatewayd.Application Server Application Servere.Management Plan Management Plan ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dc-signaling-dan-berikan-contoh-sinyal-apa-saja-yang-termasuk-dc-signaling">32.
+                                            Apa yang dimaksud Dc signaling dan berikan contoh sinyal apa saja yang termasuk dc signaling </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-sebuah-jaringan-komputer-bila-terhubung-dengan-internet-yang-berfungsi-sebagai-gateway-adalah-a%c2%a6">33.
+                                            Dalam sebuah jaringan komputer bila terhubung dengan internet yang berfungsi sebagai gateway adalah â¦..</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-arsitektur-osi-pada-jaringan-komputer">34.
+                                            Jelaskan fungsi dari arsitektur osi pada jaringan komputer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-prinsip-dari-arsitektur-jaringan-osi-dan-prinsip-dari-arsitektur-jaringan-tcpip">35.
+                                            Jelaskan prinsip dari arsitektur jaringan OSI dan prinsip dari arsitektur jaringan TCP/IP</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perangkat-keras-jaringan-yang-berfungsi-untuk-menghubungkan-beberapa-jaringan-yang-terpisah-baik-jaringan-yang-sama-maupun-berbeda-adalah-perangkat-a-hubb-bridgec-gatewayd-router%e2%80%8b">36.
+                                            Perangkat keras jaringan yang berfungsi untuk menghubungkan beberapa jaringan yang terpisah, baik jaringan yang sama maupun berbeda adalah perangkat ....a. Hubb. Bridgec. Gatewayd. Router​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#media-yang-digunakan-oleh-jaringan-softswitch-untuk-menjangkau-pelanggan-media-akses-dapat-menggunakan-cable-modem-leased-circuit-v5-2-dsl-hfc-ftthfttc-dan-radio-access-pernyataan-tersebut-mer">37.
+                                            Media yang digunakan oleh jaringan softswitch untuk menjangkau pelanggan. Media akses dapat menggunakan cable modem, leased circuit, V5.2, DSL, HFC, FTTH/FTTC dan radio access. Pernyataan tersebut merupakan fungsi dari arsitektur…</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-terjadi-jika-akses-gateway-tidak-berfungsi">38.
+                                            Apa yang terjadi jika akses gateway tidak berfungsi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#device-berfungsi-untuk-menghubungkan-jaringan-yang-memiliki-arsitektur-dan-lingkungan-berbeda-adalah">39.
+                                            device berfungsi untuk menghubungkan jaringan yang memiliki arsitektur dan lingkungan berbeda adalah? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-media-gateway-controller-adalah">40.
+                                            Fungsi dari media gateway controller adalah....</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="arsitektur-jaringan-yang-berfungsi-sebagai-gerbang-antara-jaringan-signal-ss7-dengan-node-node-lain-pada-jaringan-ip-yang-dikontrol-oleh-softswitch-disebut">
+                            1. Arsitektur jaringan yang berfungsi sebagai gerbang antara jaringan signal ss7 dengan node-node lain pada jaringan ip yang dikontrol oleh softswitch disebut</h2><br />
+                        <p><strong>Arsitektur </strong>jaringan yang berfungsi sebagai gerbang antara jaringan signal ss7 dengan node-node lain pada <strong>jaringan </strong>ip yang dikontrol oleh softswitch disebut <strong>Signalling Gateway.</strong></p><p></p>Pembahasan:<p><strong>Gateway </strong>pensinyalan (SGW) ialah komponen jaringan yang dipergunakan buat mengirim pesan pensinyalan antara node pensinyalan kanal umum (CCS), yang berkomunikasi menggunakan donasi banyak sekali transport serta <strong>protokol</strong>. Pesan <strong>pensinyalan </strong>mencakup isu <strong>ihwal </strong>pembentukan panggilan, lokasi, konversi alamat, penagihan, pesan singkat, serta layanan lainnya.</p><p></p><p><strong>Konversi transportasi </strong>umumnya asal <strong>Signaling </strong>System 7 (SS7) ke IP. aneka macam jaringan pensinyalan saling berafiliasi memakai gerbang pensinyalan. Menjadi model, galat satu jaringan <strong>pensinyalan </strong>dapat memakai lapisan Bagian Transfer Pesan konvensional dari pensinyalan SS7, sedangkan yang lain bisa memakai Protokol Transmisi Kontrol Kontrol (SCTP) / pensinyalan SS7 berbasis IP.</p><p></p>Pelajari lebih lanjut<p>Pelajari lebih lanjut tentang :</p><p>Apa pengertian gateway pada https://brainly.co.id/tugas/1121058</p><p></p>#BelajarBersamaBrainly #SPJ4<p></p><br />
+                                            <h2 class="ez-toc-section" id="dalam-komponen-soft-switch-yang-berfungsi-untu-mengontrol-semua-sesi-layanan-dan-komunikasi-mengatur-interaksi-elemen-elemen-jaringan-yang-lain-adalah-%e2%80%a6-a-signaling-gateway-b-gateway-contro">
+                            2. Dalam komponen soft switch yang berfungsi untu mengontrol semua sesi layanan dan komunikasi, mengatur interaksi elemen-elemen jaringan yang lain adalah … a. Signaling Gateway b. Gateway Controller c. Media Gateway d. Feature Server e. Media Server​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>d . feature server maaf kalau saya salah </p><br />
+                                            <h2 class="ez-toc-section" id="apa-saja-fungsi-gateway-dalam-jaringan-%e2%80%8b">
+                            3. apa saja fungsi gateway dalam jaringan ​</h2><br />
+                        <p>fungsi gateway adalah sebagai media untuk menghubungkan satu jaringan komputer dengan jaringan komputer lainnya yang berbeda protokol,...  sedangkan jika dirinci secara lebih mendalam maka fungsi gateway adalah sebagai berikut :</p><p>-sbg Protocol Converting</p><p>-dan sebagai mempermudah akses informasi </p><p></p><p></p><p>Smoga membantu </p><br />
+                                            <h2 class="ez-toc-section" id="5-jelaskan-arsitektur-utama-dari-server-softswitch%e2%80%8b">
+                            4. 5. Jelaskan arsitektur utama dari server softswitch!​</h2><br />
+                        <p><strong>Arsitektur utama </strong><strong>Softswitch, </strong><strong>yaitu:</strong></p>Media GatewayMedia Gateway Controller (MGC) atau Call AgentMedia ServerApplication serverOperating support system (OSS)<p></p>Pembahasan<p><strong>Softswitch</strong> adalah istilah kolektif untuk pendekatan baru untuk teknologi switching yang mencakup istilah kontrol panggilan dan pemrosesan panggilan.</p><p><strong>Berikut penjelasan dari arsitektur utama dari server </strong><strong>softswitch</strong><strong>:</strong></p><strong>Media Gateway </strong>(MG) bertindak sebagai elemen transport yang mengarahkan lalu lintas di jaringan softswitch, mengirim dan menerima lalu lintas dari jaringan lain yang berbeda seperti PSTN, PLMN, VoIP H.323, dan jaringan akses pelanggan. .<strong>Media Gateway Controller </strong>(MGC) atau Call Agent, adalah elemen utama dari soft switch, mengendalikan semua layanan dan sesi komunikasi, mengkoordinasikan interaksi elemen jaringan lain, PSTN, SS7, dan jaringan IP. Kemampuan menjembatani jaringan dengan karakteristik yang berbeda saling berhubungan menggunakan protokol SIP-T.<strong>Signaling Gateway</strong> (SG) menciptakan jembatan antara jaringan SS7 dan jaringan IP di bawah kendali MGC. SG hanya menangani pensinyalan SS7 dan MGC menangani sirkuit suara yang diatur oleh mekanisme pensinyalan SS7.<strong>Server media</strong> memenuhi fungsi itu. Dengan kata lain, ini meningkatkan soft switch dengan fungsionalitas media. Mendukung pemrosesan sinyal digital (DSP) jika diinginkan.<strong>Server aplikasi </strong>adalah elemen jaringan yang menyediakan aplikasi tambahan di luar fungsionalitas telepon yang memerlukan server terpisah. Contoh: pesan suara, panggilan prabayar, SMS darat, VPN suara, dan sebagainya.<strong>Operating support system</strong> (OSS) adalah elemen jaringan yang dirancang untuk mendukung pengoperasian dan pemeliharaan jaringan. Manajemen jaringan, penyediaan, penagihan, pemantauan, statistik, dan sebagainya.<p></p>Pelajari lebih lanjutMateri tentang arsitektur utama dari server softswitch https://brainly.co.id/tugas/24144612Materi tentang server softswitch https://brainly.co.id/tugas/23420774Materi tentang softswitch https://brainly.co.id/tugas/24018873<p></p>Detail jawaban<p>Kelas: 11</p><p>Mapel: TIK</p><p>Bab: 6</p><p>Kode: 11.11.6 </p><p></p><p><strong>#TingkatkanPrestasimu #SPJ3</strong></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-arsitektur-osi-pada-jaringan-komputer">
+                            5. jelaskan fungsi dari arsitektur osi pada jaringan komputer</h2><br />
+                        Dalam arsitektur jaringan komputer, terdapat suatu lapisan-lapisan (layer) yang memiliki tugas spesifik serta memiliki protokol tersendiri. ISO (International Standard Organization) telah mengeluarkan suatu standard untuk arsitektur jaringan komputer yang dikenal dengan nama Open System Interconnection <br />
+                                            <h2 class="ez-toc-section" id="server-proxy-yang-berfungsi-secara-teknis-untuk-menjadi-sebuah-gateway-berperan-untuk-membatasi-penggunaan-jaringan-local-dan-jaringan-local-adalah-a-fungsi-connection-sharing-b-fungsi-filtering-c">
+                            6. Server proxy yang berfungsi secara teknis untuk menjadi sebuah gateway berperan untuk membatasi penggunaan jaringan local dan jaringan local adalah...A. Fungsi connection sharing B. Fungsi filtering C. Fungsi caching D. Fungsi anonymous E. Fungsi transparent​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B.  fungsi filtering  maaf kalu saya salah </p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-proxy-server-dan-internet-gateway-di-suatu-jaringan-dan-apa-manfaatnya">
+                            7. apa fungsi proxy server dan internet gateway di suatu jaringan dan apa manfaatnya ?</h2><br />
+                        sebagai pembatas akses internet agar user yang menggunakan akses internet yang terhubung dengan proxy tersebut tidak bisa mengakses situs2 yang telah terblokir oleh proxy tersebut.<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-arsitektur-osi-pada-jaringan-komputer">
+                            8. Jelaskan fungsi dari Arsitektur OSI pada jaringan Komputer</h2><br />
+                        fungsi komunikasi antara 2 komputer.<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-perangkat-jaringan-berikut-server-switch-router-dan-gateway%e2%80%8b">
+                            9. Jelaskan fungsi dari perangkat jaringan berikut: Server, Switch, Router dan Gateway​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.server adalah sebuah komputer yang berfungsi  melayani komputer lain dala sebuah jaringan atau internet</p><p>2. switch adalah konsenterator dalam sebuah jaringan yang berguna sebagai pengirim dan menerima data dari sebuah komputer ke komputer yang lain atau menghubungkan jaringan lan yang satu kepada yang lain</p><p>3. router(penghala) adalah alat pengantar paket data pada sebuah jaringan dan juga sebagai penghubung beberapa jaringan sekaligus</p><p>4 gateway adalah sebuah alat penghubung sebuah komputer ke internet atau menghubungkanya kedalam sebuah jaringan</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-pengertian-arsitektur-jaringan">
+                            10. jelaskan pengertian arsitektur jaringan !</h2><br />
+                        Arsitektur Jaringan dapat diartikan sebagai rancangan arus komunikasi media elektronik.<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-arsitektur-tcpip-pada-jaringan-komputer">
+                            11. Jelaskan fungsi dari Arsitektur TCP/IP pada jaringan Komputer</h2><br />
+                        TCP/IP yakni adalah internet protocol atau protokol yang mengatur bagaimana data/traffic pada jaringan internet bekerja.<br />
+                                            <h2 class="ez-toc-section" id="apa-yang-terjadi-jika-dua-jaringan-berbeda-protocol-tanpa-gateway-%e2%80%8b">
+                            12. Apa yang terjadi jika dua jaringan berbeda protocol tanpa gateway ?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>misalnya gimana </p><p><strong>Penjelasan:</strong></p><p>iniya jaringan 4G, E, 3G, H+,H, G, 2G, </p><p>maksudnya protokol kesehatan</p><br />
+                                            <h2 class="ez-toc-section" id="dalam-penggunaannya-softswitch-mampu-menyelesaikan-permasalaan-sehinga-dapat-menjadi-jawaban-bagi-strategi-evolusi-pstn-konvensonal-menuju-ke-jaringan-masa-depan-yang-berbasis-paket-hal-ini-disebabk">
+                            13. Dalam penggunaannya, softswitch mampu menyelesaikan permasalaan sehinga dapat menjadi jawaban bagi strategi evolusi PSTN konvensonal menuju ke jaringan masa depan yang berbasis paket. Hal ini disebabkan oleh..... a. Softswitch menggunakan teknologi yang canggih sehingga mampu mengatasi semua kekurangan dari PSTNb. Softswitch memiliki lebih banyak kelebihan jika dibandingkan dengan jaringan PSTNc. Softswitch menggunakan jaringan IP sehinga dapat beroperasi secara penuh bersama PSTN sampai eksistensi PSTN habisd. Softswitch menggunakan jaringan IP yang menyebabkan biaya komunikasi murah sehingga softswitch digunakan oleh lebih banyak penggunae. Softswitch menjadi next generation network​</h2><br />
+                        <p>Jawaban:e softswitch menjadi next generation network</p><p></p><p></p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-software-yang-dapat-digunakan-untuk-membuat-jaringan-softswitch">
+                            14. Apa software yang dapat digunakan untuk membuat jaringan Softswitch?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1.Cara Kerja Softswitch</p><p>Softswitch, customer gateway dan IP telephone mengirimkan sinyal satu sama lain dalam jaringan paket dengan menggunakan protokol telepon, seperti H.323 dan SIP.
+</p><p>Setelah sinyal diterima, softswitch akan mengidentifikasi panggilan masuk yang berasal dari PSTN atau jaringan IP.
+</p><p>Jika pihak yang dipanggil menggunakan IP, maka softswitch akan mengintruksikan customer gateway sumber dan customer gateway tujuan untuk membuat rute secara langsung yang masih dalam jaringan LAN/MAN/WAN
+</p><p>Bila yang dipanggil menggunakan jaringan PSTN, maka softswitch akan mengintruksikan Originating customer gateway untuk membuat rute menuju Media Gateway (MG) yang berhubungan antara lokal dengan sentral trunk dan MG bekerja seiring dengan SG.
+</p><p>Salah satu contoh implementasi softswitch adalah VoIP atau telepon melalui internet.
+</p><p></p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="macam-macam-jaringan-berdasarkan-struktur-arsitekturnya">
+                            15. macam-macam jaringan berdasarkan struktur arsitekturnya</h2><br />
+                        jaringan peer to per<br />jaringan client/server<br />jaringan hybrid1.Jaringan pear to pear 2.jaringan client-server 3.jaringan hybrid<br />
+                                            <h2 class="ez-toc-section" id="fungsi-internet-gateway%e2%80%8b">
+                            16. fungsi internet gateway​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>FUNGSI INTERNET GATEWAY:</strong></p>Berguna sebagai portocol convertingMemudahkan akses terhadap informasiBerbagi perangkan kerasPengamanan serta pengaturan dataMenstabilkan dan meningkatkan performa komputasi<p>untuk menghubungkan koneksi client ke server yang nantinya akan memudahkan berbagi file dari server ke client ataupun sebaliknya.</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-arsitektur-osi-pada-jaringan-komputer">
+                            17. Jelaskan fungsi dari Arsitektur OSI pada jaringan Komputer </h2><br />
+                        Fungsi dari osi (open system interconnection) adalah untuk menghubungkan komputer-komputer dari vendor-vendor yang berbeda.<br />
+                                            <h2 class="ez-toc-section" id="1jelaskan-cara-kerja-komponen-context-pada-dial-attendant-jawab-2-bagaimanakah-fungsionalitas-layanan-yang-disediakan-oleh-softswitch-jawab-3-sebutkan-arsitektur-utama-dari-server-softswitch-awab">
+                            18. 1Jelaskan cara kerja komponen context pada dial-attendant! Jawab: 2.Bagaimanakah fungsionalitas layanan yang disediakan oleh softswitch? Jawab: 3.Sebutkan arsitektur utama dari server softswitch! awab:​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Komponen konteks pada dial-attendant bekerja dengan menyimpan informasi tentang panggilan yang sedang berlangsung, termasuk nomor yang dipanggil dan nomor yang memanggil. Ini memungkinkan sistem untuk mengarahkan panggilan dengan benar dan memberikan informasi yang diperlukan kepada pengguna atau layanan terkait.</p><p></p><p>Fungsionalitas layanan yang disediakan oleh softswitch mencakup pengalihan panggilan, manajemen panggilan konferensi, pemantauan jaringan, dan manajemen panggilan keluar-masuk. Softswitch memungkinkan komunikasi suara melalui jaringan IP, memfasilitasi panggilan antara perangkat tradisional dan perangkat berbasis IP.</p><p></p><p>Arsitektur utama dari server softswitch melibatkan komponen kontrol dan komponen data. Komponen kontrol mengurus manajemen panggilan, pengalihan panggilan, dan layanan seperti penyimpanan pesan suara. Komponen data menangani aspek penyimpanan dan manipulasi data terkait panggilan, seperti informasi pengguna, pengaturan panggilan, dan riwayat panggilan.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="default-gateway-pada-jaringan-adalah">
+                            19. Default gateway pada jaringan adalah</h2><br />
+                        192.168.1.1<br /><br />Username = Admin<br />Password = Admin<br />
+                                            <h2 class="ez-toc-section" id="menjelaskan-arsitektur-jaringan">
+                            20. menjelaskan arsitektur jaringan</h2><br />
+                        jaringan terkadang ada dan tidak<br /><br />
+                                            <h2 class="ez-toc-section" id="fungsi-application-layer-gateway">
+                            21. fungsi application layer gateway?</h2><br />
+                        Fuction gateway layers !<br />a. penghubung utama antara aplikasi yang berjalan pada satu komputer dan resources network yang membutuhkan akses padanya<br /><br />misal : i FTP, telnet, SMTP, HTTP, POP3 berada pada layer Application.<br /><br />
+                                            <h2 class="ez-toc-section" id="pengertian-arsitektur-jaringan-pengertian-topologi-jaringan-macam-macam-topologi-jaringan">
+                            22. pengertian arsitektur jaringan.?
+pengertian topologi jaringan..?
+macam-macam topologi jaringan..!</h2><br />
+                        Pengertian topologi jaringan komputer adalah suatu cara atau konsep untuk menghubungkan beberapa atau banyak komputer sekaligus menjadi suatu jaringan yang saling terkoneksi.
+Macam2 topologi :
+1.topologi ring
+2.topologi bus
+3.topologi star
+4.topologi mesh
+5.topologi free
+  
+Smoga benar dan bisa membantu<br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-softswitch-sebenarnya">
+                            23. apakah fungsi softswitch sebenarnya?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>menghubungkan antara jaringan sirkuit dengan jaringan paket, termasuk di dalamnya adalah jaringan telpon tetap (PSTN), internet yang berbasis IP, kabel TV dan juga jaringan seluler yang telah ada selama ini.</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-fungsi-gateway-dalam-suatu-jaringan-komputer%e2%80%8b">
+                            24. sebutkan fungsi gateway dalam suatu jaringan komputer​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>komputer yang mwngambil data internet yang telah disaring dari komputer lain yang menjadi pintu gerbang ke internet dalam sebuah jaringan lokal</p><p>Gateway adalah perangkat di dalam komputer yang fungsinya <strong>untuk mengoneksi sebuah jaringan komputer terhadap satu jaringan komputer lain, entah satu atau lebih, yang menggunakan protocol informasi yang tidak sama. Sehingga memudahkan perangkat jaringan yang terkoneksi untuk melakukan akses internet</strong><strong>.</strong></p><p></p><p></p><p><strong>maaf </strong><strong>kalo </strong><strong>salah </strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="8-dalam-sebuah-jaringan-komputer-bila-terhubung-dengan-internet-yang-berfungsi-sebagai-gateway-adalah-%e2%80%a6">
+                            25. 8.	Dalam sebuah jaringan komputer bila terhubung dengan internet yang berfungsi sebagai gateway adalah …..</h2><br />
+                        Adalah WIFI MAAF KLO SALAH YA!!!!<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-default-gateway%e2%80%8b">
+                            26. apa fungsi dari Default gateway​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Sebagai Protocol Converting</p><p>2. Memudahkan akses Informasi</p><p>3. Hardware Sharing</p><p>4. Keamanan dan pengaturan data</p><p>5. Ke-stabilan dan Peningkatan Performa Komputasi</p><p><strong>Penjelasan:</strong></p><p>Default gateway merupakan sebuah device atau perangkat yang merutekan trafik dari local network.</p><p><strong>Jawaban</strong><strong>:</strong><strong> </strong></p><p>Fungsi Gateway</p><p>Setelah kita membahas mengenai Pengertian Gateway pada jaringan komputer, maka kini DimensiData akan membahas mengenai fungsi Gateway untuk sebuah jaringan internet komputer. Jika dilihat dari pengertiannya, maka kita mungkin dapat mengatakan bahwa secara umum Gateway berfungsi untuk menghubungkan sebuah jaringan komputer dengan jaringan komputer yang lain dengan protocol yang berbeda. Gateway dapat digunakan dalam menghubungkan IBM SNA dengan digital SNA, Local Area Network atau LAN dengan Wide Area Network atau WAN. Namun, terdapat pula beberapa fungsi dari Gateway yang lain jika kita merincinya jauh lebih detail lagi. Berikut ini informasinya.</p><p></p><p>1. Sebagai Protocol Converting. Seprerti yang telah dijelaskan di atas bahwa gateway dapat menghubungkan sebuah jaringan komputer dengan jaringan komputer lain dengan protocol yang berbeda. Untuk dapat menghubungkan dua jaringan dengan protocol yang berbeda inilah gateway harus memiliki kemampuan untuk melakukan konversi protocol sehingga dua protocol yang berbeda ini dapat saling dikaitkan atau dihubungkan. Sebuah Gateway jaringan merupakan sebuah sistem internet working yang mengkoneksikan dua jaringan dalam waktu yang sama dan dapat dikonfigurasikan dalam sebuah perangkat lunak atau software. Nah, jaringan gateway ini dapat beroperasi dalam setiap tingkat yang ada pada model lapisan dari OSI atau yang disebut juga dengan Open System Interconnection.</p><p></p><p>2. Memudahkan akses Informasi. Tanpa gateway, jaringan komputer dengan protocol yang berbeda tidak akan pernah dapat dihubungkan satu sama lain. Ketika ini terjadi, maka sudah pasti bahwa sebuah jaringan komputer tidak akan mampu untuk melakukan akses informasi dari komputer yang lainnya. Ketika gateway sudah digunakan dan jaringan komputer tersebut tersambung, maka tentu saja akses informasi pun dapat berjalan dengan jauh lebih mudah. Maka Gateway pun sangat berguna untuk digunakan dalam memudahkan melakukan akses informasi.</p><p></p><p>3. Hardware Sharing, Bagi pakai hardware secara bersama-sama. Contoh dari Penerapannya adalah penggunaan Printer Server, dimana 1buah Printer dapat digunakan secara bersama oleh Client dalam Jaringan.</p><p></p><p>4. Keamanan dan pengaturan data, komputer dalam sebuah lingkungan bisnis, dengan adanya jaringan tersebut memungkinkan seorang administrator untuk mengorganisasi data-data kantor yang paling penting. Dari pada setiap departemen menjadi terpisah-pisah dan data-datanya tercecer dimana-mana. Data penting tersebut dapat di manage dalam sebuah server back end untuk kemudian di replikasi atau dibackup sesuai kebijakan perusahaan. Begitu pula seorang admin akan dapat mengontrol data-data penting tersebut agar dapat diakses atau di edit oleh orang-orang yang berhak saja.</p><p></p><p>5. Ke-stabilan dan Peningkatan Performa Komputasi</p><br />
+                                            <h2 class="ez-toc-section" id="interkoneksi-jaringan-dengan-masing-masing-jaringan-memiliki-arsitektur-yang-sangat-berbeda-dijembatani-menggunakan-perangkat-a-router-b-hubc-kabeld-gateway%e2%80%8b">
+                            27. Interkoneksi jaringan dengan masing- masing jaringan memiliki arsitektur yang sangat berbeda dijembatani menggunakan perangkat .... a. router b. hubc. kabeld. gateway​</h2><br />
+                        <p><strong>Interkoneksi </strong>jaringan dengan masing- masing jaringan memiliki arsitektur yang sangat berbeda dijembatani menggunakan perangkat adalah d.gateway. <strong>Gateway</strong> ini merupakan perangkat untuk jembatan yang berbeda.</p><p><strong>Pembahasan</strong></p><p>Sehingga bisa disimpulkan bahwa pengertian gateway merupakan suatu perangkat yg dipakai buat menghubungkan jaringan antara satu perangkat personal komputer  menggunakan lainnya. Ini dikarenakan masing-masing perangkat memang punya protokol komunikasi beda-beda, sebagai akibatnya wajib  disambungkan melalui gateway tadi.<strong>Gateway </strong>sanggup sebagai penghubung antara satu jaringan menggunakan jaringan lain meski jaringan tadi punya arsitektur &amp; pola topologi tidak sama. Selain itu, gateway bisa menghubungkan jaringan personal komputer  akbar  menggunakan akbar , kemudian pula akbar  menggunakan kecil.Peran internet gateway merupakan memperluas fungsi berdasarkan router menggunakan melakukan terjamahan data &amp; konversi protokol. Seperti halnya router bisa bertindak menjadi gateway pada suatu jaringan. Dengan menerapkan cara yang sama, switch, server, dan firewall pun sanggup digunakan menjadi <strong>gateway </strong>dalam loka yang tidak sama menggunakan menyesuaikan kebutuhan yang ada.</p><p><strong></strong></p>Pelajari lebih lanjut<p>Pelajari lebih lanjut materi tentang gateway: https://brainly.co.id/tugas/1121058</p><p></p><p><strong>#BelajarBersamaBrainly #SPJ1</strong></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-arsitektur-jaringan%e2%80%8b">
+                            28. sebutkan arsitektur jaringan​</h2><br />
+                        <p><strong>Jawaban:</strong></p>Jaringan Komputer Berdasarkan ArsitekturJawab :<p>a. Peer-to-Peer</p><p>b. Client-Server</p><p>c. Hybrid </p><p><strong>Penjelasan:</strong></p>#SEMOGA MEMBANTU YA ✨#JADI KAN JAWABAN TERCERDAS YA ✨#SEMANGAT BELAJAR NYA YA ✨#DAN JANGAN LUPA FOLLOW AKU ✨<p></p>✨ BY : NAZWANURAZIZAH459<p>✨</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-utama-media-gateway">
+                            29. apa fungsi utama media gateway?</h2><br />
+                        <p>fungsi media gateway adalah sebagai media translator</p><p>Media gateway berfungsi menghubungkan berbagai jenis media stream digital. Media gateway berfungsi sebagai media translator diantara jaringan-jaringan yang berbeda seperti PSTN, IP, ATM, dan sebagainya. </p><p></p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-arsitektur-osi-pada-jaringan-komputer">
+                            30. Jelaskan fungsi dari Arsitektur OSI pada jaringan Komputer</h2><br />
+                        alam arsitektur 
+jaringan komputer, terdapat suatu lapisan-lapisan ( layer ) yang 
+memiliki tugas spesifik serta memiliki protokol tersendiri. ISO 
+(International Standard Organization) telah mengeluarkan suatu standard 
+untuk arsitektur jaringan komputer yang dikenal dengan nama Open System 
+Interconnection ( OSI ). Standard ini terdiri dari 7 lapisan protokol 
+yang menjalankan fungsi komunikasi antara 2 komputer<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="untuk-mengatur-koneksi-dari-media-stream-merupakan-fungsi-dari%e2%80%a6-a-sg-signalling-gateway-signaling-gateway-b-megacoc-mg-media-gateway-media-gatewayd-application-server-application-servere">
+                            31. Untuk mengatur koneksi dari media stream merupakan fungsi dari…..a.SG (Signalling Gateway) Signaling gateway b.MEGACOc.MG (Media Gateway) Media gatewayd.Application Server Application Servere.Management Plan Management Plan ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B.MEGACO</p><p><strong>Penjelasan:</strong></p><p>semoga bermanfaat ya</p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dc-signaling-dan-berikan-contoh-sinyal-apa-saja-yang-termasuk-dc-signaling">
+                            32. Apa yang dimaksud Dc signaling dan berikan contoh sinyal apa saja yang termasuk dc signaling </h2><br />
+                        DC signaling<br />=&gt; Sinyal yang ditransfer dalam bentuk pulsa dengan cara merubah polaritas dan tahanan kawat penghubung<br /><br />Contoh =&gt; Untuk On/Off hook<br /><br />Semoga membantu :)<br />
+                                            <h2 class="ez-toc-section" id="dalam-sebuah-jaringan-komputer-bila-terhubung-dengan-internet-yang-berfungsi-sebagai-gateway-adalah-a%c2%a6">
+                            33. Dalam sebuah jaringan komputer bila terhubung dengan internet yang berfungsi sebagai gateway adalah â¦..</h2><br />
+                        yang berfungsi sbg gatewai (gerbang ke jaringan komputer yg lain) adalah komputer server<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-arsitektur-osi-pada-jaringan-komputer">
+                            34. Jelaskan fungsi dari arsitektur osi pada jaringan komputer</h2><br />
+                        Arsitektur OSI ini berfungsi untuk pengriman data ke sebuah device dimana pada arsitektur osi itu ada tingkatan-tingkatan dari proses pengiriman data ada :<br />1. Physical Layer<br />2. Data-Link Layer<br />3. Network Layer<br />4. Transport Layer<br />5. Session Layer<br />6. Presentation Layer<br />7. Aplication Layer<br /><br />dari masing-masing tingkatan itu, data diolah kemudian melalui tingkatan pertama hingga akhirnya ke tingkatan terakhir data sampai di pengguna ..<br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-prinsip-dari-arsitektur-jaringan-osi-dan-prinsip-dari-arsitektur-jaringan-tcpip">
+                            35. Jelaskan prinsip dari arsitektur jaringan OSI dan prinsip dari arsitektur jaringan TCP/IP</h2><br />
+                        Prinsip Kerja OSI Layer vs TCP/IP serta Perbedaan dan Persamaannya.<br />Persamaan Model OSI dan TCP/IP :<br />1.keduanya memiliki layer (lapisan).<br />2.sama – sama memiliki Application layer meskipun memiliki layanan yang berbeda.<br />3.memiliki transport dan network layer yang sama.<br />4.asumsi dasar keduanya adalah menggunakan teknologi packet switching.<br />5.dua-duanya punya transport dan network layer yang bisa diperbandingkan.<br />6dua-duanya menggunakan teknologi packet-switching, bukan circuit-switching ( Teknologi Circuit-Switching digunakan pada analog telephone).<br /><br />Perbedaan Model OSI dan TCP/IP :<br />1.TCP/IP menggabungkan presentation dan session layers kedalam application layers.<br />2.TCP/IP menggabungkan OSI-data link dan physical layers kedalam network access layer.<br />3.TCP/IP Protocol adalah standar dalam pengembangan internet.<br />
+                                            <h2 class="ez-toc-section" id="perangkat-keras-jaringan-yang-berfungsi-untuk-menghubungkan-beberapa-jaringan-yang-terpisah-baik-jaringan-yang-sama-maupun-berbeda-adalah-perangkat-a-hubb-bridgec-gatewayd-router%e2%80%8b">
+                            36. Perangkat keras jaringan yang berfungsi untuk menghubungkan beberapa jaringan yang terpisah, baik jaringan yang sama maupun berbeda adalah perangkat ....a. Hubb. Bridgec. Gatewayd. Router​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D. Router</p><p><strong>Penjelasan:</strong></p><p>Router merupakan perangkat jaringan komputer yang berfungsi untuk menghubungkan dua atau lebih jaringan komputer yang berbeda, sehingga dapat saling bertukar data dengan jaringan lainnya.</p><p></p><p><strong>Jawaban:</strong></p><p>D.Router maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="media-yang-digunakan-oleh-jaringan-softswitch-untuk-menjangkau-pelanggan-media-akses-dapat-menggunakan-cable-modem-leased-circuit-v5-2-dsl-hfc-ftthfttc-dan-radio-access-pernyataan-tersebut-mer">
+                            37. Media yang digunakan oleh jaringan softswitch untuk menjangkau pelanggan. Media akses dapat menggunakan cable modem, leased circuit, V5.2, DSL, HFC, FTTH/FTTC dan radio access. Pernyataan tersebut merupakan fungsi dari arsitektur…</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sepertinya arsitektur jaringan berbasis WAN ( Work Area Network )</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-terjadi-jika-akses-gateway-tidak-berfungsi">
+                            38. Apa yang terjadi jika akses gateway tidak berfungsi</h2><br />
+                        anda tidak akan mendapat koneksi internet karna geteway seperti gerbang untuk mengkonekkan pc<br />#semoga membantu:)<br />
+                                            <h2 class="ez-toc-section" id="device-berfungsi-untuk-menghubungkan-jaringan-yang-memiliki-arsitektur-dan-lingkungan-berbeda-adalah">
+                            39. device berfungsi untuk menghubungkan jaringan yang memiliki arsitektur dan lingkungan berbeda adalah? </h2><br />
+                        jawaban adalah GateawayGateawaey ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,<br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-media-gateway-controller-adalah">
+                            40. Fungsi dari media gateway controller adalah....</h2><br />
+                        <p><strong>Jawaban:</strong></p><p> a. Memiliki Fungsi Switching</p><p> b.  Fungsi Kontrol</p><p> c. Fungsi Persinyalan</p><p> d. Fungsi Interfaces</p><p><strong>Penjelasan:</strong></p><p>a. Memiliki Fungsi Switching</p><p>Teknik switching merupakan salah satu komponen terpenting dalam jaringan telekomunikasi. Dengan switching, komunikasi point-to-point dapat dilakukan tanpa harus menghubungkan langsung antara kedua node tersebut.</p><p></p><p>Selain untuk melakukan switch (menghubungkan) satu dengan yang lainnya untuk node IP, juga softswitch dapat menghubungkan dan memutuskan antara IP-PBX dengan PSTN, untuk mengatur lalu lintas berupa data, suara dan video.</p><p></p><p>b. Fungsi Kontrol</p><p>Fungsi kontrol pada teknologi softswitch dilakukan oleh Media Gateway Controller (MGC) yang bekerja untuk mengarahkan, memvalidasi dan menyediakan akses bagi pengguna, serta membuat rute pensinyalan ke jaringan PSTN.</p><p></p><p>c. Fungsi Pensinyalan </p><p>Signalling yang dilakukan antar MGC menggunakan protokol Magaco, H.323 dan SIP. Protokol tersebut menjamin kerja sistem secara optimal. Signalling antara PSTN dengan IP menggunakan jaringan point-to-point.</p><p></p><p>d. Fungsi Interface</p><p>Softswitch memiliki interface yang disebut dengan Application Programming Interface (API) yang membuatnya mampu untuk menambahkan atau mengembangkan server-server yang digunakan untuk menambahkan layanan baru.</p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/0OjGNulBW9g?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-tentang-iptek.html">Contoh Soal Tentang Iptek</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-benar-salah-ipa-sd.html">Contoh Soal Benar Salah Ipa Sd</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-segitiga-phytagoras.html">Contoh Soal Segitiga Phytagoras</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-direktur-keuangan.html">Fungsi Dari Direktur Keuangan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/cara-membuat-grafik-dari-fungsi.html">Cara Membuat Grafik Dari Fungsi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-kelarutan.html">Contoh Soal Kelarutan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-who-whom-whose.html">Contoh Soal Who Whom Whose</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-efek-rumah-kaca.html">Contoh Soal Efek Rumah Kaca</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-date-default-timezone-get.html">Fungsi Dari Date default timezone get</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-dan-jawaban-analisis-kredit.html">Contoh Soal Dan Jawaban Analisis Kredit</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-proposal-seminar-tugas-akhir.html">Contoh Proposal Seminar Tugas Akhir</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-increase-decimal.html">Fungsi Dari Increase Decimal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-black-garlic.html">Fungsi Dari Black Garlic</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-firewall-kecuali.html">Fungsi Dari Firewall Kecuali</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-judul-tugas-akhir-d3-pariwisata.html">Contoh Judul Tugas Akhir D3 Pariwisata</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-vitreous-humor.html">Fungsi Dari Vitreous Humor</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-studi-kasus-amdal.html">Contoh Soal Studi Kasus Amdal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-bahasa-indonesia-kelas-6.html">Contoh Soal Bahasa Indonesia Kelas 6</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-tugas-akhir-modul-3ppg.html">Contoh Tugas Akhir Modul 3ppg</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-latihan-soal-tpa.html">Contoh Latihan Soal Tpa</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediasoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediasoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

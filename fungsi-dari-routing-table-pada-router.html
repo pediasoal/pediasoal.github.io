@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Routing Table Pada Router - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Routing Table Pada Router, , , , , , , 0, , , , , , 0, fungsi-dari-routing-table-pada-router, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Routing Table Pada Router - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Routing Table Pada Router, , , , , , , 0, , , , , , 0, fungsi-dari-routing-table-pada-router, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Routing Table Pada Router - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Routing Table Pada Router, , , , , , , 0, , , , , , 0, fungsi-dari-routing-table-pada-router, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediasoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediasoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediasoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediasoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediasoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediasoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediasoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Routing Table Pada Router</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">Waliman</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Routing+Table+Pada+Router" alt="Fungsi Dari Routing Table Pada Router">
+                    </div>
+                    <p></p>
+                    <p>Fungsi Routing Table Pada Router Untuk</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-routing-table-pada-router-untuk">1.
+                                            Fungsi Routing Table Pada Router Untuk</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#meskipun-pada-routing-table-tidak-dicantumkan-network-tujuan-paket-tersebut-tetap-diteruskan-oleh-router-jenis-routing-tersebut-dikenal-dengan">2.
+                                            meskipun pada routing table tidak dicantumkan network tujuan, paket tersebut tetap diteruskan oleh router, jenis routing tersebut dikenal dengan ......</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#routing-table-pada-router-berfungsi-untuk-a-menyimpan-konfigurasi-hardware-routerb-menampung-data-yang-masuk-ke-router-c-mengolah-data-yang-akan-dikirim-ke-routerd-menampung-data-yang-ma">3.
+                                            Routing table pada router berfungsi untuk ......
+A. Menyimpan konfigurasi hardware router
+B. Menampung data yang masuk ke router 
+C. Mengolah data yang akan dikirim ke router
+D. Menampung data yang masuk ke router
+E. Menampilkan seluruh informasimyang dilakukan oleh router</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-script-membuat-routing-pada-router-dengan-iptables%e2%80%8b">4.
+                                            tuliskan script membuat routing pada router dengan iptables​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kemampuan-protocol-routing-untuk-membagiinformasi-tentang-jaringan-dengan-routerlainnya-dengan-menggunakan-protocol-routingyang-sama-adalah-pengertian-dari-oa-routerb-niccosid-komputere-network-disco">5.
+                                            Kemampuan protocol routing untuk membagiinformasi tentang jaringan dengan routerlainnya dengan menggunakan protocol routingyang sama adalah pengertian dari..oa routerb niccosid komputere network discovery​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-maksud-dari-sebuah-router-memiliki-kemampuan-routing">6.
+                                            apakah maksud dari sebuah router memiliki kemampuan routing</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#protokol-yang-digunakan-sebagai-acuan-komunikasi-routing-antara-router-yang-berperan-sebagai-core-jaringan-dengan-router-yang-bersifat-non-core-adalah">7.
+                                            Protokol yang digunakan sebagai acuan komunikasi routing antara router yang berperan sebagai core jaringan dengan router yang bersifat non core adalah ...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mengapa-dynamic-routing-perlu-digunakan-saat-konfigurasi-static-route-pada-router-cisco">8.
+                                            mengapa dynamic routing perlu digunakan saat konfigurasi static route pada router cisco</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ok-google-router-memiliki-kemampuan-routing-yang-dimaksud-routing-adalah%e2%80%8b">9.
+                                            OK Google router memiliki kemampuan routing yang dimaksud routing adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-komunikasi-yang-terjadi-diantara-router-routing-protokol-yang-mengijinkan-router-untuk-berbagi-sharing-informasi-tentang-jaringan-dan-koneksi-antar-router-dalam-jaringan-disebut">10.
+                                            Pada komunikasi yang terjadi diantara router, routing protokol yang mengijinkan router untuk berbagi (sharing) informasi tentang jaringan dan koneksi antar-router dalam jaringan disebut ....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-adalah-pernyataan-yang-benar-mengenai-protocol-routing-kecuali-a-protocol-routing-merupakan-protocol-yang-digunakan-router-router-untuk-saling-bertukar-informasi-routing-b-protocol-ro">11.
+                                            Berikut ini adalah pernyataan yang benar mengenai protocol routing kecuali .. 
+A.Protocol routing merupakan protocol yang digunakan router-router untuk saling bertukar informasi routing 
+B.Protocol routing berfungsi menjaga dan memelihara tabel routing 
+C.Protocol routing menentukan jalur terbaik jika ternyata untuk mencapai remote network tersedia beberapa jalur 
+D.Protocol routing memudahkan pengelolaan jaringan dalam skala besar 
+E.Protocol routing menentukan besarnya bandwidth yang digunakan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#proses-inter-vlan-routing-terjadi-ketika-anda-memanfaatkan-multilayer-switch-menjadi-sebuah-router-dalam-layanan-routing-antar-vlan-pada-jaringan-berbedayaitu-pada-layer%e2%80%8b">12.
+                                            Proses Inter-VLAN routing terjadi ketika anda memanfaatkan multilayer switch menjadi sebuah router dalam layanan routing antar VLAN  pada jaringan berbeda,yaitu pada layer​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-routing-table">13.
+                                            apa yang dimaksud routing  table?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-3-table-ospf-dalam-router">14.
+                                            sebutkan 3 table OSPF dalam router</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-maksud-dari-sebuah-router-memiliki-kemampuan-routing%e2%80%8b">15.
+                                            apakah maksud dari sebuah router memiliki kemampuan routing​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebuah-router-yang-memiliki-tabel-routing-statis-yang-diset-secara-manual-oleh-para-adimistrator-jaringan-disebut-dengan">16.
+                                            sebuah router yang memiliki tabel routing statis yang diset secara manual oleh para adimistrator jaringan disebut dengan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-pc-1-dan-pc-2-bisa-saling-ping-tanpa-perlu-konfigurasi-starting-routing-atau-dinamic-routing-pada-router-%e2%80%8b">17.
+                                            Apakah PC 1 dan PC 2 bisa saling ping tanpa perlu konfigurasi starting routing atau dinamic routing pada router? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-apa-yang-disebut-routing-tableapa-fungsinyabagaimana-cara-melihat-routing-table%e2%80%8b">18.
+                                            jelaskan apa yang disebut routing table,apa fungsinya,bagaimana cara melihat routing table​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-perintah-mengatur-default-routing-sebuah-router-cisco-jika-ip-gateway-nya-adalah-10-19-1-23%e2%80%8b">19.
+                                            Tuliskan Perintah mengatur default routing sebuah router cisco  jika IP gateway-nya adalah 10.19.1.23​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-kerja-routing-statis-dimulai-dengan-administrator-jaringan-yang-mengkonfigurasi-router-kemudian-router-melakukan-routing-berdasarkan-informasi-dalam">20.
+                                            Cara kerja routing statis dimulai dengan administrator jaringan yang mengkonfigurasi router kemudian router melakukan routing berdasarkan informasi dalam</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-permasalahan-yang-sering-terjadi-pada-routing-statis-yg-terkait-dengan-router%e2%80%8b">21.
+                                            jelaskan permasalahan yang sering terjadi pada routing statis yg terkait dengan router?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-routing-dan-router">22.
+                                            perbedaan routing dan router</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#protokol-yang-dapat-digunakan-sebagai-acuan-komunikasi-routing-antara-routeryang-berperan-sebagai-core-jaringan-dan-router-yang-lebih-bersifat-non-%e2%80%93-coreseperti-router-independent-yang-berfung">23.
+                                            Protokol yang dapat digunakan sebagai acuan komunikasi routing antara routeryang berperan sebagai core jaringan dan router yang lebih bersifat non – coreseperti router independent yang berfungsi sebagai perangkat routing dalam jaringa internal.protokol yang di maksud adalah?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#suatu-mekanisme-routing-yang-tergantung-dengan-routing-table-dengan-konfigurasi-manual-di-debut-dengan">24.
+                                            Suatu mekanisme routing yang tergantung dengan routing table dengan konfigurasi manual, di debut dengan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#penambahan-router-pada-static-routing-akan-menimbulkan-kerepotan-seorang-admin-karena">25.
+                                            penambahan router pada static routing akan menimbulkan kerepotan seorang admin , karena?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-bantu-cari-materi-routing-table-pengertian-tujuan-fungsi-kelebihan-kekurangan-%e2%80%8b">26.
+                                            tolong bantu cari  Materi routing table pengertian, tujuan, fungsi, kelebihan, kekurangan ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbdaan-routing-dan-router-%e2%80%8b">27.
+                                            perbdaan routing dan router ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengertian-fungsi-dari-router-tujuan-routing-tolong-bantu-ya-kak">28.
+                                            pengertian, fungsi dari router.
+tujuan routing.
+tolong bantu ya kak</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-tabel-routing-adalah-tabel-yang-memuat-seluruh-informasi-ip-address-dari-interface-router-yang-lain-sehingga-router-yang-satu-dengan-router-yang-lainnya-bisa-berkomunikasi-sebut-dan-jelaskan-5-li">29.
+                                            2. Tabel routing adalah tabel yang memuat seluruh informasi IP address dari interface router yang lain sehingga router yang satu dengan router yang lainnya bisa berkomunikasi. Sebut dan jelaskan 5 (lima) macam tabel routing yang kamu ketahui.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-di-maksud-dengan-tabel-routing-jelaskanberi-contoh-tabel-routing-menggunakan-2-router">30.
+                                            Apa yang di maksud dengan tabel routing? Jelaskan
+Beri contoh Tabel Routing menggunakan 2 router</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jaringan-apa-saja-yang-dapat-dihubungkan-dengan-router-atau-routing-dinamis%e2%80%8b">31.
+                                            Jaringan apa saja yang dapat dihubungkan dengan router atau routing dinamis​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebelum-melakukan-konfigurasi-routing-dua-router-harus-saling-terhubung-kabel-yang-digunakan-untuk-menghubungkan-dua-router-adalah-a-straight-b-crossover-c-rollover-d-console-e-sejajar">32.
+                                            sebelum melakukan konfigurasi routing, dua router harus saling terhubung. kabel yang digunakan untuk menghubungkan dua router adalah...A.straight B.crossover C. rollover D.console E. sejajar</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-konfigurasi-router-mikrotik-yang-berfungsi-untuk-membuat-keamanan-pada-routing-a-dhcp-server-b-dhcp-client-c-routing-dinamis-d-routing-statis-e-firewall%e2%80%8b">33.
+                                            Pada konfigurasi router mikrotik yang berfungsi untuk membuat keamanan pada routing? a Dhcp server b. Dhcp client c. Routing dinamis d. Routing statis e. firewall​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-konsep-kerja-inter-vlan-routing-dengan-menggunakan-router-cisco-%e2%80%8b">34.
+                                            jelaskan konsep kerja inter vlan routing dengan menggunakan router cisco.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-algoritma-routing-link-state-terdapat-paket-kecil-dari-informasi-routing-yang-dikirim-antar-router-yang-disebut">35.
+                                            pada algoritma routing link state, terdapat paket kecil dari informasi routing yang dikirim antar router yang disebut</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-prinsip-kerja-routing-statis-dalam-perangkat-router%e2%80%8b">36.
+                                            jelaskan prinsip kerja routing statis dalam perangkat router​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebuah-router-pada-routing-ospf-yang-saling-berdekatan-disebut-dengan">37.
+                                            Sebuah router pada routing ospf yang saling berdekatan disebut dengan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-apa-yang-dimaksud-dengan-routing2-jelaskan-perbedaan-rib-dengan-fib3-jelaskan-fungsi-dari-router4-tuliskan-perbedaan-nat-dengan-pat">38.
+                                            1.apa yang dimaksud dengan routing?
+2.jelaskan perbedaan RIB dengan FIB?
+3.jelaskan fungsi dari router?
+4.tuliskan perbedaan NAT dengan PAT?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sekumpulan-router-yang-berada-pada-1-kendali-administrator-dan-menggunakan-strategi-routing-yang-sama-adalah-%e2%80%8b">39.
+                                            Sekumpulan router yang berada pada 1 kendali administrator dan menggunakan strategi routing yang sama adalah....​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebuah-router-pada-routing-ospf-yang-saling-berdekatan-disebut-dengan">40.
+                                            Sebuah router pada routing ospf yang saling berdekatan disebut dengan.</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="fungsi-routing-table-pada-router-untuk">
+                            1. Fungsi Routing Table Pada Router Untuk</h2><br />
+                        1.Memberikan informasi mengenai jalur mana yang harus dilewati oleh sebuah paket data<br /><br />2.Menutup atau membuka jalur dari sebuah paket data<br /><br />3.Membantu router dalam melakukan konfigurasi dari alamat IP route<br /><br />4.Mencegah terjadinya kesalahan pengiriman paket data<br />
+                                            <h2 class="ez-toc-section" id="meskipun-pada-routing-table-tidak-dicantumkan-network-tujuan-paket-tersebut-tetap-diteruskan-oleh-router-jenis-routing-tersebut-dikenal-dengan">
+                            2. meskipun pada routing table tidak dicantumkan network tujuan, paket tersebut tetap diteruskan oleh router, jenis routing tersebut dikenal dengan ......</h2><br />
+                        <p>Meskipun pada routing table tidak dicantumkan network tujuan, paket tersebut tetap diteruskan oleh router, jenis routing tersebut dikenal dengan <strong>default route</strong>. Soal tersebut berkaitan dengan materi administrasi infrastuktur jaringan.</p><p></p>Pembahasan<p><strong>Rute default</strong> (<strong>Default route</strong>) adalah jenis perutean yang paling umum digunakan di Internet. Ini juga dikenal sebagai rute 0.0.0.0 atau rute menangkap semua. <strong>Rute default</strong> digunakan untuk merutekan lalu lintas ke alamat IP apa pun yang tidak secara eksplisit cocok dengan rute lain di tabel perutean router. <strong>Rute default </strong>biasanya menunjuk ke gateway router, yang merupakan perangkat jaringan hop berikutnya atau ISP yang akan meneruskan lalu lintas ke tujuannya.</p><p>Keuntungan menggunakan <strong>rute default</strong> adalah menghilangkan kebutuhan untuk mengkonfigurasi rute secara eksplisit untuk setiap tujuan jaringan. Kerugiannya adalah dapat menimbulkan masalah jika ada beberapa jalur ke tujuan yang sama dan salah satu jalur tersebut menjadi tidak tersedia.</p><p></p>Pelajari lebih lanjut<p>Pelajari lebih lanjut tentang rute pelayaran utama (core route): https://brainly.co.id/tugas/11205332</p><p></p><p><strong>#BelajarBersamaBrainly #SPJ4</strong></p><br />
+                                            <h2 class="ez-toc-section" id="routing-table-pada-router-berfungsi-untuk-a-menyimpan-konfigurasi-hardware-routerb-menampung-data-yang-masuk-ke-router-c-mengolah-data-yang-akan-dikirim-ke-routerd-menampung-data-yang-ma">
+                            3. Routing table pada router berfungsi untuk ......
+A. Menyimpan konfigurasi hardware router
+B. Menampung data yang masuk ke router 
+C. Mengolah data yang akan dikirim ke router
+D. Menampung data yang masuk ke router
+E. Menampilkan seluruh informasimyang dilakukan oleh router</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>kalo gak salah sih yang E</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-script-membuat-routing-pada-router-dengan-iptables%e2%80%8b">
+                            4. tuliskan script membuat routing pada router dengan iptables​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>A.Pengertian</p><p></p><p>  (Network Address Translation) atau yang lebih biasa disebut dengan NAT adalah suatu metode untuk menghubungkan lebih dari satu komputer ke jaringan internet dengan menggunakan satu alamat IP. Banyaknya penggunaan metode ini disebabkan karena ketersediaan alamat IP yang terbatas, kebutuhan akan keamanan (security), dan kemudahan serta fleksibilitas dalam administrasi jaringan.  </p><p>  Iptables adalah suatu tools dalam sistem operasi linux yang berfungsi sebagai alat untuk melakukan filter (penyaringan) terhadap (trafic) lalulintas data. Secara sederhana digambarkan sebagai pengatur lalulintas data. Dengan iptables inilah kita akan mengatur semua lalulintas dalam komputer kita, baik yang masuk ke komputer, keluar dari komputer, ataupun traffic yang sekedar melewati komputer kita.</p><p></p><p>  Perlakuan yang dialami oleh data/paket data oleh iptables digambarkan melalui tabel. Macam tabelnya adalah:</p><p></p><p>1. Filter : tabel default yang ada dalam penggunaan iptables</p><p></p><p>2. NAT : tabel ini digunakan untuk fungsi NAT, redirect, redirect port</p><p></p><p>3. Mangle : tabel ini berfungsi sebagai penghalus proses pengaturan paket</p><p></p><p></p><p>B.Latar Belakang  </p><p>  Latar belakang saya melakukan konfigurasi ini adalah agar IP Private yang ada di Debian Router maupun Debian Server dapat terhubung ke Internet dengan menggunakan Routing NAT, sehingga semua host tersebut dapat mengakses IP Public yang diberikan ISP</p><p></p><p>C.Alat Alat:</p><p></p><p></p><p>1. Sumber internet</p><p></p><p>2. 2 Komputer Server Debian (1 sebagai router dan 1 sebagai server)</p><p></p><p>3. 2LAN card untuk Debian Router dan 1 LAN card untuk debian server</p><p></p><p>4. 2 Kabel Cross Over  </p><p>D.Maksud Dan Tujuan</p><p></p><p>  Kegiatan ini bertujuan agar kita dapat melakukan konfigurasi NAT pada Debian Server dengan menggunakan iptables yang melakukan pentranslasian IP Private ke IP Public serta bertujuan agar perangkat-perangkat jaringan pada jaringan local dapat melakukan koneksi ke internet.</p><p></p><p></p><p>E.Langkah Langkah</p><p></p><p>1. Pertama - tama buat topologi seperti berikut</p><p></p><p></p><p>2. Kemudian atur IP Address dari masing-masing interface sesuai dengan topologi diatas.</p><p></p><p># nano /etc/network/interfaces</p><p></p><p>Debian Router</p><p></p><p></p><p>eth0 = dhcp client</p><p></p><p>Debian Server</p><p></p><p></p><p>3. Kemudian kita mengaktifkan ip forward pada Debian Router, caranya buka file /etc/sysctl.conf</p><p></p><p># nano /etc/sysctl.conf</p><p></p><p></p><p></p><p>4. Kemudian cari pada bagian net.ipv4.ip_forward=1 ,  </p><p>tekan CTRL + W &gt; net.ipv4.ip_forward=1</p><p></p><p></p><p>5. Lalu hilangkan tanda pagar (#) didepannya seperti dibawah ini.</p><p></p><p></p><p>6. Selanjutnya ketik perintah sysctl -p untuk mengecek apakah ip forwardnya sudah 1 atau enable.</p><p></p><p># sysctl -p</p><p></p><p></p><p>7. Kemudian tambahkan rule iptables nat</p><p></p><p># iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE</p><p></p><p></p><p>eth0 = merupakan interface yang terhubung langsung ke internet (opsional)</p><p></p><p>8. Lalu tambahkan juga pada rc.local agar pada suatu saat di reboot nanti konfigurasi iptables nat tersimpan dan tidak hilang.</p><p></p><p># nano /etc/rc.local</p><p></p><p></p><p>9.  Tambahkan   iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE</p><p></p><p></p><p>tambahkan rule nya diatas tulisan exit 0</p><p></p><p>10. Lalu coba kita reboot apakah perintah iptables nat akan berjalan atau tidak</p><p></p><p>11. Setelah reboot, coba kita lihat apakah pada tabel iptables terdapat rule yang tadi kita buat  </p><p># iptables -t nat -L</p><p></p><p></p><p>12. Kemudian kita coba ping ke 8.8.8.8 / ping google dari Debian Router</p><p></p><p></p><p>13. Selanjutnya kita coba ping  8.8.8.8 juga dari Debian Server</p><p></p><p></p><p>  </p><p></p><p> F.Kesimpulan</p><p></p><p>  Dengan adanya iptables pada debian server ini dapat membuat debian server kita menjadi sebuah Router PC sehingga dapat melakukan routing. Dan hasil dari kegiatan ini adalah koneksi internet dapat tersalurkan dari jaringan public ke jaringa yang bersifat lokal. </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="kemampuan-protocol-routing-untuk-membagiinformasi-tentang-jaringan-dengan-routerlainnya-dengan-menggunakan-protocol-routingyang-sama-adalah-pengertian-dari-oa-routerb-niccosid-komputere-network-disco">
+                            5. Kemampuan protocol routing untuk membagiinformasi tentang jaringan dengan routerlainnya dengan menggunakan protocol routingyang sama adalah pengertian dari..oa routerb niccosid komputere network discovery​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>E. network discovery</p><p><strong>Penjelasan:</strong></p><p>Network discovery adalah kemampuan routing protokol untuk membagi informasi tentang jaringan dengan router lainnnya dengan menggunakan routing protokol yang sama.</p><p></p><p></p><p></p><p></p><p>semoga membantu :)</p><br />
+                                            <h2 class="ez-toc-section" id="apakah-maksud-dari-sebuah-router-memiliki-kemampuan-routing">
+                            6. apakah maksud dari sebuah router memiliki kemampuan routing</h2><br />
+                        Routing adalah proses pengiriman data maupun informasi dengan meneruskan paket data yang dikirim dari jaringan satu ke jaringan lainnya.<br /><br />Sedangkan Router adalah perangkat keras dalam jaringan komputer yang berfungsi untuk menghubungkan dua atau lebih jaringan yang mempunyai protocol yang sama. sehingga dengan menggunakan router kita bisa menghubungkan 2 ip address yang memiliki host yang berbeda. contohnya kita bisa menghubungkan IP Address 192.168.1.2 dengan IP address 192.169.10.1.Router sangat berperan untuk jaringan berskala menengah ke atas karena digunakan untuk membagi jaringan. <br />
+                                            <h2 class="ez-toc-section" id="protokol-yang-digunakan-sebagai-acuan-komunikasi-routing-antara-router-yang-berperan-sebagai-core-jaringan-dengan-router-yang-bersifat-non-core-adalah">
+                            7. Protokol yang digunakan sebagai acuan komunikasi routing antara router yang berperan sebagai core jaringan dengan router yang bersifat non core adalah ...</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Google chorme
+</p><p>mozila  firefox
+</p><p>uc browser
+</p><p>opera
+</p><p>internet explorer</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="mengapa-dynamic-routing-perlu-digunakan-saat-konfigurasi-static-route-pada-router-cisco">
+                            8. mengapa dynamic routing perlu digunakan saat konfigurasi static route pada router cisco</h2><br />
+                        misalnya kalau ada perubahan, tidak perlu repot" untuk konfigurasi ulang setiap router, nantinya akan dikonfigurasi otomatis tergantung protokol yg digunakan, cocoknya sih untuk konfigurasi jaringan yang berskala besar. kalo jaringan skala kecil, mau pake dynamic atau static routing sih terserah :D<br />
+                                            <h2 class="ez-toc-section" id="ok-google-router-memiliki-kemampuan-routing-yang-dimaksud-routing-adalah%e2%80%8b">
+                            9. OK Google router memiliki kemampuan routing yang dimaksud routing adalah​</h2><br />
+                        <p>Tlng jdikan jawaban trbaik please trmksih!</p><p><strong>Penjelasan:</strong></p><p>Routing adalah suatu protokol yang digunakan untuk mendapatkan rute dari satu jaringan ke jaringan yang lain. </p><br />
+                                            <h2 class="ez-toc-section" id="pada-komunikasi-yang-terjadi-diantara-router-routing-protokol-yang-mengijinkan-router-untuk-berbagi-sharing-informasi-tentang-jaringan-dan-koneksi-antar-router-dalam-jaringan-disebut">
+                            10. Pada komunikasi yang terjadi diantara router, routing protokol yang mengijinkan router untuk berbagi (sharing) informasi tentang jaringan dan koneksi antar-router dalam jaringan disebut ....</h2><br />
+                        <p>Pada komunikasi yang terjadi diantara router, routing protokol yang mengijinkan router untuk berbagi (sharing) informasi tentang jaringan dan koneksi antar router dalam jaringan disebut <strong>ROUTING</strong><strong> DINAMIS</strong></p><p><strong>Penjelasan:</strong></p><strong>Routing</strong><strong> adalah </strong>proses pengiriman data atau informasi dengan meneruskan paket data dari satu jaringan ke jaringan lainnya.<strong>Beberapa contoh proses</strong><strong> routing </strong><strong>yaitu</strong> pengiriman pesan dari satu komputer ke komputer lain, telepon melalui jaringan internet dan pengeriman data ke jaringan komputer.<strong>Berdasarkan jenis konfigurasinya, </strong><strong>routing</strong><strong> dibedakan menjadi beberapa jenis, yaitu :</strong><strong>Routing </strong><strong>Statis </strong>yaitu jenis routing yang dilakukan oleh admin atau  pengelola jaringan untuk mengkonfigurasi informasi tentang jaringan yang dituju secara manual, caranya adalah dengan memasukan pengaturan routing ke dalam routing table dari router.<strong>Routing Dinamis, </strong>adalah jenis routing yang dilakukan oleh router dengan cara membuat jalur komunikasi data secara otomatis. Routing dinamis merupakan routing protokol yang digunakan untuk menemukan jaringan dan untuk melakukan update routing table pada router. Protokol pada Routing Dinamis dibedakan menjadi beberapa jenis, yaitu :Routing Information ProtocolInterior Gateway Routing ProtocolBorder Gateway Protocol<p><strong>Pelajari lebih lanjut</strong></p>Materi tentang fungsi static routing : brainly.co.id/tugas/14747434Materi tentang pengertian router : brainly.co.id/tugas/2460643Materi tentang fungsi router: brainly.co.id/tugas/4730890<p><strong>Detil Jawaban</strong></p><p>Kelas : XI (SMA)</p><p>Mapel : TIK</p><p>Bab : Mengelola basis data</p><p>Kode : 11.11.10</p><p>Kata Kunci : Routing</p><br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-adalah-pernyataan-yang-benar-mengenai-protocol-routing-kecuali-a-protocol-routing-merupakan-protocol-yang-digunakan-router-router-untuk-saling-bertukar-informasi-routing-b-protocol-ro">
+                            11. Berikut ini adalah pernyataan yang benar mengenai protocol routing kecuali .. 
+A.Protocol routing merupakan protocol yang digunakan router-router untuk saling bertukar informasi routing 
+B.Protocol routing berfungsi menjaga dan memelihara tabel routing 
+C.Protocol routing menentukan jalur terbaik jika ternyata untuk mencapai remote network tersedia beberapa jalur 
+D.Protocol routing memudahkan pengelolaan jaringan dalam skala besar 
+E.Protocol routing menentukan besarnya bandwidth yang digunakan</h2><br />
+                        <p>Jawaban:E. Protokol routing menentukan besarnya bandwidth yanh digunakan</p><p></p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="proses-inter-vlan-routing-terjadi-ketika-anda-memanfaatkan-multilayer-switch-menjadi-sebuah-router-dalam-layanan-routing-antar-vlan-pada-jaringan-berbedayaitu-pada-layer%e2%80%8b">
+                            12. Proses Inter-VLAN routing terjadi ketika anda memanfaatkan multilayer switch menjadi sebuah router dalam layanan routing antar VLAN  pada jaringan berbeda,yaitu pada layer​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Layer 3 (network layer)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-routing-table">
+                            13. apa yang dimaksud routing  table?</h2><br />
+                        <p><strong>r</strong><strong>o</strong><strong>u</strong><strong>t</strong><strong>i</strong><strong>n</strong><strong>g</strong><strong> </strong><strong>t</strong><strong>a</strong><strong>b</strong><strong>l</strong><strong>e</strong></p><p></p><p>adalah table yang memuat seluruh informasi IP address dari interfaces router yang lain sehingga router yang satu dengan router lainnya bisa berkomunikasi</p><p></p><p></p><p>semoga membantu :)</p><p><strong>Jawaban:</strong></p><p><strong>Routing</strong><strong> </strong><strong>table</strong><strong> </strong><strong>adalah</strong><strong> </strong><strong>tabel</strong><strong> </strong><strong>yg</strong><strong> </strong><strong>memuat</strong><strong> </strong><strong>seluruh</strong><strong> </strong><strong>informasi</strong><strong> </strong><strong>IP</strong><strong> </strong><strong>address</strong><strong> </strong></p><p><strong>"</strong><strong>Moga</strong><strong> </strong><strong>bermanfaat</strong><strong>"</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-3-table-ospf-dalam-router">
+                            14. sebutkan 3 table OSPF dalam router</h2><br />
+                        3 table OSPF dalam router: <br /><br />1. Routing table<br />2. Adjecency database<br />3. Topological database<br /><br />semoga membantu : )<br />
+                                            <h2 class="ez-toc-section" id="apakah-maksud-dari-sebuah-router-memiliki-kemampuan-routing%e2%80%8b">
+                            15. apakah maksud dari sebuah router memiliki kemampuan routing​</h2><br />
+                        <p>Routing adalah proses pengiriman data maupun informasi dengan meneruskan paket data yang dikirim dari jaringan satu ke jaringan lainnya.</p><p></p><p>Sedangkan Router adalah perangkat keras dalam jaringan komputer yang berfungsi untuk menghubungkan dua atau lebih jaringan yang mempunyai protocol yang sama. sehingga dengan menggunakan router kita bisa menghubungkan 2 ip address yang memiliki host yang berbeda. contohnya kita bisa menghubungkan IP Address 192.168.1.2 dengan IP address 192.169.10.1.Router sangat berperan untuk jaringan berskala menengah ke atas karena digunakan untuk membagi jaringan. </p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebuah-router-yang-memiliki-tabel-routing-statis-yang-diset-secara-manual-oleh-para-adimistrator-jaringan-disebut-dengan">
+                            16. sebuah router yang memiliki tabel routing statis yang diset secara manual oleh para adimistrator jaringan disebut dengan</h2><br />
+                        static router<br /><br /># semoga membantu<br /><br />
+                                            <h2 class="ez-toc-section" id="apakah-pc-1-dan-pc-2-bisa-saling-ping-tanpa-perlu-konfigurasi-starting-routing-atau-dinamic-routing-pada-router-%e2%80%8b">
+                            17. Apakah PC 1 dan PC 2 bisa saling ping tanpa perlu konfigurasi starting routing atau dinamic routing pada router? ​</h2><br />
+                        <p><strong>Jawaban: ya dan tidak</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>ya jika kedua pc itu dalam kondisi peer to peer atau terhubung dengan 1 perangkat yang sama</p><p></p><p>tidak, jika terhubung melalui router yang berbeda atau melalui jaringan yang berbeda</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-apa-yang-disebut-routing-tableapa-fungsinyabagaimana-cara-melihat-routing-table%e2%80%8b">
+                            18. jelaskan apa yang disebut routing table,apa fungsinya,bagaimana cara melihat routing table​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>*pengertiannya cek link ini https://www.google.com/search?ie=UTF-8&amp;source=android-browser&amp;q=jelaskan+apa+yang+disebut+routing+table%2Capa+fungsinya%2Cbagaimana+cara+melihat+routing+table%E2%80%8B</p><p>*fungsinya cek link ini https://www.google.com/search?ie=UTF-8&amp;source=android-browser&amp;q=jelaskan+apa+yang+disebut+routing+table%2Capa+fungsinya%2Cbagaimana+cara+melihat+routing+table%E2%80%8B</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-perintah-mengatur-default-routing-sebuah-router-cisco-jika-ip-gateway-nya-adalah-10-19-1-23%e2%80%8b">
+                            19. Tuliskan Perintah mengatur default routing sebuah router cisco  jika IP gateway-nya adalah 10.19.1.23​</h2><br />
+                        <p>Jawaban:25</p><p></p><p>Penjelasan:maaf klau slah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="cara-kerja-routing-statis-dimulai-dengan-administrator-jaringan-yang-mengkonfigurasi-router-kemudian-router-melakukan-routing-berdasarkan-informasi-dalam">
+                            20. Cara kerja routing statis dimulai dengan administrator jaringan yang mengkonfigurasi router kemudian router melakukan routing berdasarkan informasi dalam</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>tabel routing</p><p><strong>Penjelasan:</strong></p><p>Cara kerja static routing dapat dibagi menjadi 3 bagian :</p>Administrator jaringan yang mengkonfigurasi router.Router melakukan routing berdasarkan informasi dalam tabel routing.Routing statis digunakan untuk melewatkan paket data.<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-permasalahan-yang-sering-terjadi-pada-routing-statis-yg-terkait-dengan-router%e2%80%8b">
+                            21. jelaskan permasalahan yang sering terjadi pada routing statis yg terkait dengan router?​</h2><br />
+                        <p>-Konfigurasi yang salah: Konfigurasi yang salah pada routing statis dapat menyebabkan jaringan tidak berfungsi dengan baik atau bahkan tidak bisa terhubung.</p><p>-Kesalahan alamat IP: Kesalahan pada alamat IP dalam konfigurasi routing statis dapat menyebabkan paket tidak dapat mencapai tujuannya dan menimbulkan masalah konektivitas.</p><p>-Jumlah rute terlalu banyak: Jika terlalu banyak rute yang dikonfigurasi pada router, maka dapat mempengaruhi kinerja router dan menyebabkan kelelahan memori.</p><p>-Kesalahan pada subnet mask: Kesalahan pada subnet mask dalam konfigurasi routing statis dapat menyebabkan paket tidak dapat mencapai tujuannya dan menimbulkan masalah konektivitas.</p><p>-Kesalahan pada gateway default: Kesalahan pada gateway default dalam konfigurasi routing statis dapat menyebabkan paket tidak dapat mencapai tujuannya dan menimbulkan masalah konektivitas.</p><p>-Kesalahan pada tabel routing: Kesalahan pada tabel routing dapat menyebabkan paket tidak dapat mencapai tujuannya dan menimbulkan masalah konektivitas.</p><p>-Keterbatasan memori: Router dengan memori terbatas mungkin tidak dapat menangani jumlah rute yang besar yang dikonfigurasi dalam routing statis.</p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-routing-dan-router">
+                            22. perbedaan routing dan router</h2><br />
+                        kalau routing mh pke ing kalau router mh pke er <br />
+                                            <h2 class="ez-toc-section" id="protokol-yang-dapat-digunakan-sebagai-acuan-komunikasi-routing-antara-routeryang-berperan-sebagai-core-jaringan-dan-router-yang-lebih-bersifat-non-%e2%80%93-coreseperti-router-independent-yang-berfung">
+                            23. Protokol yang dapat digunakan sebagai acuan komunikasi routing antara routeryang berperan sebagai core jaringan dan router yang lebih bersifat non – coreseperti router independent yang berfungsi sebagai perangkat routing dalam jaringa internal.protokol yang di maksud adalah?​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Protokol adalah sebuah aturan atau standar yang mengatur atau mengijinkan terjadinya hubungan, komunikasi, dan perpindahan data antara dua atau lebih titik komputer. Protokol dapat diterapkan pada perangkat keras, perangkat lunak atau kombinasi dari keduanya. Pada tingkatan yang terendah, protokol mendefinisikan koneksi perangkat keras.</p><br />
+                                            <h2 class="ez-toc-section" id="suatu-mekanisme-routing-yang-tergantung-dengan-routing-table-dengan-konfigurasi-manual-di-debut-dengan">
+                            24. Suatu mekanisme routing yang tergantung dengan routing table dengan konfigurasi manual, di debut dengan</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Suatu mekanisme routing yang tergantung dengan routing table dengan konfigurasi manual disebut dengan static routing. Karena menggunakan konfigurasi manual, static routing akan kompleks prosesnya jika operasikan pada jaringa yang besar. Static routing juga memerlukan administrator terutama dalam situasi perubahan topologi jaringan. Static routing tidak memerlukan banyak perangkat tambahan dalam prosesnya dan lebih aman daripada dynamic routing</p><p><strong>Penjelasan:</strong></p><p>Routing sendiri merupakan kegiatan penyebaran data yang objeknya antara komputer dengan komputer dalam satu jaringan, maupun antar dua jaringan lebih dalam bentuk paket data. Routing dibagi menjadi tiga jenis menurut konfigurasinya yaitu static routing, dynamic routing dan minimal routing. Masing - masing jenis ini memilikikelebihan dan kelemahannya masing -masing. Sesuai namanya, routing memerlukan perangkat keras yang bernama router.</p><p></p><p><strong>Pelajari lebih Lanjut tentang Perbedaan Static Routing dengan Dynamic Routing</strong></p><p>https://brainly.co.id/tugas/13563648</p><p></p><p><strong>#BelajarBersamaBrainly</strong></p><br />
+                                            <h2 class="ez-toc-section" id="penambahan-router-pada-static-routing-akan-menimbulkan-kerepotan-seorang-admin-karena">
+                            25. penambahan router pada static routing akan menimbulkan kerepotan seorang admin , karena?</h2><br />
+                        karena admin diharuskan melakukan routing yang sebenarnya tidak perlu dilakukan kecuali jika routingnya dinamic.  admin harus memeriksa Seluruh aktivitas router<br />
+                                            <h2 class="ez-toc-section" id="tolong-bantu-cari-materi-routing-table-pengertian-tujuan-fungsi-kelebihan-kekurangan-%e2%80%8b">
+                            26. tolong bantu cari  Materi routing table pengertian, tujuan, fungsi, kelebihan, kekurangan ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Routing merupakan sebuah mekanisme pengiriman paket data yang ditransmisikan dari satu network ke network yang lain. Pada router, biasanya memiliki satu atau beberapa tabel routing yang menyimpan informasi jalur routing yang digunakan saat mentransfer data melalui router. Dalam kasus tertentu, router tidak hanya memiliki gateway untuk mencapai tujuan, Misalnya karena router perlu menghubungkan banyak jaringan dengan segmen yang berbeda.</p><p></p><p>Routing adalah alat yang mengirimkan paket data ke tujuan melalui jaringan atau Internet melalui proses yang disebut routing. Proses perutean terjadi pada lapisan 3 (lapisan jaringan, seperti Internet Protocol) dari protokol penumpukan tujuh tingkat OSI.</p><p></p><p>Routing mengirim data dan informasi dengan meneruskan paket data yang dikirim dari satu jaringan ke jaringan lain ke jaringan lain.</p><p>Router juga perangkat yang mengirim paket data ke tujuannya melalui jaringan atau Internet.</p><p>Routing-AdalahRouting Adalah</p><p></p><p>Routing memilih jalur yang harus dilewati suatu paket. Jalur yang baik tergantung pada beban jaringan, panjang datagram, jenis layanan yang diminta, dan pola lalu lintas. Secara umum, skema perutean hanya mempertimbangkan jalur terpendek.</p><p></p><p>Daftar Isi :</p><p></p><p>    Fungsi Routing</p><p>    Jenis Routing</p><p>    Konsep Dasar Routing</p><p>    Kelebihan dan Kekurangan Routing</p><p>        Kelebihan:</p><p>        Kekurangan:</p><p></p><p>Fungsi Routing</p><p></p><p>Pada prinsipnya, router digunakan untuk menghubungkan dan meneruskan data antara dua atau lebih jaringan satu dengan jaringan lainnya. Saat ini, router lebih dikenal sebagai alat untuk menghubungkan jaringan yang dipasang baik di rumah, kantor, warnet atau instansi lainnya untuk terhubung ke Internet. Router umumnya dapat memblokir badai siaran yang dapat mempengaruhi kinerja jaringan. Router sering bingung dengan switch, tetapi kedua perangkat ini memiliki fungsi yang berbeda, pada router sebagai penghubung antara jalan jaringan dan jalur jaringan lainnya. Sementara pada switch, ia berfungsi seperti jalanan yaitu mengumpulkan jaringan-jaringan yang ada ke dalam satu jaringan dan membentuk LAN (Local Action Network).</p><p>Jenis Routing</p><p></p><p>Routing Default adalah untuk mengirim paket secara manual. Ini sering digunakan dalam jaringan yang hanya memiliki satu output atau hanya dapat digunakan secara lokal.</p><p>Static Routing adalah router dengan kabel routing statis yang pengaturannya diatur secara manual oleh administrasi jaringan.</p><p>Dynamic Routing adalah router yang secara otomatis membuat tabel routing dengan membaca lalu lintas jaringan dan tentu saja berinteraksi dengan router lain. Routing dinamis adalah rute termudah daripada routing standar dan routing statis.</p><p>Konsep Dasar Routing</p><p></p><p>Routing adalah proses yang dialami datagram untuk mencapai tujuan di jaringan TCP/IP. Konsep routing adalah hal utama di tingkat Internet dalam jaringan TCP / IP. Ini karena proses pengalamatan berlangsung di lapisan Internet. Data dari perangkat yang terhubung ke Internet dikirim dalam bentuk datagram yang merupakan paket data yang ditentukan oleh IP.</p><p></p><p>Datagram memiliki alamat tujuan paket data. Protokol Internet memindai alamat ini untuk mengirim datagram dari perangkat sumber ke perangkat tujuan. Jika alamat tujuan datagram berada di jaringan dengan perangkat asli, datagram akan dikirimkan segera. Jika alamat tujuan datagram tidak di jaringan yang sama, datagram dikirim ke router yang paling tepat.</p><p>Kelebihan dan Kekurangan Routing</p><p>Kelebihan:</p><p></p><p>    Tidak memerlukan waktu yang lama untuk pemrosesan rute ketika dikirim ke router lawan.</p><p>    Tidak memaksakan bandwidth pada router sehingga kinerja router tidak terganggu oleh routing yang dilakukan.</p><p>    Memfasilitasi penugasan jaringan dan memberikan lebih banyak keamanan. Karena perutean statis ini dibuat secara manual, kami dapat mengatur siapa yang kami hubungkan.</p><p></p><p>Kekurangan:</p><p></p><p>    Routing statis ini membutuhkan tingkat perhatian yang lebih tinggi dalam pengaturan. Untuk alasan ini, administrator harus memiliki desain yang jelas atau topologi yang jelas sebelum menyesuaikan.</p><p>    Jika ada pengguna atau perangkat baru, pengaturan tambahan akan diperlukan lagi secara manual. Tentu saja, ini akan memakan waktu lama, karena mereka perlu menambahkan pengaturan ke router yang ada.</p><p>    Seperti yang saya katakan sebelumnya, peraturan statis ini membutuhkan lebih banyak perhatian. Oleh karena itu, peraturan ini tidak cocok untuk jaringan besar.</p><p></p><p>Sekian artikel tentang routing ini semoga bisa memberi manfaat bagi kita semua, Terimakasih.</p><br />
+                                            <h2 class="ez-toc-section" id="perbdaan-routing-dan-router-%e2%80%8b">
+                            27. perbdaan routing dan router ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Static Routing
+</p><p>Router meneruskan paket dari sebuah network ke network yang lainnya berdasarkan yang ditentukan oleh administrator. Rute pada static routing tidak berubah, kecuali jika diubah secara manual oleh administrator.
+</p><p>
+</p><p>Berikut ini adalah karakteristik dari static routing:
+</p><p>Tidak akan mentolerir jika terjadi kesalahan pada konfigurasi yang ada. Jika terjadi perubahan pada jaringan atau terjadi kegagalan sambungan antara dua atau lebih titi kyang terhubung secara langsung, arus lalu lintas tidak akan disambungkan oleh router.
+</p><p>Konfigurasi routing jenis ini biasanya dibangun dalam jaringan yang hanya mempunyai beberapa router, umumnya tidak lebih dari 2 atau 3.
+</p><p>Informasi routingnya diberikan oleh orang (biasa disebut administrator jaringan) secara manual.
+</p><p>Pada satu router hanya memiliki satu table routing.
+</p><p>Jenis Routing Static ini biasanya digunakan untuk jaringan kecil dan stabil.
+</p><p>
+</p><p>Keuntungan Routing Static :
+</p><p>- Lebih aman daripada dynamic routing karena tidak rentan terhadap serangan spoofing.
+</p><p>
+</p><p>Kelemahan Routing Static :
+</p><p>- Rentan terhadap kesalahan penulisan dan lebih merepotkan dibandingkan dynamic routing.
+</p><p>
+</p><p>2. Dynamic Routing
+</p><p>Merupakan type Routing dimana Router dapat mempelajari sendiri Rute yang terbaik yang akan ditempuhnya untuk meneruskan paket dari sebuah network ke network lainnya. Administrator tidak menentukan rute yang harus ditempuh oleh paket-paket tersebut. Administrator hanya menentukan bagaimana cara router mempelajari paket, dan kemudian router mempelajarinya sendiri. Rute pada dynamic routing berubah, sesuai dengan pelajaran yang didapatkan oleh router.
+</p><p>
+</p><p>Berikut ini adalah karakteristik dari static routing:
+</p><p>Informasi routingnya tidak lagi diberikan oleh orang (manual), melainkan diberikan oleh software.
+</p><p>Apabila salah satu jalur yang ada mengalami gangguan atau kerusakan peralatan, maka router akan secara otomatis akan mencari ganti dari jalur yang tidak bisa dipakai lagi.
+</p><p>Menangani jaringan yang lebih kompleks dan luas, atau jaringan yang konfigurasinya sering berubah ubah (koneksi putus-nyambung).
+</p><p>Jaringannya cerdas (sudah menggunakan komputasi).
+</p><p>Memerlukan routing protokol untuk membuat tablerouting dan routing protokol ini bisa memakan sumber daya komputer.
+</p><p>
+</p><p>Keuntungan Routing Dynamic :
+</p><p>- Lebih mudah untuk mengatur network yang besar karena Router akan memilih jalur lain bila ada suatu jalur yang rusak.
+</p><p>
+</p><p>Kelemahan Routing Dynamic :
+</p><p>- Update ARP table dibagikan ke semua komputer, berarti mengkonsumsi bandwith butuh RAM untuk menentukan jalur terbaik bila terjadi down karena jalur ditentukan oleh sistem, bukan admin</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="pengertian-fungsi-dari-router-tujuan-routing-tolong-bantu-ya-kak">
+                            28. pengertian, fungsi dari router.
+tujuan routing.
+tolong bantu ya kak</h2><br />
+                        pengertian:router merupakan perangkat keras  jaringan computer yang dapat digunakan untuk menghubungkan beberapa jaringan yang sama atau berbeda.<br />fungsi nya:membagi atau mendistribusikan IP address baik itu secara statis atau pu DHCP kepada semua computer ataupun perangkat yang terhubung ke router tersebut.<br /><br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="2-tabel-routing-adalah-tabel-yang-memuat-seluruh-informasi-ip-address-dari-interface-router-yang-lain-sehingga-router-yang-satu-dengan-router-yang-lainnya-bisa-berkomunikasi-sebut-dan-jelaskan-5-li">
+                            29. 2. Tabel routing adalah tabel yang memuat seluruh informasi IP address dari interface router yang lain sehingga router yang satu dengan router yang lainnya bisa berkomunikasi. Sebut dan jelaskan 5 (lima) macam tabel routing yang kamu ketahui.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Tabel Routing Statis:</p><p></p><p>Tabel ini diatur secara manual oleh administrator jaringan.</p><p>Setiap entri di tabel ini harus ditambahkan atau diubah secara manual oleh administrator.</p><p>Cocok untuk jaringan kecil atau konfigurasi sederhana.</p><p>Tabel Routing Dinamis:</p><p></p><p>Tabel ini diperbarui secara otomatis oleh protokol routing.</p><p>Router bertukar informasi untuk memahami topologi jaringan dan memperbarui tabel sesuai keadaan jaringan.</p><p>Cocok untuk jaringan yang kompleks dan dinamis.</p><p>Tabel Forwarding:</p><p></p><p>Tabel ini digunakan untuk menentukan jalur mana yang harus diambil oleh paket berdasarkan alamat tujuan.</p><p>Biasanya diperbarui dari tabel routing, dan digunakan secara aktif dalam pengiriman paket.</p><p>Tabel ARP (Address Resolution Protocol):</p><p></p><p>Mengaitkan alamat IP dengan alamat fisik (MAC address) di jaringan lokal.</p><p>Digunakan untuk mengirim paket dalam jaringan lokal.</p><p>Tabel NAT (Network Address Translation):</p><p></p><p>Mengonversi alamat IP internal menjadi alamat IP eksternal, memungkinkan beberapa perangkat di jaringan internal menggunakan satu alamat IP eksternal.</p><p>Penting untuk mengatasi kelangkaan alamat IP publik.</p><p>Tabel-tabel ini membantu router untuk membuat keputusan tentang bagaimana mengarahkan paket data melalui jaringan.</p><p></p><p></p><p></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-di-maksud-dengan-tabel-routing-jelaskanberi-contoh-tabel-routing-menggunakan-2-router">
+                            30. Apa yang di maksud dengan tabel routing? Jelaskan
+Beri contoh Tabel Routing menggunakan 2 router</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Table routing adalah table yang memuat seluruh informasi IP address dari interfaces router yang lain sehingga router yang satu dengan router lainnya bisa berkomunikasi. Routing table hanya memberikan informasi sedang routing algoritma yang menganalisa dan mengatur routing table</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jaringan-apa-saja-yang-dapat-dihubungkan-dengan-router-atau-routing-dinamis%e2%80%8b">
+                            31. Jaringan apa saja yang dapat dihubungkan dengan router atau routing dinamis​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Router dinamis adalah router yang dapat melakukan proses routing dapat berjalan secara otomatis dan dinamis setelah melalui pengaturan oleh seorang administrator jaringan.</p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="sebelum-melakukan-konfigurasi-routing-dua-router-harus-saling-terhubung-kabel-yang-digunakan-untuk-menghubungkan-dua-router-adalah-a-straight-b-crossover-c-rollover-d-console-e-sejajar">
+                            32. sebelum melakukan konfigurasi routing, dua router harus saling terhubung. kabel yang digunakan untuk menghubungkan dua router adalah...A.straight B.crossover C. rollover D.console E. sejajar</h2><br />
+                        Kabel Yang Di Gunakan Untuk Menghubungkan Dua Router Adalah Rollover Dengan Jaringan Local Area Network (LAN)<br />
+                                            <h2 class="ez-toc-section" id="pada-konfigurasi-router-mikrotik-yang-berfungsi-untuk-membuat-keamanan-pada-routing-a-dhcp-server-b-dhcp-client-c-routing-dinamis-d-routing-statis-e-firewall%e2%80%8b">
+                            33. Pada konfigurasi router mikrotik yang berfungsi untuk membuat keamanan pada routing? a Dhcp server b. Dhcp client c. Routing dinamis d. Routing statis e. firewall​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Adalah :</p><p>E. firewall</p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-konsep-kerja-inter-vlan-routing-dengan-menggunakan-router-cisco-%e2%80%8b">
+                            34. jelaskan konsep kerja inter vlan routing dengan menggunakan router cisco.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Inter-VLAN routing adalah proses mengizinkan komunikasi antara berbagai VLAN dalam sebuah jaringan. Dengan menggunakan router Cisco, konsep kerjanya melibatkan konfigurasi antarmuka atau subinterfacenya untuk setiap VLAN yang akan dihubungkan. Ini memungkinkan router untuk berperan sebagai perantara antara VLAN, mengizinkan lalu lintas untuk melewati batas antar-VLAN. Setiap VLAN memiliki alamat IP unik, dan router Cisco memainkan peran penting dalam perutean lalu lintas antar-VLAN ini, memastikan bahwa komunikasi antar-VLAN berjalan dengan lancar sesuai dengan aturan dan kebijakan yang diterapkan. melakukan inter VLAN routing dengan beberapa cara:</p><p></p><p>Router-on-a-Stick (RoAS): Dalam konfigurasi RoAS, satu antarmuka router dihubungkan ke switch yang memiliki beberapa VLAN. Router kemudian mengkonfigurasi subinterfacenya untuk setiap VLAN yang ingin dihubungkan. Setiap subantarmuka memiliki alamat IP yang sesuai dengan VLAN tersebut. Ini memungkinkan router untuk memahami lalu lintas dari setiap VLAN dan meneruskannya sesuai.</p><p></p><p>Layer 3 Switch: Beberapa model switch Cisco memiliki kemampuan Layer 3 routing built-in. Ini berarti bahwa switch dapat mengambil peran router untuk melakukan inter VLAN routing. Anda dapat mengkonfigurasi VLAN dan alamat IP pada switch, dan switch akan mengarahkan lalu lintas antar-VLAN.</p><p></p><p>Router Terpisah: Dalam beberapa kasus, router Cisco yang terpisah dapat digunakan untuk melakukan inter VLAN routing. Router ini akan terhubung ke switch melalui antarmuka Ethernet yang berbeda untuk setiap VLAN, dan Anda akan mengkonfigurasi antarmuka router dan VLAN yang sesuai.</p><p></p><p>Proses ini melibatkan pengaturan antarmuka, pengkonfigurasian VLAN, dan konfigurasi routing statis atau dinamis di router Cisco. Ini memungkinkan lalu lintas dari satu VLAN menuju ke router, kemudian diteruskan ke VLAN tujuan yang sesuai berdasarkan alamat IP dan routing yang telah dikonfigurasi. Dengan cara ini, komunikasi antar-VLAN dapat dicapai di dalam jaringan yang sama.</p><p><strong>Penjelasan:</strong></p><p>Jangan lupa di jadikan jawaban terbaik ya :D</p><p>cmiiw</p><br />
+                                            <h2 class="ez-toc-section" id="pada-algoritma-routing-link-state-terdapat-paket-kecil-dari-informasi-routing-yang-dikirim-antar-router-yang-disebut">
+                            35. pada algoritma routing link state, terdapat paket kecil dari informasi routing yang dikirim antar router yang disebut</h2><br />
+                        <p>Jawaban:Link State Advertisement(LSA)</p><p></p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-prinsip-kerja-routing-statis-dalam-perangkat-router%e2%80%8b">
+                            36. jelaskan prinsip kerja routing statis dalam perangkat router​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jika paket-paket ditujukan untuk host pada network lain maka router akan meneruskannya ke network tersebut. Sebaliknya, jika paket-paket ditujukan untuk host yang satu network maka router akan menghalangi paket-paket keluar. ... Routing statis digunakan untuk melewatkan paket data.</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebuah-router-pada-routing-ospf-yang-saling-berdekatan-disebut-dengan">
+                            37. Sebuah router pada routing ospf yang saling berdekatan disebut dengan</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>adjacency router arti harafiahnya adalah router yang bersebelahan atau yg terdekat.</p><p>Jadi proses pertama dari router OSPF ini adalah menghubungkan sir dan saling berkomunikasi dengan para router terdekat atau neighbour router</p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="1-apa-yang-dimaksud-dengan-routing2-jelaskan-perbedaan-rib-dengan-fib3-jelaskan-fungsi-dari-router4-tuliskan-perbedaan-nat-dengan-pat">
+                            38. 1.apa yang dimaksud dengan routing?
+2.jelaskan perbedaan RIB dengan FIB?
+3.jelaskan fungsi dari router?
+4.tuliskan perbedaan NAT dengan PAT?</h2><br />
+                        Routing adalah proses dimana suatu item dapat sampai ke tujuan dari satu lokasi ke lokasi lain. Beberapa contoh item yang dapat di-routing : mail, telepon call, dan data<br /><br /><br />semoga  membantu :)<br />
+                                            <h2 class="ez-toc-section" id="sekumpulan-router-yang-berada-pada-1-kendali-administrator-dan-menggunakan-strategi-routing-yang-sama-adalah-%e2%80%8b">
+                            39. Sekumpulan router yang berada pada 1 kendali administrator dan menggunakan strategi routing yang sama adalah....​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Sekumpulan router yang berada pada 1 kendali administrator dan menggunakan strategi routing yang sama adalah Autonomous System</p><p><strong>Penjelasan:</strong></p><p>Autonomous System disebut juga dengan domain routing.</p><br />
+                                            <h2 class="ez-toc-section" id="sebuah-router-pada-routing-ospf-yang-saling-berdekatan-disebut-dengan">
+                            40. Sebuah router pada routing ospf yang saling berdekatan disebut dengan.</h2><br />
+                        <p><strong>Jawaban:</strong></p>Adjacency router arti harafiahnya adalah router yang bersebelahan atau yang terdekat. Jadi proses pertama dari router OSPF ini adalah menghubungkan diri dan saling berkomunikasi dengan para router terdekat atau neighbour router. Untuk dapat membuka komunikasi, Hello protocol akan bekerja dengan mengirimkan Hello packet.<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/gwTXjCDYYBg?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/definisi-dan-fungsi-dari-topologi-bus.html">Definisi Dan Fungsi Dari Topologi Bus</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-anal.html">Fungsi Dari Anal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-kasus-dan-jawabannya.html">Contoh Soal Kasus Dan Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-subjunctive-dan-pembahasannya.html">Contoh Soal Subjunctive Dan Pembahasannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-penulisan-tugas-akhir-itb-fsrd.html">Contoh Penulisan Tugas Akhir Itb Fsrd</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-judul-tugas-akhir-logistik.html">Contoh Judul Tugas Akhir Logistik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/tes-toefl-contoh.html">Tes Toefl Contoh</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-latar-belakabg-masalah-tugas-akhir.html">Contoh Latar Belakabg Masalah Tugas Akhir</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-struktur-sel-hewan-dan-tumbuhan.html">Fungsi Dari Struktur Sel Hewan Dan Tumbuhan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-control-unit.html">Fungsi Dari Control Unit</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-daily-activity-dan-jawabannya.html">Contoh Soal Daily Activity Dan Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-sbdp-kelas-4-semester-1.html">Contoh Soal Sbdp Kelas 4 Semester 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-pengertian-dan-fungsi-dari-administrasi.html">Apa Pengertian Dan Fungsi Dari Administrasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/jelaskan-fungsi-dari-kaidah-kebahasaan-yang-dominan-dalam-teks-tersebut.html">Jelaskan Fungsi Dari Kaidah Kebahasaan Yang Dominan Dalam Teks Tersebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-textbox-label-dan-button.html">Apa Fungsi Dari Textbox Label Dan Button</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-java-update-scheduler.html">Apa Fungsi Dari Java Update Scheduler</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-bahasa-inggris-kelas-11-semester-2.html">Contoh Soal Bahasa Inggris Kelas 11 Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-humas.html">Fungsi Dari Humas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-aloe-vera-gel.html">Apa Fungsi Dari Aloe Vera Gel</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-memori.html">Fungsi Dari Memori</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediasoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediasoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

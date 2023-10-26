@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Algoritma Eigenface - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Algoritma Eigenface, , , , , , , 0, , , , , , 0, fungsi-dari-algoritma-eigenface, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Algoritma Eigenface - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Algoritma Eigenface, , , , , , , 0, , , , , , 0, fungsi-dari-algoritma-eigenface, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Algoritma Eigenface - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Algoritma Eigenface, , , , , , , 0, , , , , , 0, fungsi-dari-algoritma-eigenface, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediasoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediasoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediasoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediasoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediasoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediasoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediasoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Algoritma Eigenface</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">titaadi2009</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Algoritma+Eigenface" alt="Fungsi Dari Algoritma Eigenface">
+                    </div>
+                    <p></p>
+                    <p>Apa itu algoritma dan fungsinya?
+Apa manfaat dari algoritma?</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-algoritma-dan-fungsinyaapa-manfaat-dari-algoritma">1.
+                                            Apa itu algoritma dan fungsinya?
+Apa manfaat dari algoritma?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-algoritma">2.
+                                            apa fungsi algoritma ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ada-berapa-fungsi-algoritma%e2%80%8b">3.
+                                            ada berapa fungsi algoritma​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-aspek-teori-alat-dan-algoritma-beserta-fungsinya">4.
+                                            apa itu aspek teori alat dan algoritma beserta fungsinya ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-algoritma">5.
+                                            apakah fungsi algoritma</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dan-langkah-langkah-algoritmafungsi-algoritma-%e2%80%8b">6.
+                                            fungsi dan langkah-langkah algoritmafungsi algoritma ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-fungsi-fungsi-algoritma-dan-flowchart-%e2%80%8b">7.
+                                            sebutkan fungsi fungsi algoritma dan flowchart ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-deklarasi-dan-deskripsi-dari-algoritma">8.
+                                            fungsi dari deklarasi dan deskripsi dari algoritma</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-terangkan-pengertian-algoritma-jawab-2-sebutkan-tujuan-dan-fungsi-algoritma-jawab-3-tuliskan-lima-ciri-ciri-algoritma-jawab-4-sebutkan-penggunaan-fungsi-algoritma-sangat-penting-ja">9.
+                                            1. Terangkan pengertian algoritma! Jawab:.. 2. Sebutkan tujuan dan fungsi algoritma! Jawab:... 3. Tuliskan lima ciri-ciri algoritma! Jawab:.. 4. Sebutkan penggunaan fungsi algoritma sangat penting! Jawab: ... 5. Terangkan keuntungan pembuatan algoritma! Jawab: ...tolong bantu ya kak..terimakasih sebelumnya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-beberapa-alasan-mengapa-fungsi-algoritma-sangat-dibutuhkan-pada-komputer%e2%80%8b">10.
+                                            tuliskan beberapa alasan mengapa fungsi algoritma sangat dibutuhkan pada komputer!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-judul-algoritma%e2%80%8b">11.
+                                            fungsi judul algoritma​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-penggunaan-fungsi-algoritma-sangat-penting-%c2%a0-terangkan-keuntungan-pembuatan-algoritma-%c2%a0-%e2%80%8b">12.
+                                            Sebutkan penggunaan fungsi algoritma sangat penting ! * Terangkan keuntungan pembuatan Algoritma ! *  ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-logika-algoritma-pada-robot%e2%80%8b">13.
+                                            apa fungsi logika algoritma pada robot​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-soal-kasus-algoritma-fungsi">14.
+                                            contoh soal kasus algoritma fungsi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengertian-dari-algoritma-dan-petaminda-serta-fungsi-nya%e2%80%8b">15.
+                                            pengertian dari algoritma dan petaminda serta fungsi nya?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengertian-dari-algoritma-dan-pertaminda-dan-fungsinya%e2%80%8b">16.
+                                            pengertian dari algoritma dan pertaminda dan fungsinya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-algoritma-flowchart%e2%80%8b">17.
+                                            Jelaskan fungsi dari algoritma flowchart!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-tujuan-dan-fungsi-algoritma-%c2%a0-tuliskan-5-ciri-ciri-algoritma-%e2%80%8b">18.
+                                            Sebutkan Tujuan dan Fungsi Algoritma !  Tuliskan 5 ciri - ciri algoritma ! ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-kondisi-dalam-algoritma-percabangan">19.
+                                            Apa Fungsi kondisi dalam algoritma percabangan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-tujuan-dan-fungsi-algoritma">20.
+                                            sebutkan tujuan dan fungsi algoritma</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-tiga-struktur-algoritma-serta-jelaskan-fungsinya">21.
+                                            Sebutkan tiga struktur algoritma serta jelaskan fungsinya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-6-fungsi-logika-dan-algoritma">22.
+                                            sebutkan 6 fungsi logika dan algoritma</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tujuan-dan-fungsi-algoritma-adalah%e2%80%8b">23.
+                                            tujuan dan fungsi algoritma adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-penggunaan-fungsi-algoritma-yang-sangat-penting%e2%80%8b">24.
+                                            Sebutkan penggunaan fungsi algoritma yang sangat penting​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#simbol-terminator-dalam-algoritma-flowchart-berfungsi-sebagai%e2%80%8b">25.
+                                            simbol Terminator dalam algoritma flowchart berfungsi sebagai​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dan-manfaat-algoritma%e2%80%8b">26.
+                                            jelaskan fungsi dan manfaat algoritma​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-algoritma-sesungguhnya">27.
+                                            apa fungsi algoritma sesungguhnya?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#didalamnya-berupa-algoritma-aplikasi-ini-merupakan-fungsi-dari">28.
+                                            Didalamnya berupa algoritma aplikasi. Ini merupakan fungsi dari</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-logika-algoritma-pada-robot%e2%80%8b">29.
+                                            apa fungsi logika algoritma pada robot​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-fungsi-logika-dan-algoritma%e2%80%8b">30.
+                                            sebutkan fungsi logika dan algoritma!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-algoritma-secara-umum">31.
+                                            
+Fungsi algoritma secara umum.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-algoritma-sorting-apa">32.
+                                            fungsi dari algoritma sorting apa ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dalam-logika-dan-algoritma-terdapat-banyak-pembahasan-dan-juga-notasi-penulisan-algoritma-yangbertujuan-agar-logika-dan-algoritma-saling-selaras-dan-berkesinambungan-didalamnya-terdapat-istilahpseudo">33.
+                                            Dalam logika dan algoritma terdapat banyak pembahasan dan juga notasi penulisan algoritma yangbertujuan agar logika dan algoritma saling selaras dan berkesinambungan. Didalamnya terdapat istilahpseudocode dalam notasi penulisan algoritmaDari pernyataan tersebut, apakah yang di maksud dengan pseudocode dan apa fungsi dari pseudocodedalam notasi penulisan algoritma ?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-tuliskan-pengertian-algoritma2-tuliskan-dan-jelaskan-3-bentuk-dasar-algoritma3-tuliskan-dan-jelaskan-5-ciri-algoritma4-tuliskan-fungsi-dan-manfaat-algoritma">34.
+                                            1.Tuliskan pengertian algoritma
+2. Tuliskan dan jelaskan 3 bentuk dasar algoritma
+3. Tuliskan dan jelaskan 5 ciri algoritma
+4. Tuliskan fungsi dan manfaat algoritma</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#algoritma-terdiri-dari-3-bagian-yaitu-dan-fungsi-%e2%80%8b">35.
+                                            algoritma terdiri dari 3 bagian yaitu dan fungsi ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-algoritma-pemprograman">36.
+                                            apa fungsi algoritma pemprograman</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-algoritma-searching%e2%80%8b">37.
+                                            Jelaskan fungsi algoritma searching​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-prosedur-dan-fungsi-dalam-algoritma">38.
+                                            
+Jelaskan perbedaan Prosedur dan Fungsi dalam algoritma :</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-yang-digunakan-untuk-mencari-nilai-algoritma-adalah">39.
+                                            fungsi yang digunakan untuk mencari nilai algoritma, adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-array-pada-pembentukan-algoritma-sorting%e2%80%8b">40.
+                                            Apakah fungsi array pada pembentukan algoritma sorting?​.</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="apa-itu-algoritma-dan-fungsinyaapa-manfaat-dari-algoritma">
+                            1. Apa itu algoritma dan fungsinya?
+Apa manfaat dari algoritma?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Pengertian Algoritma Adalah</p><p>Umumnya, algoritma akan digunakan agar bisa melakukan penghitungan, melakukan penalaran secara otomatis, serta mengolah data di dalam komputer dengan menggunakan software tertentu.</p><p></p><p></p><p><strong>Jawaban:</strong></p><p>Penjelasan Algoritma :</p><p>Algoritma adalah metode atau langkah yang direncanakan secara tersusun dan berurutan.</p><p></p><p>Fungsi Algoritma :</p><p>Untuk menyelesaikan atau memecahkan permasalahan dengan sebuah intruksi atau kegiatan.</p><p></p><p>Manfaat Algoritma :</p><p>Agar bisa mempermudah membuat program yang dapat menyelesaikan masalah tertentu. Bisa digunakan berulang kali dalam menyelesaikan suatu permasalahan. Membantu menyelesaikan suatu masalah dengan logika dan juga sistematis.</p><p></p><p>SEMOGA MEMBANTU</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-algoritma">
+                            2. apa fungsi algoritma ?</h2><br />
+                        dengan algoritma, kita dapat mengatasi masalah dari yang sederhana dan kompleks sekalipun<br />pemecahan masalah dalam pemograman dengan membuat solusi yang lebih cepat dan efisien<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="ada-berapa-fungsi-algoritma%e2%80%8b">
+                            3. ada berapa fungsi algoritma​</h2><br />
+                        <p> Ada 9 fungsi</p><p></p><p>-Untuk membantu menyederhanakan suatu program yang rumit dan besar.</p><p>-Untuk memudahkan dalam membuat sebuah program untuk masalah tertentu.</p><p>-Algoritma dapat digunakan berkali-kali untuk menyelesaikan suatu permasalahan.</p><p>-Membantu memecahkan suatu permasalahan dengan logika dan sistematis.</p><p>Untuk meminimalisir penulisan program secara berulang-ulang.</p><p>-Agar dapat melakukan pendekatan top-down dan divide and conquer.</p><p>-Untuk memudahkan membuat program yang lebih rapih dan terstruktur sehingga lebih mudah dipahami dan dikembangkan.</p><p>-Memudahkan proses modifikasi pada program karena bisa dilakukan hanya pada satu modul tanpa harus mengubah modiul lainnya.</p><p>-Ketika terjadi kesalahan, algoritma dapat membantu menemukannya karena alur kerja yang jelas.</p><p>-Memudahkan proses dokumentasi.</p><p></p><p><strong>Jawaban:</strong></p>algoritma berfungsi untuk memudahkan kita melakukan sesuatu dan memecahkan masalah sehari hari.....<p></p><p><strong>Penjelasan:</strong></p><p>sebab ,aplikasi berjalan lewat proses otomatis algoritma.bukan dari Kode yang ditulis secara manual.Algoritma membantu pembantuan progam yang lebih terstruktur dan logis.</p><p></p><p></p><p></p><p></p>SEMOGA MEMBANTU<p></p><p></p>MAPEL:SMBTNKELAS: DILUAR KELAS.<br />
+                                            <h2 class="ez-toc-section" id="apa-itu-aspek-teori-alat-dan-algoritma-beserta-fungsinya">
+                            4. apa itu aspek teori alat dan algoritma beserta fungsinya ?</h2><br />
+                        1. alat merupalan tool dalam mendesain sebuah sistem sedangkan alhoritma merupalan sebuah metode utk menyelesaikan permasalahan<br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-algoritma">
+                            5. apakah fungsi algoritma</h2><br />
+                        Algoritme digunakan untuk penghitungan, pemrosesan data, dan penalaran otomatis. Algoritme adalah metode efektif diekspresikan sebagai rangkaian terbatas dari instruksi-instruksi yang telah didefinisikan dengan baik<br />Semoga Terbantu :)<br />
+                                            <h2 class="ez-toc-section" id="fungsi-dan-langkah-langkah-algoritmafungsi-algoritma-%e2%80%8b">
+                            6. fungsi dan langkah-langkah algoritmafungsi algoritma ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><strong>Mengidentifikasi masalah yang ingin dipecahkan atau tugas yang ingin dilakukan.</strong><strong>Menganalisis masalah dan mencari cara terbaik untuk menyelesaikannya. Hal ini melibatkan pemahaman yang jelas tentang masalah yang akan dipecahkan dan tujuan yang ingin dicapai.</strong><strong>Membuat rancangan algoritma dengan langkah-langkah logis yang akan diikuti untuk menyelesaikan masalah atau tugas. Setiap langkah harus jelas dan dapat dipahami.</strong><strong>Menguji dan mengevaluasi algoritma untuk memastikan bahwa ia dapat menyelesaikan masalah atau tugas dengan benar dan efisien. Jika ada masalah, algoritma perlu direvisi dan diperbaiki.</strong><p><strong></strong></p><p><strong>Fungsi algoritma adalah untuk membantu mengatasi masalah atau menyelesaikan tugas dengan cara yang tepat dan efisien.</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-fungsi-fungsi-algoritma-dan-flowchart-%e2%80%8b">
+                            7. sebutkan fungsi fungsi algoritma dan flowchart ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Algoritma berfungsi untuk memudahkan kita melakukan sesuatu dan memecahkan masalah sehari-hari. Flowchart berfungsi untuk menggambarkan secara jelas suatu alur pekerjaan dan kerangka acuan dalam pengambilan keputusan</p><p><strong>Jawaban:</strong></p><p>Algoritma adalah suatu alur atau urutan secara sistematis untuk memecahkan suatu masalah sedangkan flowchart merupakan salah satu metode untuk menyampaikan algoritma dalam bentuk diagram.</p><p>Intinya, algoritma berfungsi untuk memudahkan kita melakukan sesuatu dan memecahkan suatu masalah. </p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-deklarasi-dan-deskripsi-dari-algoritma">
+                            8. fungsi dari deklarasi dan deskripsi dari algoritma</h2><br />
+                        <p>deklarasi adalah susunan atau paparan yg kita ajukan kep[ada penilai </p><p>dekripsi adalah susunan pelajaran atau rangkuman selama kita berkuliah dalam bentuk kinerja atau di singkat dengan kkm</p><br />
+                                            <h2 class="ez-toc-section" id="1-terangkan-pengertian-algoritma-jawab-2-sebutkan-tujuan-dan-fungsi-algoritma-jawab-3-tuliskan-lima-ciri-ciri-algoritma-jawab-4-sebutkan-penggunaan-fungsi-algoritma-sangat-penting-ja">
+                            9. 1. Terangkan pengertian algoritma! Jawab:.. 2. Sebutkan tujuan dan fungsi algoritma! Jawab:... 3. Tuliskan lima ciri-ciri algoritma! Jawab:.. 4. Sebutkan penggunaan fungsi algoritma sangat penting! Jawab: ... 5. Terangkan keuntungan pembuatan algoritma! Jawab: ...tolong bantu ya kak..terimakasih sebelumnya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. algoritma adalah prosedur langkah-demi-langkah untuk penghitungan</p><p></p><p>2.Tujuan dan Fungsi Algoritma</p><p>Konsep dasar algoritma adalah memecahkan suatu masalah. Sudah jelas kalau tujuan dan fungsi dari algoritma berkaitan dengan pemecahan masalah secara lebih rinci dan terstruktur. Secara lebih jelas dapat saya uraikan bahwa tujuan adan fungsi algoritma adalah: Memecahkan program yang sulit.</p><p></p><p>3.•Algoritma harus berhenti setelah mengerjakan sejumlah langkah terbatas. ...</p><p>•Setiap langkah harus didefinisikan dengan tepat dan tidak berarti-dua (ambiguous).</p><p>•Algoritma memiliki nol atau lebih masukan (input). ...</p><p>•Algoritma memiliki nilai nol atau lebih keluaran (output). ...</p><p>•Algoritma harus sangkil (effective).</p><p></p><p>4.Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit, Menggunakan fungsi algorita bisa menjadikan program yang besar menjadi program yang lebih sederhana, ... Ketika terjadi kesalahan bisa dicari dengan mudah karena dengan fungsi algoritma bisa mendapatkan alur yang jelas.</p><p></p><p>5.Keuntungan dari pembuatan algoritma : 1. Pembuatan / penulisan algoritma tidak tergantung pada bahasa pemograman manapun, artinya penulisan algoritma independen dari bahasa pemograman dan komputer yang telaksananya. 2. Notasi algoritma dapat diterjemahkan ke dalam berbagai bahasa pemograman</p><p><strong>Penjelasan:</strong></p><p>semoga Membantu </p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-beberapa-alasan-mengapa-fungsi-algoritma-sangat-dibutuhkan-pada-komputer%e2%80%8b">
+                            10. tuliskan beberapa alasan mengapa fungsi algoritma sangat dibutuhkan pada komputer!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Algoritma simpelnya adalah tata urutan bagaimana menyelesaikan sesuatu task/problem, dalam dunia komputer algoritma dibutuhkan dalam penulisan pengkodean agar instruksi dari bahasa pemrograman  dapat dilaksanakan dengan baik oleh komputer, dan hasilnya sesuai dengan yang diharapkan.</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-judul-algoritma%e2%80%8b">
+                            11. fungsi judul algoritma​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Merupakan bagian yang terdiri atas nama algoritma dan penjelasan (spesifikasi) tentang algoritma tersebut. Dibagian ini juga digunakan untuk menentukan apakah teks algoritma yang dibuat tersebut adalah program, prosedur, atau fungsi. Algoritma harus ditulis sesuai dengan spesifikasi yang didefinisikan.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-penggunaan-fungsi-algoritma-sangat-penting-%c2%a0-terangkan-keuntungan-pembuatan-algoritma-%c2%a0-%e2%80%8b">
+                            12. Sebutkan penggunaan fungsi algoritma sangat penting ! * Terangkan keuntungan pembuatan Algoritma ! *  ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit, Menggunakan fungsi algorita bisa menjadikan program yang besar menjadi program yang lebih sederhana, ... Ketika terjadi kesalahan bisa dicari dengan mudah karena dengan fungsi algoritma bisa mendapatkan alur yang</p><p><strong>Penjelasan:</strong></p><p><strong>T</strong><strong>o</strong><strong>l</strong><strong>ong </strong><strong>dijadikan</strong><strong> </strong><strong>jawaban</strong><strong> </strong><strong>tercerdas</strong><strong> </strong><strong>ya</strong></p><p><strong>semoga</strong><strong> </strong><strong>membantu</strong></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-logika-algoritma-pada-robot%e2%80%8b">
+                            13. apa fungsi logika algoritma pada robot​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>untuk memecahkan suatu masalah. ... Untuk memudahkan dalam membuat sebuah program untuk masalah tertentu. Algoritma dapat digunakan berkali-kali untuk menyelesaikan suatu permasalahan. Membantu memecahkan suatu permasalahan dengan logika dan sistematis.</p><p><strong>Jawaban:</strong></p><p>untuk memecahkan masalah</p><p>semoga membantu</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="contoh-soal-kasus-algoritma-fungsi">
+                            14. contoh soal kasus algoritma fungsi</h2><br />
+                        <p> Buatlah algoritma dan program untuk menghitung luas dan volume suatu balok dengan menggunakan program C++ dengan struktur urut. Adapun rumus luas daribalok adalah : (2*p*l) + (2*p*t) + (2*l*t), sedangkan volume balok adalah :Volume = p*l*t.</p><p> </p><br />
+                                            <h2 class="ez-toc-section" id="pengertian-dari-algoritma-dan-petaminda-serta-fungsi-nya%e2%80%8b">
+                            15. pengertian dari algoritma dan petaminda serta fungsi nya?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>algoritma adalah urutan atau langkah-langkah untuk penghitungan atau untuk menyelesaikan suatu masalah yang ditulis secara berurutan. Sehingga, algoritma pemrograman adalah urutan atau langkah-langkah untuk menyelesaikan masalah pemrograman komputer.</p><p></p><p>Peta minda adalah suatu ilustrasi grafis yang konkrit yang dapat menunjukan bagaimana suatu konsep berhubungan atau terkait dengan konsep-konsep lain yang termasuk kategori yang sama. Peta minda ialah suatu skema atau ringkasan dari hasil belajar. Peta minda juga dikenal dengan peta konsep (min mapping).</p><p><strong>Penjelasan:</strong></p><p>fungsi algoritma</p><p></p><p>fungsi algoritma yaitu:</p><p></p><p>-Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit.</p><p>-Menggunakan fungsi algoritma bisa menjadikan program yang besar menjadi program yang lebih sederhana.</p><p>-Fungsi algoritma bisa digunakan secara berulang atau lebih dari satu kali penggunaan.</p><p>-Memudahkan dalam pembuatan program.</p><p>-Bisa mengatasi segala masalah dengan logika dan urut.</p><p>-Menggunakan fungsi algoritma bisa melakukan pendekatan top-down dan juga devide and conguer.</p><p>-Meminimalisir penulisan program yang berulang-ulang.</p><p>-Program yang ada menjadi lebih terstruktur dengan rapi sehingga dapat lebih mudah untuk dipahami ataupun dikembangkan.</p><p>-Ketika terjadi kesalahan bisa dicari dengan mudah karena dengan fungsi algoritma bisa mendapatkan alur yang jelas.</p><p>-Ketika ingin melakukan modifikasi pada program bisa dilakukan hanya pada satu modul saja tanpa harus merubah dan mengganggu modul yang lain.</p><p>-Dokumentasi yang lebih mudah</p><p></p><p></p><p>Fungsi Petaminda </p><p></p><p>-Menghemat waktu belajar dan mengulang.</p><p>-Memfasilitasi pembelajaran.</p><p>-Memperkuat ingatan.</p><p>-Memungkinkan siswa menginterpretasikan semua pelajaran yang telah dipelajari.</p><p></p><p>semoga membantu</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="pengertian-dari-algoritma-dan-pertaminda-dan-fungsinya%e2%80%8b">
+                            16. pengertian dari algoritma dan pertaminda dan fungsinya​</h2><br />
+                        <p><strong>JAWA</strong><strong>BAN</strong><strong> </strong><strong>:</strong></p><p></p><p><strong>Algor</strong><strong>itma</strong><strong> </strong>adalah urutan langkah-langlah logis penyelesaian masalah yang disusun secara sistematis dan logis.</p><p></p><p>"sistematis dan logis artinya, langkah-langkah dalam algoritma harus dapat ditentukan bernilai salah atau benar"</p><p></p><p><strong>Fungsi</strong><strong> </strong><strong>alg</strong><strong>oritma</strong><strong> </strong><strong>:</strong></p>Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit.Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit.Menggunakan fungsi algoritma bisa menjadikan program yang besar menjadi program yang lebih sederhana.Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit.Menggunakan fungsi algoritma bisa menjadikan program yang besar menjadi program yang lebih sederhana.Fungsi algoritma bisa digunakan secara berulang atau lebih dari satu kali penggunaan.Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit.Menggunakan fungsi algoritma bisa menjadikan program yang besar menjadi program yang lebih sederhana.Fungsi algoritma bisa digunakan secara berulang atau lebih dari satu kali penggunaan.Memudahkan dalam pembuatan program.Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit.Menggunakan fungsi algoritma bisa menjadikan program yang besar menjadi program yang lebih sederhana.Fungsi algoritma bisa digunakan secara berulang atau lebih dari satu kali penggunaan.Memudahkan dalam pembuatan program.Bisa mengatasi segala masalah dengan logika dan urut.Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit.Menggunakan fungsi algoritma bisa menjadikan program yang besar menjadi program yang lebih sederhana.Fungsi algoritma bisa digunakan secara berulang atau lebih dari satu kali penggunaan.Memudahkan dalam pembuatan program.Bisa mengatasi segala masalah dengan logika dan urut.Menggunakan fungsi algoritma bisa melakukan pendekatan top-down dan juga devide and conguer.Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit.Menggunakan fungsi algoritma bisa menjadikan program yang besar menjadi program yang lebih sederhana.Fungsi algoritma bisa digunakan secara berulang atau lebih dari satu kali penggunaan.Memudahkan dalam pembuatan program.Bisa mengatasi segala masalah dengan logika dan urut.Menggunakan fungsi algoritma bisa melakukan pendekatan top-down dan juga devide and conguer.Meminimalisir penulisan program yang berulang-ulang.Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit.Menggunakan fungsi algoritma bisa menjadikan program yang besar menjadi program yang lebih sederhana.Fungsi algoritma bisa digunakan secara berulang atau lebih dari satu kali penggunaan.Memudahkan dalam pembuatan program.Bisa mengatasi segala masalah dengan logika dan urut.Menggunakan fungsi algoritma bisa melakukan pendekatan top-down dan juga devide and conguer.Meminimalisir penulisan program yang berulang-ulang.Program yang ada menjadi lebih terstruktur dengan rapi sehingga dapat lebih mudah untuk dipahami ataupun dikembangkan.Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit.Menggunakan fungsi algoritma bisa menjadikan program yang besar menjadi program yang lebih sederhana.Fungsi algoritma bisa digunakan secara berulang atau lebih dari satu kali penggunaan.Memudahkan dalam pembuatan program.Bisa mengatasi segala masalah dengan logika dan urut.Menggunakan fungsi algoritma bisa melakukan pendekatan top-down dan juga devide and conguer.Meminimalisir penulisan program yang berulang-ulang.Program yang ada menjadi lebih terstruktur dengan rapi sehingga dapat lebih mudah untuk dipahami ataupun dikembangkan.Ketika terjadi kesalahan bisa dicari dengan mudah karena dengan fungsi algoritma bisa mendapatkan alur yang jelas.Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit.Menggunakan fungsi algoritma bisa menjadikan program yang besar menjadi program yang lebih sederhana.Fungsi algoritma bisa digunakan secara berulang atau lebih dari satu kali penggunaan.Memudahkan dalam pembuatan program.Bisa mengatasi segala masalah dengan logika dan urut.Menggunakan fungsi algoritma bisa melakukan pendekatan top-down dan juga devide and conguer.Meminimalisir penulisan program yang berulang-ulang.Program yang ada menjadi lebih terstruktur dengan rapi sehingga dapat lebih mudah untuk dipahami ataupun dikembangkan.Ketika terjadi kesalahan bisa dicari dengan mudah karena dengan fungsi algoritma bisa mendapatkan alur yang jelas.Ketika ingin melakukan modifikasi pada program bisa dilakukan hanya pada satu modul saja tanpa harus merubah dan mengganggu modul yang lain.Dokumentasi yang lebih mudah<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-algoritma-flowchart%e2%80%8b">
+                            17. Jelaskan fungsi dari algoritma flowchart!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>menggambarkan alur sebuah program dari setiap prosesnya. </p><p></p><p><strong>Penjelasan:</strong></p><p>semoga membantu^_^</p><p><strong>Jawaban:</strong></p><p></p><p>ada di bawah </p><p><strong>Penjelasan:</strong></p><p>fungsi utama algoritma flowchart adalah membantu dalam pemahaman, komunikasi, dan perencanaan langkah-langkah dalam algoritma atau proses dengan cara yang mudah dipahami dan divisualisasikan.</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-tujuan-dan-fungsi-algoritma-%c2%a0-tuliskan-5-ciri-ciri-algoritma-%e2%80%8b">
+                            18. Sebutkan Tujuan dan Fungsi Algoritma !  Tuliskan 5 ciri - ciri algoritma ! ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Tujuan dan Fungsi Algoritma</p><p>Konsep dasar algoritma adalah memecahkan suatu masalah. Sudah jelas kalau tujuan dan fungsi dari algoritma berkaitan dengan pemecahan masalah secara lebih rinci dan terstruktur. Secara lebih jelas dapat saya uraikan bahwa tujuan adan fungsi algoritma adalah: Memecahkan program yang sulit.</p><p></p><p></p><p></p><p>Ciri-ciri algoritma, yaitu:</p><p>-Ada input atau masukan.</p><p>-Ada output atau keluaran.</p><p>-Langkahnya pasti, jelas, dan tidak ambigu.</p><p>-Langkahnya sederhana.</p><p>-Ada batasan waktu (stoping role)</p><p><strong>Jawaban:</strong></p><p>* Tujuan dan Fungsi Algoritma</p><p>Konsep dasar algoritma adalah memecahkan suatu masalah. Sudah jelas kalau tujuan dan fungsi dari algoritma berkaitan dengan pemecahan masalah secara lebih rinci dan terstruktur. Secara lebih jelas dapat saya uraikan bahwa tujuan adan fungsi algoritma adalah: Memecahkan program yang sulit</p><p>* 1)Algoritma harus berhenti setelah mengerjakan sejumlah langkah terbatas.</p><p></p><p>2)Setiap langkah harus didefinisikan dengan tepat dan tidak berarti-dua (Ambiguitas).</p><p></p><p>3)Algoritma memiliki nol atau lebih masukkan.</p><p></p><p>4)Algoritma memiliki nol atau lebih keluaran.</p><p></p><p>5)Algoritma harus efektif (setiap langkah harus sederhana sehingga dapat dikerjakan dalam waktu yang masuk akal)</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-kondisi-dalam-algoritma-percabangan">
+                            19. Apa Fungsi kondisi dalam algoritma percabangan</h2><br />
+                        fungsinya adalah memeriksa suatu keadaan terpenuhi atau tidak<br />oleh karena dalam percabangan hanya dikenal operator logika "T/F" maka kemungkinan jawabannya hanya 2 yaitu <br />T atau TRUE yaitu keadaannya terpenuhi<br />dan F atau FALSE yaitu keadaannya tidak terpenuhi<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-tujuan-dan-fungsi-algoritma">
+                            20. sebutkan tujuan dan fungsi algoritma</h2><br />
+                        Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit,<br /><br />Menggunakan fungsi algoritma bisa menjadikan program yang besar menjadi program yang lebih sederhana,<br /><br />Fungsi algoritma bisa digunakan secara berulang atau lebih dari satu kali penggunaan,<br /><br />Memudahkan dalam pembuatan program,<br /><br />Bisa mengatasi segala masalah dengan logika dan urut,<br /><br />Menggunakan fungsi algoritma bisa melakukan pendekatan top-down dan juga divide and conquer,<br /><br />Meminimalisir penulisan program yang berulang-ulang,<br /><br />Program yang ada menjadi lebih terstuktur dengan rapi sehingga dapat lebih mudah untuk dipahami ataupun dikembangkan,<br /><br />Ketika terjadi kesalahan bisa dicari dengan mudah karena dengan fungsi algoritma bisa mendapatkan alur yang jelas<br /><br />Ketika ingin melakukan modifikasi pada program bisa dilakukan hanya pada satu modul saja tanpa harus merubah dan menganggu modul yang lain,<br /><br />Dokumentasi yang lebih mudah<br /><br />menggunakan fungsi algoritma bisa untuk memecahkan program yg rumit,menggunakan fungsi algoritma biasa menjadikan program besar menjadi sederhana, fungsi algoritma bisa digunakan berulang atau lebih dari 1 kali penggunaan<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-tiga-struktur-algoritma-serta-jelaskan-fungsinya">
+                            21. Sebutkan tiga struktur algoritma serta jelaskan fungsinya</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Berikut adalah tiga struktur algoritma umum beserta penjelasan fungsinya:</p><p></p><p>1. Struktur Pemilihan (Conditional Structure):</p><p>   Struktur pemilihan digunakan untuk mengambil keputusan berdasarkan kondisi yang diberikan. Ini memungkinkan algoritma untuk melakukan perbandingan logika dan menjalankan perintah yang sesuai tergantung pada hasil evaluasi kondisi. Dalam struktur ini, biasanya terdapat pernyataan if (jika) dan/atau else (jika tidak).</p><p></p><p>   Contoh:</p><p>   ```</p><p>   if (kondisi) {</p><p>       // blok kode jika kondisi terpenuhi</p><p>   } else {</p><p>       // blok kode jika kondisi tidak terpenuhi</p><p>   }</p><p>   ```</p><p></p><p>2. Struktur Pengulangan (Loop Structure):</p><p>   Struktur pengulangan memungkinkan algoritma untuk menjalankan serangkaian perintah berulang kali berdasarkan kondisi yang ditentukan. Dengan menggunakan struktur ini, kita dapat mengulangi blok kode berulang kali hingga kondisi tertentu terpenuhi atau mencapai batas pengulangan yang ditentukan.</p><p></p><p>   Contoh:</p><p>   ```</p><p>   while (kondisi) {</p><p>       // blok kode yang akan diulang selama kondisi terpenuhi</p><p>   }</p><p>   ```</p><p></p><p>3. Struktur Pemanggilan Fungsi (Function Call Structure):</p><p>   Struktur pemanggilan fungsi memungkinkan algoritma untuk membagi tugas menjadi bagian-bagian yang lebih kecil dan memanggil fungsi atau subrutin yang telah ditentukan sebelumnya. Ini memungkinkan penggunaan kode yang dapat digunakan kembali dan mengorganisasi algoritma menjadi unit-unit yang lebih terdefinisi.</p><p></p><p>   Contoh:</p><p>   ```</p><p>   function namaFungsi() {</p><p>       // blok kode fungsi</p><p>   }</p><p></p><p>   // Memanggil fungsi</p><p>   namaFungsi();</p><p>   ```</p><p></p><p>Dengan menggunakan struktur-struktur ini, kita dapat merancang algoritma yang lebih kompleks dan terstruktur dengan melakukan pengambilan keputusan, pengulangan tindakan, dan penggunaan fungsi yang terorganisir. Setiap struktur memiliki peran dan fungsinya sendiri dalam membantu algoritma mencapai tujuan yang diinginkan.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-6-fungsi-logika-dan-algoritma">
+                            22. sebutkan 6 fungsi logika dan algoritma</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>jika kita menggunakan Algoritma dengan bahasa Indonesia kita bisa melakukan nya</p><br />
+                                            <h2 class="ez-toc-section" id="tujuan-dan-fungsi-algoritma-adalah%e2%80%8b">
+                            23. tujuan dan fungsi algoritma adalah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Untuk membantu menyederhanakan suatu program yang rumit dan besar.</p><p><strong>Penjelasan:</strong></p><p>semoga membantu,maaf kalau salah</p><p><strong>Jawaban:</strong></p><p>Untuk membantu menyederhanakan suatu program yang rumit dan besar. Untuk memudahkan di dalam membuat sebuah program untuk masalah tertentu</p><p><strong>Penjelasan:</strong></p><p>iya iya kayaknya bener okok </p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-penggunaan-fungsi-algoritma-yang-sangat-penting%e2%80%8b">
+                            24. Sebutkan penggunaan fungsi algoritma yang sangat penting​</h2><br />
+                        <p>Menggunakan fungsi algoritma bisa digunakan untuk memecahkan program yang rumit, Menggunakan fungsi algorita bisa menjadikan program yang besar menjadi program yang lebih sederhana, ... Ketika terjadi kesalahan bisa dicari dengan mudah karena dengan fungsi algoritma bisa mendapatkan alur yang jelas.</p><p></p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="simbol-terminator-dalam-algoritma-flowchart-berfungsi-sebagai%e2%80%8b">
+                            25. simbol Terminator dalam algoritma flowchart berfungsi sebagai​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Terminator/Simbol Titik Terminal menunjukkan permulaan (start) atau akhir (stop) dari suatu proses. -Flow Line / garis alir adalah simbol yang digunakan untuk menghubungkan antara simbol yang satu dengan simbol yang lain (connecting line). Simbol ini juga berfungsi untuk menunjukkan arah aliran program.</p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><p><strong>Jawaban:</strong></p><p>Terminator/Simbol Titik Terminal menunjukkan permulaan (start) atau akhir (stop) dari suatu proses. -Flow Line / garis alir adalah simbol yang digunakan untuk menghubungkan antara simbol yang satu dengan simbol yang lain (connecting line). Simbol ini juga <strong>berfungsi untuk menunjukkan arah aliran program.</strong></p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dan-manfaat-algoritma%e2%80%8b">
+                            26. jelaskan fungsi dan manfaat algoritma​</h2><br />
+                        <p></p><p>Hasil Telusur</p><p>Cuplikan pilihan dari web</p><p></p>Fungsi dan Manfaat Algoritma<p></p><p>Untuk membantu menyederhanakan suatu program yang rumit dan besar. Untuk memudahkan dalam membuat sebuah program untuk masalah tertentu. Algoritma dapat digunakan berkali-kali untuk menyelesaikan suatu permasalahan. Membantu memecahkan suatu permasalahan dengan logika dan sistematis.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-algoritma-sesungguhnya">
+                            27. apa fungsi algoritma sesungguhnya?</h2><br />
+                        Dalam kehidupan nyata, logaritma sangat diperlukan bagi ilmu 
+pengetahuan. Dalam sejarah ilmu pengetahuan, pengembangan tabel 
+logaritma dan penggunaannya merupakan prestasi yang luar biasa. Para 
+astronom masih menggunakan skala logaritmik untuk sumbu grafik dan 
+diagram.Penggunaan logaritma yang paling jelas adalah pada penghitungan 
+skala Richter untuk gempa bumi dan desibel. Logaritma juga diaplikasikan
+ dalam penghitungan frekuensi musik. Penggunaan lain fungsi logaritma 
+adalah dalam bidang biologi, yaitu untuk mengukur laju pertumbuhan 
+penduduk, antropologi, dan keuangan (untuk menghitung bunga majemuk).<br /><br />
+                                            <h2 class="ez-toc-section" id="didalamnya-berupa-algoritma-aplikasi-ini-merupakan-fungsi-dari">
+                            28. Didalamnya berupa algoritma aplikasi. Ini merupakan fungsi dari</h2><br />
+                        <p><strong>Jawaban:Algoritma &amp; pemrograman adalah sesuatu yang berbeda. Kendati demikian, keduanya kerap dianggap sama. Belajar algoritma komputer akan membuat Anda mampu mengetahui definisi, dan membedakan kedua istilah tersebut. Anda juga akan mengetahui bahasa pemrograman. Dikutip dari Oolish Blog UNS, algoritma adalah urutan langkah-langkah logis penyelesaian sebuah masalah yang disusun secara logis dan sistematis.
+</strong></p><p><strong>
+</strong></p><p><strong>Mengenai asal- usul dari kata algoritma itu sendiri bukan merupakan sesuatu yang penting dalam pembahasan di dunia pemrograman. Setiap langkah dalam program algoritma ini haruslah logis dan jelas. Yang dimaksud jelas adalah memiliki nilai benar atau salah dan tidak memiliki nilai di tengah-tengah. Alogoritma juga erat kaitannya dengan step by step dalam melakukan pekerjaan. Anda akan melihat proses dari sebuah hasil kerja.
+</strong></p><p><strong>
+</strong></p><p><strong>Algoritma pemrograman tidak selalu identik dengan angka. Terdapat 3 pertimbangan dalam pemilihan algoritma. Ke-3 pertimbangan tersebut adalah benar, baik, dan efisien. Benar berarti output dari algoritma tersebut tidak salah. Sebaik apapun algoritmanya, jika salah, maka menjadi percuma.
+</strong></p><p><strong>
+</strong></p><p><strong>Baik maksudnya seberapa baik hasil dari algoritma tersebut dengan indikator kedekatan antara hasil dengan nilai yang real. Sebuah algoritma program haruslah efisien dari segi waktu dan memori. Jangan sampai algoritma tersebut menghabiskan waktu dan menghabiskan tempat. Sekarang, apa bedanya algoritma dengan program? Program itu adalah kumpulan pernyataan computer.
+</strong></p><p><strong>
+</strong></p><p><strong>Sementara metode tahapan yang sistematis di dalam program adalah algoritma. Dengan kata lain, sebuah program adalah implementasi dari bahasa pemrograman. Program itu dapat dimaknai sebagai algoritma ditambah bahasa atau struktur data. Sebuah program yang baik, memiliki struktur data yang naik pula. Sebaliknya, struktur data yang buruk dengan algoritma yang baik tetap tidak akan membuat sebuah program menjadi baik.
+</strong></p><p><strong>
+</strong></p><p><strong>Lantas, adakah standar atau indikator yang dapat menyatakan baik dan buruknya sebuah algoritma? Jawabannya ada, berikut adalah syarat-syarat sebuah algoritma pemrograman komputer dikatakan baik.
+</strong></p><p><strong>
+</strong></p><p><strong>Algoritma komputer harus efisien dimana prosesnya dapat diselesaikan secepat mungkin dengan frekeusi perhitungan yang sependek mungkin. Dengan kata lain, tidak boros sumber daya.
+</strong></p><p><strong>Algoritma yang baik harus dengan mudah diimplementasikan ke perangkat komputer.
+</strong></p><p><strong>Program algoritma yang baik harus mudah dipahami. Hal ini berlaku tidak diskriminatif dimana siapapun dapat dengan mudah memahami algoritma tersebut. Dampak buruk dari susahnya dimengerti sebuah algoritma adalah kesulitan pengelolaan algoritma.
+</strong></p><p><strong>Akurasi tinggi adalah syarat lain dari program algoritma yang baik. Mana bisa menjadi algoritma yang digunakan secara profesional jika hasilnya tidak akurat.
+</strong></p><p><strong>Semakin umum maka semakin baik. Algoritma yang baik adalah algoritma yang berlaku umum dan tidak terbatas pada 1 bidang spesifik. Jika bisa sampai berlaku umum, maka algoritma tersebut mampu menyelesaikan masalah dan bermanfaat di berbagai bidang.
+</strong></p><p><strong>Algoritma dan pemrograman yang baik memiliki langkah-langkah yang jelas dan detail. Setiap proses tepat dan lengkap dimana tidak tanggung, penuh kejelasan, dan penuh kepastian.
+</strong></p><p><strong>Algoritma yang baik juga harus bisa dikembangkan. Bukan tidak mungkin sebuah algoritma yang tampak sederhana bisa terus dikembangkan untuk menghasilkan hasil yang lebih tinggi dan lebih baik hasilnya</strong></p><p></p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-logika-algoritma-pada-robot%e2%80%8b">
+                            29. apa fungsi logika algoritma pada robot​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>untuk memecahkan suatu masalah. ... Untuk memudahkan dalam membuat sebuah program untuk masalah tertentu. Algoritma dapat digunakan berkali-kali untuk menyelesaikan suatu permasalahan. Membantu memecahkan suatu permasalahan dengan logika dan sistematis.</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-fungsi-logika-dan-algoritma%e2%80%8b">
+                            30. sebutkan fungsi logika dan algoritma!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Intinya logika adalah ilmu yang mengarahkan cara berpikir untuk melakukan kegiatan dengan tujuan tertentu dan berkaitan erat dengan algoritma. Sementara algoritma adalah langkah-langkah penyelesaian masalah yang disusun secara sistematis memakai bahasa yang logis untuk memecahkan suatu permasalahan</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-algoritma-secara-umum">
+                            31. 
+Fungsi algoritma secara umum.</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Pada dasarnya fungsi utama dari algoritma adalah untuk memecahkan suatu masalah. Suatu algoritma pemrograman membawa keuntungan serta fungsi penting dalam aktivitas pembuatan program. Algoritma pada umumnya digunakan untuk membantu setiap orang yang ingin mengkonversikan sebuah permasalahan ke bahasa pemrograman</p><p><strong>Jawaban:</strong></p>Memudahkan perancangan sebuah program. Membantu dalam menyelesaikan permasalahan yang sifatnya repetitif. Membantu penyusunan program secara lebih rapi dan terstruktur. Memudahkan dalam proses pencarian kesalahan<p><strong>Penjelasan:</strong></p>maaf klo salah <br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-algoritma-sorting-apa">
+                            32. fungsi dari algoritma sorting apa ?</h2><br />
+                        untuk mengatasi masalah logika dan masalah matimatika dengan cara berurutan.<br />
+                                            <h2 class="ez-toc-section" id="dalam-logika-dan-algoritma-terdapat-banyak-pembahasan-dan-juga-notasi-penulisan-algoritma-yangbertujuan-agar-logika-dan-algoritma-saling-selaras-dan-berkesinambungan-didalamnya-terdapat-istilahpseudo">
+                            33. Dalam logika dan algoritma terdapat banyak pembahasan dan juga notasi penulisan algoritma yangbertujuan agar logika dan algoritma saling selaras dan berkesinambungan. Didalamnya terdapat istilahpseudocode dalam notasi penulisan algoritmaDari pernyataan tersebut, apakah yang di maksud dengan pseudocode dan apa fungsi dari pseudocodedalam notasi penulisan algoritma ?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>pseudocode adalah aturan dalam penulisan bahas pemrograman</p><p><strong>Penjelasan:</strong></p><p>contoh seperti if, else, if else, dll. itu merupakan sebuah logika dalam pemrograman jika a = b, maka b = a</p><br />
+                                            <h2 class="ez-toc-section" id="1-tuliskan-pengertian-algoritma2-tuliskan-dan-jelaskan-3-bentuk-dasar-algoritma3-tuliskan-dan-jelaskan-5-ciri-algoritma4-tuliskan-fungsi-dan-manfaat-algoritma">
+                            34. 1.Tuliskan pengertian algoritma
+2. Tuliskan dan jelaskan 3 bentuk dasar algoritma
+3. Tuliskan dan jelaskan 5 ciri algoritma
+4. Tuliskan fungsi dan manfaat algoritma</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>1. apa itu algoritma? : Algoritma adalah urutan langkah logis yang digunakan untuk menyelesaikan suatu masalah. Singkatnya, sebuah masalah harus diselesaikan dengan beberapa langkah yang logis.</p><p>2. 3 bentuk dasar algoritma : </p><p>-(a) Algoritma Sekuensial (Sequence Algorithm)</p><p>Algoritma sekuensial merupakan algoritma yang langkah-langkahnya secara urut dari awal hingga akhir. Bentuk dari algoritma sekuensial ini salah satu contohnya seperti algoritma memasak air. Langkah demi langkah yang dijalankan harus urut dari atas sampai bawah.</p><p>-(b) Algoritma Perulangan (Looping Algorithm)</p><p>algoritma perulangan merupakan suatu algoritma yang menjalankan beberapa langkah tertentu secara berulang-ulang atau looping. Pada masalah yang kita hadapi, ada pula sebuah langkah yang harus kita lakukan secara berulang-ulang.</p><p>-(c) Algoritma Percabangan atau Bersyarat (Conditional Algorithm)</p><p>algoritma bersyarat merupakan algoritma yang menjalankan langkah berikutnya apabila terdapat syarat yang sudah dapat dipenuhi.</p><p></p><p>3. 5 ciri algoritma </p><p>)Algoritma harus berhenti setelah mengerjakan sejumlah langkah terbatas.
+</p><p>
+</p><p>2)Setiap langkah harus didefinisikan dengan tepat dan tidak berarti-dua (Ambiguitas).
+</p><p>
+</p><p>3)Algoritma memiliki nol atau lebih masukkan.
+</p><p>
+</p><p>4)Algoritma memiliki nol atau lebih keluaran.
+</p><p>
+</p><p>5)Algoritma harus efektif (setiap langkah harus sederhana sehingga dapat dikerjakan dalam waktu yang masuk akal)</p><p></p><p>4. fungsi dan manfaat algoritma :</p><p>fungsi dari algoritma berkaitan dengan pemecahan masalah secara lebih rinci dan terstruktur. Secara lebih jelas dapat saya uraikan bahwa tujuan adan fungsi algoritma adalah:
+</p><p>
+</p><p>Memecahkan program yang sulit
+</p><p>-Membuat program besar menjadi lebih sederhana
+</p><p>-Dapat digunakan berkali-kali untuk memecahkan suatu permasalahan,
+</p><p>-Memudahkan programmer untuk membuat program.
+</p><p>-Meminimalisir kesalahn.
+</p><p>Karena algoritma itu terstruktur, maka kita bisa melihat alur algoritma untuk menemukan kesalahan. </p><p></p><p>semoga membantu :v</p><br />
+                                            <h2 class="ez-toc-section" id="algoritma-terdiri-dari-3-bagian-yaitu-dan-fungsi-%e2%80%8b">
+                            35. algoritma terdiri dari 3 bagian yaitu dan fungsi ​</h2><br />
+                        <p><strong>Jawaban:</strong></p>Struktur dasar algoritma terdiri dari 3 macam yaitu struktur sekuensial struktur pemilihan dan struktur perulangan. ... Runtunan merupakan struktur dasar algoritma terdiri dari satu atau lebih instruksi yang setiap instruksinya dikerjakan secara berurutan sesuai dengan urutan penulisan algoritma tersebut.<p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-algoritma-pemprograman">
+                            36. apa fungsi algoritma pemprograman</h2><br />
+                        untuk mengetahui dan mempertimbangkan apa yang akan terjadi serta mengurutkan suatu proses yang terarah<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-algoritma-searching%e2%80%8b">
+                            37. Jelaskan fungsi algoritma searching​</h2><br />
+                        <p>Algoritma searching atau pencarian adalah serangkaian langkah atau metode yang digunakan untuk mencari elemen tertentu dalam kumpulan data atau array. Fungsi utama algoritma searching adalah untuk menemukan posisi atau indeks dari elemen yang dicari dalam struktur data yang diberikan.</p><p></p><p>Beberapa fungsi algoritma searching yang umum digunakan meliputi:</p><p></p><p>1. Linear Search (Pencarian Linear): Memeriksa elemen satu per satu dari awal hingga akhir struktur data untuk menemukan elemen yang sesuai dengan kriteria yang diinginkan. Cocok untuk struktur data yang tidak terurut atau ukuran datanya kecil.</p><p></p><p>2. Binary Search (Pencarian Biner): Mencari elemen dalam struktur data yang sudah terurut secara berurutan dengan membagi struktur data menjadi dua bagian dan membandingkan elemen tengah dengan elemen yang dicari. Jika nilai elemen tengah lebih besar dari elemen yang dicari, maka pencarian dilakukan pada bagian sebelumnya, dan sebaliknya. Algoritma ini sangat efisien untuk data yang besar dan terurut.</p><p></p><p>3. Hashing: Menggunakan fungsi hash untuk mengonversi nilai yang dicari menjadi indeks dari struktur data yang mengandung data tersebut. Metode ini sangat cepat dalam mencari elemen, namun memerlukan alokasi memori yang tepat untuk menyimpan nilai-nilai yang di-hash.</p><p></p><p>4. Interpolation Search: Digunakan untuk pencarian pada data yang terurut dengan interval yang sama. Algoritma ini memanfaatkan interpolasi linear untuk memperkirakan posisi elemen yang dicari dengan memperhitungkan nilai minimum dan maksimum data.</p><p></p><p>5. Jump Search: Digunakan pada data yang terurut dengan cara melompati sejumlah langkah yang tetap untuk mencari rentang yang mungkin berisi elemen yang dicari. Setelah ditemukan rentang tersebut, dilakukan pencarian linear untuk menemukan elemen yang sesuai.</p><p></p><p>Fungsi algoritma searching sangat penting dalam pemrograman dan analisis data, karena memungkinkan kita untuk mencari data dengan efisien, mengoptimalkan waktu dan sumber daya komputasi yang dibutuhkan. Pemilihan algoritma searching yang tepat tergantung pada jenis data, ukuran data, dan kebutuhan pencarian yang diinginkan.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-prosedur-dan-fungsi-dalam-algoritma">
+                            38. 
+Jelaskan perbedaan Prosedur dan Fungsi dalam algoritma :</h2><br />
+                        Jelaskan perbedaan Prosedur dan Fungsi dalam algoritma :JawabanPendahuluan<p>Pengertian Algoritma
+</p><p>Algoritma adalah susunan logis dan sistematis dari langkah-langkah untuk memecahkan atau menyelesaikan suatu permasalahan. Misalnya adalah langkah – langkah untuk memasak mie instan, langkah – langkah yang dapat kita temukan di balik bungkus mie instan tersebut juga dapat kita sebut sebagai sebuah algoritma karena merupakan langkah-langkah untuk menyelesaikan permasalahan yaitu memasak mi instan menjadi matang.
+</p><p>
+Dalam dunia komputer, algoritma merupakan alur pemrosesan pada sistem komputer yang terbentuk dari kumpulan command atau perintah yang terintegrasi pada setiap aspek komputer (brainware, software, dan hardware).  </p><p>
+Dalam dunia pemrograman, algoritma digunakan untuk membuat software dengan berbagai kegunaan yang digunakan pada perangkat komputer. Algoritma dalam pembuatan software diimplementasikan dengan beberapa bahasa pemrograman seperti C/C++, C#, Visual Basic, dan bahasa pemrograman lainnya.Tanpa algoritma yang tepat, baris demi baris kode tidak akan menghasilkan output yang diinginkan. Oleh karena itu algortima sangat penting dalam membuat program berfungsi sebagaimana mestinya.
+</p><p>
+Pengertian dan Pengenalan Program
+</p><p>Apakah program menurut kalian? Program adalah file teks yang berisi pernyataan-pernyataan dalam bahasa pemrograman.
+</p><p>Kemudian bagaimanakah cara membuat program? Ada beberapa langkah yang dilakukan, yaitu:
+</p>Merancang program. Disini kita mendefinisikan masalah dan menulis algoritmanya untuk penyelesaian masalah tersebut.
+Memasukkan program ke komputer (Implementasi).  Kompilasi program ke “excecutable”. Excecutable: membuat program dapat dijalankan.
+Jalankan program.
+Ulangi hingga benar. Ini disebut proses debugging.
+<p>
+</p><p>Struktur program, disini kita gunakan patokan bahasa C/C++
+</p><p>Bahasa C/C++ secara umum memiliki struktur program sbb:
+</p>Daftar Header file
+Deklarasi variabel global dan fungsi-fungsi tambahan  Kepala fungsi utama /main
+Definisi fungsi utama / main
+Definisi definisi tambahan (subroutine)
+Subroutine dapat ditulis setelah fungsi utama atau didalam Library. Namun bila diletakan pada library, maka file library harus disertakan dengan menggunakan preprocessor directive yang diletakan pada daftar header file.  <p>Aturan umum Penulisan Bahasa C/C++  </p><p>Penulisan Bahasa C++ membedakan antara huruf besar dan huruf kecil (Case Sensitive).
+</p><p>Contoh: #include&lt;stdio.H&gt; dengan #include&lt;stdio.h&gt;  </p><p>Untuk memberikan komentar suatu statement ada 2 macam, yaitu
+</p><p>1.  /* Jika komentar  </p><p>          berisi lebih dari 1 baris. */  </p><p>2.  // gunakan tanda ini jika hanya 1 baris
+</p><p>Awal dan akhir dari fungsi harus diakhiri dengan kurung kurawal
+</p><p>Contoh:	void test()
+</p><p>{
+</p><p>	printf(“ProGram”);
+</p><p>getch();
+</p><p> }
+</p><p>
+Setiap statement harus diakhiri tanda titik koma(;).
+</p><p>Contoh: printf(“Programing itu Asik!”);
+</p><p>        int nilai=100;
+</p><p>
+Deklarasi.  </p><p>Bentuk umumnya :
+</p><p>Nama_tipe nama_variabel ;
+</p><p>Contoh :
+</p><p>int x; // Deklarasi x bertipe integer
+</p><p>char y, huruf, nim[10]; // Deklarasi variable bertipe char
+</p><p>
+Setiap Variable yang digunakan wajib di deklarasikan terlebih dahulu.
+</p><p>Contoh:	char a=97,A=65;
+</p><p>Tidak selamanya program hanya terdiri dari beberapa baris. Semakin rumit dan kompleks suatu program, semakin kompleks pula coding yang dibuat. Untuk memperpendek dan merapikan coding yang rumit tersebut, kita memecah coding tersebut menjadi beberapa prosedur/fungsi yang tidak lepas dari fungsi utama (fungsi main). Jika diibaratkan dengan sebuah novel, prosedur/fungsi adalah bab atau chapter yang menyusun cerita dari novel tersebut.
+</p><br />Pembahasan<p>Prosedur adalah suatu program terpisah dalam blok sendiri yang berfungsi sebagai subprogram (program bagian). Procedure biasanya bersifat suatu aktifitas seperti meghitung faktorial sebuah bilangan, mencari bilangan genap dari sekumpulan bilangan ,dsb.</p><p>Sedangkan Fungsi sebenarnya hampir tidak ada bedanya dengan prosedur. Yang membedakan hanyalah tipe data kembalian yang diberikan. Misalnya pada prosedur, dia hanya menhitung faktorial dari sebuah bilangan dan mencetaknya ke layar secara langsung. Pada fungsi menhitung faktorial, isinya sama dengan prosedur, tapi nilai faktorial tidak di cetak langsung melainkan di kembalikan ke pemanggil.</p><p>Contohnya:</p><p>void hitung_faktorial(int input)</p><p>{</p><p>....</p><p>....</p><p>print( nilai faktorial );</p><p>}</p><p>jika dibuat fungsi akan menjadi</p><p>int hitung_faktorial(int input)</p><p>{</p><p>....</p><p>....</p><p>return( nilai faktorial );</p><p>}</p><br />Kesimpulan<p>Perbedaan prosedur dan fungsi hanya terletak pada nilai yang dikembalikan setelah rutin program selesai. Pada dasarnya tidak ada perbedaan yang signifikan antara prosedur dan fungsi pada Bahasa Pemrograman, hanya dibedakan dari return value</p><br />Pejalari lebih lanjut<p>alforitma decrease and conquer https://brainly.co.id/tugas/17413335</p>Detil Jawaban
+Kelas : 10
+Mapel : TIK
+Bab : Mengenal Pemrograman Komputer
+Kode : 10.11.6
+Kata Kunci : prosedur dan fungsi, algoritma<br />
+                                            <h2 class="ez-toc-section" id="fungsi-yang-digunakan-untuk-mencari-nilai-algoritma-adalah">
+                            39. fungsi yang digunakan untuk mencari nilai algoritma, adalah</h2><br />
+                        ata algorithm diserap menjadi algoritma. <br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-array-pada-pembentukan-algoritma-sorting%e2%80%8b">
+                            40. Apakah fungsi array pada pembentukan algoritma sorting?​.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jawaban pada penjelasan ya</p><p><strong>Penjelasan:</strong></p><p>Array adalah struktur data yang memungkinkan Anda menyimpan dan mengakses sekumpulan data yang terorganisir secara terurut. Dalam pembentukan algoritma sorting, array sering digunakan untuk menyimpan data yang akan diurutkan. Algoritma sorting akan membandingkan elemen-elemen dari array tersebut satu per satu dan mengurutkannya sesuai dengan kriteria yang telah ditentukan, seperti mengurutkan dari yang terkecil ke yang terbesar atau sebaliknya. Dengan menggunakan array, Anda dapat dengan mudah mengakses dan memanipulasi data yang akan diurutkan, sehingga memudahkan Anda dalam membuat algoritma sorting yang efisien dan tepat.</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/YVfI-NeoyEc?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-shunt-ayrton.html">Contoh Soal Shunt Ayrton</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-usbn-sma-bahasa-indonesia.html">Contoh Soal Usbn Sma Bahasa Indonesia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-bidang-kartesius.html">Contoh Soal Bidang Kartesius</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-who-whom-whose.html">Contoh Soal Who Whom Whose</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-notasi-asimptitic.html">Fungsi Dari Notasi Asimptitic</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-dan-pembahasan-kuat-medan-listrik-pada-bola-konduktor.html">Contoh Soal Dan Pembahasan Kuat Medan Listrik Pada Bola Konduktor</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/6-tentukan-domain-dari-fungsi-berikut.html">6 Tentukan Domain Dari Fungsi Berikut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-congratulation-pilihan-ganda.html">Contoh Soal Congratulation Pilihan Ganda</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-tema-8-kelas-2-sd.html">Contoh Soal Tema 8 Kelas 2 Sd</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-bahasa-indonesia-kelas-2-semester-1.html">Contoh Soal Bahasa Indonesia Kelas 2 Semester 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-deep-freeze.html">Fungsi Dari Deep Freeze</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-tugas-akhir-modul-3ppg.html">Contoh Tugas Akhir Modul 3ppg</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-deposito.html">Contoh Soal Deposito</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-phb.html">Fungsi Dari Phb</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-pemerintah-yang-paling-hakiki-adalah.html">Fungsi Dari Pemerintah Yang Paling Hakiki Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-cpns-kementerian-kelautan-dan-perikanan.html">Contoh Soal Cpns Kementerian Kelautan Dan Perikanan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-cincin-newton.html">Contoh Soal Cincin Newton</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apakah-fungsi-dari-kondensor-yang-terdapat-pada-mikroskop.html">Apakah Fungsi Dari Kondensor Yang Terdapat Pada Mikroskop</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-patung-perunggu.html">Fungsi Dari Patung Perunggu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-essay-surat-lamaran-pekerjaan-dan-jawabannya.html">Contoh Soal Essay Surat Lamaran Pekerjaan Dan Jawabannya</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediasoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediasoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

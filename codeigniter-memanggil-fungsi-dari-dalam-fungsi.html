@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Codeigniter Memanggil Fungsi Dari Dalam Fungsi - BELAJAR</title>
+    <meta name="description" content="Codeigniter Memanggil Fungsi Dari Dalam Fungsi, , , , , , , 0, , , , , , 0, codeigniter-memanggil-fungsi-dari-dalam-fungsi, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Codeigniter Memanggil Fungsi Dari Dalam Fungsi - BELAJAR" />
+    <meta property="og:description" content="Codeigniter Memanggil Fungsi Dari Dalam Fungsi, , , , , , , 0, , , , , , 0, codeigniter-memanggil-fungsi-dari-dalam-fungsi, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Codeigniter Memanggil Fungsi Dari Dalam Fungsi - BELAJAR" />
+    <meta name="twitter:description" content="Codeigniter Memanggil Fungsi Dari Dalam Fungsi, , , , , , , 0, , , , , , 0, codeigniter-memanggil-fungsi-dari-dalam-fungsi, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediasoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediasoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediasoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediasoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediasoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediasoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediasoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Codeigniter Memanggil Fungsi Dari Dalam Fungsi</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">HusniAP</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Codeigniter+Memanggil+Fungsi+Dari+Dalam+Fungsi" alt="Codeigniter Memanggil Fungsi Dari Dalam Fungsi">
+                    </div>
+                    <p></p>
+                    <p>fungsi sistem pada codeigniter</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-sistem-pada-codeigniter">1.
+                                            fungsi sistem pada codeigniter</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-file-config-di-codeigniter">2.
+                                            fungsi file config di codeigniter</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-user-guide-pada-codeigniter">3.
+                                            fungsi user guide pada codeigniter</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#upacara-didaerah-sumba-yang-berfungsi-untuk-memanggil-dan-mengiringi-kepergian-roh-ke-alam-kubur-adalah">4.
+                                            upacara didaerah Sumba yang berfungsi untuk memanggil dan mengiringi kepergian roh ke alam kubur adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#icon-undo-berfungsi-untuk-a-memanggil-perintah-sesudahnyab-mengulang-pekerjaan-sebelumnyac-memanggil-filed-mengulang-penyimpanan%e2%80%8b">5.
+                                            icon undo berfungsi untuk...a. memanggil perintah sesudahnyab. mengulang pekerjaan sebelumnyac. memanggil filed. mengulang penyimpanan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-supaya-bisa-membuat-website-berbasis-codeigniter-dan-ajax">6.
+                                            Bagaimana supaya bisa membuat website berbasis codeigniter dan ajax?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#suatu-sistem-yang-berfungsi-untuk-memasukkan-datamengolahmemanggilmenyimpan-dan-menyajikan-data-adalah">7.
+                                            suatu sistem yang berfungsi untuk memasukkan data,mengolah,memanggil,menyimpan dan menyajikan data adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-menu-pada-compiler-free-pascal-yang-berfungsi-untuk-menentukan-atau-mengubah-drive-aktif-untuk-penyimpanan-dan-pemanggilan-file-hasil-pengodingan-program-pascal-adalah">8.
+                                            fungsi menu pada compiler free pascal yang berfungsi untuk menentukan atau mengubah drive aktif untuk penyimpanan dan pemanggilan file hasil pengodingan program pascal adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-apa-keunggulan-framework-codeigniter-dari-framework-laravel-sehingga-framework-codeigniter-lebih-banyak-digunakan-dikalangan-programmer">9.
+                                            3.	Apa keunggulan framework codeigniter dari framework Laravel sehingga framework codeigniter lebih banyak digunakan dikalangan programmer </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#benda-arkeologis-dari-masa-pra-aksara-yang-berfungsi-untuk-memanggil-hujan-adalah%e2%80%8b">10.
+                                            benda arkeologis dari masa pra aksara yang berfungsi untuk memanggil hujan adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-script-yang-berfungsi-untuk-memanggil-hasil-luas-adalah-bntu-jwb">11.
+                                            1.script yang berfungsi untuk memanggil hasil luas adalah...#bntu jwb</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gambar-gambar-kecil-yang-berfungsi-sebagai-jalan-pintas-untuk-memanggil-sebuah-file-program-folder-atau-drive-disebut">12.
+                                            gambar-gambar kecil yang berfungsi sebagai jalan pintas untuk memanggil sebuah file program, folder atau drive disebut</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#upacara-didaerah-sumba-yang-berfungsi-untuk-memanggil-dan-mengiringi-kepergian-roh-ke-alam-kubur-adalah">13.
+                                            upacara didaerah Sumba yang berfungsi untuk memanggil dan mengiringi kepergian roh ke alam kubur adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#istilah-lain-dari-%e2%80%9ckumpulan-kelas%e2%80%9d-pada-codeigniter-disebut-%e2%80%8b">14.
+                                            Istilah lain dari “kumpulan kelas” pada CodeIgniter disebut .​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-tahapan-configurasi-pada-codeigniter">15.
+                                            tuliskan tahapan configurasi pada codeigniter</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pada-pembuatan-program-sebelumnya-sudah-ada-fungsi-yang-digunakan-yaitu-fungsi-main-fungsi-main-inilah-yang-digunakan-untuk-memanggil-fungsi-lainnya-main-disebut-juga-sebagai-%e2%80%8b">16.
+                                            Pada pembuatan program sebelumnya sudah ada fungsi yang digunakan yaitu fungsi main (). Fungsi main inilah yang digunakan untuk memanggil fungsi lainnya. Main () disebut juga sebagai ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-perintah-yang-berfungsi-untuk-memanggil-file-yang-telah-kita-buat%e2%80%8b">17.
+                                            sebutkan perintah yang berfungsi untuk memanggil file yang telah kita buat​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perintah-cepat-untuk-memanggil-fungsi-dari-tolong-jwb-kak-%e2%80%8b">18.
+                                            Perintah cepat untuk memanggil fungsi dari .... tolong jwb kak ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-kelebihan-dan-kekurangan-dari-penggunaan-fungsi-getelementbyid-yang-dapat-memanggil-obyek-tunggal-dan-bukan-array">19.
+                                            Apakah kelebihan dan kekurangan dari penggunaan fungsi getElementById() yang dapat memanggil obyek tunggal dan bukan array?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#providermicrosoft-jet-oledb-4-0data-sourcefungsi-dari-perintah-di-atas-adalahselect-onea-%c2%a0mengsisi-datab-%c2%a0memanggil-tabelc-%c2%a0mendukung-pemanggilan-database-%e2%80%8b">20.
+                                            Provider=Microsoft.Jet.OLEDb.4.0;Data Source"fungsi dari perintah di atas adalah:Select one:a. mengsisi datab. memanggil tabelc. mendukung pemanggilan database ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-teknik-pembuatan-dan-pemanggilan-fungsi">21.
+                                            Jelaskan Teknik pembuatan dan pemanggilan fungsi!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-menu-pada-complier-free-pascal-yang-berfungsi-untuk-menetukan-atau-mengubah-drive-aktif-untuk-penyimpanan-dan-pemanggilan-file-hasil-pengodingan-program-pascal-adalah%e2%80%a6-%e2%80%8b">22.
+                                            Fungsi menu pada complier free pascal yang berfungsi untuk menetukan atau mengubah drive aktif untuk penyimpanan dan pemanggilan file hasil pengodingan program pascal adalah… ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-kerja-php-pada-codeigniter">23.
+                                            Bagaimana cara kerja PHP pada CodeIgniter ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#membuat-form-download-upload-codeigniter">24.
+                                            membuat form download upload codeigniter</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-membatasi-akses-controller-codeigniter">25.
+                                            Bagaimana cara membatasi akses controller codeigniter?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#masyarakat-praaksara-pada-masa-perundagian-sudah-mengenal-sistem-kepercayaan-yang-terbukti-dari-ditemukannya-nekara-yang-berfungsi-sebagai-%c2%a05-poinalat-pemanggil-hujanalat-memanggil-roh-nenek">26.
+                                            Masyarakat praaksara pada masa perundagian sudah mengenal sistem kepercayaan yang terbukti dari ditemukannya nekara yang berfungsi sebagai .... *5 poinalat pemanggil hujanalat memanggil roh nenek moyangalat memanggil dewaalat memanggil dewi kesuburanalat memanggil roh halus​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#alat-musik-yang-fungsinya-untuk-memanggil-kepala-adat-dan-masyarakat-untuk-berkumpul-adalah">27.
+                                            Alat musik yang fungsinya untuk memanggil kepala adat dan masyarakat untuk berkumpul adalah ...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#source-code-untuk-menghitung-eoq-dengan-codeigniter-dong-kak">28.
+                                            Source code untuk menghitung eoq dengan codeigniter dong kak?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mayoritas-bahasa-komputer-menyediakan-mekanisme-untuk-memanggil-fungsi-dan-disediakan-oleh%e2%80%8b">29.
+                                            mayoritas bahasa komputer menyediakan mekanisme untuk memanggil fungsi dan disediakan oleh​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#suatu-sistem-yang-berfungsi-untuk-memasukkan-data-mengolah-memanggil-menyimpan-memanipulasi-dan-menyajikan-data-adalah%e2%80%8b">30.
+                                            Suatu sistem yang berfungsi untuk memasukkan data mengolah, memanggil, menyimpan, memanipulasi, dan menyajikan data adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#peninggalan-pada-zaman-perunggu-yang-berfungsi-sebagai-alat-pemanggil-hujan-adalah">31.
+                                            peninggalan pada zaman perunggu yang berfungsi sebagai alat pemanggil hujan adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-perintah-yang-berfungsi-untuk-memanggil-file-yang-telah-kita-buatjawab-kak-mapelteknologi-informasi-dan-komunikasiini-bukan-b-indonesia">32.
+                                            Sebutkan perintah yang berfungsi untuk memanggil file yang telah kita buat!
+JAWAB KAK 
+Mapel:teknologi informasi dan komunikasi
+Ini bukan b.indonesia</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#include-using-namespace-std-fungsi-menu-void-1-2-fungsi-jumlah-pesanan-void-3-4-5-fungsi-pilihan-menu-void-pilihan6-7">33.
+                                            #include using namespace std; //Fungsi Menu void 1 ........() { 2 . . . . } //Fungsi Jumlah Pesanan void 3 . . . . (4....... ) { 5 . . . . } //Fungsi Pilihan Menu void pilihan(6....... ) { 7 . . . . } //Fungsi cetak void 8 ........(int i, int jml, int pil[], int item[]) { } main() { } 9 . . . . //Variabel yang digunakan int i, jml, pil[100], item[100]; //Pemanggilan fungsi menu menu(); //Pemanggilan fungsi jumlah jumlah(jml); system("cls"); menu(); //Pemanggilan fungsi pilihan menu pilihan(i, jml, pil, item); system("cls"); menu(); //Pemanggilan fungsi cetak hasil 10 . . . .</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-tahapan-pembuatan-login-pada-codeigniter">34.
+                                            tuliskan tahapan pembuatan login pada codeigniter</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-belajar-codeigniter-untuk-pemula">35.
+                                            bagaimana cara belajar codeigniter untuk pemula?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-satu-contoh-project-aplikasi-codeigniter">36.
+                                            buat satu contoh project aplikasi codeigniter</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#masyarakat-praaksara-pada-masa-perundagian-sudah-mengenal-sistem-kepercayaan-yang-terbukti-dari-ditemukannya-nekara-yang-berfungsi-sebagai-5-poinalat-pemanggil-hujanalat-memanggil-roh-nenek-moya">37.
+                                            Masyarakat praaksara pada masa perundagian sudah mengenal sistem kepercayaan yang terbukti dari ditemukannya nekara yang berfungsi sebagai .... *5 poinalat pemanggil hujanalat memanggil roh nenek moyangalat memanggil dewaalat memanggil dewi kesuburanalat memanggil roh halus​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-membuat-crud-yang-benar-di-codeigniter">38.
+                                            bagaimana membuat CRUD yang benar di codeigniter ...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#benda-peninggalan-jaman-perundagian-yg-berfungsi-sebagai-sarana-apa-cara-memanggil-hujan">39.
+                                            Benda peninggalan jaman Perundagian yg berfungsi sebagai sarana apa cara memanggil Hujan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tombol-yang-berfungsi-untuk-memanggil-help-pada-ms-word-adalah">40.
+                                            Tombol yang berfungsi untuk memanggil help pada ms.word adalah</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="fungsi-sistem-pada-codeigniter">
+                            1. fungsi sistem pada codeigniter</h2><br />
+                        1.mampu mempercepat dan mempermudah kita dalam pembuatan website. <br />2.menghasilkan suatu struktur pemrograman yang sangat rapi, baik dari segi kode maupun struktur file phpnya.<br />
+                                            <h2 class="ez-toc-section" id="fungsi-file-config-di-codeigniter">
+                            2. fungsi file config di codeigniter</h2><br />
+                        Fungsi file config di codeigniterJawaban Pendahuluan<p>Fungsi file config pada codeigniter adalah sebagai file yang berfungsi untuk melakukan berbagai macam pengaturan pada framework codeiginiter. Pada codeigniter, file config merupakan sebuah folder.</p>Pembahasan <p>Setelah membahas mengenai file config pada codeigniter, mari kita bahas juga secara singkat mengenai apa itu codeigniter. Codeigniter merupakan salah satu framework untuk membuat website menggunakan bahasa php. Pada Codeigniter terdapat beberapa folder yang didalamnya berisi berbagai macam file dengan fungsinya yang berbeda-beda. Salah satunya adalah file config yang telah kita sebutkan dan jelaskan tadi.</p><p>Pada folder config sendiri terdiri dari berbagai macam file, antara lain adalah </p><p>1. autoload.php</p><p>2. database.php</p><p>3. routes.php</p><p>4. config.php</p>Kesimpulan <p>Demikian pemabahasan mengenai apa itu codeigniter dan pembahasan mengenai file config pada codeigniter. Dengan menggunakan framework seperti codeigniter maka proses pembuatan website akan semakin mudah dilakukan. Untuk mempelajari materi lebih lanjut mengenai cara membuat website dan bahasa pemrograman php dapat dibaca pada link berikut</p>Pelajari lebih lanjut <p>1. Kata PHP pada bahasa pemrograman PHP merupakan singkatan dari https://brainly.co.id/tugas/6350522</p><p>2. Website yang berfungsi untuk mencari informasi secara cepat dan akurat disebut https://brainly.co.id/tugas/9815740</p><p>3. Cara untuk mengakses website https://brainly.co.id/tugas/9009528</p>Detil Jawaban<p>Kelas : 9 SMP</p><p>Mapel : TI</p><p>Bab : Pengertian dan Fungsi Framework Codeigniter</p><p>Kata Kunci : Fungsi file config pada Codeigniter</p><br /><br />
+                                            <h2 class="ez-toc-section" id="fungsi-user-guide-pada-codeigniter">
+                            3. fungsi user guide pada codeigniter</h2><br />
+                        mengajarkan dan memberi referensi kepada user (dalam hal ini programmer yang ingin menggunakanya) tentang bagaimana cara menggunakan CodeIgnter itu sendiri<br />
+                                            <h2 class="ez-toc-section" id="upacara-didaerah-sumba-yang-berfungsi-untuk-memanggil-dan-mengiringi-kepergian-roh-ke-alam-kubur-adalah">
+                            4. upacara didaerah Sumba yang berfungsi untuk memanggil dan mengiringi kepergian roh ke alam kubur adalah</h2><br />
+                        Upacara Marapu<br /><br />Upacara Marapu adalah kepercayaan asli orang Sumba. Dalam kepercayaan Marapu, arwah nenek moyang sangat dihormati, dipuja, dan dimintai tolong untuk menyampaikan permohonannya kepada Tuhan. Kitab suci Marapu disebut Lii Ndai. Kitab ini berupa syair yang dihafal dalam ingatan para pemuka adat dan dibacakan pada saat upacara-upacara tertentu diselingi nyanyian adat.<br />
+                                            <h2 class="ez-toc-section" id="icon-undo-berfungsi-untuk-a-memanggil-perintah-sesudahnyab-mengulang-pekerjaan-sebelumnyac-memanggil-filed-mengulang-penyimpanan%e2%80%8b">
+                            5. icon undo berfungsi untuk...a. memanggil perintah sesudahnyab. mengulang pekerjaan sebelumnyac. memanggil filed. mengulang penyimpanan​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B. mengulang pekerjaan sebelumnya</p><p><strong>Penjelasan:</strong></p><p>kebalikan Undo adalah Redo yang berfungsi untuk mengembalikan perintah yang telah dibatalkan sebelumnya</p><p></p><p>semoga membantu :)</p><p><strong>Jawaban:</strong></p><p>B.Mengulang Pekerjaan Sebelumnya</p><p><strong>Penjelasan:</strong></p><p>Fungsi dari ikon undo adalah untuk melakukan pembatalan dari sebuah perintah yang dimana sudah dilakukan sebelumnya.</p><p></p><p><strong>M</strong><strong>a</strong><strong>a</strong><strong>f</strong><strong> </strong><strong>k</strong><strong>a</strong><strong>l</strong><strong>a</strong><strong>u</strong><strong> </strong><strong>S</strong><strong>a</strong><strong>l</strong><strong>a</strong><strong>h</strong></p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-supaya-bisa-membuat-website-berbasis-codeigniter-dan-ajax">
+                            6. Bagaimana supaya bisa membuat website berbasis codeigniter dan ajax?</h2><br />
+                        Dengan cara berlatih dan belajar terus, maka suatu saat pasti bisa.<br />
+                                            <h2 class="ez-toc-section" id="suatu-sistem-yang-berfungsi-untuk-memasukkan-datamengolahmemanggilmenyimpan-dan-menyajikan-data-adalah">
+                            7. suatu sistem yang berfungsi untuk memasukkan data,mengolah,memanggil,menyimpan dan menyajikan data adalah</h2><br />
+                        SIG (Sistem Informasi Geografis)<br />
+                                            <h2 class="ez-toc-section" id="fungsi-menu-pada-compiler-free-pascal-yang-berfungsi-untuk-menentukan-atau-mengubah-drive-aktif-untuk-penyimpanan-dan-pemanggilan-file-hasil-pengodingan-program-pascal-adalah">
+                            8. fungsi menu pada compiler free pascal yang berfungsi untuk menentukan atau mengubah drive aktif untuk penyimpanan dan pemanggilan file hasil pengodingan program pascal adalah</h2><br />
+                        <p>Fungsi menu pada compiler free pascal yang berfungsi untuk menentukan atau mengubah drive aktif untuk penyimpanan dan pemanggilan file hasil pengodingan program pascal <strong>adalah Menu Change Dir.</strong></p><p><strong>Pembahasan</strong></p><strong>Turbo Pascal adalah </strong>sebuah sistem pengembangan perangkat lunak yang terdiri atas compiler dan lingkungan pengembangan terintegrasi atas bahasa pemrograman pascal untuk sistem operasi SP/M, CP/M-86 dan MS-DOS.<strong>Program adalah</strong> instruksi-instruksi yang diberikan kepada komputer untuk melaksanakan tugas tertentu.<strong>Pemrograman adalah</strong> upaya untuk membuat kode-kode yang dapat dikenal oleh komputer.Turbo Pascal yang dikeluarkan oleh Borland International dirilis pada tahun 1992 yang mempunyai :<strong>Compiler</strong><strong> </strong>: Untuk mengkompilasi program menjadi suatu objek yang dipahami oleh komputer<strong>Debugger</strong> : Untuk membantu mencari kesalahan program<strong>Linker</strong> : Untuk menggabungkan file objek dan file pustaka dan membentuk file executable<strong>Editor</strong> : Untuk menulis program sumber /source code<p><strong>Turbo Pascal mempunyai sebaris menu dibagian paling atas yang terdiri dari :</strong></p><p><strong>1. File </strong></p><strong>New</strong> : Membuat program baru<strong>Open</strong> : Memanggil program yang disimpan pada disk<strong>Save</strong> : Menyimpan program dengan nama yang sama<strong>Save As</strong> : Menyimpan program dengan nama yang lain<strong>Save All </strong>: Menyimpan semua program yang ada di layar<strong>Change Dir</strong> : Mengubah drive aktif untuk penyimpanan dan pemanggilan file<strong>Print</strong> : Untuk mencetak<strong>Print Setup</strong> : Pengaturan file<strong>DOS Shell</strong> : Untuk masuk ke DOS sementara dan kembali lagi ke Turbo Pascal ketik EXIT kemudian Enter<strong>Exit</strong> : Keluar dari Turbo Pascal<p><strong>2. Edit</strong></p><strong>Undo</strong> : Untuk mengembalikan yang terhapus terakhir<strong>Redo</strong> : Untuk menghapus kembali yang di Undo<strong>Cut</strong> : Untuk menghapus blok dan dipindah ketempat lain<strong>Copy</strong> : Untuk mengcopy blok<strong>Paste</strong> : Untuk menampilkan isi dari cut atau copy blog<strong>Show Clipboard</strong> : Untuk menampilkan isi clipboard<p><strong>3. Search</strong></p><strong>Find</strong> : Untuk mencari atau perintah yang tertulis pada program yang sedang dikerjakan<strong>Replace </strong>: Untuk mengganti kata atau perintah yang tertulis pada program yang sedang dikerjakan<strong>Search Again</strong> : Untuk mencari lagi kata atau perintah yang tertulis pada program yang sedang dikerjakan<strong>Go to line number </strong>: Untuk menuju kebaris yang dimaksud<strong>Show last compiler error</strong> : Untuk menunjukkan kesalahan kompilasi yang terakhir<strong>Find eror</strong> : Untuk mencari kesalahan<strong>Find procedure</strong> : Untuk mencari procedure yang dimaksud<strong>Previous Browserdan Globals</strong> : Untuk menunjukkan berbagai fungsi dan prosedur yang ada di pascal<strong>Objects dan unit </strong>: Untuk mencari nama objek dan unit<strong>Symbol </strong>: Untuk mencari simbol<p><strong>4. Run</strong></p><strong>Run</strong> : Untuk menjalankan atau mengekskusi program<strong>Step Over </strong><strong>Trace into</strong> : Untuk mengeksekusi baris berikutnya<strong>Go to cursor</strong> : Untuk memulai/melanjutkan eksekusi program dimulai dari posisi saat ekskusi dimulai sampai tempat kursor berada.<strong>Program reset </strong>: Untuk memberitahukan Turbo Pascal bahwa sudah selesai dengan pembetulan-pembetulan dan menginisialisasi debugger untuk operasi yang lain<strong>Parameter</strong> : Untuk menjalankan program parameter<p><strong>5. Compile </strong></p><strong>Compile </strong>: Untuk mengkompile program <strong>Make</strong> : Untuk mengaktifkan perintah make, jika file yang primer telah diberi nama, maka file ini akan dikompilasi, jika tidak maka file yang terakhir yang sedang dimuat di editor akan dikompilasi.<strong>Build </strong>: Untuk mengkompilasi file-file yang sifatnya bebas<strong>Primary File</strong> : Untuk menyatakan bahwa file akan dikompilasi pada saat make (F9)<strong>Clear primary file</strong> : Untuk menghapus file primer<strong>Information </strong>: Untuk menampilkan jendela informasi dari program <p><strong>6. Debug</strong></p><strong>Breakpoints </strong>: Untuk mengatur suatu baris sebagai breakpoint<strong>Call stack </strong>: Untuk menunjukkan daftar pemanggil<strong>Register</strong> : Untuk menampilkan informasi CPU<strong>Watch</strong> : Untuk menampilkan jendela watch<strong>Output</strong> : Untuk menampilkan output program<strong>User Screen</strong> : Untuk melihat hasil dari program yang telah compile dan kita run<strong>Evaluate/modify </strong>: Untuk memberikan nilai yang baru<strong>Add Watch : </strong>Untuk menambahkan rinci data<strong>Add breakpoint</strong> : Untuk menambah breakpoint<p><strong>7. Tools</strong></p><strong>Messages</strong> : Untuk menampilkan jendela pesan kesalahan<strong>Go to Next </strong>: Untuk menuju ke baris selanjutnya<strong>Go to previous</strong> : Untuk menuju ke baris sebelumnya<strong>Grep </strong>: Untuk menyaring masukan atau menampilkan baris-baris yang mengandung kriteria tertentu<p><strong>8</strong>.<strong> Option</strong> : Untuk mengatur berbagai pilihan computer, memori size, linker, debugger</p><p><strong>9. Window</strong> : Untuk mengatur tampilan windows</p><p><strong>10. Help </strong>: berisi berbagai bantuan yang disediakan Turbo Pascal</p><p></p><p><strong>Pelajari lebih lanjut</strong></p>Materi tentang definisi Turbo Pascal : brainly.co.id/tugas/1716427<p><strong>Detil Jawaban</strong></p><p>Kelas : IX (SMP)</p><p>Mapel : TIK</p><p>Bab : Menu dan ikon pada Microsoft Word 2007</p><p>Kode : 8.11.1</p><p>Kata Kunci : Turbo Pascal</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="3-apa-keunggulan-framework-codeigniter-dari-framework-laravel-sehingga-framework-codeigniter-lebih-banyak-digunakan-dikalangan-programmer">
+                            9. 3.	Apa keunggulan framework codeigniter dari framework Laravel sehingga framework codeigniter lebih banyak digunakan dikalangan programmer </h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Sebenarnya ini opini pribadi karena dari saya sendiri masih menggunakan framework laravel untuk beberapa  projek,</p><p></p><p>mungkin yang menjadi alasan kenapa lebih unggul karna framework CI lebih ringan untuk digunakan dan bisa lebih leluasa mengimplementasi fungsi pada framework CodeIgniter</p><p></p><p><strong>Penjelasan:</strong></p><p><strong>Untuk lebih lengkap bisa dilihat pada tabel dibawah </strong></p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="benda-arkeologis-dari-masa-pra-aksara-yang-berfungsi-untuk-memanggil-hujan-adalah%e2%80%8b">
+                            10. benda arkeologis dari masa pra aksara yang berfungsi untuk memanggil hujan adalah​</h2><br />
+                        <p></p><p><strong>Jawaban:</strong></p><p>Nekara</p><p><strong>Penjelasan:</strong></p><p>Nekara adalah gendang perunggu berbentuk seperti dandang berpinggang pada bagian tengahnya dengan selaput suara berupa logam atau perunggu. Nekara sendiri berkembang pada zaman perunggu di lembah Song Hong, Vietnam. Nekara sendiri disebarkan berkat pengaruh dari china hingga sampai ke Indonesia. Nekara merupakan benda suci yang sering di gunakan dalam sebuah perayaan, upacara keagamaan  dan mas kawin. Nekara ini banyak ditemukan di Bali, Maluku, Selayar dan Irian.</p><p></p><p><strong>Pelajari Lebih Lanjut</strong></p>zaman perunggu : https://brainly.co.id/tugas/13988650kebudayaan pada zaman perunggu: https://brainly.co.id/tugas/13034949Kebudayaan Dongson https://brainly.co.id/tugas/1976548<p></p><p><strong>Detil Jawaban</strong></p><p><strong>Kelas:</strong> 7</p><p><strong>Mapel: </strong>Sejarah</p><p><strong>Bab: </strong>Zaman Pra Aksara</p><p><strong>Kode:</strong></p><p><strong></strong></p><p><strong>Kata Kunci:</strong> zaman perunggu, upacara, nekara</p><br />
+                                            <h2 class="ez-toc-section" id="1-script-yang-berfungsi-untuk-memanggil-hasil-luas-adalah-bntu-jwb">
+                            11. 1.script yang berfungsi untuk memanggil hasil luas adalah...#bntu jwb</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>function</p><p><strong>Penjelasan:</strong></p><p>perintah tersebut digunakan untuk memanggil fungsi </p><br />
+                                            <h2 class="ez-toc-section" id="gambar-gambar-kecil-yang-berfungsi-sebagai-jalan-pintas-untuk-memanggil-sebuah-file-program-folder-atau-drive-disebut">
+                            12. gambar-gambar kecil yang berfungsi sebagai jalan pintas untuk memanggil sebuah file program, folder atau drive disebut</h2><br />
+                        Gambar-gambar kecil yang berfungsi sebagai jalan pintas untuk memanggil sebuah file program, folder, atau drive disebut Shortcut.shortcut<br /><br />-semoga bermanfaat-<br /><br />
+                                            <h2 class="ez-toc-section" id="upacara-didaerah-sumba-yang-berfungsi-untuk-memanggil-dan-mengiringi-kepergian-roh-ke-alam-kubur-adalah">
+                            13. upacara didaerah Sumba yang berfungsi untuk memanggil dan mengiringi kepergian roh ke alam kubur adalah</h2><br />
+                        Upacara Merapu di daerah Sumba utk memangil dan mengiringi kepergian roh<br />
+                                            <h2 class="ez-toc-section" id="istilah-lain-dari-%e2%80%9ckumpulan-kelas%e2%80%9d-pada-codeigniter-disebut-%e2%80%8b">
+                            14. Istilah lain dari “kumpulan kelas” pada CodeIgniter disebut .​</h2><br />
+                        <p>library atau pusaka</p><p></p><p>terima kasih </p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-tahapan-configurasi-pada-codeigniter">
+                            15. tuliskan tahapan configurasi pada codeigniter</h2><br />
+                        Kalau aku pake XAMPP<br /><br />1. Download Codeigniter Framework di situs resminya<br />2. Ekstrak kemudian taruh di folder htdocs dengan nama project. Contoh : htdocs/aplikasiku/(taruh disini)<br />3. Aktifkan Apache dan Mysql pada XAMPP<br />4. Ketikkan localhost/project yang dibuat pada web browser<br />5. Ketika muncul tulisan "welcome to codeigniter !" framework siap digunakan<br /><br />Untuk konfigurasi, masuk ke folder codeigniter dan double-click pada folder config. Di folder config ada beberapa file php yang bisa diubah oleh beberapa pengembang.<br /><br />1. Database.php<br />file ini berisikan untuk membuat koneksi dan memilih database<br /><br />2. Config.php<br />mengatur basis file yang nantinya akan dibuka<br /><br />3. Autoload.php<br />Karena CI bersifat MVC, autoload berfungsi untuk memanggil library, helper, model,dll <br /><br />4.  Routes.php<br />Memanggil default controller yang tersedia/akan dibuat<br /><br />pengalamanku gitu,<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="pada-pembuatan-program-sebelumnya-sudah-ada-fungsi-yang-digunakan-yaitu-fungsi-main-fungsi-main-inilah-yang-digunakan-untuk-memanggil-fungsi-lainnya-main-disebut-juga-sebagai-%e2%80%8b">
+                            16. Pada pembuatan program sebelumnya sudah ada fungsi yang digunakan yaitu fungsi main (). Fungsi main inilah yang digunakan untuk memanggil fungsi lainnya. Main () disebut juga sebagai ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>method/function</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-perintah-yang-berfungsi-untuk-memanggil-file-yang-telah-kita-buat%e2%80%8b">
+                            17. sebutkan perintah yang berfungsi untuk memanggil file yang telah kita buat​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Menu file</p><p><strong>Penjelasan:</strong></p><p>New / New Blank Dokumen : Digunakan untuk menyiapkan lembar kerja baru</p><p></p><p>Open : Digunakan untuk membuka kembali file yang sudah pernah disimpan.</p><p></p><p>Save : Digunakan untuk menyimpan file atau dokumen dengan nama yang sama.</p><p></p><p>Save As : Digunakan untuk menyimpan file atau dokumen dengan nama lain.</p><p></p><p>Page setup : Digunakan untuk mengatur batas-batas kertas.</p><p></p><p>Print : Digunakan untuk mencetak</p><p></p><p>Print Preview : Digunakan untuk melihat hasil ketikan sebelum dicetak.</p><p></p><p>Exit : Digunakan untuk keluar dari lembar kerja (dokumen) setelah selesai mengetik naskah.</p><p></p><p></p><p>SEMOGA MEMBANTU:D</p><p><strong>Jawaban:</strong></p><p></p><p>file tempat menyimpan data data file bisa di gunakan di hp , laptop , atau komputer juga bisa kita bisa melihat file di mana saja dan kapan saja </p><p><strong>Penjelasan:</strong></p><p></p><p>maaf kalau jawaban saya kurang tepat </p><p>semoga bermampaat yaaaa </p><br />
+                                            <h2 class="ez-toc-section" id="perintah-cepat-untuk-memanggil-fungsi-dari-tolong-jwb-kak-%e2%80%8b">
+                            18. Perintah cepat untuk memanggil fungsi dari .... tolong jwb kak ​</h2><br />
+                        <p><strong>Jawaban:</strong></p>OFFICE BUTTON<p><strong>Penjelasan:</strong></p>maaf klw slh!<br />
+                                            <h2 class="ez-toc-section" id="apakah-kelebihan-dan-kekurangan-dari-penggunaan-fungsi-getelementbyid-yang-dapat-memanggil-obyek-tunggal-dan-bukan-array">
+                            19. Apakah kelebihan dan kekurangan dari penggunaan fungsi getElementById() yang dapat memanggil obyek tunggal dan bukan array?</h2><br />
+                        didalam soal anda sudah ada jawabanya, <br />kelebihan, hanya bisa me initial satu id, jadi memudahkan programmer untuk menginta setiap event dari id yang bersangkutan. <br /><br />kekurangannya, programmer harus bisa menghafal id itu sendiri agar tidak conflict ketika ada id yang sama di gunakan untuk keperluan berbeda<br />
+                                            <h2 class="ez-toc-section" id="providermicrosoft-jet-oledb-4-0data-sourcefungsi-dari-perintah-di-atas-adalahselect-onea-%c2%a0mengsisi-datab-%c2%a0memanggil-tabelc-%c2%a0mendukung-pemanggilan-database-%e2%80%8b">
+                            20. Provider=Microsoft.Jet.OLEDb.4.0;Data Source"fungsi dari perintah di atas adalah:Select one:a. mengsisi datab. memanggil tabelc. mendukung pemanggilan database ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>mendukung pemanggilan data base</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-teknik-pembuatan-dan-pemanggilan-fungsi">
+                            21. Jelaskan Teknik pembuatan dan pemanggilan fungsi!</h2><br />
+                        Buat dulu deklarasinya, misal anda ingin input nama, maka deklarasinya char, kalau input angka deklarasinya integer. Misal = int absen;
+char nama[30];
+Lalu pemanggilan fungsinya kalau integer menggunakan %d kalau char menggunakan %c kalau string menggunakan %s. Nama yg hendak diinput termasuk string maksudnya terdiri dr beberapa karakter. Jadi pemanggilan fungsinya : printf("Input nama : "); scanf("%s", &amp;nama");      printf("Input nomor absen : "); scanf("%d", &amp;absen);<br />
+                                            <h2 class="ez-toc-section" id="fungsi-menu-pada-complier-free-pascal-yang-berfungsi-untuk-menetukan-atau-mengubah-drive-aktif-untuk-penyimpanan-dan-pemanggilan-file-hasil-pengodingan-program-pascal-adalah%e2%80%a6-%e2%80%8b">
+                            22. Fungsi menu pada complier free pascal yang berfungsi untuk menetukan atau mengubah drive aktif untuk penyimpanan dan pemanggilan file hasil pengodingan program pascal adalah… ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi menu pada compiler free pascal yang berfungsi untuk menentukan atau mengubah drive aktif untuk penyimpanan dan pemanggilan file hasil pengodingan program pascal adalah Menu Change Dir.</p><p><strong>Penjelasan:</strong></p><p>urbo Pascal adalah sebuah sistem pengembangan perangkat lunak yang terdiri atas compiler dan lingkungan pengembangan terintegrasi atas bahasa pemrograman pascal untuk sistem operasi SP/M, CP/M-86 dan MS-DOS.</p><p>Program adalah instruksi-instruksi yang diberikan kepada komputer untuk melaksanakan tugas tertentu.</p><p>Pemrograman adalah upaya untuk membuat kode-kode yang dapat dikenal oleh komputer.</p><p>Turbo Pascal yang dikeluarkan oleh Borland International dirilis pada tahun 1992 yang mempunyai :</p><p>Compiler : Untuk mengkompilasi program menjadi suatu objek yang dipahami oleh komputer</p><p>Debugger : Untuk membantu mencari kesalahan program</p><p>Linker : Untuk menggabungkan file objek dan file pustaka dan membentuk file executable</p><p>Editor : Untuk menulis program sumber /source code</p><p>Turbo Pascal mempunyai sebaris menu dibagian paling atas yang terdiri dari :</p><p></p><p>1. File</p><p></p><p>New : Membuat program baru</p><p>Open : Memanggil program yang disimpan pada disk</p><p>Save : Menyimpan program dengan nama yang sama</p><p>Save As : Menyimpan program dengan nama yang lain</p><p>Save All : Menyimpan semua program yang ada di layar</p><p>Change Dir : Mengubah drive aktif untuk penyimpanan dan pemanggilan file</p><p>Print : Untuk mencetak</p><p>Print Setup : Pengaturan file</p><p>DOS Shell : Untuk masuk ke DOS sementara dan kembali lagi ke Turbo Pascal ketik EXIT kemudian Enter</p><p>Exit : Keluar dari Turbo Pascal</p><p>2. Edit</p><p></p><p>Undo : Untuk mengembalikan yang terhapus terakhir</p><p>Redo : Untuk menghapus kembali yang di Undo</p><p>Cut : Untuk menghapus blok dan dipindah ketempat lain</p><p>Copy : Untuk mengcopy blok</p><p>Paste : Untuk menampilkan isi dari cut atau copy blog</p><p>Show Clipboard : Untuk menampilkan isi clipboard</p><p>3. Search</p><p></p><p>Find : Untuk mencari atau perintah yang tertulis pada program yang sedang dikerjakan</p><p>Replace : Untuk mengganti kata atau perintah yang tertulis pada program yang sedang dikerjakan</p><p>Search Again : Untuk mencari lagi kata atau perintah yang tertulis pada program yang sedang dikerjakan</p><p>Go to line number : Untuk menuju kebaris yang dimaksud</p><p>Show last compiler error : Untuk menunjukkan kesalahan kompilasi yang terakhir</p><p>Find eror : Untuk mencari kesalahan</p><p>Find procedure : Untuk mencari procedure yang dimaksud</p><p>Previous Browserdan Globals : Untuk menunjukkan berbagai fungsi dan prosedur yang ada di pascal</p><p>Objects dan unit : Untuk mencari nama objek dan unit</p><p>Symbol : Untuk mencari simbol</p><p>4. Run</p><p></p><p>Run : Untuk menjalankan atau mengekskusi program</p><p>Step Over</p><p>Trace into : Untuk mengeksekusi baris berikutnya</p><p>Go to cursor : Untuk memulai/melanjutkan eksekusi program dimulai dari posisi saat ekskusi dimulai sampai tempat kursor berada.</p><p>Program reset : Untuk memberitahukan Turbo Pascal bahwa sudah selesai dengan pembetulan-pembetulan dan menginisialisasi debugger untuk operasi yang lain</p><p>Parameter : Untuk menjalankan program parameter</p><p>5. Compile</p><p></p><p>Compile : Untuk mengkompile program</p><p>Make : Untuk mengaktifkan perintah make, jika file yang primer telah diberi nama, maka file ini akan dikompilasi, jika tidak maka file yang terakhir yang sedang dimuat di editor akan dikompilasi.</p><p>Build : Untuk mengkompilasi file-file yang sifatnya bebas</p><p>Primary File : Untuk menyatakan bahwa file akan dikompilasi pada saat make (F9)</p><p>Clear primary file : Untuk menghapus file primer</p><p>Information : Untuk menampilkan jendela informasi dari program</p><p>6. Debug</p><p></p><p>Breakpoints : Untuk mengatur suatu baris sebagai breakpoint</p><p>Call stack : Untuk menunjukkan daftar pemanggil</p><p>Register : Untuk menampilkan informasi CPU</p><p>Watch : Untuk menampilkan jendela watch</p><p>Output : Untuk menampilkan output program</p><p>User Screen : Untuk melihat hasil dari program yang telah compile dan kita run</p><p>Evaluate/modify : Untuk memberikan nilai yang baru</p><p>Add Watch : Untuk menambahkan rinci data</p><p>Add breakpoint : Untuk menambah breakpoint</p><p>7. Tools</p><p></p><p>Messages : Untuk menampilkan jendela pesan kesalahan</p><p>Go to Next : Untuk menuju ke baris selanjutnya</p><p>Go to previous : Untuk menuju ke baris sebelumnya</p><p>Grep : Untuk menyaring masukan atau menampilkan baris-baris yang mengandung kriteria tertentu</p><p>8. Option : Untuk mengatur berbagai pilihan computer, memori size, linker, debugger</p><p></p><p>9. Window : Untuk mengatur tampilan windows</p><p></p><p>10. Help : berisi berbagai bantuan yang disediakan Turbo Pascal</p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-kerja-php-pada-codeigniter">
+                            23. Bagaimana cara kerja PHP pada CodeIgniter ?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>CodeIgniter adalah Framework yang dikembangkan pada Bahasa Pemrograman PHP. Code Igniter bersifat Open-Source yang banyak digunakan oleh para developer dalam mengembangkan website yang dinamis.</p><p></p><p>Cara Kerja CodeIgniter</p><p>Code igniter merupakan framework MVC. MVC adalah Model-view-controller. Ketika kamu anggaplah mencari suatu informasi, controller akan merespon permintaan kamu, lalu menyajikan informasi yang kamu cari jika memang tersedia.</p><p></p><p>Contoh kecilnya yakni, jika kamu ingin mencari id=3, maka controller akan merespon permintaan kamu, lalu meminta Model untuk mengambil data dari id=3. Model nantinya akan memberikan data tersebut kembali ke controller. Controller akan menyajikan data tersebut kepada View dengan format yang mudah dikenali (Human-readable format).  Dan hasilnya akan muncul pada browser kamu.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="membuat-form-download-upload-codeigniter">
+                            24. membuat form download upload codeigniter</h2><br />
+                        Form Download Berbasis Codeigniter?<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-membatasi-akses-controller-codeigniter">
+                            25. Bagaimana cara membatasi akses controller codeigniter?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Pakai Middleware dong...!</p><p><strong>Buat moderator</strong> yang mau hapus jawaban saya :</p><p>Bukannya saya tidak niat menjawab, tapi memang hanya itu jawabannya. Maaf saya nulis begini karena beberapa kali jawaban saya dihapus karena dikira tidak serius dalam menjawab.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="masyarakat-praaksara-pada-masa-perundagian-sudah-mengenal-sistem-kepercayaan-yang-terbukti-dari-ditemukannya-nekara-yang-berfungsi-sebagai-%c2%a05-poinalat-pemanggil-hujanalat-memanggil-roh-nenek">
+                            26. Masyarakat praaksara pada masa perundagian sudah mengenal sistem kepercayaan yang terbukti dari ditemukannya nekara yang berfungsi sebagai .... *5 poinalat pemanggil hujanalat memanggil roh nenek moyangalat memanggil dewaalat memanggil dewi kesuburanalat memanggil roh halus​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>sebagai alat pemanggil hujan</p><br />
+                                            <h2 class="ez-toc-section" id="alat-musik-yang-fungsinya-untuk-memanggil-kepala-adat-dan-masyarakat-untuk-berkumpul-adalah">
+                            27. Alat musik yang fungsinya untuk memanggil kepala adat dan masyarakat untuk berkumpul adalah ...</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>taburi</p><p></p><p></p><p></p><p></p><p>itu jawabannya semoga membantu</p><p><strong>Jawaban:</strong></p><p><strong>Tahuri</strong></p><p><strong>Penjelasan:</strong></p><p>Dahulu penggunaan tahuri memiliki tujuan untuk memanggil masyarakat atau kepala adat agar berkumpul di balai pertemuan atau masyarakat setempat biasa menyebutnya dengan <strong>Baileo</strong><strong>.</strong><strong> </strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="source-code-untuk-menghitung-eoq-dengan-codeigniter-dong-kak">
+                            28. Source code untuk menghitung eoq dengan codeigniter dong kak?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>https://abayups.files.wordpress.com/2015/01/c5821-g2b4-4.gif?w=376&amp;h=282</p><p><strong>Penjelasan:</strong></p><p>yg aku tau rumusnya aja, EOQ itu menggunakan bahasa pemrograman PHP MySQL</p><br />
+                                            <h2 class="ez-toc-section" id="mayoritas-bahasa-komputer-menyediakan-mekanisme-untuk-memanggil-fungsi-dan-disediakan-oleh%e2%80%8b">
+                            29. mayoritas bahasa komputer menyediakan mekanisme untuk memanggil fungsi dan disediakan oleh​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>system'</p><p>semangat belajar gays</p><br />
+                                            <h2 class="ez-toc-section" id="suatu-sistem-yang-berfungsi-untuk-memasukkan-data-mengolah-memanggil-menyimpan-memanipulasi-dan-menyajikan-data-adalah%e2%80%8b">
+                            30. Suatu sistem yang berfungsi untuk memasukkan data mengolah, memanggil, menyimpan, memanipulasi, dan menyajikan data adalah​</h2><br />
+                        SIG ATAU SISTEM INFORMASI GEOGRAFISistem Informasi Geografis bahasa inggrisnya: Geographic Information System <br />
+                                            <h2 class="ez-toc-section" id="peninggalan-pada-zaman-perunggu-yang-berfungsi-sebagai-alat-pemanggil-hujan-adalah">
+                            31. peninggalan pada zaman perunggu yang berfungsi sebagai alat pemanggil hujan adalah</h2><br />
+                        Nekara Perunggu maaf kalo salah<br /><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-perintah-yang-berfungsi-untuk-memanggil-file-yang-telah-kita-buatjawab-kak-mapelteknologi-informasi-dan-komunikasiini-bukan-b-indonesia">
+                            32. Sebutkan perintah yang berfungsi untuk memanggil file yang telah kita buat!
+JAWAB KAK 
+Mapel:teknologi informasi dan komunikasi
+Ini bukan b.indonesia</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>perintah open/ctrl+o</p><p><strong>Penjelasan:</strong></p><p>moga membantu(•‿•)</p><br />
+                                            <h2 class="ez-toc-section" id="include-using-namespace-std-fungsi-menu-void-1-2-fungsi-jumlah-pesanan-void-3-4-5-fungsi-pilihan-menu-void-pilihan6-7">
+                            33. #include using namespace std; //Fungsi Menu void 1 ........() { 2 . . . . } //Fungsi Jumlah Pesanan void 3 . . . . (4....... ) { 5 . . . . } //Fungsi Pilihan Menu void pilihan(6....... ) { 7 . . . . } //Fungsi cetak void 8 ........(int i, int jml, int pil[], int item[]) { } main() { } 9 . . . . //Variabel yang digunakan int i, jml, pil[100], item[100]; //Pemanggilan fungsi menu menu(); //Pemanggilan fungsi jumlah jumlah(jml); system("cls"); menu(); //Pemanggilan fungsi pilihan menu pilihan(i, jml, pil, item); system("cls"); menu(); //Pemanggilan fungsi cetak hasil 10 . . . .</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ini yang di tanyakan apa?</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-tahapan-pembuatan-login-pada-codeigniter">
+                            34. tuliskan tahapan pembuatan login pada codeigniter</h2><br />
+                        - Buat Database dan table login di mysql<br />- Di codeigniter, aktifkan library database, session, helper url, dan set encription key <br />- hubungkan codeigniter dengan mysql<br />- buat form login dan codingannya, dll<br /><br /><br />saran saya liat di web aja banyak<br />#semoga bermanfaat<br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-belajar-codeigniter-untuk-pemula">
+                            35. bagaimana cara belajar codeigniter untuk pemula?</h2><br />
+                        <p>1. pelajari dokumentasi https://www.codeigniter.com/user_guide/</p><p>2. buat aplikasi sederhana</p><p>3. kembangkan</p><br />
+                                            <h2 class="ez-toc-section" id="buat-satu-contoh-project-aplikasi-codeigniter">
+                            36. buat satu contoh project aplikasi codeigniter</h2><br />
+                        pengunaan di Cl pertama kita buat dulu di controller nya misal halo bro.php lalu simpan di aplikasi controller kemudian buat fil teman saya.php simpan aplikasi/view<br />jika sudah coba jalankan ketik http//lokalhost/codegniter.index.php<br /><br />
+                                            <h2 class="ez-toc-section" id="masyarakat-praaksara-pada-masa-perundagian-sudah-mengenal-sistem-kepercayaan-yang-terbukti-dari-ditemukannya-nekara-yang-berfungsi-sebagai-5-poinalat-pemanggil-hujanalat-memanggil-roh-nenek-moya">
+                            37. Masyarakat praaksara pada masa perundagian sudah mengenal sistem kepercayaan yang terbukti dari ditemukannya nekara yang berfungsi sebagai .... *5 poinalat pemanggil hujanalat memanggil roh nenek moyangalat memanggil dewaalat memanggil dewi kesuburanalat memanggil roh halus​</h2><br />
+                        <p>Masyarakat praaksara yang belum mengenal tulisan sudah mengenal sistem kepercayaan yang mana terbukti dengan ditermukan<strong> Nekara yang memiliki fungsi sebagai alat pemanggil hujan</strong>. Hal ini dikarenakan Nekara tidak memiliki fungsi untuk memanggil roh nenek moyang, berbagai dewa dan roh halus.</p><p></p>Pembahasan<p><strong>Nekara merupakan</strong> genderang yang relatif besar yang mana terbuat dari perunggu pada masa perundagian, nekara secara umum memliki bentuk seperti berpinggang pada bagian tengah dan tertutup di tempat atasnya. Nekara sampai sekarang masih ada dan ditemukan di berabgai daerah di Indonesia seperti Jawa, Bali hingga kepulauan Kei. Nekara secara umum sekarang digunakan sebagai mas kawin dalam upacara pernikahan dan untuk masa dahulu digunakan untuk memanggil hujan.</p><p></p>Pelajari lebih lanjutFungsi umum Nekara https://brainly.co.id/tugas/2807147Pengertian umum Nekara https://brainly.co.id/tugas/14713912Fungsi umum perunggu https://brainly.co.id/tugas/6332129<p></p>Detail jawaban<p><strong>Kelas: </strong>4</p><p><strong>Mapel:</strong> Ilmu Sosial</p><p><strong>Bab:</strong> Bab 4 - Keanekaragaman Suku dan Budaya Setempat</p><p><strong>Kode: </strong>4.10.4</p><p><strong>#TingkatkanPrestasimu</strong></p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-membuat-crud-yang-benar-di-codeigniter">
+                            38. bagaimana membuat CRUD yang benar di codeigniter ...</h2><br />
+                        <p>baca dan langsung praktek disini aja</p><p>https://www.petanikode.com/codeigniter-database/</p><p>NB : Database memakai MySql yang merupakan best friend semua framework PHP tapi bisa juga memakai database lain seperti SQL Server atau SQlite. selamat berkreasi. Happy coding.</p><br />
+                                            <h2 class="ez-toc-section" id="benda-peninggalan-jaman-perundagian-yg-berfungsi-sebagai-sarana-apa-cara-memanggil-hujan">
+                            39. Benda peninggalan jaman Perundagian yg berfungsi sebagai sarana apa cara memanggil Hujan</h2><br />
+                        jawabannya nekara<br />nekara berfungsi untuk upacara keagamaan dan mendatangkan hujan<br /><br /><br /><br />semoga membantu...<br />maaf jika ada kesalahan<br />
+                                            <h2 class="ez-toc-section" id="tombol-yang-berfungsi-untuk-memanggil-help-pada-ms-word-adalah">
+                            40. Tombol yang berfungsi untuk memanggil help pada ms.word adalah</h2><br />
+                        tombol yang digunakan untuk memanggil help pada ms.word adalah F1<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/_dljWFm08OY?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-meter-ke-centimeter.html">Contoh Soal Meter Ke Centimeter</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-efek-rumah-kaca.html">Contoh Soal Efek Rumah Kaca</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-asli-dari-sqrt.html">Fungsi Asli Dari Sqrt</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-dan-jawaban-tap.html">Contoh Soal Dan Jawaban Tap</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/soal-pts-kls-2-semester-1.html">Soal Pts Kls 2 Semester 1</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-loader-pada-operasi-sistem.html">Fungsi Dari Loader Pada Operasi Sistem</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-barisan-deret-aritmatika-dan-geometri.html">Contoh Soal Barisan Deret Aritmatika Dan Geometri</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-pancasila-sebagai-dasar-negara.html">Contoh Soal Pancasila Sebagai Dasar Negara</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-bintara-polri.html">Contoh Soal Bintara Polri</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-penyetaraan-reaksi-redoks-metode-setengah-reaksi-suasana-asam.html">Contoh Soal Penyetaraan Reaksi Redoks Metode Setengah Reaksi Suasana Asam</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-latar-belakang-tugas-akhir-perhotelan.html">Contoh Latar Belakang Tugas Akhir Perhotelan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-pengangguran.html">Contoh Soal Pengangguran</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-ignition-switch.html">Fungsi Dari Ignition Switch</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-kasus-stroke.html">Contoh Soal Kasus Stroke</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-textbox-label-dan-button.html">Apa Fungsi Dari Textbox Label Dan Button</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-rantai-markov.html">Contoh Soal Rantai Markov</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/soal-toefl-structure.html">Soal Toefl Structure</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-kamera-dalam-pembutan-video.html">Fungsi Dari Kamera Dalam Pembutan Video</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-bentuk-pangkat-akar-dan-logaritma-beserta-pembahasannya.html">Contoh Soal Bentuk Pangkat Akar Dan Logaritma Beserta Pembahasannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-sewa-dibayar-dimuka-jurnal-umum.html">Contoh Soal Sewa Dibayar Dimuka Jurnal Umum</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediasoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediasoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

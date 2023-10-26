@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Mode cfb Di Python - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Mode cfb Di Python, , , , , , , 0, , , , , , 0, fungsi-dari-mode-cfb-di-python, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Mode cfb Di Python - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Mode cfb Di Python, , , , , , , 0, , , , , , 0, fungsi-dari-mode-cfb-di-python, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Mode cfb Di Python - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Mode cfb Di Python, , , , , , , 0, , , , , , 0, fungsi-dari-mode-cfb-di-python, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediasoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediasoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediasoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediasoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediasoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediasoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediasoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Mode cfb Di Python</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">Vandi4306</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Mode+cfb+Di+Python" alt="Fungsi Dari Mode cfb Di Python">
+                    </div>
+                    <p></p>
+                    <p>IDLE merupakan program editor bawaan Python. IDLE bisa digunakan dalam untuk menjalankan python dalam mode interaktif. Arti interaktif di sini adalah: *</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#idle-merupakan-program-editor-bawaan-python-idle-bisa-digunakan-dalam-untuk-menjalankan-python-dalam-mode-interaktif-arti-interaktif-di-sini-adalah">1.
+                                            IDLE merupakan program editor bawaan Python. IDLE bisa digunakan dalam untuk menjalankan python dalam mode interaktif. Arti interaktif di sini adalah: *</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-python-dan-apa-fungsinya%e2%80%8b">2.
+                                            Apa itu python? dan apa fungsinya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#siapa-pencipta-bahasa-pythonapa-fungsi-bahasa-python-pada-tempat-industri">3.
+                                            Siapa pencipta bahasa python?
+apa fungsi bahasa python pada tempat industri?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mode-pesawat-berfungsi-sebagai-jelaskan%e2%80%8b">4.
+                                            mode pesawat berfungsi sebagai? Jelaskan!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-view-mode">5.
+                                            apa fungsi view mode ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-bhsa-pemrograman-python%e2%80%8b">6.
+                                            fungsi bhsa pemrograman python​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-fungsi-perulangan-dalam-bahasa-pemograman-python-%e2%80%8b">7.
+                                            Jelaskan fungsi dari fungsi perulangan dalam bahasa pemograman Python! ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-fungsi-continue-pada-python">8.
+                                            Apa yang dimaksud dengan fungsi Continue pada Python ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-module-beautifulsoup-di-python">9.
+                                            Apa fungsi module BeautifulSoup di python</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-mode-pesawat-di-hp-kalian%e2%80%8b">10.
+                                            apa fungsi mode pesawat di hp kalian​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kuis-1-cara-membuat-fungsi-di-python">11.
+                                            Kuis ----
+1. Cara membuat fungsi di Python.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-program-menggunakan-fungsi-pada-python-dengan-mengaplikasikan-fungsi-matematika-fungsi-nomor-acak-dan-fungsi-trigonometri">12.
+                                            Buatlah program menggunakan fungsi pada python dengan mengaplikasikan fungsi matematika, fungsi nomor acak, dan fungsi Trigonometri!.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-utama-tanda-sama-dengan-ganda-pada-bahasa-pemrograman-seperti-phpjavadan-python">13.
+                                            Apakah fungsi utama tanda sama dengan ganda (==) pada bahasa pemrograman seperti php,java,dan python ? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-membuat-fungsi-ekspor-data-csv-menggunakan-bahasa-python">14.
+                                            Bagaimana cara membuat fungsi ekspor data csv menggunakan bahasa python?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ada-beberapa-mode-komputer-untuk-berhenti-bekerja-dari-komputer-diantaranya-mode-shutdown-sleep-dan-restart-jelaskan-fungsi-dari-3-mode-komputer-tersebut">15.
+                                            Ada beberapa mode komputer untuk berhenti bekerja dari komputer, diantaranya mode shutdown, sleep, dan restart. Jelaskan fungsi dari 3 mode komputer tersebut !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#python-sebutkan-3-tipe-data-number-yang-sering-digunakan-di-python-dan-jelaskan-fungsi-beserta-kegunaannya">16.
+                                            PYTHON sebutkan 3 tipe data number yang sering digunakan di PYTHON, 
+ dan jelaskan fungsi beserta kegunaannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-object-mode%e2%80%8b">17.
+                                            apa fungsi object mode?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-dari-fitur-restricted-mode%e2%80%8b">18.
+                                            apa fungsi dari fitur restricted mode?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-tuliskan-fungsi-tanda-%e2%80%9c%e2%80%9d-pada-python%e2%80%8b">19.
+                                            1. Tuliskan fungsi tanda “#” pada Python​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-antara-kernel-mode-dan-user-mode-sebagai-fungsi-untuk-security-system">20.
+                                            Apa perbedaan antara kernel mode dan user mode sebagai fungsi untuk security system ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ini-adalah-fungsi-mode-dalam-pertunjukan-tari-kecualiini-adalah-fungsi-mode-dalam-pertunjukan-tari-kecuali">21.
+                                            ini adalah fungsi mode dalam pertunjukan tari, kecualiini adalah fungsi mode dalam pertunjukan tari, kecuali</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-for-di-python-untuk-apa">22.
+                                            Fungsi for di python untuk apa ??</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-apa-itu-python-dan-kenapa-dibutuhkan-untuk-pemrograman-2-apa-perbedaan-antara-python-2-dan-python-3-3-bagaimana-cara-menginstal-python-di-komputer-saya-4-apa-yang-dimaksud-dengan-tipe-data-di">23.
+                                            1. Apa itu Python dan kenapa dibutuhkan untuk pemrograman? 2. Apa perbedaan antara Python 2 dan Python 3? 3. Bagaimana cara menginstal Python di komputer saya? 4. Apa yang dimaksud dengan tipe data di Python? 5. Bagaimana cara membuat variabel di Python? 6. Bagaimana cara melakukan input dan output di Python? 7. Bagaimana cara melakukan operasi matematika dasar di Python? 8. Apa itu tipe data list di Python dan bagaimana cara mengaksesnya? 9. Bagaimana cara membuat fungsi di Python? 10. Apa itu modul dalam Python dan bagaimana cara menggunakannya?jawab harus bnr semua gk bnr gw report​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-python-3-dan-python-2">24.
+                                            Apa perbedaan python 3 dan python 2 ??</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tentang-fungsi-mode">25.
+                                            jelaskan tentang fungsi MODE?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-mode-pesawat">26.
+                                            apa fungsi mode pesawat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-read-mode-pada-android">27.
+                                            fungsi read mode pada android</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-road-mode-%e2%80%8b">28.
+                                            apa fungsi road mode      ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-program-mengenai-fungsi-return-pada-python">29.
+                                            Buatlah program mengenai fungsi return pada python</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-view-mode">30.
+                                            Apa fungsi view mode?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-try-except-pada-bahasa-pemrograman-pythonminta-tolong-dijawab%e2%80%8b">31.
+                                            Apa fungsi Try-Except pada bahasa pemrograman python?Minta tolong dijawab​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-perbedaan-antara-fungsi-mod-dan-fungsi-mode">32.
+                                            Apa perbedaan antara fungsi MOD dan fungsi MODE? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-untuk-kalimat-atau-beberapa-huruf-pada-bahasa-pemogramman-python-adalah">33.
+                                            fungsi untuk kalimat atau beberapa huruf pada bahasa pemogramman python adalah?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#blend-mode-berfungsi-untuk-memilih-a-warnab-layer-modec-ukurand-ketebalan">34.
+                                            blend mode berfungsi untuk memilih ? a.warnab.layer modec.ukurand.ketebalan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kepanjangan-dari-cfb-dan-cb-tahun-berdirinya-dan-bidang-organisasi-cost-oime-cfb-dan-cp-tolong-di-bantu-nya-kakak">35.
+                                            kepanjangan dari CFB dan CB ?
+Tahun berdirinya dan bidang organisasi Cost, Oime , Cfb dan CP !
+tolong di bantu nya kakak.. :)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-jenis-fungsi-perulangan-bahasa-pemrograman-python-yaitu">36.
+                                            2 jenis fungsi perulangan bahasa pemrograman python yaitu?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-mode-pada-kamera-dslr">37.
+                                            fungsi mode pada kamera DSLR</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsinya-input-di-python-adalah">38.
+                                            Fungsinya input di python adalah ...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-membuat-fungsi-di-python-bagaimana-sih">39.
+                                            Cara membuat fungsi di python bagaimana sih</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-struktur-penulisan-fungsi-if-pada-python%e2%80%8b">40.
+                                            Jelaskan struktur penulisan fungsi IF pada python!​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="idle-merupakan-program-editor-bawaan-python-idle-bisa-digunakan-dalam-untuk-menjalankan-python-dalam-mode-interaktif-arti-interaktif-di-sini-adalah">
+                            1. IDLE merupakan program editor bawaan Python. IDLE bisa digunakan dalam untuk menjalankan python dalam mode interaktif. Arti interaktif di sini adalah: *</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>IDLE merupakan program editor bawaan Python. IDLE bisa digunakan dalam untuk menjalankan python dalam mode interaktif. Arti interaktif adalah ketika anda mengetikkan perintah, maka hasilnya akan langsung ditampilkan.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-itu-python-dan-apa-fungsinya%e2%80%8b">
+                            2. Apa itu python? dan apa fungsinya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Python adalah bahasa pemrograman tujuan umum yang ditafsirkan, tingkat tinggi. Dibuat oleh Guido van Rossum dan pertama kali dirilis pada tahun 1991, filosofi desain Python menekankan keterbacaan kode dengan penggunaan spasi putih yang signifikan</p><p><strong>Penjelasan:</strong></p><p>Fungsinya, sebagai bahasa pemrograman, Python menggabungkan kemampuan, kapabilitas dan sintaksis kode serta fungsi pustaka yang berkualitas tinggi</p><br />
+                                            <h2 class="ez-toc-section" id="siapa-pencipta-bahasa-pythonapa-fungsi-bahasa-python-pada-tempat-industri">
+                            3. Siapa pencipta bahasa python?
+apa fungsi bahasa python pada tempat industri?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Guido van Rossum dibuat pada tahun 1991</p><p>2. Contohnya digunakan bahasa yang digunakan untuk merancang artificial intelligence atau bisa sebut AI, Python juga digunakan seorang Data Engineer untuk memantau data tersebut atau bisa diistilahkan dengan monitoring data</p><br />
+                                            <h2 class="ez-toc-section" id="mode-pesawat-berfungsi-sebagai-jelaskan%e2%80%8b">
+                            4. mode pesawat berfungsi sebagai? Jelaskan!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Mode pesawat merupakan  mode yang dapat gunakan saat berada di pesawat sehingga sinyal dari suatu device tidak mengganggu pesawat yang ditumpangi.</p><p><strong>Penjelasan:</strong></p><p>selain itu mode pesawat juga dapat berfungsi sebagai berikut:</p>merefresh sinyal internetmenghemat bateraimengurangi notifikasi yang mengganggu<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-view-mode">
+                            5. apa fungsi view mode ?</h2><br />
+                        untuk melihat didalam kameraberfungsi untuk menampilkan dokumen dalam 3 pilihan:<br />1. Page break view<br />2. Page layout view<br />3. Normal View<br /><br /># view mode pada Ms. Office Excel 2007<br /><br />
+                                            <h2 class="ez-toc-section" id="fungsi-bhsa-pemrograman-python%e2%80%8b">
+                            6. fungsi bhsa pemrograman python​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>menggabungkan kemampuan,kapabilitas dan sintaksis kode serta fungsi pustaka yang berkualitas tinggi.</p><p><strong>Penjelasan:</strong></p><p>semoga membantu :)</p><p><strong>Jawaban:</strong></p><p>Python banyak digunakan untuk membuat berbagai macam program, seperti: program CLI, Program GUI (desktop), Aplikasi Mobile, Web, IoT, Game, Program untuk Hacking, vs studio code dsb.
+</p><p>Python juga dikenal dengan bahasa pemrograman yang mudah dipelajari, karena struktur sintaknya rapi dan mudah dipahami.</p><p><strong>Penjelasan:</strong></p><p>Semoga Membantu...</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-fungsi-perulangan-dalam-bahasa-pemograman-python-%e2%80%8b">
+                            7. Jelaskan fungsi dari fungsi perulangan dalam bahasa pemograman Python! ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi perulangan dalam bahasa pemrograman Python digunakan untuk menjalankan serangkaian instruksi atau blok kode secara berulang sesuai dengan kondisi atau batasan tertentu. <br /><br />Dalam bahasa pemrograman Python, terdapat dua jenis perulangan yang umum digunakan:</p><p>1. Perulangan "for"<br />2. Perulangan "while"</p><p><strong>Penjelasan:</strong></p><p>1. Perulangan "for" digunakan ketika kita sudah mengetahui jumlah iterasi yang akan dilakukan. Perulangan "for" akan mengulangi blok kode sejumlah iterasi sesuai dengan objek yang diberikan.<br />Contoh : <br /><strong>Input</strong><br />for i in range(5):</p><p>    print(i)</p><p><strong>Output<br /></strong>0</p><p>1</p><p>2</p><p>3</p><p>4<br /></p><p>2. Perulangan "while": Perulangan "while" digunakan ketika kita ingin menjalankan blok kode berulang kali selama kondisi tertentu terpenuhi. Blok kode akan terus dieksekusi selama kondisi yang diberikan bernilai benar (True).<br />Contoh :<br /><strong>Input</strong><br />count = 0</p><p>while count &lt; 5:</p><p>    print(count)</p><p>    count += 1</p><p><strong>Output<br /></strong>0</p><p>1</p><p>2</p><p>3</p><p>4</p><br />
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-fungsi-continue-pada-python">
+                            8. Apa yang dimaksud dengan fungsi Continue pada Python ?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Apa yang dimaksud dengan fungsi Continue pada Python?</p><p><strong>Penjelasan:</strong></p><p>Perintah Continue adalah perintah untuk melakukan pengulangan dari awal, dan akan mengabaikan semua yang tersisa di loop menuju ke awal loop.</p><p>Python adalah bahasa multiguna yang memakai filosofi perancangan fokus pada tingkat keterbacaan kode. Python menggabungkan skills, capability, dan code syntax, beserta fungsi pusaka berkualitas tinggi.</p><strong>Se</strong><strong>moga</strong><strong> bisa</strong><strong> membantu</strong><strong>:</strong><strong>)</strong><strong>Ma</strong><strong>af</strong><strong> jika</strong><strong> salah</strong><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-module-beautifulsoup-di-python">
+                            9. Apa fungsi module BeautifulSoup di python</h2><br />
+                        untuk parsing HTML dan bisa digunakan untuk scrapping web<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-mode-pesawat-di-hp-kalian%e2%80%8b">
+                            10. apa fungsi mode pesawat di hp kalian​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Mode pesawat berguna untuk memutuskan jaringan kartu yang ada di HP</p><p></p><p>semoga membantu </p><p><strong>Jawaban:</strong></p><p>mencari jaringan</p><p><strong>Penjelasan:</strong></p><p>mencari jaringan pada saat gangguan pada sinyal maka dilakukan mode pesawat.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="kuis-1-cara-membuat-fungsi-di-python">
+                            11. Kuis ----
+1. Cara membuat fungsi di Python.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi adalah blok kode terorganisir dan dapat digunakan kembali yang digunakan untuk melakukan sebuah tindakan/action. Fungsi memberikan modularitas yang lebih baik untuk aplikasi Anda dan tingkat penggunaan kode yang tinggi.</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-program-menggunakan-fungsi-pada-python-dengan-mengaplikasikan-fungsi-matematika-fungsi-nomor-acak-dan-fungsi-trigonometri">
+                            12. Buatlah program menggunakan fungsi pada python dengan mengaplikasikan fungsi matematika, fungsi nomor acak, dan fungsi Trigonometri!.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Saya bantu buatkan programnya</p><p><strong>Penjelasan:</strong></p><p>import math</p><p>import random</p><p></p><p>print("1. Mencari pythagoras")</p><p>print("2. Angka random")</p><p>print("3. Kalkulator")</p><p></p><p>x = int(input("Pilihan: "))</p><p></p><p>if x == 1 :</p><p>    side_1 = float(input("side = "))</p><p>    side_2 = float(input("side = "))</p><p>    print("Pythagoras = ",(math.sqrt(side_1**2 + side_2**2)))</p><p>    </p><p>elif x == 2:</p><p>    print("Angka = ",(random.randint(10, 100)))</p><p>    </p><p>elif x == 3:</p><p>    num1 = float(input("Masukkan angka 1 = "))</p><p>    num2 = float(input("Masukkan angka 2 = "))</p><p>    print("Hasil pembagian =",(num1 / num2))</p><p>    print("Hasil pengurangan =",(num1 - num2))</p><p>    print("Hasil perkalian =",(num1 * num2))</p><p>    print("Hasil penjumalahan =",(num1 + num2))</p><p>    </p><p>else:</p><p>    print("Salah input !!")</p><p>    </p><br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-utama-tanda-sama-dengan-ganda-pada-bahasa-pemrograman-seperti-phpjavadan-python">
+                            13. Apakah fungsi utama tanda sama dengan ganda (==) pada bahasa pemrograman seperti php,java,dan python ? </h2><br />
+                        <p><strong>Jawaban:<br /></strong>Dalam bahasa manusianya itu berarti sama dengan<br />penjelasan dibawah ya</p><p><strong>Penjelasan:</strong></p><p>== di dalam bahasa pemrograman bisa di artikan sebagai <strong>sama dengan </strong>contoh<br /><br />variable = "jawaban"<br /><br />if variable == "jawaban" {<br />      print("variable adalah jawaban")<br />} else {<br />      print("variable bukan jawaban")<br />}</p><p><strong>Fungsi utama tanda sama dengan ganda (==)</strong> pada bahasa pemrograman seperti <strong>PHP</strong>, <strong>Java</strong>, dan <strong>Python</strong> adalah <strong>sebagai operator logika kesamaan nilai dua variabel</strong>, yang mengembalikan nilai:</p><strong>true (atau 1)</strong> jika nilai kedua variabel <strong>sama</strong>, atau <strong>false (atau 0)</strong> jika nilai kedua variabel <strong>berbeda</strong>.<p>Walaupun fungsi utamanya sama, terdapat perbedaan dalam penggunaannya, tergantung dari implementasi dan aturan yang ditetapkan pada setiap bahasa pemrograman tersebut.<br /> </p>Pembahasan<p>Untuk menentukan apakah dua variabel a dan b sama nilainya, bahasa pemrograman seperti PHP, Java, dan Python (bahkan C, C++, dsb.) menggunakan operator berupa tanda sama dengan ganda (==). <br />Alasan utamanya adalah untuk membedakan dengan operator atau tanda yang digunakan untuk memberi nilai (assignment) pada variabel, yaitu tanda sama dengan tunggal (=).</p><p>Agar lebih jelas, kita gunakan contoh ilustrasi.</p><p>Untuk contoh ini, kita akan mengevaluasi output dari algoritma sederhana berikut pada interpreter masing-masing bahasa pemrograman tersebut.</p>Deklarasi sekaligus inisialisasi variabel a dengan nilai integer 10.Deklarasi sekaligus inisialisasi variabel b dengan nilai string "10".Periksa apakah a sama dengan nilai integer 10.Periksa apakah a sama dengan nilai desimal/float 10.0.Periksa apakah a sama dengan hasil penjumlahan 5 + 5.Periksa apakah a sama dengan hasil penjumlahan 4.5 + 5.5.Periksa apakah b sema dengan nilai string "10".Periksa apakah a sama dengan b.Hasil Eksekusi Pada InterpreterPHP<p>Interpreter dijalankan dengan eksekusi perintah "php -a" pada shell Linux.</p>php &gt; $a = 10;php &gt; $b = "10";php &gt; echo $a == 10;<br />1php &gt; echo $a == 10.0;<br />1php &gt; echo $a == 5 + 5;<br />1php &gt; echo $a == 4.5 + 5.5;<br />1php &gt; echo $b == "10";<br />1php &gt; echo $a == $b;<br />1Java<p>Interpreter dijalankan dengan eksekusi perintah "jshell" pada shell Linux.</p>jshell&gt; int a = 10;<br />a ==&gt; 10jshell&gt; String b = "10";<br />b ==&gt; "10"jshell&gt; a == 10;<br />$5 ==&gt; truejshell&gt; a == 10.0;<br />$6 ==&gt; truejshell&gt; a == 5 + 5;<br />$7 ==&gt; truejshell&gt; a == 4.5 + 5.5;<br />$8 ==&gt; truejshell&gt; b == "10";<br />$9 ==&gt; truejshell&gt; a == b;<br />|  Error:<br />|  bad operand types for binary operator '=='<br />|    first type:  int<br />|    second type: java.lang.String<br />|  a == b;<br />|  ^----^Python<p>Interpreter dijalankan dengan eksekusi perintah "python" pada shell Linux.</p>&gt;&gt;&gt; a = 10&gt;&gt;&gt; b = "10"&gt;&gt;&gt; a == 10<br />True&gt;&gt;&gt; a == 10.0<br />True&gt;&gt;&gt; a == 5 + 5<br />True&gt;&gt;&gt; a == 4.5 + 5.5<br />True&gt;&gt;&gt; b == "10"<br />True&gt;&gt;&gt; a == b<br />FalseKesimpulan<p>Pada langkah terakhir, terdapat perbedaan, yaitu interpreter PHP menganggap integer 10 sama dengan string "10", sedangkan Java dan Python tidak. Hal ini terjadi karena perbandingan kesamaan nilai variabel dengan tanda sama dengan ganda (==) pada PHP dilakukan dengan mekanisme "type-juggling", artinya membandingkan "isi" dari variabel, tanpa memperhatikan tipe data. </p><p>Jika pada langkah terakhir kita ingin mendapatkan output serupa dengan Java atau Python, pada PHP kita gunakan tanda tripel sama dengan (===). Sebagai contoh:</p><p>php &gt; echo $a === $b;<br />⇒ Tidak ada output karena hasilnya 0 atau false. </p><p>Agar terlihat outputnya, dapat digunakan perintah PHP berikut ini:<br />php &gt; echo $a === $b ? "sama" : "tidak sama";<br />tidak sama</p><p>Outputnya adalah "tidak sama".</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-membuat-fungsi-ekspor-data-csv-menggunakan-bahasa-python">
+                            14. Bagaimana cara membuat fungsi ekspor data csv menggunakan bahasa python?</h2><br />
+                        <p>Jawaban: vari sendiri bosque</p><p></p><p>Penjelasan:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="ada-beberapa-mode-komputer-untuk-berhenti-bekerja-dari-komputer-diantaranya-mode-shutdown-sleep-dan-restart-jelaskan-fungsi-dari-3-mode-komputer-tersebut">
+                            15. Ada beberapa mode komputer untuk berhenti bekerja dari komputer, diantaranya mode shutdown, sleep, dan restart. Jelaskan fungsi dari 3 mode komputer tersebut !</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Shutdown = Mematikan computer</p><p>Sleep = mode ini tuh ngebuat computer jadi gk aktif sedangkan RAM sama komponen yang mendukung aktivitas RAM akan tetap nyala dengan tenaga kecil</p><p>Restart = Merefresh computer</p><p><strong>Penjelasan:</strong></p><p>Sleep</p><p>Secara bahasa, sleep berarti tidur. Cara melaukan sleep adalah klik Windows, muncul option sleep, lalu diklik. Pada komputer yang sudah di-setting sedemikian rupa, dibiarkan nyala tanpa dilakukan apapun pun (idle) nanti akan masuk mode sleep otomatis.</p><p></p><p></p><p> </p><p>Terus apa bedanya mode sleep dengan shutdown? Mode sleep mematikan layar, CPU, dan hampir semua mesin. Namun, tetap menyimpan data yang di RAM. Jadi sebenarnya tidak benar-benar mati. Ada beberapa komponen yang masih menyala. Baterai atau listrik cukup hemat.</p><p></p><p>Satu lagi, jika mode sleep dihidupkan kembali, aplikasi-aplikasi yang tadinya belum ditutup masih tetap terbuka. Hasil ketikan, editan foto, video, dan sebagainya tidak hilang meskipun belum tersimpan ke dalam folder.</p><p></p><p></p><p> </p><p>Selain itu, saat komputer dinyalakan kembali dari mode sleep, booting akan lebih cepat. Tidak seperti komputer baru dinyalakan yang harus booting dari awal. Dan mode ini sangat cocok dimanfaatkan saat butuh istirahat sebentar, makan, minum, mandi, ada tamu, dll..</p><p></p><p>Hibernate</p><p>Secara bahasa, hibernate atau hibernasi berarti tidur panjang. Panjangnya melebihi sleep. Cara masuk mode ini sama: Klik Windows, muncul pilihan hibernate, dan diklik. Jika mode sleep di atas terlalu lama, sementara baterai tinggal sedikit, maka laptop secara otomatis memindahkannya ke mode hibernasi.</p><p> </p><p>Mengapa? Karena mode hibernate lebih hemat baterai dari sleep. Soal aplikasi yang sebelumnya terbuka akan tetap terbuka sama seperti mode sleep. Perbedaannya hanyalah data yang di RAM akan dipindah ke hard disk. Lalu saat dinyalakan kembali, booting sedikit lebih lama. Namun, tetap lebih cepat dibanding dari shutdown.</p><p></p><p>Berdasarkan pengertiannya sudah jelas. Mode hibernate cocok digunakan untuk komputer dan laptop istirahat lebih lama. Contohnya tidur siang, ada tamu penting, pergi keluar, dan sebagainya.</p><p></p><p>Atas fungsi tersebut, beberapa orang bahkan tidak pernah shut down komputer di rumah. Mereka lebih suka mematikannya dengan mode hibernasi. Shutdown hanya dilakukan 2-3 kali seminggu. Saya tidak tau itu aman atau tidak. Yang jelas lebih baik gunakan sesuai gunanya saja. Dan pahami juga pengertian shutdown berikut ini.</p><p></p><p>Shutdown</p><p>Shut down adalah mematikan komputer dan laptop. Akan tetapi namanya juga barang elektronik, bukan manusia atau hewan yang kalau sudah mati tidak bisa hidup kembali, hehe. Bedanya dengan mode sleep dan hibernasi adalah shutdown benar-benar mematikan semua mesin, termasuk RAM dan hard disk.</p><p></p><p>Bahkan men-shut down saat beberapa aplikasi masih terbuka, secara otomatis akan menutupnya. Hasil kerjaan seperti ketikan, editan foto, dan sebagainya yang belum tersimpan ke folder kemungkinan besar hilang. Soal booting sewaktu dihidupkan kembali, lebih lama daripada mode hibernasi.</p><p></p><p>Lalu kapan waktu yang tepat untuk melakukan shutdown komputer atau laptop? Pertama, saat mesin benar-benar ingin diistirahatkan. Kedua saat mau disimpan lama. Ketiga saat akan dipindahkan. Khusus laptop saat mau dibawa dengan dimasukkan ke dalam tas (shutdown sangat dianjurkan). </p><p></p><p>Restart</p><p>Selain sleep, hibernate, dan shutdown, pada komputer juga terdapat pilihan restart, login, dan logout. Karena letaknya hampir berdekatan, baiklah di sini akan dijelaskan sekalian saja.</p><p></p><p>Restart adalah proses di mana komputer dimatikam dan kemudian menyala kembali tanpa perlu memencet tombol power. Berdasarkan kinerjanya seperti ini, restart sangat cocok digunakan setelah instal aplikasi baru, update driver, dan sebagainya yang biasanya butuh di-restart agar efeknya terasa.</p><p></p><p>Kemudian saat komputer sudah lama menyala dan dirasa lemot sehingga butuh refresh, restart juga bisa dijadikan pilihan karena memang niatnya ingin mematikan dan langsung menyalakan kembali saat itu juga.</p><p></p><p>Login dan logout</p><p>Demi kemanan, komputer bisa di-setting agar memiliki username dan password. Dan uniknya dalam satu perangkat bisa digunakan lebih dari satu orang dengan membuat username dan password sendiri-sendiri. Intinya kalau ingin menjelaskan login dan logout, saya misalkan saja komputer atau laptop Anda ada dua pengguna.</p><p></p><p>Misal, pengguna A sudah tidak akan menggunakan lagi atau mau ganti pengguna B. Maka A tinggal log out saja. Kemudian B log in menggunakan username dan password sendiri. Jadi, prosesnya biar tidak perlu mematikan komputer. Sehingga tidak perlu booting dari awal lagi. Dan meskipun A dan B menggunakan satu komputer, nanti ada beberapa data yang tidak bisa saling lihat (terpisah).</p><p></p><p>Kira-kira begitulah perbedaan mode sleep, hibernate atau hibernasi, shutdown, restart, login, dan logout. Intinya masing-masing memiliki pengertiam dan fungsi yang tidak sama. Untuk memilih mana yang lebih baik, sebaiknya sesuaikan dengan kebutuhan saja.</p><p></p><p>maaf kak jika jawabannya salah atau kurang lengkap saya udh kasih jawabannya lebih dari 3 kak</p><br />
+                                            <h2 class="ez-toc-section" id="python-sebutkan-3-tipe-data-number-yang-sering-digunakan-di-python-dan-jelaskan-fungsi-beserta-kegunaannya">
+                            16. PYTHON sebutkan 3 tipe data number yang sering digunakan di PYTHON, 
+ dan jelaskan fungsi beserta kegunaannya</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Integer	 25 atau 1209 	Menyatakan bilangan bulat.</p><p>2. Float	3.14 atau 0.99	Menyatakan bilangan yang mempunyai koma.</p><p>3. Hexadecimal 9a atau 1d3	Menyatakan bilangan dalam format heksa (bilangan berbasis 16).</p><p></p><p></p><p><strong>Jawaban:</strong></p><p>logo-groovymenu</p><p>Tipe Data Python</p><p>Tipe data adalah suatu media atau memori pada komputer yang digunakan untuk menampung informasi.</p><p></p><p>Python sendiri mempunyai tipe data yang cukup unik bila kita bandingkan dengan bahasa pemrograman yang lain.</p><p></p><p>Berikut adalah tipe data dari bahasa pemrograman Python :</p><p></p><p>Tipe Data	Contoh	Penjelasan</p><p>Boolean	True atau False	Menyatakan benar True yang bernilai 1, atau salah False yang bernilai 0</p><p>String	"Ayo belajar Python"	Menyatakan karakter/kalimat bisa berupa huruf angka, dll (diapit tanda " atau ')</p><p>Integer	25 atau 1209	Menyatakan bilangan bulat</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-object-mode%e2%80%8b">
+                            17. apa fungsi object mode?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Object Mode dipakai untuk melakukan kegiatan pengeditan pada suatu objek secara menyeluruh/keseluruhan.</p><p></p><p><strong>Penjelasan:</strong></p><p>-semoga membantu (✿^‿^)</p><p>-jadikan jawaban terbaik jika berkenan terimakasih</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-dari-fitur-restricted-mode%e2%80%8b">
+                            18. apa fungsi dari fitur restricted mode?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Mode Terbatas adalah setelan opsional yang dapat Anda gunakan di YouTube. Fitur ini membantu memfilter konten yang berpotensi berisi konten dewasa, yang mungkin tidak ingin Anda lihat atau yang ingin Anda sembunyikan dari orang lain yang menggunakan perangkat Anda.</p><p>fungsi dari fitur restricted mode ialah salah satunya sangat berguna bagi orang tua yang hendak membatasi konsumsi konten terhadap anaknya mode ini membuat Google atau YouTube secara otomatis mendeteksi dan memblokir akses bagi pengguna yang menonton konten tidak pantas atau belum sesuai dengan usianya </p><br />
+                                            <h2 class="ez-toc-section" id="1-tuliskan-fungsi-tanda-%e2%80%9c%e2%80%9d-pada-python%e2%80%8b">
+                            19. 1. Tuliskan fungsi tanda “#” pada Python​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Tanda <strong>#</strong> digunakan untuk memberikan komentar. Sebuah komentar adalah sebuah text yang tidak akan dijalankan oleh <strong>Python</strong> sebagai code. Komentar hanya dapat dibaca oleh manusia.</p><p></p><p>semoga bermanfaat</p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-antara-kernel-mode-dan-user-mode-sebagai-fungsi-untuk-security-system">
+                            20. Apa perbedaan antara kernel mode dan user mode sebagai fungsi untuk security system ?</h2><br />
+                        kalau kernel mode adalah keamanan yang diatur oleh system itu sendiri. kalau user mode adalah keamana yang di atur penggunae atau orang yang mengatur.<br /><br />
+                                            <h2 class="ez-toc-section" id="ini-adalah-fungsi-mode-dalam-pertunjukan-tari-kecualiini-adalah-fungsi-mode-dalam-pertunjukan-tari-kecuali">
+                            21. ini adalah fungsi mode dalam pertunjukan tari, kecualiini adalah fungsi mode dalam pertunjukan tari, kecuali</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>hanya dekorasi</p><p><strong>Penjelasan</strong><strong>:</strong><strong> </strong></p><p>ayoo jdikan yg terbaikkk</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-for-di-python-untuk-apa">
+                            22. Fungsi for di python untuk apa ??</h2><br />
+                        untuk pengulangan seperti loopJawaban<br /><br /><br />Berfungsi untuk perulangan atau looping dalam dunia pemrograman adalah hal yang mendasar yaitu dengan menggunakan fungsi xrange() <br />
+                                            <h2 class="ez-toc-section" id="1-apa-itu-python-dan-kenapa-dibutuhkan-untuk-pemrograman-2-apa-perbedaan-antara-python-2-dan-python-3-3-bagaimana-cara-menginstal-python-di-komputer-saya-4-apa-yang-dimaksud-dengan-tipe-data-di">
+                            23. 1. Apa itu Python dan kenapa dibutuhkan untuk pemrograman? 2. Apa perbedaan antara Python 2 dan Python 3? 3. Bagaimana cara menginstal Python di komputer saya? 4. Apa yang dimaksud dengan tipe data di Python? 5. Bagaimana cara membuat variabel di Python? 6. Bagaimana cara melakukan input dan output di Python? 7. Bagaimana cara melakukan operasi matematika dasar di Python? 8. Apa itu tipe data list di Python dan bagaimana cara mengaksesnya? 9. Bagaimana cara membuat fungsi di Python? 10. Apa itu modul dalam Python dan bagaimana cara menggunakannya?jawab harus bnr semua gk bnr gw report​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Python adalah bahasa pemrograman tingkat tinggi yang serbaguna dan mudah dipelajari. Python digunakan dalam berbagai bidang seperti pengembangan web, analisis data, kecerdasan buatan, dan automasi tugas. Dibutuhkan untuk pemrograman karena sintaksisnya yang sederhana, memiliki banyak pustaka dan modul yang mendukung pengembangan, serta fleksibilitasnya dalam menangani berbagai jenis proyek.</p><p></p><p>2. Python 2 dan Python 3 adalah dua versi yang berbeda dari bahasa pemrograman Python. Python 3 diperkenalkan sebagai pengembangan dari Python 2 dengan perbaikan dan peningkatan fitur. Perbedaannya termasuk sintaksis yang lebih bersih, penanganan karakter dan string yang lebih konsisten, dukungan untuk Unicode secara bawaan, dan perubahan dalam beberapa fungsi dan metode tertentu. Saat ini, Python 3 lebih disarankan untuk pengembangan baru karena Python 2 sudah mencapai akhir masa dukungannya.</p><p></p><p>3. Untuk menginstal Python di komputer Anda, Anda dapat mengunjungi situs resmi Python (python.org) dan mengunduh instalator Python sesuai dengan sistem operasi yang Anda gunakan. Kemudian, ikuti instruksi instalasi yang diberikan oleh instalator Python.</p><p></p><p>4. Tipe data di Python mengacu pada jenis nilai atau informasi yang dapat disimpan dan diolah oleh program. Contoh tipe data di Python termasuk integer (bilangan bulat), float (bilangan desimal), string (teks), boolean (benar/salah), list (daftar nilai), tuple (urutan nilai yang tidak dapat diubah), dictionary (pasangan kunci-nilai), dan lainnya.</p><p></p><p>5. Variabel di Python dapat dibuat dengan memberikan nama pada suatu nilai atau objek. Misalnya, untuk membuat variabel dengan nama "x" dan nilai 10, Anda dapat menulis kode: `x = 10`.</p><p></p><p>6. Input dapat diterima dari pengguna menggunakan fungsi `input()` dalam Python. Misalnya, `nama = input("Masukkan nama Anda: ")` akan meminta pengguna untuk memasukkan nama dan menyimpannya dalam variabel `nama`. Untuk output, Anda dapat menggunakan fungsi `print()` untuk mencetak nilai atau pesan ke konsol. Misalnya, `print("Halo, dunia!")` akan mencetak "Halo, dunia!" di konsol.</p><p></p><p>7. Operasi matematika dasar seperti penjumlahan (+), pengurangan (-), perkalian (*), pembagian (/), dan modulo (%) dapat dilakukan dengan mudah di Python. Contohnya, `x = 5 + 3` akan menyimpan hasil penjumlahan 5 dan 3 dalam variabel `x`.</p><p></p><p>8. Tipe data list di Python adalah struktur data yang digunakan untuk menyimpan kumpulan nilai dalam urutan tertentu. Anda dapat mengakses elemen-elemen di dalam list menggunakan indeks. Misalnya, jika `my_list = [1, 2, 3]`, maka `my_list[0]` akan mengembalikan nilai 1 (elemen pertama dalam list).</p><p></p><p>9. Fungsi di Python dapat dibuat menggunakan kata kunci `def`. Misalnya, `def fungsi_salam(): print("Halo!")` akan membuat fungsi dengan nama "fungsi_salam" yang menc</p><p>10.Modul dalam Python adalah file Python yang berisi kode-kode terkait yang dapat digunakan kembali dalam program lain. Modul memungkinkan kita untuk mengatur kode menjadi unit yang terpisah dan memudahkan pengelolaan dan penggunaan kembali kode tersebut.</p><p></p><p>Untuk menggunakan modul di Python, langkah-langkahnya sebagai berikut:</p><p></p><p>1. Import modul: Gunakan pernyataan `import` di awal program untuk mengimpor modul yang ingin digunakan. Misalnya, `import math` akan mengimpor modul matematika yang disediakan oleh Python.</p><p></p><p>2. Gunakan fungsi atau variabel dari modul: Setelah mengimpor modul, Anda dapat menggunakan fungsi atau variabel yang ada di dalamnya. Misalnya, jika modul math telah diimpor, Anda dapat menggunakan fungsi `math.sqrt()` untuk menghitung akar kuadrat.</p><p></p><p>3. Penamaan yang tepat: Ketika menggunakan fungsi atau variabel dari modul, pastikan untuk menggunakan nama yang tepat dengan menambahkan nama modul sebagai awalan. Misalnya, `math.sqrt(16)` akan menghitung akar kuadrat dari 16 menggunakan fungsi `sqrt()` dari modul math.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-python-3-dan-python-2">
+                            24. Apa perbedaan python 3 dan python 2 ??</h2><br />
+                        python 3 dan python 2 memiliki perbedaan pada fungsi print<br /><br />python 2 : print ""<br />python 3 : print ("")<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-tentang-fungsi-mode">
+                            25. jelaskan tentang fungsi MODE?</h2><br />
+                        Mode untuk sesuatu yg bersangkuran dengan hpmode adalah metode yak kayaknya salah<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-mode-pesawat">
+                            26. apa fungsi mode pesawat</h2><br />
+                        menghemat baterai<br />mempercepat pengisian/charger baterai<br />memperkuat sinyal<br />mempercepat sistem android<br />untuk keselamatan dalam penerbangan sebaiknya dihidupkan mode pesawat<br /><br />semoga membantu yaaauntuk meghemat kuota, menghemat baterai, jika ada di dlm peswat digunkan sbg pengaman<br />
+                                            <h2 class="ez-toc-section" id="fungsi-read-mode-pada-android">
+                            27. fungsi read mode pada android</h2><br />
+                        biar layar gak mati kalau di diemin (lagi membaca)<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-road-mode-%e2%80%8b">
+                            28. apa fungsi road mode      ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Mode off road di opera bertujuan mempercepat loading data sehingga pengguna dapat dengan cepat browsing suatu halaman website. dengan sistem kompresi data yang tinggi server opera menampung permintaan suatu halaman site dengan terlebih dahulu mengkompresi, meng-enkripsi dan memperkecil data maupun image untuk kemudian didistribusikan kembali ke pengguna opera. Jadi bagi pengguna opera yang jaringannya lambat dan mempunyai kuota yang pas-pasan bisa mengaktifkan fitur mode off road.</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-program-mengenai-fungsi-return-pada-python">
+                            29. Buatlah program mengenai fungsi return pada python</h2><br />
+                        <p><strong>Jawaban:</strong></p>Jadikan jawaban yang terbaik ya <br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-view-mode">
+                            30. Apa fungsi view mode?</h2><br />
+                        digunakan untuk mengatur tampilan yang terdiri dari print out dll<br /><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-try-except-pada-bahasa-pemrograman-pythonminta-tolong-dijawab%e2%80%8b">
+                            31. Apa fungsi Try-Except pada bahasa pemrograman python?Minta tolong dijawab​</h2><br />
+                        <p>Try-Except adalah fitur pada bahasa pemrograman Python yang digunakan untuk menangani error atau exception yang mungkin terjadi saat program dijalankan. Struktur Try-Except digunakan untuk mengeksekusi blok kode dalam "try" dan jika terjadi error atau exception, maka kode dalam "except" akan dijalankan.</p><p></p><p>Contohnya seperti ini:</p><p></p><p>try:</p><p></p><p>   # kode yang mungkin menyebabkan exception</p><p></p><p>   result = x / y</p><p>except ZeroDivisionError:</p><p></p><p>   # kode yang akan dijalankan jika terjadi exception ZeroDivisionError</p><p></p><p>   print("Error: Tidak bisa membagi dengan nol")</p><p>except Exception as e:</p><p></p><p>   # kode yang akan dijalankan jika terjadi exception lainnya</p><p></p><p>   print("Error: ", e)</p><p></p><p>Dalam contoh diatas, kode dalam blok try akan mencoba untuk membagi x dengan y. Jika terjadi exception ZeroDivisionError, karena pembagian dengan 0, maka kode dalam blok except pertama akan dijalankan dan menampilkan pesan "Error: Tidak bisa membagi dengan nol". Jika terjadi exception lainnya, maka kode dalam blok except kedua akan dijalankan dan menampilkan pesan "Error: ", diikuti dengan deskripsi dari exception yang terjadi.</p><p></p><p>Try-Except sangat membantu dalam menangani error yang mungkin terjadi saat program dijalankan, sehingga program dapat tetap berjalan dengan stabil meskipun terjadi error.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-perbedaan-antara-fungsi-mod-dan-fungsi-mode">
+                            32. Apa perbedaan antara fungsi MOD dan fungsi MODE? </h2><br />
+                        <p><strong>Jawaban:</strong></p><p>mod adalah sebuah rasa. </p><p>mode adalah sebuah pilihan yang sudah ditentukan.</p><p><strong>Penjelasan:</strong></p><p>Fungsi-fungsinya:</p><p></p><p>modulus adalah sisa pembagian dari suatu bilangan terhadap bilangan lain. Microsoft Excel juga memiliki fungsi untuk menghasikan nilai sisa pembagian yaitu fungsi MOD(). <strong>Fungsi MOD</strong>() akan mengembalikan atau menghasilkan nilai sisa pembagian suatu bilangan terhadap bilangan lain.</p><p></p><p>MODE mengembalikan nilai yang paling sering terjadi, atau berulang, dalam array atau rentang data</p><p></p><p></p><p>Maaf klau salah</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-untuk-kalimat-atau-beberapa-huruf-pada-bahasa-pemogramman-python-adalah">
+                            33. fungsi untuk kalimat atau beberapa huruf pada bahasa pemogramman python adalah?</h2><br />
+                        Fungsi pada Python, dibuat dengan kata kunci def kemudian diikuti dengan nama fungsinya.<br /><br />Contoh:<br /><br />def nama_fungsi(): print "Hello ini Fungsi" <br /><br />Sama seperti blok kode yang lain, kita juga harus memberikan identasi (tab atau spasi 2x) untuk menuliskan isi fungsi.<br /><br /><br />Setelah kita buat fungsinya, lalu apa?<br /><br />Setelah kita buat, kita bisa memanggilnya seperti ini:<br /><br />nama_fungsi() <br /><br />Sebagai contoh, coba tulis kode program berikut:<br /><br /># Membuat Fungsi def salam(): print "Hello, Selamat Pagi" ## Pemanggilan Fungsi salam() <br /><br />Hasilnya:<br /><br />Hello, Selamat Pagi<br />
+                                            <h2 class="ez-toc-section" id="blend-mode-berfungsi-untuk-memilih-a-warnab-layer-modec-ukurand-ketebalan">
+                            34. blend mode berfungsi untuk memilih ? a.warnab.layer modec.ukurand.ketebalan</h2><br />
+                        menurutku yg A warna kalau salah maaf yaaaaaaa<br />
+                                            <h2 class="ez-toc-section" id="kepanjangan-dari-cfb-dan-cb-tahun-berdirinya-dan-bidang-organisasi-cost-oime-cfb-dan-cp-tolong-di-bantu-nya-kakak">
+                            35. kepanjangan dari CFB dan CB ?
+Tahun berdirinya dan bidang organisasi Cost, Oime , Cfb dan CP !
+tolong di bantu nya kakak.. :)</h2><br />
+                        semoga membantu..<br />CFB singkatan dlm bahasa Spanyol.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="2-jenis-fungsi-perulangan-bahasa-pemrograman-python-yaitu">
+                            36. 2 jenis fungsi perulangan bahasa pemrograman python yaitu?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>perulangan 'for' dan 'while'</p><p><strong>Penjelasan:</strong></p><p>Dalam bahasa pemrograman Python, terdapat dua jenis fungsi perulangan yang umum digunakan, yaitu:</p>Perulangan for: Perulangan for digunakan untuk mengulang iterasi sejumlah elemen atau item dalam urutan tertentu seperti string, list, tuple, atau rangkaian angka. Setiap elemen dalam urutan tersebut akan diproses secara berurutan. Contoh penggunaan perulangan for:<p></p><p>for i in range(1, 6):</p><p>    print(i)</p><p></p><p>Pada contoh di atas, perulangan for mengulang iterasi dari 1 hingga 5 dengan menggunakan fungsi range(). Setiap nilai 'i' akan dicetak.</p><p></p>Perulangan while: Perulangan while digunakan untuk mengulang iterasi selama kondisi tertentu terpenuhi. Perulangan while akan terus berjalan selama kondisi yang diberikan bernilai True. Contoh penggunaan perulangan while:<p>i = 1</p><p>while i &lt;= 5:</p><p>    print(i)</p><p>    i += 1</p><p></p><p>Pada contoh di atas, perulangan while akan terus berjalan selama nilai 'i' kurang dari atau sama dengan 5. Setiap nilai 'i' akan dicetak, dan nilai 'i' akan bertambah satu setiap kali iterasi dilakukan.</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-mode-pada-kamera-dslr">
+                            37. fungsi mode pada kamera DSLR</h2><br />
+                        fungsi nya mengatur jarak dekat sehingga objek tampak lebih dekat.<br />maaf ya klu salahUntuk mengatur mode/cara pengambilan gambar dengan dslr. Bisa dengan cara manual (sebelum mengambil gbr, atur dulu iso (kecerahan), shutter speed (kecepatan) &amp; aperturenya(yg mengatur banyaknya cahaya masuk ke lensa)), semi manual (hanya mengatur salah satu dari shutter speed, iso, atau aperture) dan otomatis (tinggal jepret, ga usah ngatur2 lagi)<br /><br />Semoga membantu...<br />
+                                            <h2 class="ez-toc-section" id="fungsinya-input-di-python-adalah">
+                            38. Fungsinya input di python adalah ...</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Python sudah menyediakan fungsi input() dan raw_input() untuk mengambil inputan dari keyboard. Artinya, teks yang kita inputkan dari keyboard akan disimpan ke dalam nama_variabel . ... Fungsi input() digunakan untuk mengambil data angka. Sedangkan raw_input() untuk mengambil teks.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="cara-membuat-fungsi-di-python-bagaimana-sih">
+                            39. Cara membuat fungsi di python bagaimana sih</h2><br />
+                        <p>Cara membuat fungsi di python adalah def nama_variable():</p><br /><p>Contoh :</p><br /><p>def nama(): --&gt;function di python</p><p>print"Hallo"</p><p>nama()--&gt; pemanggilan fungsi </p><br /><p>Output : Hallo</p><br /><p>Semoga Membantu</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-struktur-penulisan-fungsi-if-pada-python%e2%80%8b">
+                            40. Jelaskan struktur penulisan fungsi IF pada python!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>fungsi juga dapat dipanggil pada fungsi lain, bahkan bisa memanggil dirinya sendiri. Fungsi yang memanggil dirinya sendiri, disebut fungsi rekursif</p><p><strong>Penjelasan:</strong></p><p>MAAF KALO SALAH</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/89cGQjB5R4M?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-gps-docktor.html">Fungsi Dari Gps Docktor</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-satuan-berat-kelas-3-sd.html">Contoh Soal Satuan Berat Kelas 3 Sd</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-ketenagakerjaan.html">Contoh Soal Ketenagakerjaan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-psikotes-deret.html">Contoh Soal Psikotes Deret</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-difraksi-kisi-dan-pembahasannya.html">Contoh Soal Difraksi Kisi Dan Pembahasannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/6-tentukan-domain-dari-fungsi-berikut.html">6 Tentukan Domain Dari Fungsi Berikut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-proposal-tugas-akhir-tentang-pelabuhan.html">Contoh Proposal Tugas Akhir Tentang Pelabuhan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-kasus-manajemen-bencana.html">Contoh Soal Kasus Manajemen Bencana</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-bphtb-jual-beli.html">Contoh Soal Bphtb Jual Beli</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-data-margin-30.html">Fungsi Dari Data margin 30</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/negara-kita.html">Negara Kita</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-deret-geometri-tak-hingga-brainly.html">Contoh Soal Deret Geometri Tak Hingga Brainly</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/sebutkan-fungsi-dari-sistem-saraf.html">Sebutkan Fungsi Dari Sistem Saraf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-penggunaan-simbol-flowchart.html">Fungsi Dari Penggunaan Simbol Flowchart</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-inti-kalimat.html">Contoh Soal Inti Kalimat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-persediaan.html">Contoh Soal Persediaan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/apa-fungsi-dari-java-update-scheduler.html">Apa Fungsi Dari Java Update Scheduler</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-judul-tugas-akhir-teknik-sipil-tentang-manajemen.html">Contoh Judul Tugas Akhir Teknik Sipil Tentang Manajemen</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-nomor-indeks.html">Fungsi Dari Nomor Indeks</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-aksara-jawa-dan-jawabannya.html">Contoh Soal Aksara Jawa Dan Jawabannya</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediasoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediasoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

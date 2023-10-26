@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fungsi Dari Tipe Data Dalam Query Language - BELAJAR</title>
+    <meta name="description" content="Fungsi Dari Tipe Data Dalam Query Language, , , , , , , 0, , , , , , 0, fungsi-dari-tipe-data-dalam-query-language, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fungsi Dari Tipe Data Dalam Query Language - BELAJAR" />
+    <meta property="og:description" content="Fungsi Dari Tipe Data Dalam Query Language, , , , , , , 0, , , , , , 0, fungsi-dari-tipe-data-dalam-query-language, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fungsi Dari Tipe Data Dalam Query Language - BELAJAR" />
+    <meta name="twitter:description" content="Fungsi Dari Tipe Data Dalam Query Language, , , , , , , 0, , , , , , 0, fungsi-dari-tipe-data-dalam-query-language, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://pediasoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://pediasoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://pediasoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://pediasoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://pediasoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://pediasoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://pediasoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://pediasoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Fungsi Dari Tipe Data Dalam Query Language</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">chinrayu1061</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Fungsi+Dari+Tipe+Data+Dalam+Query+Language" alt="Fungsi Dari Tipe Data Dalam Query Language">
+                    </div>
+                    <p></p>
+                    <p>Tuliskan query data definition language saat pembutan tabel mahasiswa</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-query-data-definition-language-saat-pembutan-tabel-mahasiswa">1.
+                                            Tuliskan query data definition language saat pembutan tabel mahasiswa</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-structured-query-language">2.
+                                            Apa itu structured query language</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengertian-dari-hibernate-query-language">3.
+                                            pengertian dari Hibernate Query Language</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-fungsi-masing-masing-dari-tipe-data-dan-variabel%e2%80%8b">4.
+                                            sebutkan dan jelaskan fungsi masing masing dari tipe data dan variabel!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-query-dan-pengertian-relasi-pada-ms-acces-2007">5.
+                                            Apa fungsi Query dan pengertian relasi pada Ms.Acces 2007 ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-tipe-data-integer">6.
+                                            Apakah fungsi tipe data integer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mengambil-data-dari-satu-atau-banyak-tabel-hasilnya-akan-dijadikan-sebuah-tabel-baru-adalah-fungsi-dari-a-query-parameterb-make-table-queryc-queryd-query-perhitungan%e2%80%8b">7.
+                                            Mengambil data dari satu atau banyak tabel, hasilnya akan dijadikan sebuah tabel baru adalah fungsi dari ...a. query parameterb. make table queryc. queryd. query perhitungan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-fungsi-tipe-data-char%e2%80%8b">8.
+                                            Apakah fungsi tipe data char​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-cara-mengubah-format-tipe-data-menjadi-mata-uang-rupiah-pada-struktur-query-penjualan-buku%e2%80%8b">9.
+                                            Jelaskan cara mengubah format tipe data menjadi mata uang Rupiah pada struktur query penjualan buku​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-dari-tipe-data-karakter">10.
+                                            fungsi dari tipe data karakter?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#query-yang-berfungsi-untuk-mengubah-nilai-data-pada-tabel-adalah%e2%80%8b">11.
+                                            query yang berfungsi untuk mengubah nilai data pada tabel adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#structured-query-language-sql-adalah-bahasa-yang-digunakan-mengakses-basis-data-yang-tergolong-relasional-jelaskan-dan-berikan-contoh-pernyataan-pada-sql">12.
+                                            Structured Query Language (SQL) adalah bahasa yang digunakan mengakses basis data yang tergolong relasional. jelaskan dan berikan contoh pernyataan pada SQL.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#yang-termasuk-kategori-mengupdate-data-query">13.
+                                            yang termasuk kategori mengupdate data query</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pal-ada-empat-tipe-obyek-yang-ada-dalam-program-aplikasi-microsoft-office-yaitu-table-query-form-dan-report-jelaskan-apa-arti-dari-keempat-tipe-obyek-tersebut%e2%80%8b">14.
+                                            pal: . Ada empat tipe obyek yang ada dalam program aplikasi Microsoft Office, yaitu table, query, form, dan report. Jelaskan apa arti dari keempat tipe obyek tersebut?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-query-num_rows">15.
+                                            apa fungsi $query-&gt;num_rows() ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#query-adalah-fasilitas-manipulasi-data-yang-terdapat-dalam-software-berjenis">16.
+                                            query adalah fasilitas manipulasi data yang terdapat dalam software berjenis</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#digunakan-untuk-memanipulasi-data-dan-mengendalikan-manipulasi-data-tersebut-melalui-bahasa-query-adalah-pengertian-dari">17.
+                                            Digunakan untuk memanipulasi data dan mengendalikan manipulasi data tersebut melalui bahasa query adalah pengertian dari...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#secara-dasar-ada-dua-tipe-data-manipulation-language-sebutkan-dan-jelaskan">18.
+                                            secara dasar ada dua tipe data manipulation language sebutkan dan jelaskan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-yang-termasuk-kategori-mengupdate-data-query">19.
+                                            Sebutkan yang termasuk kategori mengupdate data query</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#structured-query-language-sql-adalah-bahasa-yang-digunakan-mengakses-basis-data-yang-tergolong-relasional-jelaskan-dan-berikan-contoh-pernyataan-pada-sql">20.
+                                            Structured Query Language (SQL) adalah bahasa yang digunakan mengakses basis data yang tergolong relasional. jelaskan dan berikan contoh pernyataan pada SQL.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-maanakah-yang-tidak-termasuk-kategorimmeng-update-querty-a-manambahkan-field-yang-di-link-b-mengurangi-field-yang-di-link-dengan-query-c-mengubah-rumus-pada-suatu-field-d-mengubah-tipe">21.
+                                            berikut ini maanakah yang tidak termasuk kategorimmeng-update querty a. manambahkan field yang di-link b. mengurangi field yang di-link dengan query c. mengubah rumus pada suatu field d. mengubah tipe data pada tabel e. menambah file pada query</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-fungsi-tipe-data-variabel-dan-konstanta-dalam-pemrograman%e2%80%8b">22.
+                                            Apa fungsi tipe data variabel dan konstanta dalam pemrograman​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pernyataan-yang-sesuai-untuk-mendefinisikan-tipe-data-bilangan-bulat-adalah-a-tipe-data-yang-berfungsi-menampung-data-yang-memiliki-angka-belakang-komab-tipe-data-yang-mempresentasikan-data-yang">23.
+                                            Pernyataan yang sesuai untuk mendefinisikan tipe data bilangan bulat adalah...
+a. Tipe data yang berfungsi menampung data yang memiliki angka belakang koma
+b. Tipe data yang mempresentasikan data yang hanya mengandung dua nilai
+c. Tipe data yang mepresentasikan data berupa karakter
+d. Tipe data yang menyimpan lebih dari satu variabel
+e. Tipe data yang digunakan untuk angka yang tidak memiliki angka dibelakang koma</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-tipe-data-pada-microsoft-acces">24.
+                                            jelaskan fungsi dari tipe data pada microsoft acces</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-tipe-data-adalah">25.
+                                            fungsi tipe data adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-tipe-data">26.
+                                            jelaskan fungsi dari tipe data</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-fungsi-dari-tipe-data-pada-m-s-acces">27.
+                                            jelaskan fungsi dari tipe data pada M.s Acces</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#command-query-yang-digunakan-untuk-menemukan-apakah-data-yang-dicari-berada-di-dalam-query">28.
+                                            Command query yang digunakan untuk menemukan apakah data yang dicari berada di dalam query</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-query-dalam-pengolah-basis-data">29.
+                                            Jelaskan query dalam pengolah basis data?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#query-adalah-fasilitas-manipulasi-data-yang-terdapat-dalam-software-berjenis">30.
+                                            query adalah fasilitas manipulasi data yang terdapat dalam software berjenis</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tipe-data-untuk-fungsi-mempunyai-beberapa-macam-sebutkan-macam-macam-tipe-data-untuk-dungsi">31.
+                                            Tipe data untuk fungsi mempunyai beberapa macam. Sebutkan macam-macam tipe data untuk dungsi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#komponen-utama-perangkat-lunak-dalam-menerjemahkan-bahasa-pemograman-yaitua-software-language-dan-machine-languageb-object-programc-tipe-datad-tipe-bahasa-pemrogramantolong-dijawab-butuh-sekarang">32.
+                                            komponen utama perangkat lunak dalam menerjemahkan bahasa pemograman yaitua. software language dan machine languageb. object programc. tipe datad. tipe bahasa pemrogramantolong dijawab, butuh sekarang juga​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-tipe-data-dan-fungsinya-masing">33.
+                                            Sebutkan tipe data dan fungsinya masing"</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-sort-pada-query">34.
+                                            fungsi sort pada query</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-manakah-yang-tidak-termasuk-kategori-mengupdate-query-a-menambah-field-yang-di-link-dengan-queryb-mengurangi-field-yang-di-link-dengan-queryc-mengubah-rumus-pada-suatu-fieldd-mengubah">35.
+                                            berikut ini manakah yang tidak termasuk kategori mengupdate query..a. menambah field yang di link dengan queryb. mengurangi field yang di link dengan queryc. mengubah rumus pada suatu fieldd. mengubah tipe data pada tabele. menambah field pada query</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-update-data-dengan-menggunakan-datasheet-dan-query">36.
+                                            jelaskan update data dengan menggunakan datasheet dan query</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#spa-fungsi-utama-query">37.
+                                            spa fungsi utama query</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#query-pada-aplikasi-basis-data">38.
+                                            Query pada aplikasi basis data</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#untuk-melihat-data-selection-query-yang-digunakan-adalah%e2%80%8b">39.
+                                            untuk melihat data selection query yang digunakan adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-query-untuk-menghapus-data-barang-dengan-id_barang-ok1716%e2%80%8b">40.
+                                            tuliskan query untuk menghapus data barang dengan ID_Barang= "Ok1716"​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="tuliskan-query-data-definition-language-saat-pembutan-tabel-mahasiswa">
+                            1. Tuliskan query data definition language saat pembutan tabel mahasiswa</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>CREATE TABLE &lt;Mahasiswa&gt; ( </p><p>&lt;column_definition&gt; | &lt;table_constraint&gt; </p><p>)</p><p><strong>Penjelasan:</strong></p><p>maaf kalau salah </p><p><strong>Jawaban:</strong></p><p><strong>Create</strong><strong> </strong><strong>Table </strong><strong>(</strong><strong>Mahasiswa</strong><strong>)</strong></p><p><strong>(</strong><strong>Column)</strong><strong>_</strong><strong>(</strong><strong>Definition)</strong></p><p><strong>(</strong><strong>Table)</strong><strong>_</strong><strong>(</strong><strong>Constraint)</strong></p><p><strong>Penjelasan:</strong></p><p><strong>Maaf</strong><strong> kalau</strong><strong> salah</strong></p><br />
+                                            <h2 class="ez-toc-section" id="apa-itu-structured-query-language">
+                            2. Apa itu structured query language</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>SQL adalah sebuah bahasa yang digunakan untuk mengakses data dalam basis data relasional. Bahasa ini secara de facto merupakan bahasa standar yang digunakan dalam manajemen basis data relasional. Saat ini hampir semua server basis data yang ada mendukung bahasa ini untuk melakukan manajemen datanya.</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="pengertian-dari-hibernate-query-language">
+                            3. pengertian dari Hibernate Query Language</h2><br />
+                        Hibernate Query Language (HQL) adalah bahasa query berorientasi objek, mirip dengan SQL, tapi bukannya beroperasi pada tabel dan kolom, HQL bekerja dengan objek persisten dan sifat mereka. query HQL diterjemahkan oleh Hibernate dalam query SQL konvensional yang pada gilirannya melakukan tindakan pada database.<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-fungsi-masing-masing-dari-tipe-data-dan-variabel%e2%80%8b">
+                            4. sebutkan dan jelaskan fungsi masing masing dari tipe data dan variabel!​</h2><br />
+                        <p>Variabel sendiri dapat disebut sebagai simbol yang digunakan untuk menyimpan sebuah nilai. Sedangkan tipe data  yakni disebut dengan jenis nilai yang akan disimpan. Tipe-tipe data sangatlah banyak.
+</p><p>Pembahasan
+</p><p>Macam-macam tipe data antara lain :  </p>Integer : Tipe data ini dapat didefinisikan sebagai integer. Jadi program yang menggunakan tipe data integer tidak akan mendukung penggunaan huruf.
+Char : merupakan tipe data yang biasanya terdiri dari angka, tanda baca, huruf atau bahkan karakter khusus. Untuk menyimpan karakter, diperlukan 1 byte atau 8 bit ruang dalam memori.
+Array : tipe data ini termasuk dalam tipe data komposit karena dapat menyimpan. Data yang disimpan dalam tipe data array harus dari tipe yang sama atau homogen. Penggunaan tipe data array ini berbeda dari tipe data lain, yang tidak secara langsung dinyatakan, tetapi tipe data ini sering memainkan peran penting dalam penggunaan data agar lebih terstruktur.
+Date : tipe data yang digunakan untuk menyimpan data dari tipe tanggal, bulan dan tahun, misalnya tanggal lahir, tanggal transaksi.
+Numerik : tipe data yang dapat digunakan untuk menyimpan data dalam bentuk angka. Contoh 6.00
+Float : tipe data yang sering disebut sebagai tipe data bilangan real.
+Small INT : tipe data integer yang jangkauannya lebih kecil dari integer.
+Decimal : tipe data yang dapat menampung data fraksional.
+String : Seringkali tipe data yang terdiri dari serangkaian karakter yang memiliki panjang tertentu, tipe data string ini sering dianggap sebagai tipe data dasar.
+Double : tipe data tipe float tetapi dengan contoh akurasi yang lebih tinggi 5.555555
+Pelajari lebih lanjut
+<p>1. Materi tentang Tipe-tipe karakter data ? https://brainly.co.id/tugas/6349659  </p><p>2. Materi tentang Bagaimana cara membedakan tipe data integer dengan tipe data karakter? https://brainly.co.id/tugas/15480305  </p><p>3. Materi tentang Apa perbedaan tipe persamaan data string dengan tipe data karakter? https://brainly.co.id/tugas/12597754  </p><p>-----------------------------
+</p>Detil jawaban
+<p>Kelas: 10
+</p><p>Mapel: TIK
+</p><p>Bab: Bab 6 - Mengenal Pemrograman Komputer
+</p><p>Kode: 10.11.6
+</p><p>#AyoBelajar
+</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-query-dan-pengertian-relasi-pada-ms-acces-2007">
+                            5. Apa fungsi Query dan pengertian relasi pada Ms.Acces 2007 ?</h2><br />
+                        Query ialah fasilitas dalam Ms. Access 2007 yang berfungsi untuk mengolah, mengurutkan, menampilkan, dan mengelompokkan data. <br /><br />relasi ialah hubungan antar tabel dalam Ms. Access yang mana penghubung antar tabel ialah field yang telah disetting sebagai primary key.<br /><br /># semoga membantu<br /><br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-tipe-data-integer">
+                            6. Apakah fungsi tipe data integer</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>integer adalah tipe data yang terdiri dari angka bulat (tidak mengandung nilai pecahan atau nilai desimal). Nilai ini bisa berbentuk angka positif maupun negatif, contohnya 1, 2, 6, -44, 20000, atau 128730123.</p><p><strong>Jawaban:</strong></p><p></p><p>Tipe data, jika dipahami dengan benar, tentu dapat berfungsi dengan baik juga. Oleh karena itu untuk programmer atau publik pasti akan terbantu dengan memiliki pemahaman yang baik tentang tipe data.</p><p></p><p>Dengan menggunakan tipe data yang baik, pemrogram akan dapat memberikan kontrol dan batasan mereka sendiri pada program yang mereka buat.</p><p></p><p>Dalam hal ini programmer dapat menentukan memori yang akan mereka gunakan. Untuk komunitas yang lebih luas, memahami tipe data juga akan menyediakan fungsinya sendiri.</p><p></p><p>Contohnya adalah tipe integer dan non-integer seperti desimal dan fraksi. Untuk menentukan volume air mungkin Anda akan menemukan data dengan nilai non-integer, misalnya 1,5 liter.</p><p></p><p>Sedangkan perhitungan barang seperti motor dan sebagainya tentu saja akan ditulis dengan bilangan bulat. Jadi tidak mungkin untuk motor menjadi 4,5 atau angka desimal dan fraksi lainnya.</p><p></p>SEMOGA BERMANFAAT..<br />
+                                            <h2 class="ez-toc-section" id="mengambil-data-dari-satu-atau-banyak-tabel-hasilnya-akan-dijadikan-sebuah-tabel-baru-adalah-fungsi-dari-a-query-parameterb-make-table-queryc-queryd-query-perhitungan%e2%80%8b">
+                            7. Mengambil data dari satu atau banyak tabel, hasilnya akan dijadikan sebuah tabel baru adalah fungsi dari ...a. query parameterb. make table queryc. queryd. query perhitungan​</h2><br />
+                        <p><strong>Jawaban</strong><strong>:</strong><strong>B</strong><strong>.</strong><strong>Make</strong><strong> </strong><strong>table</strong><strong> </strong><strong>query</strong></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apakah-fungsi-tipe-data-char%e2%80%8b">
+                            8. Apakah fungsi tipe data char​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>  fungsi tipe data character</p><p>tipe data sembarang huruf, angka, dan simbol. Yang memungkinkan kita untuk memesan memori yang dapat menyimpan nilai dalam bentuk karakter tunggal seperti ‘a’, ‘$’ dan lain-lain.</p><p><strong>Penjelasan:</strong></p><p>ini dri jawaban tugas Saia juga wkwk</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-cara-mengubah-format-tipe-data-menjadi-mata-uang-rupiah-pada-struktur-query-penjualan-buku%e2%80%8b">
+                            9. Jelaskan cara mengubah format tipe data menjadi mata uang Rupiah pada struktur query penjualan buku​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Cara mengubah format mata uang rupiah yaitu :</p><p><strong>1</strong><strong>.</strong><strong> </strong><strong>Siapkan</strong><strong> </strong><strong>data </strong><strong>angka </strong><strong>yang </strong><strong>akan </strong><strong>diformat</strong><strong> </strong><strong>mata </strong><strong>uang</strong></p><p><strong>2</strong><strong>.</strong><strong> </strong><strong>Blok </strong><strong>Cell </strong><strong>yang </strong><strong>berisi </strong><strong>data </strong><strong>yang </strong><strong>akan </strong><strong>diformat</strong><strong> </strong><strong>mata </strong><strong>uang</strong><strong>.</strong></p><p><strong>3</strong><strong>.</strong><strong> </strong><strong>Klik </strong><strong>kanan </strong><strong>pada </strong><strong>area</strong><strong> </strong><strong>Cell </strong><strong>yang </strong><strong>telah </strong><strong>diseleksi</strong><strong>.</strong></p><p><strong>4</strong><strong>.</strong><strong> </strong><strong>Akan </strong><strong>muncul </strong><strong>kotak </strong><strong>dialog</strong><strong> </strong><strong>pilihan,</strong><strong> </strong><strong>pilih </strong><strong>Format</strong><strong> </strong><strong>Cells,</strong><strong> </strong><strong>sehingga</strong><strong> </strong><strong>akan </strong><strong>tampil </strong><strong>kotak </strong><strong>dialog</strong><strong> </strong><strong>format</strong><strong> </strong><strong>Cell.</strong></p><p><strong>5</strong><strong>.</strong><strong> </strong><strong>Klik </strong><strong>tab </strong><strong>Number,</strong><strong> </strong><strong>pilih </strong><strong>Category </strong><strong>Currency </strong><strong>atau </strong><strong>Accounting</strong><strong>.</strong></p><p><strong>6</strong><strong>.</strong><strong> </strong><strong>Pada </strong><strong>pilihan </strong><strong>Symbol,</strong><strong> </strong><strong>cari </strong><strong>dan </strong><strong>pilih </strong><strong>RP </strong><strong>Indonesian,</strong><strong> </strong><strong>untuk </strong><strong>menampilkan</strong><strong> </strong><strong>mata </strong><strong>uang</strong><strong> rupiah</strong><strong>.</strong></p><p><strong>7</strong><strong>.</strong><strong> </strong><strong>Klik </strong><strong>OK</strong><strong>.</strong></p><p><strong>Penjelasan:</strong></p><p><strong>Maaf </strong><strong>jika</strong><strong> salah</strong></p><p><strong>Semoga </strong><strong>bermanfaat</strong></p><p><strong>#</strong><strong>jangan </strong><strong>lupa</strong><strong> follow</strong><strong> </strong><strong>^</strong><strong>_</strong><strong>^</strong></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-dari-tipe-data-karakter">
+                            10. fungsi dari tipe data karakter?</h2><br />
+                        untuk mengetahui karakter dan tipe tipe penulis<br />
+                                            <h2 class="ez-toc-section" id="query-yang-berfungsi-untuk-mengubah-nilai-data-pada-tabel-adalah%e2%80%8b">
+                            11. query yang berfungsi untuk mengubah nilai data pada tabel adalah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>query apa? mysql? kalau query mysql untuk update data itu <strong>U</strong><strong>P</strong><strong>D</strong><strong>A</strong><strong>T</strong><strong>E</strong><strong> </strong><strong>n</strong><strong>a</strong><strong>m</strong><strong>a</strong><strong>_</strong><strong>t</strong><strong>a</strong><strong>b</strong><strong>e</strong><strong>l</strong><strong> </strong><strong>S</strong><strong>E</strong><strong>T</strong><strong> </strong><strong>v</strong><strong>a</strong><strong>l</strong><strong>u</strong><strong>e</strong><strong>1</strong><strong>=</strong><strong>"</strong><strong>v</strong><strong>a</strong><strong>l</strong><strong>u</strong><strong>e</strong><strong>"</strong><strong>.</strong></p><p>jangan lupa like, follow, jadikan jawaban tercerdas</p><br />
+                                            <h2 class="ez-toc-section" id="structured-query-language-sql-adalah-bahasa-yang-digunakan-mengakses-basis-data-yang-tergolong-relasional-jelaskan-dan-berikan-contoh-pernyataan-pada-sql">
+                            12. Structured Query Language (SQL) adalah bahasa yang digunakan mengakses basis data yang tergolong relasional. jelaskan dan berikan contoh pernyataan pada SQL.</h2><br />
+                        contoh : select * from tb_sample<br />
+                                            <h2 class="ez-toc-section" id="yang-termasuk-kategori-mengupdate-data-query">
+                            13. yang termasuk kategori mengupdate data query</h2><br />
+                        ialah perintah database yg "update table tabel_name set field=nilai_field where field=nama_field"<br /><br />#semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="pal-ada-empat-tipe-obyek-yang-ada-dalam-program-aplikasi-microsoft-office-yaitu-table-query-form-dan-report-jelaskan-apa-arti-dari-keempat-tipe-obyek-tersebut%e2%80%8b">
+                            14. pal: . Ada empat tipe obyek yang ada dalam program aplikasi Microsoft Office, yaitu table, query, form, dan report. Jelaskan apa arti dari keempat tipe obyek tersebut?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Berikut adalah penjelasan mengenai keempat tipe obyek dalam program aplikasi Microsoft Office:</p><p></p><p>1. Table (Tabel): Tabel adalah obyek yang digunakan untuk menyimpan dan mengatur data dalam format yang terstruktur. Tabel terdiri dari kolom dan baris yang membentuk bidang data. Tabel digunakan untuk mengorganisir dan menyimpan informasi dalam database.</p><p></p><p>2. Query (Kueri): Query adalah obyek yang digunakan untuk mengambil, memfilter, dan memanipulasi data dari tabel atau sumber data lainnya. Dengan menggunakan query, Anda dapat mengambil data yang spesifik sesuai dengan kriteria yang ditentukan, melakukan perhitungan atau perubahan pada data, serta menggabungkan data dari beberapa tabel.</p><p></p><p>3. Form (Formulir): Formulir adalah obyek yang digunakan untuk memasukkan, mengedit, dan menampilkan data secara interaktif. Formulir menyediakan antarmuka pengguna yang lebih terstruktur dan terorganisir dibandingkan dengan tampilan tabel. Dengan menggunakan formulir, pengguna dapat dengan mudah memasukkan data ke dalam tabel dan melakukan operasi lainnya, seperti validasi data atau navigasi antarrekaman.</p><p></p><p>4. Report (Laporan): Laporan adalah obyek yang digunakan untuk menghasilkan tampilan cetak atau digital yang terstruktur dari data. Laporan biasanya digunakan untuk menganalisis, menyajikan, dan memvisualisasikan data dalam format yang lebih terstruktur dan informatif. Anda dapat mengatur tata letak, menambahkan grafik atau elemen visual lainnya, serta menambahkan ringkasan atau pemformatan khusus pada laporan.</p><p></p><p>Keempat tipe obyek tersebut saling berinteraksi dan digunakan dalam aplikasi Microsoft Office, seperti Microsoft Access atau Microsoft Excel, untuk mengelola dan menganalisis data dengan lebih efektif.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-query-num_rows">
+                            15. apa fungsi $query-&gt;num_rows() ?</h2><br />
+                        itu buat menghitung jumlah keselurahan di ms.excel sama seperti auto sum tapi ini langsung diurutkan <br /><br />semoga membantu ya <br />jadikan yang terbaik dan terima kasih <br /><br />Prof.Gdwar<br />
+                                            <h2 class="ez-toc-section" id="query-adalah-fasilitas-manipulasi-data-yang-terdapat-dalam-software-berjenis">
+                            16. query adalah fasilitas manipulasi data yang terdapat dalam software berjenis</h2><br />
+                        Biasaya terdapat pada sofware untuk pengolahan database.<br />:)<br /><br />
+                                            <h2 class="ez-toc-section" id="digunakan-untuk-memanipulasi-data-dan-mengendalikan-manipulasi-data-tersebut-melalui-bahasa-query-adalah-pengertian-dari">
+                            17. Digunakan untuk memanipulasi data dan mengendalikan manipulasi data tersebut melalui bahasa query adalah pengertian dari...</h2><br />
+                        Structure Query Language (SQL) <br />
+                                            <h2 class="ez-toc-section" id="secara-dasar-ada-dua-tipe-data-manipulation-language-sebutkan-dan-jelaskan">
+                            18. secara dasar ada dua tipe data manipulation language sebutkan dan jelaskan</h2><br />
+                        <p>Secara dasar, terdapat dua tipe data manipulation language (DML), yaitu:</p><br /><p>1. Prosedural</p><p>DML Prosedural digunakan dalam bahasa pemrograman tingkat tinggi (contoh: Java, PHP, C) dengan cara pengguna memberikan spesifikasi kepada sistem tentang data apa yang dibutuhkan dan bagaimana cara memperoleh data tersebut.</p><br /><p>2. Non prosedural (deklaratif)</p><p>DML non prosedural digunakan dalam bahasa pemrograman deklaratif (contoh: SQL, QBE) dengan cara pengguna memberikan spesifikasi data yang diperlukan tanpa perlu tahu bagaimana cara memperoleh data tersebut. </p><br /><p><strong>Perbedaan DML dan DDL</strong></p><p>Selain DML, dalam konsep manajemen database juga dikenal adanya DDL (Data Definition Language). DDL adalah kumpulan perintah untuk membuat, mengubah, dan menghapus database maupun objek yang terdapat dalam database (tabel, indeks, prosedur, trigger). Contoh perintah DDL: CREATE, ALTER, DROP. Sedangkan DML sendiri merupakan kumpulan perintah untuk memanipulasi data yang terdapat dalam sebuah tabel. Contoh perintah DML: INSERT, UPDATE, DELETE.</p><br /><p><strong>Pelajari lebih lanjut</strong></p><p>Untuk lebih memahami konsep DML maupun database lebih lanjut dapat silakan buka beberapa link berikut ini:</p><p>- konsep SQL dan database: https://brainly.co.id/tugas/9485886</p><p>- perintah SQL: https://brainly.co.id/tugas/4609642</p><p>- perintah DDL: https://brainly.co.id/tugas/15978359</p><br /><p>Detil tambahan:</p><p>Level: SMP</p><p>Mapel: TIK (Teknologi Informasi dan Komunikasi)</p><p>Materi: Basis data</p><p>Kata kunci: Data Manipulation Language, DML</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-yang-termasuk-kategori-mengupdate-data-query">
+                            19. Sebutkan yang termasuk kategori mengupdate data query</h2><br />
+                        Select query<br /><br />Sebuah select query adalah jenis query yang paling umum. Query ini mengambil data dari satu atau lebih tabel dan menampilkan hasilnya dalam datasheet dimana Anda dapat mengupdate record (dengan beberapa pembatasan). Anda juga dapat menggunakan select query untuk membuat mengelompokkan data dan menghitung jumlah dengan sum, menghitung dengan count, menghitung rata-rata, dan menghitung total.<br /><br />Parameter query <br /><br />Sebuah query parameter adalah bahwa ketika query dijalankan akan menampilkan kotak dialog yang meminta Anda untuk mengisi parameter atau nilai variabel, seperti kriteria untuk mengambil record atau nilai yang ingin Anda masukkan dalam lapangan. Anda dapat merancang query yang meminta Anda untuk memesukkan lebih dari satu informasi, misalnya, Anda dapat merancang parameter query untuk dua tanggal. Akses kemudian dapat mengambil semua record yang berada diantara dua tanggal.<br /><br />Parameter query juga berguna bila digunakan sebagai record source untuk form, report, dan access data page. Sebagai contoh, Anda dapat membuat laporan penghasilan bulanan berdasarkan parameter query. Ketika Anda mencetak laporan, Access akan menampilkan kotak dialog yang meminta untuk mengisi bulan yang akan ditampilkan pada laporan tersebut. Anda memasukkan bulan dan Akses mencetak laporan yang sesuai dengan kriteria bulan.<br /><br />Crosstab query<br /><br />Anda menggunakan crosstab query untuk menghitung dan restrukturisasi data agar analisis data lebih mudah. Crosstab query menghitung jumlah sum, rata-rata, jumlah count, atau jenis lain dari total data yang dikelompokan oleh dua jenis informasi - satu di sisi kiri dari datasheet dan yang lain di bagian atas.<br /><br />Action query<br /><br />Sebuah action query adalah query yang membuat update pada banyak record hanya dalam satu operasi. Ada empat jenis action query:<br /><br />Delete Queries Sebuah delete query menghapus sekelompok record dari satu atau lebih tabel. Sebagai contoh, Anda bisa menggunakan delete query untuk menghapus produk yang dihentikan atau yang tidak ada dalam order. Dengan delete query, Anda selalu menghapus keseluruhan record, bukan hanya fileds yang dipilih dalam record.Update Query Sebuah update query membuat perubahan menyeluruh untuk sekelompok record dalam satu atau lebih tabel. Sebagai contoh, Anda dapat menaikkan harga sebesar 10 persen untuk semua produk susu, atau Anda dapat menaikkan gaji sebesar 5 persen untuk orang dalam kategori pekerjaan tertentu. Dengan update query, anda dapat mengubah data dalam tabel yang ada.Append Query Append query menambahkan sekelompok record dari satu tabel atau lebih pada akhir satu atau lebih tabel. Sebagai contoh, misalkan Anda mendapatkan beberapa pelanggan baru dan database berisi tabel informasi tentang pelanggan tersebut. Untuk menghindari mengetik semua informasi ini ke dalam database Anda sendiri, Anda dapat menambahkan pada tabel Pelanggan Anda.Make-Table Query Make-table query dapat membuat tabel baru dari seluruh atau sebagian dari data dalam satu atau lebih tabel. Membuat-tabel query sangat membantu untuk menciptakan tabel untuk ekspor ke Microsoft Access database lain atau tabel history yang berisi catatan lama.<br />SQL query<br /><br />Sebuah query SQL adalah query yang anda buat dengan menggunakan pernyataan SQL. Anda dapat menggunakan Structured Query Language (SQL) untuk query, memperbarui, dan mengelola database relasional seperti Access.<br /><br />Bila Anda membuat sebuah query dalam query Design view, Akses akan membuat SQL yang setara di belakang layar untuk Anda. Jika Anda ingin, Anda dapat melihat atau mengedit sintak SQL pada SQL view. Namun, setelah Anda membuat perubahan untuk query dalam tampilan SQL, query mungkin tidak ditampilkan dengan cara sebelumnya dalam tampilan Design.<br /><br />
+                                            <h2 class="ez-toc-section" id="structured-query-language-sql-adalah-bahasa-yang-digunakan-mengakses-basis-data-yang-tergolong-relasional-jelaskan-dan-berikan-contoh-pernyataan-pada-sql">
+                            20. Structured Query Language (SQL) adalah bahasa yang digunakan mengakses basis data yang tergolong relasional. jelaskan dan berikan contoh pernyataan pada SQL.</h2><br />
+                        internet banyak gan pengertian nya. tapi sedikit info SQL lebih kedalam pengembangan sebuah web aplikasi<br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-maanakah-yang-tidak-termasuk-kategorimmeng-update-querty-a-manambahkan-field-yang-di-link-b-mengurangi-field-yang-di-link-dengan-query-c-mengubah-rumus-pada-suatu-field-d-mengubah-tipe">
+                            21. berikut ini maanakah yang tidak termasuk kategorimmeng-update querty a. manambahkan field yang di-link b. mengurangi field yang di-link dengan query c. mengubah rumus pada suatu field d. mengubah tipe data pada tabel e. menambah file pada query</h2><br />
+                        Menurut saya jawabannya adalah d.  Mengubah tipe data pada tabel<br />Jika anda keberatan dengan jawaban ini, silahkan ajukan di kolom komentarE. Menambah File Pada Query<br />
+                                            <h2 class="ez-toc-section" id="apa-fungsi-tipe-data-variabel-dan-konstanta-dalam-pemrograman%e2%80%8b">
+                            22. Apa fungsi tipe data variabel dan konstanta dalam pemrograman​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>tipe data dari variabel atau konstanta adalah untuk menentukan jenis data yang akan disimpan pada variabel atau konstanta tsb</p><p><strong>Penjelasan:</strong></p><p>tipe data bermacam" mulai dari tipe data string untuk alphanumerics dan symbol atau Integer yang khusus untuk numeric, kemudian boolean untuk true/false, float untuk decimal dst</p><br />
+                                            <h2 class="ez-toc-section" id="pernyataan-yang-sesuai-untuk-mendefinisikan-tipe-data-bilangan-bulat-adalah-a-tipe-data-yang-berfungsi-menampung-data-yang-memiliki-angka-belakang-komab-tipe-data-yang-mempresentasikan-data-yang">
+                            23. Pernyataan yang sesuai untuk mendefinisikan tipe data bilangan bulat adalah...
+a. Tipe data yang berfungsi menampung data yang memiliki angka belakang koma
+b. Tipe data yang mempresentasikan data yang hanya mengandung dua nilai
+c. Tipe data yang mepresentasikan data berupa karakter
+d. Tipe data yang menyimpan lebih dari satu variabel
+e. Tipe data yang digunakan untuk angka yang tidak memiliki angka dibelakang koma</h2><br />
+                        <p><strong>Jawaban:b. Tipe data yang mempresentasikan data yang hanya mengandung dua nilai</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>b. Tipe data yang mempresentasikan data yang hanya mengandung dua nilai</p><p><strong>Jawaban:</strong></p><p>E</p><p><strong>Penjelasan:</strong></p><p>Integer merupakan angka minus, 0 1, 2, 3 hingga 2048 sehingga jawaban B merupakan jawaban yang salah. Contohnya</p><p></p><p>#include &lt;iostream&gt;</p><p>#include &lt;string&gt;</p><p>using namespace std;</p><p></p><p>int main()</p><p>{</p><p>    int a = 1000;</p><p>    int b = 1000;</p><p>    int c = a + b;</p><p>    cout&lt;&lt;c;</p><p>}</p><p></p><p>C akan tetap mengoutput 2000, bukan error</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-tipe-data-pada-microsoft-acces">
+                            24. jelaskan fungsi dari tipe data pada microsoft acces</h2><br />
+                         text =&gt; penulisan text-text biasa<br /> memo =&gt; penulisan singkat<br /> number =&gt; penulisan angka<br /> date and time =&gt; penulisan tanggal dan waktu<br />  hyperlink =&gt; untuk menyimpan alamat/url<br /><br />
+                                            <h2 class="ez-toc-section" id="fungsi-tipe-data-adalah">
+                            25. fungsi tipe data adalah</h2><br />
+                        Adanya Jenis/fungsi data yang ingin disimpan<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-tipe-data">
+                            26. jelaskan fungsi dari tipe data</h2><br />
+                        1.Text<br />2.number<br />3.date/time<br />4.currency<br />5.Auto number<br />6.yes/no<br />7.hyperlink<br />Fungsinya adalah untuk menyimpan data yang diinputkan oleh pengguna, sesuai dengan kegunaannya dan supaya dapat diorganisir agar bisa digunakan kembali untuk dipanggil<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-fungsi-dari-tipe-data-pada-m-s-acces">
+                            27. jelaskan fungsi dari tipe data pada M.s Acces</h2><br />
+                        <p><strong>Jawaban:</strong><br /></p>
+
+<p><strong> </strong></p>
+
+<p>Fungsi dari tipe data pada MS Acces adalah:</p>
+
+<p><strong> </strong></p>
+
+<p>1.    <strong>Text</strong>:
+tipe data ini berfungsi untuk menyimpan teks, angka atau kombinasinya. Ukuran
+yang dapat ditampung dalam tipe data ini maksimum adalah 255 karakter.          </p>
+
+<p>2.    <strong>Memo</strong>:
+tipe data ini berfungsi untuk menyimpan teks, angka atau kombinasinya dan mirip
+seperti tipe data Text, namun tipe data Memo memiliki kapasitas lebih besar
+hingga 65,536 karakter. Meski lebih besar kapasitasnya, kelemahan tipe data
+Memo ini adalah tidak dapat disortir, namun masih dapat di-search (dicari
+isinya).</p>
+
+<p>3.    <strong>Byte</strong>:
+untuk menyimpan angka dengan nilai antara 0 sampai 255. </p>
+
+<p>4.    <strong>Integer</strong>:
+untuk menyimpan angka dengan nilai antara -32,768 dan 32,767.</p>
+
+<p>5.    <strong>Long</strong>:
+untuk menyimpan angka dengan nilai antara -2,147,483,648 and 2,147,483,647.</p>
+
+<p>6.    <strong>Single</strong>:
+untuk menyimpan data dengan jenis Single precision floating-point dengan ukuran
+32 bit (4 byte)</p>
+
+<p>7.    <strong>Double</strong>:
+untuk menyimpan data dengan jenis Double precision floating-point dengan ukuran
+64 bit (8 byte)</p>
+
+<p>8.    <strong>Currency</strong>:
+untuk menyimpan data, yang terdiri dari 15 digit nilai mata uang, umumnya
+dollar, dan 4 digit nilai desimal.</p>
+
+<p>9.    <strong>AutoNumber</strong>:
+untuk menyimpan nilai yang diisi secara otomatis oleh database, dimulai dari
+angka 1.</p>
+
+<p>10. <strong>Date/Time</strong>:
+untuk menyimpan yang terdiri dari tahun, bulan dan tanggal</p>
+
+<p>11. <strong>Yes/No</strong>:
+untuk menyimpan nilai logika seperti ya/tidak, benar/salah, on/off. Tipe data
+ini tidak boleh kosong.</p>
+
+<p>12. <strong>Ole
+Object</strong>: untuk menyimpan file berukuran besar seperti gambar, video dan
+musik, atau data BLOB (binary large object) lainya</p>
+
+<p>13. <strong>Hyperlink</strong>:
+untuk menyimpan link ke halaman web. </p>
+
+<p>14. <strong>Lookup
+Wizard</strong>: untuk menyimpan pilihan dalam bentuk dropdown list</p>
+
+<p>                                                                                                                      </p>
+
+<p><strong>Kelas: XII</strong></p>
+
+<p><strong>Mata Pelajaran: Teknologi
+Informasi</strong></p>
+
+<p><strong>Materi: Microsoft Office </strong></p>
+
+<p><strong>Kata Kunci: Tipe data
+dalam Microsoft Access</strong></p><br />
+                                            <h2 class="ez-toc-section" id="command-query-yang-digunakan-untuk-menemukan-apakah-data-yang-dicari-berada-di-dalam-query">
+                            28. Command query yang digunakan untuk menemukan apakah data yang dicari berada di dalam query</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p>Select * from Tabel where Kolom IN (select Kolom from Tabel)</p><p></p><p><strong>Penjelasan:</strong></p><p><strong>In Select</strong> dipakai mencari kriteria dalam query</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-query-dalam-pengolah-basis-data">
+                            29. Jelaskan query dalam pengolah basis data?</h2><br />
+                        Query<br /><br />adalah semacam kemampuan untuk menampilkan suatu data dari database dimanamengambil dari table-tabel yang ada di database, namun tabel tersebut tidak semuaditampilkan sesuai dengan yang kita inginkan. <br /><br />Semoga membantu <br />
+                                            <h2 class="ez-toc-section" id="query-adalah-fasilitas-manipulasi-data-yang-terdapat-dalam-software-berjenis">
+                            30. query adalah fasilitas manipulasi data yang terdapat dalam software berjenis</h2><br />
+                        Microsoft Office Acces<br />pengolahan data seperti ms accees, sql yog, php myadmin, navicat dll<br />
+                                            <h2 class="ez-toc-section" id="tipe-data-untuk-fungsi-mempunyai-beberapa-macam-sebutkan-macam-macam-tipe-data-untuk-dungsi">
+                            31. Tipe data untuk fungsi mempunyai beberapa macam. Sebutkan macam-macam tipe data untuk dungsi</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Integer: tipe data yang digunakan untuk menyimpan bilangan bulat seperti 1, 2, 3, dan seterusnya. Contohnya pada bahasa pemrograman C++, Java, Python, dan sebagainya.</p><p></p><p>Float/double: tipe data yang digunakan untuk menyimpan bilangan pecahan seperti 1.23, 3.14, dan seterusnya. Contohnya pada bahasa pemrograman C++, Java, Python, dan sebagainya.</p><p></p><p>String: tipe data yang digunakan untuk menyimpan teks atau karakter seperti "Halo", "Nama Saya", dan seterusnya. Contohnya pada bahasa pemrograman C++, Java, Python, dan sebagainya.</p><p></p><p>Boolean: tipe data yang digunakan untuk menyimpan nilai kebenaran (true/false). Contohnya pada bahasa pemrograman C++, Java, Python, dan sebagainya.</p><p></p><p>Array/List: tipe data yang digunakan untuk menyimpan kumpulan nilai yang serupa. Contohnya pada bahasa pemrograman C++, Java, Python, dan sebagainya.</p><p></p><p>Object/Class: tipe data yang digunakan untuk mengelompokkan data dan fungsi ke dalam satu kesatuan. Contohnya pada bahasa pemrograman Java, Python, dan sebagainya.</p><p></p><p>Pointer/Reference: tipe data yang digunakan untuk menyimpan alamat memori dari suatu variabel atau fungsi. Contohnya pada bahasa pemrograman C++, dan sebagainya.</p><br />
+                                            <h2 class="ez-toc-section" id="komponen-utama-perangkat-lunak-dalam-menerjemahkan-bahasa-pemograman-yaitua-software-language-dan-machine-languageb-object-programc-tipe-datad-tipe-bahasa-pemrogramantolong-dijawab-butuh-sekarang">
+                            32. komponen utama perangkat lunak dalam menerjemahkan bahasa pemograman yaitua. software language dan machine languageb. object programc. tipe datad. tipe bahasa pemrogramantolong dijawab, butuh sekarang juga​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>D.tipe bahasa pemerograman</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-tipe-data-dan-fungsinya-masing">
+                            33. Sebutkan tipe data dan fungsinya masing"</h2><br />
+                        1. Integer (int) : tipe data untuk bilangan bulat<br />2. Float : tipe data untuk bilangan desimal<br />3. Double : tipe data untuk bilangan desimal yang kompleks/panjang<br />4. String : tipe data untuk teks<br />5. Character (char) : tipe data untuk satu karakter<br />
+                                            <h2 class="ez-toc-section" id="fungsi-sort-pada-query">
+                            34. fungsi sort pada query</h2><br />
+                        memnambah karakter huruf atau angka <br /><br />maaf klo salah<br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-manakah-yang-tidak-termasuk-kategori-mengupdate-query-a-menambah-field-yang-di-link-dengan-queryb-mengurangi-field-yang-di-link-dengan-queryc-mengubah-rumus-pada-suatu-fieldd-mengubah">
+                            35. berikut ini manakah yang tidak termasuk kategori mengupdate query..a. menambah field yang di link dengan queryb. mengurangi field yang di link dengan queryc. mengubah rumus pada suatu fieldd. mengubah tipe data pada tabele. menambah field pada query</h2><br />
+                        b.mengurani field yang di link dengan query<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-update-data-dengan-menggunakan-datasheet-dan-query">
+                            36. jelaskan update data dengan menggunakan datasheet dan query</h2><br />
+                        Update data melalui query<br /><br />a. Membuat query<br /><br /><br />    Sebelum memulai kegiatn ini,sebaiknya kamu tahu terlebih dahulu pengertian dari query.query bisa    diartikan sebagai pernyataan atu permintaan untuk memproses tabel yang ada.untuk mengupdate data melalui query,kamu harus memiliki query terlebih dahulu.namun jika kamu belum memiliki query,maka kamu harus membuatnya terlebih dahulu.terdapat dua cara membuat query<br /><br />yaitu:   1.      Create query in design view<br /><br />           2.      Create query by using wizard<br /><br /><br />Kita gunakan metode create query by using wizard.berikut adalah langkah-langkahnya. Pada jendela objects pilih queries,kemudian klik ganda pada create query by using wizard. Pilih nama pada tabel daftar.jika ingin ditampilkan seluruh field dalam query yang kamu buat,klik tombol &gt;&gt; namun jika hanya ingin dipilih beberapa field saja,klik tombol  &gt; sekarang pilih seluruh field dan klik next selanjutnya,dalam pilihan yang diberikan,pilihlah detail dan klik next. Selanjtnya,kamu akan diberi pilihan untuk memberi nama query yang kamu buat.secara otomatis,ms access memberi nama sesuai nama tabel yang dirujuk,yaitu daftar query kemudian klik finish.<br /><br /><br />Kita dapat memilih untuk menampilkan field tertentu setelah query dibuat.bagaimana caranya?lakukanlah langkah-langkah berikut :<br /><br />=&gt; simpan hasil query yang kamu buat dan tutup query<br /><br />=&gt; klik kanan daftar query dan pilih design view<br /><br />=&gt; selanjutnya kamu akan mendapatkan jendela design view<br /><br />=&gt; jika kamu hanya ingin menampilkan field nama siswa,prog.pilihan,math,bhs inggris,maka berikan tanda   <br /><br />     checklist pada bagian show hanya pada field ini saja<br /><br />=&gt; simpan dengan nama daftar query baru.selanjutnya,buka daftar query baru.<br /><br /><br />Bagaimana menampilkan jumlah nilai dan nilai rata-rata pada query?perhatikan langkah-langkah berikut :<br /><br /><br />buka query daftar query.pada kolom jumlah nilai,ketikkan rumus berikut:<br /><br /><br />Jumlah nilai:[ppkn]+[bhs indo]+[math]+[bhs inggris]+[nilai ipa]+[nilai ips]<br /><br /><br />Simpan hasil perubahan yang kamu buat di design view<br /><br /><br />selanjutnya,kamu dapat melihat query daftar query telah menunjukkan jumlah nilai siswa.<br /><br /><br />jika kamu menginginkan   juga nilai rata-rata ikut diperlihatkan dalam query.beri tanda checklist pada kolom nilai rata-rata di design view,kemudian ketikkan persamaan berikut:<br /><br /><br />Nilai rata-rata: [jumlah nilai]/6<br /><br /><br />simpan perubahan yang kamu lakukan dan keluarlah dari design view.selanjutnya buka kembali daftar query<br /><br /><br />kamu dapat mengubah jumlah desimal dengan mengklik kanan kolom.nilai rata-rata pada jendela design view,kemudian klik properties<br /><br />ubah format pada filed properties menjadi  standard<br /><br />simpan hasil perubahan query dengan menekan ctrl+s dan buka daftar query.<br /><br />                            <br /><br />b.Update data melalui query<br /><br />Sebelumnya kamu telah mempelajari bagaimana mengubah data melalui tabel dan form.selanjutnya,kamu akan mempelajari bagaimana mengubah data melalui query.untuk itu,lakukan langkah-langkah sebagai berikut:<br /><br /><br />buka basis data data akademik,kemudian masuklah daftar query <br /><br />pada record terakhir,masukkan data-data tersebut dengan tepat<br /><br />simpan hasil perubahan yang telah dilakukan dan juga dapat dilihat pada tabel &amp; form<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="spa-fungsi-utama-query">
+                            37. spa fungsi utama query</h2><br />
+                        1. Menampilkan data data tertentu pada suatu table<br />2. Menampilkan data dari 2 table atau lebih dengan syarat antar table itu ada field yang berhubungan<br />3. Dapat melakukan operasi perhitungan<br />#Maaf klo salah<br />
+                                            <h2 class="ez-toc-section" id="query-pada-aplikasi-basis-data">
+                            38. Query pada aplikasi basis data</h2><br />
+                        Query wizard<br /><br />Maaf kalo salah<br />
+                                            <h2 class="ez-toc-section" id="untuk-melihat-data-selection-query-yang-digunakan-adalah%e2%80%8b">
+                            39. untuk melihat data selection query yang digunakan adalah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>SELECT</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-query-untuk-menghapus-data-barang-dengan-id_barang-ok1716%e2%80%8b">
+                            40. tuliskan query untuk menghapus data barang dengan ID_Barang= "Ok1716"​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>delete from barang where ID_Barang="Ok1716"</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/84geBdv9IJc?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-perintah-cls-pada-microsoft-visual-basic-2010.html">Fungsi Dari Perintah Cls Pada Microsoft Visual Basic 2010</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-kimia-elektrolit-dan-non-elektrolit.html">Contoh Soal Kimia Elektrolit Dan Non Elektrolit</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-eps-dari-saham.html">Fungsi Eps Dari Saham</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-shunt-ayrton.html">Contoh Soal Shunt Ayrton</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-benar-salah-ipa-sd.html">Contoh Soal Benar Salah Ipa Sd</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-bahasa-indonesia-tentang-pidato.html">Contoh Soal Bahasa Indonesia Tentang Pidato</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-cloze-test-bahasa-inggris.html">Contoh Soal Cloze Test Bahasa Inggris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/tes-toefl-di-ilp.html">Tes Toefl Di Ilp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-c4-matematika-sma.html">Contoh Soal C4 Matematika Sma</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-vahan-pengganti.html">Fungsi Dari Vahan Pengganti</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-dan-jawaban-kapasitor.html">Contoh Soal Dan Jawaban Kapasitor</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-isoquant.html">Contoh Soal Isoquant</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-batu-pipisan-yang-berasal-dari-zaman-mesolitikum.html">Fungsi Batu Pipisan Yang Berasal Dari Zaman Mesolitikum</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/5-contoh-soal-median-beserta-jawabannya.html">5 Contoh Soal Median Beserta Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-sel-schwann.html">Fungsi Dari Sel Schwann</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-studi-kasus-amdal.html">Contoh Soal Studi Kasus Amdal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-metode-ilmiah.html">Contoh Soal Metode Ilmiah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-teknologi.html">Fungsi Teknologi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/fungsi-dari-if-dan-microsoft-excel.html">Fungsi Dari If Dan Microsoft Excel</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://pediasoal.github.io/contoh-soal-bahasa-inggris-tentang-teks-lagu.html">Contoh Soal Bahasa Inggris Tentang Teks Lagu</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://pediasoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://pediasoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://pediasoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
